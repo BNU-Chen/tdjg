@@ -1,3 +1,4 @@
+console.log("in WarmMap.js");
 //规划功能地图js
 var jswNavToolbar, jswMap, jswInfoTemplate, jswDynamicMapServiceLayer, jswFJMD;
 var jswPortalUrl = "http://www.arcgis.com";

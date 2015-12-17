@@ -41,6 +41,7 @@ Ext.define('MyApp.view.tpProjPlan', {
     },
 
     onViewItemClick: function(dataview, record, item, index, e, eOpts) {
+        console.log("tpProjPlan......");
         Ext.getCmp("body").getLayout().setActiveItem(2);
         switch(record.raw.id)
         {

@@ -1,3 +1,4 @@
+console.log("in ProjectMap.js");
 //规划功能地图js
 var jsNavToolbar, jsMap, jsSymbol, jsInfoTemplate, jsDynamicMapServiceLayer, jsLayer1, jsLayer2, jsQuery, jsGP, jsSelect;
 var jsFeatureLayer,jsFeatureSet,jsExtent,jsDrawingInfo,jsFields, jsFJMD;
@@ -351,7 +352,9 @@ require([
     //Select
     window.jsSelect = function(sql){
 
-    	var gpSelect = 'http://localhost:6080/arcgis/rest/services/GP/SelectTest/GPServer/Select';
+    	// var gpSelect = 'http://localhost:6080/arcgis/rest/services/GP/SelectCom';
+    	// var gpSelect = 'http://localhost:6080/arcgis/rest/services/GP/SelectCom';
+    	var gpSelect = 'http://localhost:6080/arcgis/rest/services/GP/SelectTest';
 		jsSelect = new esri.tasks.Geoprocessor(gpSelect);
 		
 		jsSelect.outSpatialReference=jsMap.spatialReference;
@@ -631,7 +634,7 @@ require([
 	var jsProjectID;
 	window.jsSelectCommon = function(sql, projectID){
 		
-		var gpSelect = 'http://localhost:6080/arcgis/rest/services/GP/SelectCom/GPServer/SelectCom';
+		var gpSelect = 'http://localhost:6080/arcgis/rest/services/GP/SelectTest/GPServer';
 		jsSelectCom = new esri.tasks.Geoprocessor(gpSelect);
 		
 		jsSelectCom.outSpatialReference=jsMap.spatialReference;

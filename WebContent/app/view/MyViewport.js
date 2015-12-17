@@ -194,32 +194,6 @@ Ext.define('MyApp.view.MyViewport', {
                         },
                         {
                             xtype: 'treepanel',
-                            id: 'tree_infoPubManager1',
-                            title: '测试',
-                            root: {
-                                expanded: true,
-                                children: [
-                                    {
-                                        id: 'infoArticleJYXCTab',
-                                        text: '建言献策',
-                                        icon: '',
-                                        leaf: true
-                                    }
-                                ]
-                            },
-                            rootVisible: false,
-                            viewConfig: {
-
-                            },
-                            listeners: {
-                                itemclick: {
-                                    fn: me.onTree_infoPubManager1ItemClick,
-                                    scope: me
-                                }
-                            }
-                        },
-                        {
-                            xtype: 'treepanel',
                             id: 'tree_xianzhuang',
                             title: '现状',
                             root: {
@@ -270,16 +244,10 @@ Ext.define('MyApp.view.MyViewport', {
                                 expanded: true,
                                 children: [
                                     {
-                                        id: 'xiangmu_guihua',
+                                        id: '',
                                         text: '项目与规划',
                                         icon: '',
                                         children: [
-                                            {
-                                                id: 301,
-                                                text: '项目创建',
-                                                icon: '',
-                                                leaf: true
-                                            },
                                             {
                                                 id: 302,
                                                 text: '项目管理',
@@ -288,20 +256,64 @@ Ext.define('MyApp.view.MyViewport', {
                                             },
                                             {
                                                 id: 303,
-                                                text: '规划复垦区域',
+                                                text: '规划拆迁区域',
                                                 icon: '',
                                                 leaf: true
                                             },
                                             {
                                                 id: 304,
-                                                text: '生成规划报告',
+                                                text: '现状冲突房屋',
+                                                icon: '',
+                                                leaf: true
+                                            }
+                                            //,
+                                            //                                            {
+                                            //                                                id: 102,
+                                            //                                                text: '任务管理',
+                                            //                                                icon: '',
+                                            //                                                leaf: true
+                                            //                                            },
+                                        ]
+                                    },
+                                    {
+                                        id: '',
+                                        text: '公告及意见',
+                                        icon: '',
+                                        children: [
+                                            {
+                                                id: 601,
+                                                text: '查看公告',
+                                                icon: '',
+                                                leaf: true
+                                            },
+                                            {
+                                                id: 602,
+                                                text: '添加公告',
+                                                icon: '',
+                                                leaf: true
+                                            },
+                                            {
+                                                id: 603,
+                                                text: '发表意见',
+                                                icon: '',
+                                                leaf: true
+                                            },
+                                            {
+                                                id: 604,
+                                                text: '查看意见',
+                                                icon: '',
+                                                leaf: true
+                                            },
+                                            {
+                                                id: 605,
+                                                text: '意见统计',
                                                 icon: '',
                                                 leaf: true
                                             }
                                         ]
                                     },
                                     {
-                                        id: 'fukenshenqingguanli',
+                                        id: '',
                                         text: '复垦申请管理',
                                         icon: '',
                                         children: [
@@ -338,199 +350,33 @@ Ext.define('MyApp.view.MyViewport', {
                                         ]
                                     },
                                     {
-                                        id: 'gonggao_yijian',
-                                        text: '公告及意见',
+                                        id: 501,
+                                        text: '录入拆迁面积',
                                         icon: '',
-                                        children: [
-                                            {
-                                                id: 601,
-                                                text: '查看公告',
-                                                icon: '',
-                                                leaf: true
-                                            },
-                                            {
-                                                id: 602,
-                                                text: '添加公告',
-                                                icon: '',
-                                                leaf: true
-                                            },
-                                            {
-                                                id: 603,
-                                                text: '发表意见',
-                                                icon: '',
-                                                leaf: true
-                                            },
-                                            {
-                                                id: 604,
-                                                text: '查看意见',
-                                                icon: '',
-                                                leaf: true
-                                            },
-                                            {
-                                                id: 605,
-                                                text: '意见统计',
-                                                icon: '',
-                                                leaf: true
-                                            }
-                                        ]
-                                    }/*{
-                                        id: '',
-                                        text: '项目立项',
-                                        icon: 'images/fenghuang.png',
+                                        leaf: true
+                                    },
+                                    {
+                                        id: 502,
+                                        text: '农户拆迁信息确认',
+                                        icon: '',
+                                        leaf: true
+                                    },
+                                    {
+                                        id: 503,
+                                        text: '农户补偿信息确认',
+                                        icon: '',
+                                        leaf: true,
+                                        
+                                    },
+                                    {
+                                        id: 505,
+                                        text: '查看农户拆确认汇总表',
+                                        icon: '',
+                                        leaf: true,
                                         
                                     },
                                     {
                                         id: '',
-                                        text: '规划复垦范围',
-                                        icon: 'images/fenghuang.png',
-                                        leaf: true
-                                    },
-                                    {
-                                        id: '',
-                                        text: '规划公示及意见',
-                                        icon: 'images/fenghuang.png',
-                                        leaf: true
-                                    },
-                                    {
-                                        id: '',
-                                        text: '申请管理',
-                                        icon: 'images/fenghuang.png',
-                                        children: [
-                                            {
-                                                id: '',
-                                                text: '申请复垦',
-                                                icon: '',
-                                                leaf: true
-                                            },
-                                            {
-                                                id: '',
-                                                text: '审核申请',
-                                                icon: '',
-                                                leaf: true
-                                            },
-                                            {
-                                                id: '',
-                                                text: '查看申请状态',
-                                                icon: '',
-                                                leaf: true
-                                            }
-                                        ]
-                                    },
-                                    {
-                                        id: '',
-                                        text: '项目进展管理',
-                                        icon: 'images/fenghuang.png',
-                                        leaf: true
-                                    }*/
-                                ]
-                            },
-                            rootVisible: false,
-                            viewConfig: {
-
-                            },
-                            listeners: {
-                                selectionchange: {
-                                    fn: me.onTreepanelSelectionChange4,
-                                    scope: me
-                                }
-                            }
-                        },
-                        {
-                            xtype: 'treepanel',
-                            id: 'tree_chaiqian',
-                            title: '拆迁',
-                            root: {
-                                expanded: true,
-                                children: [
-                                    {
-                                        id: 'cq_chaiqianguochengguanli',
-                                        text: '拆迁过程管理',
-                                        icon: '',
-                                        children: [
-                                            {
-                                                id: 501,
-                                                text: '录入面积',
-                                                icon: '',
-                                                leaf: true
-                                            },
-                                            {
-                                                id: 502,
-                                                text: '确认拆迁信息',
-                                                icon: '',
-                                                leaf: true
-                                            },
-                                            {
-                                                id: 503,
-                                                text: '确认补偿信息',
-                                                icon: '',
-                                                leaf: true
-                                            },
-                                            {
-                                                id: 504,
-                                                text: '管理拆迁日志',
-                                                icon: '',
-                                                leaf: true
-                                            },
-                                            {
-                                                id: 505,
-                                                text: '管理农户确认汇总表',
-                                                icon: '',
-                                                leaf: true
-                                            }
-                                        ]
-                                    },
-                                    {
-                                        id: 'cq_jiancejiankong',
-                                        text: '监测监控',
-                                        icon: '',
-                                        children: [
-                                            {
-                                                id: 701,
-                                                text: '拆迁过程监控',
-                                                icon: '',
-                                                leaf: true
-                                            },
-                                            {
-                                                id: 702,
-                                                text: '补偿监测',
-                                                icon: '',
-                                                leaf: true
-                                            },
-                                            {
-                                                id: 703,
-                                                text: '安置监测',
-                                                icon: '',
-                                                leaf: true
-                                            },
-                                            {
-                                                id: 704,
-                                                text: '拆迁进度监控',
-                                                icon: '',
-                                                leaf: true
-                                            }
-                                        ]
-                                    },
-                                    {
-                                        id: 'cq_yujingguanli',
-                                        text: '预警管理',
-                                        icon: '',
-                                        children: [
-                                            {
-                                                id: 801,
-                                                text: '预警规则管理',
-                                                icon: '',
-                                                leaf: true
-                                            },
-                                            {
-                                                id: 802,
-                                                text: '预警日志管理',
-                                                icon: '',
-                                                leaf: true
-                                            }
-                                        ]
-                                    },
-                                    {
-                                        id: 'cq_rukubeian',
                                         text: '入库备案',
                                         icon: '',
                                         children: [
@@ -553,26 +399,54 @@ Ext.define('MyApp.view.MyViewport', {
                                                 leaf: true
                                             }
                                         ]
-                                    }/*{
+                                    }
+                                ]
+                            },
+                            rootVisible: false,
+                            viewConfig: {
+
+                            },
+                            listeners: {
+                                selectionchange: {
+                                    fn: me.onTreepanelSelectionChange4,
+                                    scope: me
+                                }
+                            }
+                        },
+                        {
+                            xtype: 'treepanel',
+                            id: 'tree_chaiqian',
+                            title: '拆迁',
+                            root: {
+                                expanded: true,
+                                children: [
+                                    {
+                                        id: 504,
+                                        text: '查看拆迁日志',
+                                        icon: '',
+                                        leaf: true,
+                                        
+                                    },
+                                    {
                                         id: '',
-                                        text: '规划拆迁效果评估',
-                                        icon: 'images/fenghuang.png',
+                                        text: '监测监控',
+                                        icon: '',
                                         children: [
                                             {
-                                                id: 1001,
-                                                text: '交互式评估',
+                                                id: 701,
+                                                text: '空间监测',
                                                 icon: '',
                                                 leaf: true
                                             },
                                             {
-                                                id: 1002,
-                                                text: '提交竣工报告',
+                                                id: 702,
+                                                text: '补偿监测',
                                                 icon: '',
                                                 leaf: true
                                             },
                                             {
-                                                id: 1003,
-                                                text: '报送评估报告',
+                                                id: 703,
+                                                text: '安置监测',
                                                 icon: '',
                                                 leaf: true
                                             },
@@ -581,78 +455,29 @@ Ext.define('MyApp.view.MyViewport', {
                                     },
                                     {
                                         id: '',
-                                        text: '拆迁公示及意见',
-                                        icon: 'images/fenghuang.png',
-                                        leaf: true
-                                    },
-                                    {
-                                        id: '',
-                                        text: '拆迁信息管理',
-                                        icon: 'images/fenghuang.png',
+                                        text: '预警管理',
+                                        icon: '',
                                         children: [
                                             {
-                                                id: 'recFile',
-                                                text: '拆迁补偿信息管理',
+                                                id: 801,
+                                                text: '预警规则管理',
                                                 icon: '',
                                                 leaf: true
                                             },
                                             {
-                                                id: '',
-                                                text: '拆迁日志管理',
-                                                icon: '',
-                                                leaf: true
-                                            },
-                                            {
-                                                id: '',
-                                                text: '拆迁协议书管理',
+                                                id: 802,
+                                                text: '预警日志管理',
                                                 icon: '',
                                                 leaf: true
                                             }
                                         ]
                                     },
                                     {
-                                        id: 'preWarm',
-                                        text: '监控预警',
-                                        icon: 'images/fenghuang.png',
-                                        children: [
-                                            {
-                                                id: '',
-                                                text: '农户拆迁安置监测',
-                                                icon: '',
-                                                leaf: true
-                                            },
-                                            {
-                                                id: 'MontCtrl',
-                                                text: '农户拆迁补偿监测',
-                                                icon: '',
-                                                leaf: true
-                                            },
-                                            {
-                                                id: 'reclProc',
-                                                text: '拆迁过程监控',
-                                                icon: '',
-                                                leaf: true
-                                            },
-                                            {
-                                                id: '',
-                                                text: '拆迁预警',
-                                                icon: '',
-                                                leaf: true
-                                            }
-                                        ]
-                                    },
-                                    {
-                                        id: 'efectEvlu',
-                                        text: '规划拆迁效果评估',
-                                        icon: 'images/fenghuang.png',
+                                        id: 1001,
+                                        text: '评估',
+                                        icon: '',
                                         leaf: true
-                                    },
-                                    {
-                                        id: 'proj',
-                                        text: '项目进展管理',
-                                        icon: 'images/fenghuang.png',
-                                        leaf: true
-                                    }*/
+                                    }
                                 ]
                             },
                             rootVisible: false,
@@ -970,15 +795,6 @@ Ext.define('MyApp.view.MyViewport', {
         tabPanel.add(Ext.widget(xtype));
     },
 
-    onTree_infoPubManager1ItemClick: function(dataview, record, item, index, e, eOpts) {
-
-        var xtype = record.internalId;
-        var tabPanel = Ext.getCmp('myTabPanel');
-        tabPanel.removeAll(true);
-        tabPanel.add(Ext.widget(xtype));
-        //console.log(xtype);
-    },
-
     onTreepanelSelectionChange3: function(model, selected, eOpts) {
         var xtype = selected[0].get('id');
         var tabPanel = Ext.getCmp('myTabPanel');
@@ -991,11 +807,6 @@ Ext.define('MyApp.view.MyViewport', {
         var tabPanel = Ext.getCmp('myTabPanel');
 
         switch (xtype) {
-            case 301:
-                tabPanel.removeAll(true);
-                tabPanel.add(Ext.widget('proj'));
-                Ext.getCmp("proj").getLayout().setActiveItem(0);
-                break;
             case 302:
                 tabPanel.removeAll(true);
                 tabPanel.add(Ext.widget('proj'));
@@ -1004,12 +815,22 @@ Ext.define('MyApp.view.MyViewport', {
             case 303:
                 tabPanel.removeAll(true);
                 tabPanel.add(Ext.widget('proj'));
+                var head = document.getElementsByTagName('head')[0];
+                var script = document.createElement("script");
+                script.type = "text/javascript";
+                script.src = "MyMap/ProjectMap.js";
+                head.appendChild(script);
                 Ext.getCmp("proj").getLayout().setActiveItem(2);
                 break;
             case 304:
                 tabPanel.removeAll(true);
                 tabPanel.add(Ext.widget('proj'));
-                Ext.getCmp("proj").getLayout().setActiveItem(3);
+                Ext.getCmp("proj").getLayout().setActiveItem(4);
+                break;
+            case 102:
+                tabPanel.removeAll(true);
+                tabPanel.add(Ext.widget('main'));
+                Ext.getCmp("main").getLayout().setActiveItem(2);
                 break;
             case 401:
                 tabPanel.removeAll(true);
@@ -1023,81 +844,128 @@ Ext.define('MyApp.view.MyViewport', {
                 break;
             case 403:
 
-                    tabPanel.removeAll(true);
-                    tabPanel.add(Ext.widget('application'));
-                    var appStore = Ext.create('Ext.data.Store', {
+                tabPanel.removeAll(true);
+                tabPanel.add(Ext.widget('application'));
+                var appStore = Ext.create('Ext.data.Store', {
 
-                        proxy: {
-                            // load using HTTP
-                            type: 'ajax',
-                            url: 'showAppByID.action',
-                            // the return will be XML, so lets set up a reader
-                            reader:{
-                                type:"json",
-                                root:"results",
-                                totalProperty :'totalCount'
-                            },
-                            actionMethods: {
-                                read: 'POST'
-                            },
-                            writer:{
-                                type:"json"
-                            }
+                    proxy: {
+                        // load using HTTP
+                        type: 'ajax',
+                        url: 'showAppByID.action',
+                        // the return will be XML, so lets set up a reader
+                        reader: {
+                            type: "json",
+                            root: "results",
+                            totalProperty: 'totalCount'
                         },
-                        listeners:{
-                            beforeload:function(){
-                                msgTip = Ext.MessageBox.show({
-                                    title:'提示',
-                                    width : 250,
-                                    msg:'加载中,请稍后......'
-                                });
-                            }
+                        actionMethods: {
+                            read: 'POST'
                         },
-                        fields: [
-                            {name: 'name',  type: 'string', useNull: true},
-                            {name: 'card',  type: 'string'},
-                            {name: 'address',  type: 'string'},
-                            {name: 'applicationAddress', type: 'string'},
-                            {name: 'productID', type: 'string'},
-                            {name: 'phone', type: 'string'},
-                            {name: 'totalArea', type: 'auto'},
-                            {name: 'bulidArea', type: 'auto'},
-                            {name: 'productDate', type: 'date',
-                             mapping: 'productDate.time',  dateFormat : 'time'},
-                            {name: 'applicationDate', type: 'date',
-                             mapping: 'applicationDate.time',  dateFormat : 'time'},
-                            {name: 'north', type: 'auto'},
-                            {name: 'south', type: 'auto'},
-                            {name: 'west', type: 'auto'},
-                            {name: 'east', type: 'auto'},
-                            {name: 'work', type: 'string'},
-                            {name: 'afterUse', type: 'string'},
-                            {name: 'belongUse', type: 'string'},
-                            {name: 'reword', type: 'string'},
-                            {name: 'isAgreeSelf', type: 'string'},
-                            {name: 'isAgreeVillage', type: 'string'},
-                            {name: 'isAgreeTown', type: 'string'},
-                            {name: 'content', type: 'string'}
-                        ]
-
+                        writer: {
+                            type: "json"
+                        }
+                    },
+                    listeners: {
+                        beforeload: function() {
+                            msgTip = Ext.MessageBox.show({
+                                title: '提示',
+                                width: 250,
+                                msg: '加载中,请稍后......'
                             });
+                        }
+                    },
+                    fields: [{
+                        name: 'name',
+                        type: 'string',
+                        useNull: true
+                    }, {
+                        name: 'card',
+                        type: 'string'
+                    }, {
+                        name: 'address',
+                        type: 'string'
+                    }, {
+                        name: 'applicationAddress',
+                        type: 'string'
+                    }, {
+                        name: 'productID',
+                        type: 'string'
+                    }, {
+                        name: 'phone',
+                        type: 'string'
+                    }, {
+                        name: 'totalArea',
+                        type: 'auto'
+                    }, {
+                        name: 'bulidArea',
+                        type: 'auto'
+                    }, {
+                        name: 'productDate',
+                        type: 'date',
+                        mapping: 'productDate.time',
+                        dateFormat: 'time'
+                    }, {
+                        name: 'applicationDate',
+                        type: 'date',
+                        mapping: 'applicationDate.time',
+                        dateFormat: 'time'
+                    }, {
+                        name: 'north',
+                        type: 'auto'
+                    }, {
+                        name: 'south',
+                        type: 'auto'
+                    }, {
+                        name: 'west',
+                        type: 'auto'
+                    }, {
+                        name: 'east',
+                        type: 'auto'
+                    }, {
+                        name: 'work',
+                        type: 'string'
+                    }, {
+                        name: 'afterUse',
+                        type: 'string'
+                    }, {
+                        name: 'belongUse',
+                        type: 'string'
+                    }, {
+                        name: 'reword',
+                        type: 'string'
+                    }, {
+                        name: 'isAgreeSelf',
+                        type: 'string'
+                    }, {
+                        name: 'isAgreeVillage',
+                        type: 'string'
+                    }, {
+                        name: 'isAgreeTown',
+                        type: 'string'
+                    }, {
+                        name: 'content',
+                        type: 'string'
+                    }]
+
+                });
 
 
 
-                            appStore.load({
-                            callback: function(records, options, success){
+                appStore.load({
+                    callback: function(records, options, success) {
 
 
-                            //遍历store
-                            appStore.each(function(record) {
+                        //遍历store
+                        appStore.each(function(record) {
 
                             //重写radiogroup的 setValue()方法。
-                            Ext.override(Ext.form.RadioGroup,{setValue: function(v){
-                                v = v.replace( /^\s+|\s+$/g, "" );
-                                this.items.each(function(item,index,length){
-                                if (v==item.boxLabel)item.checked = true;
-                            });
-                            }
+                            Ext.override(Ext.form.RadioGroup, {
+                                setValue: function(v) {
+                                    v = v.replace(/^\s+|\s+$/g, "");
+                                    this.items.each(function(item, index, length) {
+                                        if (v == item.boxLabel) item.checked = true;
+                                    });
+                                }
                             });
                             Ext.getCmp("appliName1").setValue(record.get("name"));
                             Ext.getCmp("appliID1").setValue(record.get("card"));
@@ -1128,179 +996,421 @@ Ext.define('MyApp.view.MyViewport', {
                             Ext.getCmp("contentOthers1").setValue(record.get("content"));
 
 
-                            });
+                        });
 
-                            msgTip.hide(); // 加载完成，关闭提示框
-                            Ext.getCmp("application").getLayout().setActiveItem(2);
+                        msgTip.hide(); // 加载完成，关闭提示框
+                        Ext.getCmp("application").getLayout().setActiveItem(2);
 
-                            }
-                            });
-
-
-                            break;
-
-                            case 404:
-                            tabPanel.removeAll(true);
-                            tabPanel.add(Ext.widget('application'));
-                            Ext.getCmp("application").getLayout().setActiveItem(3);
-                            break;
-                            case 405:
-                            tabPanel.removeAll(true);
-                            tabPanel.add(Ext.widget('application'));
-                            Ext.getCmp("application").getLayout().setActiveItem(4);
-                            break;
-                            case 601:
-                            tabPanel.removeAll(true);
-                            tabPanel.add(Ext.widget('notice'));
-                            Ext.getCmp("notice").getLayout().setActiveItem(0);
-                            Ext.getCmp("allNotice").getLayout().setActiveItem(0);
-                            break;
-                            case 602:
-                            tabPanel.removeAll(true);
-                            tabPanel.add(Ext.widget('notice'));
-                            Ext.getCmp("notice").getLayout().setActiveItem(1);
-                            break;
-                            case 603:
-                            tabPanel.removeAll(true);
-                            tabPanel.add(Ext.widget('notice'));
-                            Ext.getCmp("notice").getLayout().setActiveItem(2);
-                            break;
-                            case 604:
-
-                            tabPanel.removeAll(true);
-                            tabPanel.add(Ext.widget('notice'));
-                            Ext.getCmp("notice").getLayout().setActiveItem(3);
-                            Ext.getCmp("gridviewShowSug").getStore().load({params:{start: 0, limit: 2,  date: "", noticeID : "1"}});
-                            break;
-
-                            case 605:
-                            tabPanel.removeAll(true);
-                            tabPanel.add(Ext.widget('notice'));
-                            Ext.getCmp("notice").getLayout().setActiveItem(4);
-                            break;
-
-                            default:
-                            break;
-                            }
+                    }
+                });
 
 
+                break;
 
+            case 404:
+                tabPanel.removeAll(true);
+                tabPanel.add(Ext.widget('application'));
+                Ext.getCmp("application").getLayout().setActiveItem(3);
+                break;
+            case 405:
+                tabPanel.removeAll(true);
+                tabPanel.add(Ext.widget('application'));
+                Ext.getCmp("application").getLayout().setActiveItem(4);
+                break;
+
+            case 601:
+                tabPanel.removeAll(true);
+                tabPanel.add(Ext.widget('notice'));
+                Ext.getCmp("notice").getLayout().setActiveItem(0);
+                Ext.getCmp("allNotice").getLayout().setActiveItem(0);
+                break;
+            case 602:
+                tabPanel.removeAll(true);
+                tabPanel.add(Ext.widget('notice'));
+                if (Ext.getCmp('noticeEnclosure') !== undefined) {
+
+                    Ext.getCmp('noticeEnclosure').getComponent(0).setRawValue("");
+
+                }
+                Ext.getCmp("notice").getLayout().setActiveItem(1);
+                break;
+            case 603:
+                tabPanel.removeAll(true);
+                tabPanel.add(Ext.widget('notice'));
+                Ext.getCmp("notice").getLayout().setActiveItem(2);
+                break;
+            case 604:
+
+                tabPanel.removeAll(true);
+                tabPanel.add(Ext.widget('notice'));
+                Ext.getCmp("notice").getLayout().setActiveItem(3);
+                Ext.getCmp("gridviewShowSug").getStore().load({
+                    params: {
+                        start: 0,
+                        limit: 2,
+                        date: "",
+                        noticeID: "1"
+                    }
+                });
+                break;
+
+            case 605:
+                tabPanel.removeAll(true);
+                tabPanel.add(Ext.widget('notice'));
+                Ext.getStore('point').reload();
+                Ext.getCmp("notice").getLayout().setActiveItem(4);
+                break;
+
+            case 501:
+
+                tabPanel.removeAll(true);
+                tabPanel.add(Ext.widget('reclProc'));
+                var store = Ext.getCmp("writeArea").getStore();
+                store.load({
+                    params: {
+                        flag: ""
+                    },
+                    callback: function(records, options, success) {
+                        Ext.getCmp("ReclProc").getLayout().setActiveItem(0);
+                    }
+                });
+                break;
+            case 502:
+
+                tabPanel.removeAll(true);
+                tabPanel.add(Ext.widget('reclProc'));
+                var store = Ext.getCmp("writeArea").getStore();
+                store.load({
+                    params: {
+                        flag: "1"
+                    },
+                    callback: function(records, options, success) {
+                        Ext.getCmp("ReclProc").getLayout().setActiveItem(1);
+                    }
+                });
+                break;
+            case 503:
+
+                tabPanel.removeAll(true);
+                tabPanel.add(Ext.widget('reclProc'));
+                var store = Ext.getCmp("writeArea").getStore();
+                store.load({
+                    params: {
+                        flag: "1"
+                    },
+                    callback: function(records, options, success) {
+                        Ext.getCmp("ReclProc").getLayout().setActiveItem(2);
+                    }
+                });
+                break;
+            case 505:
+
+                tabPanel.removeAll(true);
+                tabPanel.add(Ext.widget('reclProc'));
+                var store = Ext.getCmp("writeArea").getStore();
+                store.load({
+                    params: {
+                        flag: ""
+                    },
+                    callback: function(records, options, success) {
+                        Ext.getCmp("ReclProc").getLayout().setActiveItem(6);
+                    }
+                });
+                break;
+            case 901:
+                tabPanel.removeAll(true);
+                tabPanel.add(Ext.widget('recFile'));
+                Ext.getCmp("RecFile").getLayout().setActiveItem(0);
+                break;
+            case 902:
+                tabPanel.removeAll(true);
+                tabPanel.add(Ext.widget('recFile'));
+                Ext.getCmp("RecFile").getLayout().setActiveItem(1);
+                break;
+            case 903:
+                tabPanel.removeAll(true);
+                tabPanel.add(Ext.widget('recFile'));
+                Ext.getCmp("RecFile").getLayout().setActiveItem(2);
+                break;
+            default:
+                break;
+        }
 
     },
 
     onTreepanelSelectionChange5: function(model, selected, eOpts) {
-
         var xtype = selected[0].get('id');
         var tabPanel = Ext.getCmp('myTabPanel');
 
         switch (xtype) {
-            case 501:
 
-            tabPanel.removeAll(true);
-            tabPanel.add(Ext.widget('reclProc'));
-            var store = Ext.getCmp("writeArea").getStore();
-            store.load({params:{flag: ""},
-            callback: function(records, options, success){
-                Ext.getCmp("ReclProc").getLayout().setActiveItem(0);
-            }
-        });
-        break;
+            case 504:
+                tabPanel.removeAll(true);
+                tabPanel.add(Ext.widget('reclProc'));
+                Ext.getCmp("ReclProc").getLayout().setActiveItem(3);
+                break;
 
-        case 502:
 
-        tabPanel.removeAll(true);
-        tabPanel.add(Ext.widget('reclProc'));
-        var store = Ext.getCmp("writeArea").getStore();
-        store.load({params:{flag: "1"},
-        callback: function(records, options, success){
-            Ext.getCmp("ReclProc").getLayout().setActiveItem(1);
+            case 701:
+                tabPanel.removeAll(true);
+                tabPanel.add(Ext.widget('MontCtrl'));
+                jswCardStore = Ext.create('Ext.data.Store', {
+                    id: 'CardStord',
+                    proxy: {
+                        // load using HTTP
+                        type: 'ajax',
+                        url: 'showCard.action',
+                        // the return will be XML, so lets set up a reader
+                        reader: {
+                            type: "json",
+                            root: "results",
+                            totalProperty: 'totalCount'
+                        },
+                        actionMethods: {
+                            read: 'POST'
+                        },
+                        writer: {
+                            type: "json"
+                        }
+                    },
+                    fields: [{
+                            name: 'projectID',
+                            type: 'string'
+                        }, {
+                            name: 'houseNumber',
+                            type: 'string'
+                        }, {
+                            name: 'demolitionFlag',
+                            type: 'string'
+                        }, {
+                            name: 'DLMC',
+                            type: 'string'
+                        }, {
+                            name: 'DYNHSFZ',
+                            type: 'string'
+                        }, {
+                            name: 'DYNHXM',
+                            type: 'string'
+                        }, {
+                            name: 'FWJG',
+                            type: 'string'
+                        }, {
+                            name: 'FWSYSJ',
+                            type: 'string'
+                        }, {
+                            name: 'QSDWMC',
+                            type: 'string'
+                        }, {
+                            name: 'SFDYXZSJ',
+                            type: 'string'
+                        }, {
+                            name: 'FWZP',
+                            type: 'string'
+                        }, {
+                            name: 'joinFlag',
+                            type: 'string'
+                        }, {
+                            name: 'shape_Area',
+                            type: 'auto'
+                        },
+
+                    ]
+                });
+
+                jswCardStore.load({
+                    callback: function(records, options, success) {
+
+                        Ext.getCmp("MontCtrl").getLayout().setActiveItem(0);
+
+                        if (document.getElementById("jsMontMap")) {
+                            var e = document.getElementById("jsMontMap");
+                            e.parentNode.removeChild(e);
+                            var head = document.getElementsByTagName('head')[0];
+                            var script = document.createElement("script");
+                            script.id = "jsMontMap";
+                            script.type = "text/javascript";
+                            script.src = "MyMap/WarmMap.js";
+                            head.appendChild(script);
+                        } else {
+                            var head = document.getElementsByTagName('head')[0];
+                            var script = document.createElement("script");
+                            script.id = "jsMontMap";
+                            script.type = "text/javascript";
+                            script.src = "MyMap/WarmMap.js";
+                            head.appendChild(script);
+                        }
+
+                    }
+                });
+                break;
+            case 702:
+                tabPanel.removeAll(true);
+                tabPanel.add(Ext.widget('MontCtrl'));
+                Ext.getCmp("MontCtrl").getLayout().setActiveItem(1);
+                break;
+            case 703:
+                tabPanel.removeAll(true);
+                tabPanel.add(Ext.widget('MontCtrl'));
+                Ext.getStore('montAZ').load({
+                    params: {
+                        start: 0,
+                        limit: 2,
+                        categoryAZ: "安置监测"
+                    }
+                });
+                Ext.getCmp("allMontAZ").setActiveTab(0);
+                Ext.getCmp("MontCtrl").getLayout().setActiveItem(2);
+                break;
+
+            case 801:
+                tabPanel.removeAll(true);
+                tabPanel.add(Ext.widget('preWarm'));
+                Ext.getCmp("RecWarm").getLayout().setActiveItem(0);
+                break;
+            case 802:
+                tabPanel.removeAll(true);
+                tabPanel.add(Ext.widget('preWarm'));
+                Ext.getCmp("RecWarm").getLayout().setActiveItem(1);
+                break;
+
+            case 1001:
+                tabPanel.removeAll(true);
+                tabPanel.add(Ext.widget('efctEvlu'));
+                var projectionStore = Ext.create('Ext.data.ArrayStore', {
+                    proxy: {
+                        type: "ajax",
+                        url: "showProject.action",
+
+                        reader: {
+                            type: "json",
+                            root: "results",
+                            totalProperty: 'totalCount'
+                        },
+                        actionMethods: {
+                            read: 'POST'
+                        },
+                        writer: {
+                            type: "json"
+                        }
+                    },
+                    fields: [{
+                        name: 'id',
+                        type: 'auto'
+                    }, {
+                        name: 'projectNumber',
+                        type: 'string'
+                    }, {
+                        name: 'projectAddress',
+                        type: 'string'
+                    }, {
+                        name: 'createTime',
+                        type: 'date'
+                    }, {
+                        name: 'projectStatus',
+                        type: 'string'
+                    }, {
+                        name: 'endTime',
+                        type: 'date'
+                    }, {
+                        name: 'projectDescription',
+                        type: 'string'
+                    }, ],
+
+                });
+                projectionStore.load();
+                var projectionPanel = Ext.create('Ext.grid.Panel', {
+                    emptyText: '没有项目可选择',
+                    region: 'center',
+                    allowDeselect: true,
+                    columnLines: true,
+                    store: projectionStore,
+                    columns: [{
+                            xtype: 'gridcolumn',
+                            width: 75,
+                            align: 'center',
+                            dataIndex: 'projectNumber',
+                            text: '项目编号'
+                        }, {
+                            xtype: 'gridcolumn',
+                            width: 150,
+                            align: 'center',
+                            dataIndex: 'projectAddress',
+                            text: '项目所在地'
+                        }, {
+                            xtype: 'datecolumn',
+                            width: 75,
+                            align: 'center',
+                            dataIndex: 'createTime',
+                            text: '立项时间'
+                        }, {
+                            xtype: 'gridcolumn',
+                            width: 150,
+                            align: 'center',
+                            dataIndex: 'projectDescription',
+
+                            text: '项目描述'
+                        },
+
+                    ],
+
+                    selModel: Ext.create('Ext.selection.CheckboxModel', {
+
+                    })
+                });
+                var projectionWindow = Ext.create('Ext.window.Window', {
+                    title: '请选择项目',
+                    width: 600,
+
+                    height: 400,
+                    layout: {
+                        type: 'border',
+                    },
+                    items: [{
+                        xtype: 'panel',
+                        layout: 'hbox',
+                        region: 'south',
+                        items: [{
+
+                            xtype: 'button',
+                            text: '确定',
+                            handler: function() {
+                                if (projectionPanel.getSelectionModel().hasSelection()) {
+                                    var records = projectionPanel.getSelectionModel().getSelection();
+                                    jsEvaluteProjectID = records[0].get('projectNumber');
+
+                                    Ext.getCmp('evluProjecID').setValue(jsEvaluteProjectID);
+                                    projectionWindow.destroy();
+                                } else {
+                                    Ext.Msg.alert('提示', "请选择一个项目");
+                                }
+
+                            },
+                            width: 70,
+
+                        }, {
+                            xtype: 'button',
+                            text: '取消',
+                            handler: function() {
+                                projectionWindow.destroy();
+                            },
+                            width: 70,
+                        }, ]
+                    }]
+                });
+                projectionWindow.add(projectionPanel);
+                projectionWindow.show();
+
+                Ext.getCmp("EfctEvlu").getLayout().setActiveItem(0);
+                var head = document.getElementsByTagName('head')[0];
+                var script = document.createElement("script");
+                script.type = "text/javascript";
+                script.src = "MyMap/FinalMap.js";
+                head.appendChild(script);
+                break;
+            default:
+                break;
+
         }
-        });
-        break;
-
-
-        case 503:
-
-        tabPanel.removeAll(true);
-        tabPanel.add(Ext.widget('reclProc'));
-        var store = Ext.getCmp("writeArea").getStore();
-        store.load({params:{flag: "1"},
-        callback: function(records, options, success){
-        Ext.getCmp("ReclProc").getLayout().setActiveItem(2);
-        }
-        });
-        break;
-
-        case 504:
-        tabPanel.removeAll(true);
-        tabPanel.add(Ext.widget('reclProc'));
-        Ext.getCmp("ReclProc").getLayout().setActiveItem(3);
-        break;
-        case 505:
-
-        tabPanel.removeAll(true);
-        tabPanel.add(Ext.widget('reclProc'));
-        var store = Ext.getCmp("writeArea").getStore();
-        store.load({params:{flag: ""},
-        callback: function(records, options, success){
-        Ext.getCmp("ReclProc").getLayout().setActiveItem(6);
-        }
-        });
-        break;
-
-        case 701:
-        tabPanel.removeAll(true);
-        tabPanel.add(Ext.widget('MontCtrl'));
-        Ext.getCmp("MontCtrl").getLayout().setActiveItem(0);
-        break;
-        case 702:
-        tabPanel.removeAll(true);
-        tabPanel.add(Ext.widget('MontCtrl'));
-        Ext.getCmp("MontCtrl").getLayout().setActiveItem(1);
-        break;
-        case 703:
-        tabPanel.removeAll(true);
-        tabPanel.add(Ext.widget('MontCtrl'));
-        Ext.getCmp("MontCtrl").getLayout().setActiveItem(2);
-        break;
-        case 704:
-        tabPanel.removeAll(true);
-        tabPanel.add(Ext.widget('MontCtrl'));
-        Ext.getCmp("MontCtrl").getLayout().setActiveItem(3);
-        break;
-        case 801:
-        tabPanel.removeAll(true);
-        tabPanel.add(Ext.widget('preWarm'));
-        Ext.getCmp("PreWarm").getLayout().setActiveItem(0);
-        break;
-        case 802:
-        tabPanel.removeAll(true);
-        tabPanel.add(Ext.widget('preWarm'));
-        Ext.getCmp("PreWarm").getLayout().setActiveItem(1);
-        break;
-        case 901:
-        tabPanel.removeAll(true);
-        tabPanel.add(Ext.widget('recFile'));
-        Ext.getCmp("RecFile").getLayout().setActiveItem(0);
-        break;
-        case 902:
-        tabPanel.removeAll(true);
-        tabPanel.add(Ext.widget('recFile'));
-        Ext.getCmp("RecFile").getLayout().setActiveItem(1);
-        break;
-        case 903:
-        tabPanel.removeAll(true);
-        tabPanel.add(Ext.widget('recFile'));
-        Ext.getCmp("RecFile").getLayout().setActiveItem(2);
-        break;
-
-        default:
-        break;
-
-        };
-
-
-
 
     },
 

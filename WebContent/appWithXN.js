@@ -347,8 +347,8 @@ Ext.application({
         'tpReclProc',
         'reclProc',
         
-	'use_SelectLayerWindow',
-	'use_MonitorResult',
+    	'use_SelectLayerWindow',
+    	'use_MonitorResult',
         'db_BlacklistTab',
         'db_BlacklistWindow',
         'db_RoleRightSettingWindow'

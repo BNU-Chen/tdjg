@@ -1,3 +1,4 @@
+console.log("in Totalmap.js");
 //规划功能地图js
 var jstNavToolbar, jstMap, jstSymbol, jstInfoTemplate, jstDynamicMapServiceLayer, jstQueryTask, jstQuery;
 var jsPortalUrl = "http://www.arcgis.com";

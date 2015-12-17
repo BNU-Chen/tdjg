@@ -1,3 +1,4 @@
+console.log("in finalMap.js");
 //js
 var jsfNavToolbar, jsfMap, jsfInfoTemplate, jsfDynamicMapServiceLayer, jsfLayer1, jsfLayer2, jsfGP;
 var jsPortalUrl = "http://www.arcgis.com";

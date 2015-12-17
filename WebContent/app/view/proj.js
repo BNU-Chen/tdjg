@@ -1264,10 +1264,10 @@ Ext.define('MyApp.view.proj', {
 																			  
 																			  var id = records[i].get("Id");
 																			  if (i ==  records.length - 1) {
-																				  jsSql = jsSql + "\"Id\" = " +	id;
+																				  jsSql = jsSql + "Id = " +	id;
 																				  continue;
 																			  }
-																			  jsSql = jsSql + "\"Id\" = " +	id + " OR ";										 
+																			  jsSql = jsSql + "Id = " +	id + " OR ";										 
 																		  }
 																		  jsSelect(jsSql);
 																		  msgSel = Ext.MessageBox.show({
