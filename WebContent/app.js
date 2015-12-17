@@ -348,13 +348,7 @@ Ext.application({
         'tpEfctEvlu',
         'application',
         'tpReclProc',
-        'reclProc',
-        
-        'use_SelectLayerWindow',
-        'use_MonitorResult',
-        'db_BlacklistTab',
-        'db_BlacklistWindow',
-        'db_RoleRightSettingWindow'
+        'reclProc'
     ],
     name: 'MyApp',
 
