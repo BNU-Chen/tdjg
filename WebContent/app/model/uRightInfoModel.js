@@ -29,6 +29,9 @@ Ext.define('MyApp.model.uRightInfoModel', {
             name: 'rightName'
         },
         {
+            name: 'rightIndex'
+        },
+        {
             name: 'url'
         },
         {

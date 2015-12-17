@@ -25,7 +25,7 @@
             "userConfig": {
                 "url": "get_abwsRwList"
             },
-            "name": "MyAjaxProxy70",
+            "name": "MyAjaxProxy71",
             "designerId": "8b60ac64-37db-42e7-bb26-5d3e861ac2e1",
             "cn": [
                 {
@@ -38,7 +38,7 @@
                     "userConfig": {
                         "root": "root"
                     },
-                    "name": "MyJsonReader70",
+                    "name": "MyJsonReader71",
                     "designerId": "2c4abd35-bff0-45e1-b8e9-92d4fed825ea"
                 }
             ]

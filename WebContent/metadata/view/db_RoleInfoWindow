@@ -31,7 +31,7 @@
                 "layout": "vbox",
                 "title": null
             },
-            "name": "MyForm2",
+            "name": "MyForm3",
             "designerId": "bd468415-fcc1-4872-b36b-c68c7b0d1586",
             "cn": [
                 {
@@ -49,7 +49,7 @@
                         "readOnly": true,
                         "width": 400
                     },
-                    "name": "MyTextField15",
+                    "name": "MyTextField18",
                     "designerId": "e1b231cd-ca2e-4856-bf21-ac1e3df0f09e"
                 },
                 {
@@ -68,7 +68,7 @@
                         "submitValue": false,
                         "width": 400
                     },
-                    "name": "MyTextField16",
+                    "name": "MyTextField19",
                     "designerId": "e2d369b2-1aa3-4559-8b88-625e38c38624"
                 },
                 {
@@ -86,7 +86,7 @@
                         "readOnly": true,
                         "width": 400
                     },
-                    "name": "MyTextField17",
+                    "name": "MyTextField20",
                     "designerId": "dabe40da-1833-4a50-b59b-f3a330b129c7"
                 },
                 {
@@ -123,7 +123,7 @@
                         "labelWidth": 70,
                         "name": "description"
                     },
-                    "name": "MyHtmlEditor2",
+                    "name": "MyHtmlEditor3",
                     "designerId": "15201c0a-7c36-434b-bada-3a7e2e4150ee"
                 },
                 {
@@ -137,7 +137,7 @@
                         "dock": "bottom",
                         "layout|flex": 1
                     },
-                    "name": "MyToolbar3",
+                    "name": "MyToolbar5",
                     "designerId": "e40d7015-59d8-46cd-8897-fad3fa03f819",
                     "cn": [
                         {
@@ -150,7 +150,7 @@
                             "userConfig": {
                                 "layout|flex": null
                             },
-                            "name": "MyFill3",
+                            "name": "MyFill4",
                             "designerId": "871f8ef2-8764-4772-86f7-75121ad46706"
                         },
                         {
@@ -164,7 +164,7 @@
                                 "layout|flex": null,
                                 "text": "取消"
                             },
-                            "name": "MyButton10",
+                            "name": "MyButton16",
                             "designerId": "30a5c084-f08b-4c57-8162-b234f1d70d3c",
                             "cn": [
                                 {
@@ -199,7 +199,7 @@
                                 "layout|flex": null,
                                 "width": 30
                             },
-                            "name": "MySpacer3",
+                            "name": "MySpacer4",
                             "designerId": "4c1829af-6deb-4d26-8852-61d6a57a932f"
                         },
                         {
@@ -213,7 +213,7 @@
                                 "layout|flex": null,
                                 "text": "确认修改"
                             },
-                            "name": "MyButton11",
+                            "name": "MyButton17",
                             "designerId": "558c11ec-95aa-45b7-ae82-32a0fc941013",
                             "cn": [
                                 {

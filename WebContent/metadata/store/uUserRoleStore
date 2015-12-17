@@ -30,7 +30,7 @@
                 ],
                 "url": "get_UserRoleList"
             },
-            "name": "MyAjaxProxy91",
+            "name": "MyAjaxProxy92",
             "designerId": "ec316901-6273-4ee7-a74f-ec75af3e9c7e",
             "cn": [
                 {
@@ -43,7 +43,7 @@
                     "userConfig": {
                         "root": "root"
                     },
-                    "name": "MyJsonReader91",
+                    "name": "MyJsonReader92",
                     "designerId": "1b5c4b07-6ebf-47ef-96da-285659689c4e"
                 }
             ]

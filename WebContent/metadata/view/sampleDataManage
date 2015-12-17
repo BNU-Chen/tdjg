@@ -27,7 +27,7 @@
                 "layout": "fit",
                 "title": ""
             },
-            "name": "MyForm24",
+            "name": "MyForm25",
             "designerId": "d544c938-4639-4577-a907-4b2e9c76bd72",
             "cn": [
                 {
@@ -42,7 +42,7 @@
                         "store": "SampleStore",
                         "title": ""
                     },
-                    "name": "MyGridPanel28",
+                    "name": "MyGridPanel29",
                     "designerId": "c62b3f53-c47f-48b3-beeb-4e97eeea20da",
                     "cn": [
                         {
@@ -52,7 +52,7 @@
                                 "type": "array"
                             },
                             "codeClass": null,
-                            "name": "MyRowNumberer22",
+                            "name": "MyRowNumberer23",
                             "designerId": "a169be4b-470e-4bdd-af53-4715b39386f8"
                         },
                         {
@@ -67,7 +67,7 @@
                                 "hidden": true,
                                 "text": "记录号"
                             },
-                            "name": "MyColumn147",
+                            "name": "MyColumn153",
                             "designerId": "56926c4d-028f-4e32-8538-e57ffe3649c3"
                         },
                         {
@@ -81,7 +81,7 @@
                                 "dataIndex": "sampleId",
                                 "text": "样品编号"
                             },
-                            "name": "MyColumn148",
+                            "name": "MyColumn154",
                             "designerId": "c172bb8c-bbfd-45d8-8c4a-0fff5929efac"
                         },
                         {
@@ -95,7 +95,7 @@
                                 "dataIndex": "sampleAddresss",
                                 "text": "采集地点"
                             },
-                            "name": "MyColumn149",
+                            "name": "MyColumn155",
                             "designerId": "31fab0d3-60e6-4be0-8986-92c5d10b6098"
                         },
                         {
@@ -109,7 +109,7 @@
                                 "dataIndex": "projectId",
                                 "text": "项目编号"
                             },
-                            "name": "MyColumn150",
+                            "name": "MyColumn156",
                             "designerId": "5d6146dd-0dd8-408e-bd38-35c455045a4c"
                         },
                         {
@@ -123,7 +123,7 @@
                                 "dataIndex": "projectName",
                                 "text": "项目名称"
                             },
-                            "name": "MyColumn151",
+                            "name": "MyColumn157",
                             "designerId": "19d22a78-eeea-447e-8c4b-8d924e126554"
                         },
                         {
@@ -137,7 +137,7 @@
                                 "dataIndex": "soilThickness",
                                 "text": "土层厚度"
                             },
-                            "name": "MyColumn152",
+                            "name": "MyColumn158",
                             "designerId": "ea5cc4f1-83e2-42a8-8ace-6747e60808fa"
                         },
                         {
@@ -151,7 +151,7 @@
                                 "dataIndex": "soilmoisture",
                                 "text": "土壤含水量"
                             },
-                            "name": "MyColumn153",
+                            "name": "MyColumn159",
                             "designerId": "0ac02fb7-40b9-47a4-8422-40ad01ff9a2c"
                         },
                         {
@@ -165,7 +165,7 @@
                                 "dataIndex": "soiltexture",
                                 "text": "土壤质地"
                             },
-                            "name": "MyColumn154",
+                            "name": "MyColumn160",
                             "designerId": "8fdce37b-f213-4d7c-8454-ad1bb9d6a530"
                         },
                         {
@@ -179,7 +179,7 @@
                                 "dataIndex": "longitude",
                                 "text": "经度"
                             },
-                            "name": "MyColumn155",
+                            "name": "MyColumn161",
                             "designerId": "22f8e9a5-442b-4b49-b70d-2954fde780f3"
                         },
                         {
@@ -193,7 +193,7 @@
                                 "dataIndex": "latitude",
                                 "text": "纬度"
                             },
-                            "name": "MyColumn156",
+                            "name": "MyColumn162",
                             "designerId": "8e5f0cd3-07b6-45f2-8236-8699485e0230"
                         },
                         {
@@ -207,7 +207,7 @@
                                 "dataIndex": "organicmatter",
                                 "text": "有机质"
                             },
-                            "name": "MyColumn157",
+                            "name": "MyColumn163",
                             "designerId": "be07c7e4-8aeb-406d-b2a5-703099c1ed3e"
                         },
                         {
@@ -221,7 +221,7 @@
                                 "dataIndex": "phvalue",
                                 "text": "pH值"
                             },
-                            "name": "MyColumn158",
+                            "name": "MyColumn164",
                             "designerId": "ef1b2ad6-3d40-4935-a327-d662a425fe74"
                         },
                         {
@@ -235,7 +235,7 @@
                                 "dataIndex": "totalnitrogen",
                                 "text": "全氮"
                             },
-                            "name": "MyColumn159",
+                            "name": "MyColumn165",
                             "designerId": "698adc0a-3bb2-4fd1-809f-7c6b9a2d904c"
                         },
                         {
@@ -249,7 +249,7 @@
                                 "dataIndex": "totalphosphorus",
                                 "text": "全磷"
                             },
-                            "name": "MyColumn160",
+                            "name": "MyColumn166",
                             "designerId": "f61dead8-c74a-42c5-9dc9-6115f93c46ac"
                         },
                         {
@@ -263,7 +263,7 @@
                                 "dataIndex": "totalpotassium",
                                 "text": "全钾"
                             },
-                            "name": "MyColumn161",
+                            "name": "MyColumn167",
                             "designerId": "d32839e4-cdaa-4924-a4fd-308eab2dadc5"
                         },
                         {
@@ -277,7 +277,7 @@
                                 "dataIndex": "recorder",
                                 "text": "记录人"
                             },
-                            "name": "MyColumn162",
+                            "name": "MyColumn168",
                             "designerId": "1e099d44-719c-45be-a7a5-3a64cdecd2d1"
                         },
                         {
@@ -292,7 +292,7 @@
                                 "format": "Y-m-d",
                                 "text": "采样时间"
                             },
-                            "name": "MyDateColumn23",
+                            "name": "MyDateColumn24",
                             "designerId": "9f7db366-72fa-4967-a0c6-6c074925025f"
                         },
                         {
@@ -302,7 +302,7 @@
                                 "type": "object"
                             },
                             "codeClass": null,
-                            "name": "MyGridView28",
+                            "name": "MyGridView29",
                             "designerId": "5db315bf-b1d5-4b14-bc35-3c73b5e3e995"
                         },
                         {
@@ -315,7 +315,7 @@
                             "userConfig": {
                                 "dock": "top"
                             },
-                            "name": "MyToolbar36",
+                            "name": "MyToolbar38",
                             "designerId": "fbac2d7f-90ba-42f8-9261-cf346070a9a8",
                             "cn": [
                                 {
@@ -331,7 +331,7 @@
                                         "layout|flex": null,
                                         "name": "sampleSearch"
                                     },
-                                    "name": "MyTextField134",
+                                    "name": "MyTextField138",
                                     "designerId": "5cae7813-0084-4b3d-8ce7-0ca6023cc651"
                                 },
                                 {
@@ -345,7 +345,7 @@
                                         "layout|flex": null,
                                         "text": "查询"
                                     },
-                                    "name": "MyButton142",
+                                    "name": "MyButton159",
                                     "designerId": "78bcdfbf-073f-40a8-b856-66cf9ba09863",
                                     "cn": [
                                         {
@@ -395,7 +395,7 @@
                                         "layout|flex": null,
                                         "text": "添加"
                                     },
-                                    "name": "MyButton143",
+                                    "name": "MyButton160",
                                     "designerId": "ce08a0d7-23ef-46b9-87ba-5b8064b7ac82",
                                     "cn": [
                                         {
@@ -453,7 +453,7 @@
                                         "layout|flex": null,
                                         "text": "编辑"
                                     },
-                                    "name": "MyButton144",
+                                    "name": "MyButton161",
                                     "designerId": "25f4febd-8dd8-416c-b06d-e5fd4c9090e8",
                                     "cn": [
                                         {
@@ -525,7 +525,7 @@
                                         "layout|flex": null,
                                         "text": "删除"
                                     },
-                                    "name": "MyButton145",
+                                    "name": "MyButton162",
                                     "designerId": "71dce38c-0ef7-44c3-8b3f-c077f4ebedf8",
                                     "cn": [
                                         {
@@ -591,7 +591,7 @@
                                         "layout|flex": null,
                                         "text": "查看采样点空间分布图"
                                     },
-                                    "name": "MyButton146",
+                                    "name": "MyButton163",
                                     "designerId": "b134a34a-cec8-471f-9093-d95df5cde575",
                                     "cn": [
                                         {
@@ -661,7 +661,7 @@
                                         "layout|flex": null,
                                         "text": "返回"
                                     },
-                                    "name": "MyButton147",
+                                    "name": "MyButton164",
                                     "designerId": "cc9d3acb-e944-40b7-bad0-77f2ac2b64c5",
                                     "cn": [
                                         {
@@ -713,7 +713,7 @@
                                 "type": "object"
                             },
                             "codeClass": "Ext.selection.CheckboxModel",
-                            "name": "MyCheckboxSelectionModel20",
+                            "name": "MyCheckboxSelectionModel21",
                             "designerId": "60a1037a-ed37-4aa1-99db-a82b87353647"
                         }
                     ]

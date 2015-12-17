@@ -10,7 +10,7 @@
         "cacheBust": true,
         "urlPrefix": "http://localhost:8080",
         "exportPath": "F:/eclipsework2/tdlzJGXT/WebContent",
-        "buildShouldOverwriteIndex": false,
+        "buildShouldOverwriteIndex": true,
         "canvasControls": {
             "viewportSize": {
                 "name": "Auto Expand",
@@ -20,11 +20,7 @@
             }
         },
         "sdkPath": "",
-        "generateArchitectVersion": true,
-        "projectHasEnabledWebServer": false,
-        "lockUrlPrefix": false,
-        "installStatus": "Not Installed",
-        "displayfield-ExtBox1-1119-inputEl": "a new version of the framework is available"
+        "generateArchitectVersion": true
     },
     "xdsVersion": "3.1.0",
     "xdsBuild": 1943,
@@ -33,6 +29,8 @@
     "framework": "ext42",
     "viewOrderMap": {
         "view": [
+            "10a52c31-f883-43e5-9be9-7adfb3130a21",
+            "209bb862-cb31-48de-ab5f-9d6239d3a05d",
             "5d8d09e7-3e50-4ac7-8876-9113c65e0868",
             "5a8b202f-7da1-4e71-92db-b427bb1c80e4",
             "b3cad98d-a708-4672-85dc-150dea53e71e",
@@ -143,9 +141,11 @@
             "e63f6212-48b6-45f0-9a06-45e1510a10c5",
             "3863b411-3de4-4d75-8dd1-ea2d03876c70",
             "5dd9f5ad-9730-40f4-a0ab-826cf954bcbe",
-            "a354ca40-1983-476d-b8c3-bf01c7703031"
+            "a354ca40-1983-476d-b8c3-bf01c7703031",
+            "70dfb4ad-ecc2-4168-9ba0-284e903350c8"
         ],
         "store": [
+            "dcae5db3-3379-49b1-9b8e-738a7220c483",
             "d4758df8-438c-49df-a761-963a7c994450",
             "ec61529e-baa9-40c9-9187-6fad9a5b8786",
             "617e98a8-417d-4c6c-be84-9a580e72ab41",
@@ -257,10 +257,12 @@
             "16bba5ec-c648-4555-a688-0a895a3a4c6c",
             "936ced0a-4448-42df-914c-5b2b4fe92003",
             "d3f028cd-98f6-4644-965c-df1000b2145e",
-            "cd405333-9439-4e13-a7ae-b2dba0cd93ea"
+            "cd405333-9439-4e13-a7ae-b2dba0cd93ea",
+            "7dffb792-4a47-4c1b-a7f1-3c9b5763a8a6"
         ],
         "controller": [],
         "model": [
+            "0c426089-1b35-49f9-bd8f-21fa2fb4515c",
             "55245382-87d2-42f8-80f1-9b08521b3d11",
             "734002c5-1b2b-43d9-b1f0-db9754bc90bc",
             "3f80361b-d3c2-4e1e-aff4-10e9474df214",
@@ -317,7 +319,8 @@
             "2d2efb22-e4fd-429c-ad6e-f655cc0463c0",
             "93cfc550-53d5-4398-bc30-c8f1e1dc2511",
             "2cab1081-11a2-48f6-bf5f-82dc83121212",
-            "fdb042e8-641e-4a7c-a35e-0758821a8106"
+            "fdb042e8-641e-4a7c-a35e-0758821a8106",
+            "6eb0d025-8195-4da3-8ff5-decc8494826f"
         ],
         "resource": [
             "acdf234a-c287-49b6-887d-80441f0839a7"

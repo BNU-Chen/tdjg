@@ -24,7 +24,7 @@
             "userConfig": {
                 "url": "search_PubNewDynamic"
             },
-            "name": "MyAjaxProxy40",
+            "name": "MyAjaxProxy41",
             "designerId": "657826e9-1fc8-4c39-bb4b-28399e551786",
             "cn": [
                 {
@@ -37,7 +37,7 @@
                     "userConfig": {
                         "root": "root"
                     },
-                    "name": "MyJsonReader40",
+                    "name": "MyJsonReader41",
                     "designerId": "621416ff-812a-47e9-9d33-59d0f3953383"
                 }
             ]

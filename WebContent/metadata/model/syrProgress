@@ -24,7 +24,7 @@
                 "name": "time",
                 "type": "date"
             },
-            "name": "MyField437",
+            "name": "MyField444",
             "designerId": "3299cd0e-e9fd-41d0-ad28-cb13189cbff8"
         },
         {
@@ -39,7 +39,7 @@
                 "name": "projectName",
                 "type": "string"
             },
-            "name": "MyField438",
+            "name": "MyField445",
             "designerId": "2b5b3121-35a4-46ae-9f4a-f04632ead0cd"
         },
         {
@@ -53,7 +53,7 @@
                 "name": "ppercentPz",
                 "type": "float"
             },
-            "name": "MyField439",
+            "name": "MyField446",
             "designerId": "ea67e7ef-7da9-4ddc-859a-36870e8465c5"
         },
         {
@@ -67,7 +67,7 @@
                 "name": "ppercentSl",
                 "type": "float"
             },
-            "name": "MyField440",
+            "name": "MyField447",
             "designerId": "33a58d3b-d7ca-4286-9ddd-765f51d72e3d"
         },
         {
@@ -81,7 +81,7 @@
                 "name": "ppercentDl",
                 "type": "float"
             },
-            "name": "MyField441",
+            "name": "MyField448",
             "designerId": "3512c976-f6de-4ebe-a589-89bc93d20732"
         },
         {
@@ -95,7 +95,7 @@
                 "name": "report",
                 "type": "string"
             },
-            "name": "MyField442",
+            "name": "MyField449",
             "designerId": "418c7643-2745-48b4-97c3-5d5bd5183f98"
         }
     ]

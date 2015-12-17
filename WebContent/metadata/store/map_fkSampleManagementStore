@@ -31,7 +31,7 @@
                 ],
                 "url": "get_sampleManagement"
             },
-            "name": "MyAjaxProxy92",
+            "name": "MyAjaxProxy93",
             "designerId": "cf6a6270-28de-4d76-ae57-43913ddbb2fa",
             "cn": [
                 {
@@ -44,7 +44,7 @@
                     "userConfig": {
                         "root": "root"
                     },
-                    "name": "MyJsonReader92",
+                    "name": "MyJsonReader93",
                     "designerId": "798650d1-0937-4254-8ee9-182dc1fcaebc"
                 }
             ]

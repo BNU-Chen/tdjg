@@ -30,7 +30,7 @@
                 "subGridXType": "",
                 "title": "未审核申请列表"
             },
-            "name": "MyGridPanel19",
+            "name": "MyGridPanel20",
             "designerId": "af0b93a6-a148-4b53-98c7-c6e479664147",
             "cn": [
                 {
@@ -44,7 +44,7 @@
                         "dataIndex": "applyId",
                         "text": "申请编号"
                     },
-                    "name": "MyColumn112",
+                    "name": "MyColumn117",
                     "designerId": "d92dc432-f677-4f07-94a1-db9487acdfb4"
                 },
                 {
@@ -58,7 +58,7 @@
                         "dataIndex": "projectId",
                         "text": "复垦项目编号"
                     },
-                    "name": "MyColumn113",
+                    "name": "MyColumn118",
                     "designerId": "c578a5d7-56e5-4724-ac0f-8fa47716a3f9"
                 },
                 {
@@ -73,7 +73,7 @@
                         "text": "复垦项目名称",
                         "width": 260
                     },
-                    "name": "MyColumn114",
+                    "name": "MyColumn119",
                     "designerId": "90b01a91-2c9c-481e-a980-97cb250960fb"
                 },
                 {
@@ -88,7 +88,7 @@
                         "text": "项目施工单位",
                         "width": 200
                     },
-                    "name": "MyColumn115",
+                    "name": "MyColumn120",
                     "designerId": "b5052dcf-334c-4eeb-a2e6-ae4d42cdb8b3"
                 },
                 {
@@ -103,7 +103,7 @@
                         "format": "Y-m-d",
                         "text": "提交申请日期"
                     },
-                    "name": "MyDateColumn16",
+                    "name": "MyDateColumn17",
                     "designerId": "422138ec-03d4-44b5-80b8-16ca15d504ea"
                 },
                 {
@@ -117,7 +117,7 @@
                         "dataIndex": "note",
                         "text": "备注信息"
                     },
-                    "name": "MyColumn116",
+                    "name": "MyColumn121",
                     "designerId": "8cf4d4f3-e266-441f-85ee-5666b84e6160"
                 },
                 {
@@ -132,7 +132,7 @@
                         "text": "申请文件已上传",
                         "width": 120
                     },
-                    "name": "MyColumn117",
+                    "name": "MyColumn122",
                     "designerId": "9d1bdabd-516b-483f-ba08-5025da7c294f"
                 },
                 {
@@ -146,7 +146,7 @@
                         "dataIndex": "checkResult",
                         "text": "审核结果"
                     },
-                    "name": "MyColumn118",
+                    "name": "MyColumn123",
                     "designerId": "c6b4997b-908e-4ac0-804e-bd4ef7586cda"
                 },
                 {
@@ -156,7 +156,7 @@
                         "type": "object"
                     },
                     "codeClass": null,
-                    "name": "MyGridView19",
+                    "name": "MyGridView20",
                     "designerId": "06fe9689-0ef8-4867-9074-39ca268bbb04"
                 },
                 {
@@ -169,7 +169,7 @@
                     "userConfig": {
                         "dock": "top"
                     },
-                    "name": "MyToolbar25",
+                    "name": "MyToolbar27",
                     "designerId": "581e5fd3-13c1-4f6b-9b24-496ec578d4e2",
                     "cn": [
                         {
@@ -184,7 +184,7 @@
                                 "layout|flex": null,
                                 "text": "验收申请"
                             },
-                            "name": "MyButton98",
+                            "name": "MyButton104",
                             "designerId": "dced8822-3ef7-4178-9bc0-95ff063c72bf",
                             "cn": [
                                 {
@@ -225,7 +225,7 @@
                                 "layout|flex": null,
                                 "text": "删除申请"
                             },
-                            "name": "MyButton99",
+                            "name": "MyButton105",
                             "designerId": "48dde0f0-d588-43a6-8074-8f5c056e9ecf",
                             "cn": [
                                 {
@@ -289,7 +289,7 @@
                                 "layout|flex": null,
                                 "text": "审核申请"
                             },
-                            "name": "MyButton100",
+                            "name": "MyButton106",
                             "designerId": "52390eb8-57c9-4e5a-8804-f25521bcc540",
                             "cn": [
                                 {
@@ -343,7 +343,7 @@
                                 "layout|flex": null,
                                 "name": "searchKeyword2"
                             },
-                            "name": "MyTextField122",
+                            "name": "MyTextField126",
                             "designerId": "f70e1c6d-0c59-4ecb-8050-fb84f9c93299"
                         },
                         {
@@ -359,7 +359,7 @@
                                 "layout|flex": null,
                                 "text": "查询"
                             },
-                            "name": "MyButton101",
+                            "name": "MyButton107",
                             "designerId": "44159b55-bd27-4c71-aeef-299d7fb2657b",
                             "cn": [
                                 {
@@ -426,7 +426,7 @@
                     "userConfig": {
                         "designer|displayName": "applyCheskbox"
                     },
-                    "name": "MyCheckboxSelectionModel12",
+                    "name": "MyCheckboxSelectionModel13",
                     "designerId": "e5a64f4f-b0cb-415a-9299-8fbdb583ccae"
                 }
             ]
@@ -448,7 +448,7 @@
                 "subGridXType": "",
                 "title": "已审核申请列表"
             },
-            "name": "MyGridPanel20",
+            "name": "MyGridPanel21",
             "designerId": "25ab1ef8-8c95-4404-b799-a998a18cd9ad",
             "cn": [
                 {
@@ -462,7 +462,7 @@
                         "dataIndex": "applyId",
                         "text": "申请编号"
                     },
-                    "name": "MyColumn119",
+                    "name": "MyColumn124",
                     "designerId": "701b3855-a1bf-4417-a6f5-6ddce8389ed8"
                 },
                 {
@@ -476,7 +476,7 @@
                         "dataIndex": "projectId",
                         "text": "复垦项目编号"
                     },
-                    "name": "MyColumn120",
+                    "name": "MyColumn125",
                     "designerId": "89ea7e0f-5c78-412f-ac54-68b815900f8f"
                 },
                 {
@@ -491,7 +491,7 @@
                         "text": "复垦项目名称",
                         "width": 260
                     },
-                    "name": "MyColumn121",
+                    "name": "MyColumn126",
                     "designerId": "3fc8076f-af68-40f9-8775-bf94f6e94985"
                 },
                 {
@@ -506,7 +506,7 @@
                         "text": "项目施工单位",
                         "width": 200
                     },
-                    "name": "MyColumn122",
+                    "name": "MyColumn127",
                     "designerId": "cfa62e51-2187-449b-a2c8-890e7d85d73b"
                 },
                 {
@@ -521,7 +521,7 @@
                         "format": "Y-m-d",
                         "text": "提交申请日期"
                     },
-                    "name": "MyDateColumn17",
+                    "name": "MyDateColumn18",
                     "designerId": "79cddf8f-500f-4e9d-8c14-02f4cff0e96e"
                 },
                 {
@@ -535,7 +535,7 @@
                         "dataIndex": "note",
                         "text": "备注信息"
                     },
-                    "name": "MyColumn123",
+                    "name": "MyColumn128",
                     "designerId": "1cf6f2a2-91b0-45bb-938d-2bd93449aa90"
                 },
                 {
@@ -550,7 +550,7 @@
                         "text": "申请文件已上传",
                         "width": 120
                     },
-                    "name": "MyColumn124",
+                    "name": "MyColumn129",
                     "designerId": "63c8e083-2788-42ee-9527-f931e4de3474"
                 },
                 {
@@ -564,7 +564,7 @@
                         "dataIndex": "checkResult",
                         "text": "审核结果"
                     },
-                    "name": "MyColumn125",
+                    "name": "MyColumn130",
                     "designerId": "2eead8d3-fa95-4aab-b049-9bc107af4f35"
                 },
                 {
@@ -574,7 +574,7 @@
                         "type": "object"
                     },
                     "codeClass": null,
-                    "name": "MyGridView20",
+                    "name": "MyGridView21",
                     "designerId": "7e2b419a-8c53-4dbd-bcbc-5dd1cf9f114c"
                 },
                 {
@@ -587,7 +587,7 @@
                     "userConfig": {
                         "dock": "top"
                     },
-                    "name": "MyToolbar26",
+                    "name": "MyToolbar28",
                     "designerId": "5fbcd4a1-24d2-4982-880c-c6afa6c587d4",
                     "cn": [
                         {
@@ -602,7 +602,7 @@
                                 "layout|flex": null,
                                 "text": "验收申请"
                             },
-                            "name": "MyButton102",
+                            "name": "MyButton108",
                             "designerId": "5e7e337f-b029-4ba9-ab08-14b2310ba0f1",
                             "cn": [
                                 {
@@ -643,7 +643,7 @@
                                 "layout|flex": null,
                                 "text": "删除申请"
                             },
-                            "name": "MyButton103",
+                            "name": "MyButton109",
                             "designerId": "9f336490-52e4-435b-ad3e-9e923f66b50d",
                             "cn": [
                                 {
@@ -707,7 +707,7 @@
                                 "layout|flex": null,
                                 "text": "审核申请"
                             },
-                            "name": "MyButton104",
+                            "name": "MyButton110",
                             "designerId": "9887c9ec-db38-4535-a758-5975b167eb85",
                             "cn": [
                                 {
@@ -762,7 +762,7 @@
                                 "layout|flex": null,
                                 "name": "searchKeyword2"
                             },
-                            "name": "MyTextField123",
+                            "name": "MyTextField127",
                             "designerId": "7011800a-6891-40ab-833a-fb9d0cc98dbc"
                         },
                         {
@@ -778,7 +778,7 @@
                                 "layout|flex": null,
                                 "text": "查询"
                             },
-                            "name": "MyButton105",
+                            "name": "MyButton111",
                             "designerId": "1544e8c3-1e42-4a4c-9198-d8df46c5bcd7",
                             "cn": [
                                 {
@@ -842,7 +842,7 @@
                     "userConfig": {
                         "designer|displayName": "applyCheskbox"
                     },
-                    "name": "MyCheckboxSelectionModel13",
+                    "name": "MyCheckboxSelectionModel14",
                     "designerId": "7a64af8a-e0f0-49bd-a081-ad9b3a376be8"
                 }
             ]

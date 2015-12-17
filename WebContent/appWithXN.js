@@ -15,68 +15,71 @@
 
 //@require @packageOverrides
 Ext.Loader.setConfig({
-    enabled: true
+    enabled : true
 });
 
 Ext.application({
-    models: [
-'InfoArticleModel',
-'InfoChannelModel',
-'InfoVoteModel',
-'InfoCommentModel',
-'InfoVoteoptionModel',
-'InfoReportModel',
-'InfoLetterModel',
-'SampleModel',
-'syrSchemeShow',
-'dbBackupRecoveryModel',
-'syrMonitorData',
-'abnmWholeSupervisionModel',
-'abnmIndexModel',
-'abnmDkTransSupervisionModel',
-'infoAreaModel',
-'FkRegulatoryModle',
-'FkYanshouGongchengModle',
-'FkProjectDikuaiModel',
-'FkacceptApplyModel',
-'FkRwModel',
-'EvaluateReportModel',
-'db_users',
-'syrProgress',
-'TaishiPrice',
-'TaishiVolume_Pie',
-'TaishiFind',
-'TaishiAlarm_Pie',
-'TaishiNumber_Pie',
-'TaishiArea',
-'TaishiAlarmTable',
-'publicProjectModel',
-'pdaModel',
-'ShouyiStat_Nonghu',
-'ShouyiStat_Jianshe',
-'ShouyiCombox',
-'ShouyiFind_Zijin',
-'Shouyi_Find',
-'ShouyiAlarm_Pie',
-'ShouyiAlarmTable',
-'TaishiVolume_Column',
-'TaishiNumberTextField',
-'TaishiVolumeTextField',
-'TaishiPriceTextField',
-'uResourcesModel',
-'uRightInfoModel',
-'uRightListModel',
-'uRightResourcesModel',
-'uRoleInfoModel',
-'uRoleRightModel',
-'uUserInfoModel',
-'uUserRoleModel',
-'uDeptInfoModel',
-'map_fkSampleManagementModel',
-'yqprjmonitorInfoModel',
-'TaishiFormPanelEdit'
-         ],
-    stores: [
+    models : [
+        'InfoArticleModel',
+        'InfoChannelModel',
+        'InfoVoteModel',
+        'InfoCommentModel',
+        'InfoVoteoptionModel',
+        'InfoReportModel',
+        'InfoLetterModel',
+        'SampleModel',
+        'syrSchemeShow',
+        'dbBackupRecoveryModel',
+        'syrMonitorData',
+        'abnmWholeSupervisionModel',
+        'abnmIndexModel',
+        'abnmDkTransSupervisionModel',
+        'infoAreaModel',
+        'FkRegulatoryModle',
+        'FkYanshouGongchengModle',
+        'FkProjectDikuaiModel',
+        'FkacceptApplyModel',
+        'FkRwModel',
+        'EvaluateReportModel',
+        'db_users',
+        'syrProgress',
+        'TaishiPrice',
+        'TaishiVolume_Pie',
+        'TaishiFind',
+        'TaishiAlarm_Pie',
+        'TaishiNumber_Pie',
+        'TaishiArea',
+        'TaishiAlarmTable',
+        'publicProjectModel',
+        'pdaModel',
+        'ShouyiStat_Nonghu',
+        'ShouyiStat_Jianshe',
+        'ShouyiCombox',
+        'ShouyiFind_Zijin',
+        'Shouyi_Find',
+        'ShouyiAlarm_Pie',
+        'ShouyiAlarmTable',
+        'TaishiVolume_Column',
+        'TaishiNumberTextField',
+        'TaishiVolumeTextField',
+        'TaishiPriceTextField',
+        'uResourcesModel',
+        'uRightInfoModel',
+        'uRightListModel',
+        'uRightResourcesModel',
+        'uRoleInfoModel',
+        'uRoleRightModel',
+        'uUserInfoModel',
+        'uUserRoleModel',
+        'uDeptInfoModel',
+        'map_fkSampleManagementModel',
+        'yqprjmonitorInfoModel',
+        'TaishiFormPanelEdit',
+        
+        'dbBlacklistModel',
+        'uOptLogModel'
+    ],
+    stores : [
         'ArticlePubJYXCStore',
         'InfoChannelStore',
         'InfoVoteStore',
@@ -185,7 +188,6 @@ Ext.application({
         'ApplyprojectStore',
         'ApplyIdStore',
         
-        
         'notice',
         'ggleixing',
         'showSuggestion',
@@ -215,9 +217,14 @@ Ext.application({
         'storeUserControl',
         'storePermission',
         'reclProc',
-        'recordReclProc'
+        'recordReclProc',
+        
+	'useMapResourceStore',
+        'dbBlacklistStore',
+        'uOptLogStore'
+        
     ],
-    views: [
+    views : [
         'ManagAcceptApply',
         'infoArticleJYXCTab',
         'infoCommentTab',
@@ -338,8 +345,15 @@ Ext.application({
         'tpEfctEvlu',
         'application',
         'tpReclProc',
-        'reclProc'
+        'reclProc',
+        
+	'use_SelectLayerWindow',
+	'use_MonitorResult',
+        'db_BlacklistTab',
+        'db_BlacklistWindow',
+        'db_RoleRightSettingWindow'
     ],
-    autoCreateViewport: true,
-    name: 'MyApp'
-});
+    autoCreateViewport : true,
+    name : 'MyApp'
+}
+);

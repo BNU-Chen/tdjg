@@ -27,7 +27,7 @@
                 "title": "",
                 "url": "FKSchemeShow"
             },
-            "name": "MyForm23",
+            "name": "MyForm24",
             "designerId": "bc638af7-8956-403d-8d1d-275d3d0fb9d1",
             "cn": [
                 {
@@ -44,7 +44,7 @@
                         "store": "syrSchemeShow",
                         "title": ""
                     },
-                    "name": "MyGridPanel27",
+                    "name": "MyGridPanel28",
                     "designerId": "7b9c8ded-2e14-4f8d-92e3-f48cc56a1a67",
                     "cn": [
                         {
@@ -54,7 +54,7 @@
                                 "type": "array"
                             },
                             "codeClass": null,
-                            "name": "MyRowNumberer21",
+                            "name": "MyRowNumberer22",
                             "designerId": "051b7329-82bc-4fba-8876-123eed2c4a9b"
                         },
                         {
@@ -68,7 +68,7 @@
                                 "dataIndex": "dbTime",
                                 "text": "入库时间"
                             },
-                            "name": "MyDateColumn21",
+                            "name": "MyDateColumn22",
                             "designerId": "fc4efe7a-c4a8-498e-9cba-6d7fee4a9325"
                         },
                         {
@@ -82,7 +82,7 @@
                                 "autoRender": true,
                                 "autoShow": true
                             },
-                            "name": "MyGridView27",
+                            "name": "MyGridView28",
                             "designerId": "b5ce077d-3a79-48f6-bf0d-8b1c8a7a2d61"
                         },
                         {
@@ -96,7 +96,7 @@
                                 "dataIndex": "projectName",
                                 "text": "项目名称"
                             },
-                            "name": "MyColumn145",
+                            "name": "MyColumn151",
                             "designerId": "58cb7211-c490-4b55-a507-bc461e5371a4"
                         },
                         {
@@ -110,7 +110,7 @@
                                 "dataIndex": "finishTime",
                                 "text": "复垦完成时间"
                             },
-                            "name": "MyDateColumn22",
+                            "name": "MyDateColumn23",
                             "designerId": "345d84fd-6d7b-4a5f-83b9-af6eeb5bab83"
                         },
                         {
@@ -124,7 +124,7 @@
                                 "dataIndex": "projectLocation",
                                 "text": "项目位置"
                             },
-                            "name": "MyColumn146",
+                            "name": "MyColumn152",
                             "designerId": "a27071ff-9982-4c94-9207-debcde1b5002"
                         },
                         {
@@ -138,7 +138,7 @@
                                 "dock": "top",
                                 "fixed": true
                             },
-                            "name": "MyToolbar35",
+                            "name": "MyToolbar37",
                             "designerId": "76bd328d-f518-426c-8a30-e69556bda7cb",
                             "cn": [
                                 {
@@ -156,7 +156,7 @@
                                         "layout|flex": null,
                                         "width": 195
                                     },
-                                    "name": "MyTextField130",
+                                    "name": "MyTextField134",
                                     "designerId": "9f9f0f3b-fc68-4cc8-a9f5-72629d38b153"
                                 },
                                 {
@@ -174,7 +174,7 @@
                                         "layout|flex": null,
                                         "width": 69
                                     },
-                                    "name": "MyTextField131",
+                                    "name": "MyTextField135",
                                     "designerId": "2b553524-5f7c-4fe5-9576-1ee906dea4eb"
                                 },
                                 {
@@ -192,7 +192,7 @@
                                         "layout|flex": null,
                                         "width": 75
                                     },
-                                    "name": "MyTextField132",
+                                    "name": "MyTextField136",
                                     "designerId": "b8d8d670-3eb1-4a6e-8514-27c52b3e93a9"
                                 },
                                 {
@@ -210,7 +210,7 @@
                                         "layout|flex": null,
                                         "width": 80
                                     },
-                                    "name": "MyTextField133",
+                                    "name": "MyTextField137",
                                     "designerId": "293ee2f5-1d8e-4ca3-b175-85f9b5002e53"
                                 },
                                 {
@@ -228,7 +228,7 @@
                                         "layout|flex": null,
                                         "width": 151
                                     },
-                                    "name": "MyDateField30",
+                                    "name": "MyDateField31",
                                     "designerId": "d0c3b2e6-4c3f-4aa9-8568-ddf5d1b57097"
                                 },
                                 {
@@ -246,7 +246,7 @@
                                         "layout|flex": null,
                                         "width": 111
                                     },
-                                    "name": "MyDateField31",
+                                    "name": "MyDateField32",
                                     "designerId": "c01ada3d-e59e-43f1-8988-84c9cb4e1e65"
                                 },
                                 {
@@ -262,7 +262,7 @@
                                         "text": "查询",
                                         "width": 50
                                     },
-                                    "name": "MyButton138",
+                                    "name": "MyButton155",
                                     "designerId": "392f2492-4cf7-4a75-b5a7-0db0a9639df6",
                                     "cn": [
                                         {
@@ -308,7 +308,7 @@
                                         "text": "添加",
                                         "width": 50
                                     },
-                                    "name": "MyButton139",
+                                    "name": "MyButton156",
                                     "designerId": "b8b990ca-086d-4248-b71f-4e3f1a48b202",
                                     "cn": [
                                         {
@@ -482,7 +482,7 @@
                                         "text": "修改",
                                         "width": 50
                                     },
-                                    "name": "MyButton140",
+                                    "name": "MyButton157",
                                     "designerId": "81db372f-6921-48ca-bf9a-248de37e25bd",
                                     "cn": [
                                         {
@@ -659,7 +659,7 @@
                                         "text": "删除",
                                         "width": 50
                                     },
-                                    "name": "MyButton141",
+                                    "name": "MyButton158",
                                     "designerId": "04b9a72d-14aa-4281-8d71-ada76a4e6127",
                                     "cn": [
                                         {

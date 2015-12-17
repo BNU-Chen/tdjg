@@ -30,7 +30,7 @@
                 "layout": "absolute",
                 "title": ""
             },
-            "name": "MyForm",
+            "name": "MyForm1",
             "designerId": "39c5cf43-28df-4c31-a47d-94eef708325d",
             "cn": [
                 {
@@ -48,7 +48,7 @@
                         "name": "title",
                         "width": 400
                     },
-                    "name": "MyTextField1",
+                    "name": "MyTextField4",
                     "designerId": "3263865c-bbce-40e8-be0e-3b0c61d573ff"
                 },
                 {
@@ -66,7 +66,7 @@
                         "name": "source",
                         "width": 400
                     },
-                    "name": "MyTextField2",
+                    "name": "MyTextField5",
                     "designerId": "f9429c4c-4dde-46b6-a38a-22f3b8087131"
                 },
                 {
@@ -84,7 +84,7 @@
                         "name": "author",
                         "width": 400
                     },
-                    "name": "MyTextField3",
+                    "name": "MyTextField6",
                     "designerId": "1dd2a726-ca61-49e9-89d7-aa813e2035be"
                 },
                 {
@@ -102,7 +102,7 @@
                         "name": "chanel",
                         "width": 400
                     },
-                    "name": "MyComboBox",
+                    "name": "MyComboBox1",
                     "designerId": "4e108b4c-0f90-4ceb-840b-66512a301482",
                     "cn": [
                         {
@@ -150,7 +150,7 @@
                         "name": "content",
                         "width": 740
                     },
-                    "name": "MyHtmlEditor",
+                    "name": "MyHtmlEditor1",
                     "designerId": "5d57b789-6411-4e21-964b-6603c19b9a15"
                 },
                 {
@@ -166,7 +166,7 @@
                         "text": "上传图片",
                         "width": 80
                     },
-                    "name": "MyButton3",
+                    "name": "MyButton9",
                     "designerId": "f62e8323-87bf-40d1-bb64-bceebe95eceb"
                 },
                 {
@@ -182,7 +182,7 @@
                         "text": "保存",
                         "width": 80
                     },
-                    "name": "MyButton4",
+                    "name": "MyButton10",
                     "designerId": "838cd24a-34ef-4379-b852-5d0fb9fe8fa5"
                 },
                 {
@@ -198,7 +198,7 @@
                         "text": "取消",
                         "width": 80
                     },
-                    "name": "MyButton5",
+                    "name": "MyButton11",
                     "designerId": "021e7d85-99ec-461c-86bc-7568e6955ed6"
                 },
                 {

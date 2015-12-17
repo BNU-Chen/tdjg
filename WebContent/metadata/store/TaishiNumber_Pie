@@ -32,7 +32,7 @@
                 ],
                 "url": "getBenefitList24"
             },
-            "name": "MyAjaxProxy10",
+            "name": "MyAjaxProxy11",
             "designerId": "3f3f67e2-43c3-4efe-9aad-3473e2cc8d13",
             "cn": [
                 {
@@ -45,7 +45,7 @@
                     "userConfig": {
                         "root": null
                     },
-                    "name": "MyJsonReader10",
+                    "name": "MyJsonReader11",
                     "designerId": "0c40edb8-8f5a-488b-93b2-5d4a4fa6584b"
                 }
             ]

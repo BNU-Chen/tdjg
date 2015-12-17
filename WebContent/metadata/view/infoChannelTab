@@ -27,7 +27,7 @@
                 "layout": "border",
                 "title": null
             },
-            "name": "MyForm43",
+            "name": "MyForm44",
             "designerId": "173368a9-6a2a-431d-9f56-98304ad2c0f8",
             "cn": [
                 {
@@ -43,7 +43,7 @@
                         "store": "InfoChannelStore",
                         "title": "频道栏目"
                     },
-                    "name": "MyGridPanel41",
+                    "name": "MyGridPanel42",
                     "designerId": "2f899ad3-72ec-4eea-8f85-632c4537a37c",
                     "cn": [
                         {
@@ -57,7 +57,7 @@
                                 "dataIndex": "channelId",
                                 "text": "频道栏目ID"
                             },
-                            "name": "MyColumn211",
+                            "name": "MyColumn217",
                             "designerId": "f1df0a3f-d220-4cfc-ace3-32c08497e361"
                         },
                         {
@@ -71,7 +71,7 @@
                                 "dataIndex": "channelName",
                                 "text": "名称"
                             },
-                            "name": "MyColumn212",
+                            "name": "MyColumn218",
                             "designerId": "fd108f5e-6b01-4f05-b24e-54dd26acc898"
                         },
                         {
@@ -85,7 +85,7 @@
                                 "dataIndex": "articleNum",
                                 "text": "文章数"
                             },
-                            "name": "MyColumn213",
+                            "name": "MyColumn219",
                             "designerId": "3b8a65d6-e379-4f05-a667-0774efdfa619"
                         },
                         {
@@ -155,7 +155,7 @@
                                 "type": "object"
                             },
                             "codeClass": null,
-                            "name": "MyGridView41",
+                            "name": "MyGridView42",
                             "designerId": "37e4f6d2-c275-4d73-ac86-50dc293fc804"
                         },
                         {
@@ -165,7 +165,7 @@
                                 "type": "object"
                             },
                             "codeClass": "Ext.selection.CheckboxModel",
-                            "name": "MyCheckboxSelectionModel33",
+                            "name": "MyCheckboxSelectionModel34",
                             "designerId": "5ada2c99-dc91-4f9e-9baa-fea58a5b65a9"
                         },
                         {
@@ -191,7 +191,7 @@
                             "userConfig": {
                                 "dock": "top"
                             },
-                            "name": "MyToolbar55",
+                            "name": "MyToolbar57",
                             "designerId": "0e10cbfa-0b90-4876-af53-f12ba20d39f4",
                             "cn": [
                                 {
@@ -205,7 +205,7 @@
                                         "layout|flex": null,
                                         "text": "增加频道栏目"
                                     },
-                                    "name": "MyButton221",
+                                    "name": "MyButton238",
                                     "designerId": "0c068510-59ce-427e-acab-67ac772d54f0",
                                     "cn": [
                                         {
@@ -260,7 +260,7 @@
                                         "layout|flex": null,
                                         "text": "删除频道栏目"
                                     },
-                                    "name": "MyButton222",
+                                    "name": "MyButton239",
                                     "designerId": "994a7f1d-d784-4a5e-a0a6-110a895f6865"
                                 },
                                 {
@@ -274,7 +274,7 @@
                                         "layout|flex": null,
                                         "text": "查看文章列表"
                                     },
-                                    "name": "MyButton223",
+                                    "name": "MyButton240",
                                     "designerId": "100e3363-b1a6-40e1-8eef-c40d38d7f1c5"
                                 }
                             ]

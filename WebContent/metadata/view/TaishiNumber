@@ -30,7 +30,7 @@
                 "layout|region": "north",
                 "title": "查询条件"
             },
-            "name": "MyForm12",
+            "name": "MyForm13",
             "designerId": "1bd6a4a3-5dd4-46a0-8438-d110469eb1cf",
             "cn": [
                 {
@@ -53,7 +53,7 @@
                         "name": "",
                         "width": 180
                     },
-                    "name": "MyDateField13",
+                    "name": "MyDateField14",
                     "designerId": "ea8e490a-5475-4d60-80e9-62a77df557ba"
                 },
                 {
@@ -76,7 +76,7 @@
                         "name": "",
                         "width": 180
                     },
-                    "name": "MyDateField14",
+                    "name": "MyDateField15",
                     "designerId": "22cf3db7-3fde-4530-b8c8-12d70c6f949a"
                 },
                 {
@@ -102,7 +102,7 @@
                         "valueField": "value",
                         "width": 180
                     },
-                    "name": "MyComboBox6",
+                    "name": "MyComboBox7",
                     "designerId": "a2559ddc-0230-432a-8eb8-95d0ac9713a6"
                 },
                 {
@@ -118,7 +118,7 @@
                         "text": "查询",
                         "width": 60
                     },
-                    "name": "MyButton45",
+                    "name": "MyButton51",
                     "designerId": "5d657300-5502-4dbf-9bf2-4edcfd8c6c68",
                     "cn": [
                         {

@@ -1,6 +1,6 @@
 package cn.edu.bnu.land.model;
 
-// Generated 2014-9-12 9:03:28 by Hibernate Tools 4.0.0
+// Generated Nov 4, 2015 9:01:25 PM by Hibernate Tools 4.0.0
 
 import java.util.List;
 import javax.naming.InitialContext;

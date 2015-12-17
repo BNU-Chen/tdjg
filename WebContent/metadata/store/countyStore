@@ -26,7 +26,7 @@
                 "extraParams": null,
                 "url": "get_infoAreaCountyList"
             },
-            "name": "MyAjaxProxy22",
+            "name": "MyAjaxProxy23",
             "designerId": "83b2d261-a95e-45da-91c2-ea4fc10a3438",
             "cn": [
                 {
@@ -39,7 +39,7 @@
                     "userConfig": {
                         "root": null
                     },
-                    "name": "MyJsonReader22",
+                    "name": "MyJsonReader23",
                     "designerId": "3ce637b5-6dbd-4c82-bfdc-c91963c1d0f3"
                 }
             ]

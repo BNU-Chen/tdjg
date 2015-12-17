@@ -28,7 +28,7 @@
             "userConfig": {
                 "name": "roleId"
             },
-            "name": "MyField5",
+            "name": "MyField12",
             "designerId": "d6c12738-3039-4a6e-9522-1c6d390bac4a"
         },
         {
@@ -41,7 +41,7 @@
             "userConfig": {
                 "name": "roleName"
             },
-            "name": "MyField6",
+            "name": "MyField13",
             "designerId": "61733473-2403-42c3-83ef-e565aeb9082c"
         },
         {
@@ -54,7 +54,7 @@
             "userConfig": {
                 "name": "roleNameCn"
             },
-            "name": "MyField7",
+            "name": "MyField14",
             "designerId": "240d5557-f924-45fe-a7b9-f0f4dccbc168"
         },
         {
@@ -67,7 +67,7 @@
             "userConfig": {
                 "name": "enabled"
             },
-            "name": "MyField8",
+            "name": "MyField15",
             "designerId": "ad735821-fc91-4a80-b99a-6b3a4d9e7ab2"
         },
         {
@@ -80,7 +80,7 @@
             "userConfig": {
                 "name": "description"
             },
-            "name": "MyField9",
+            "name": "MyField16",
             "designerId": "4ed1ad4e-80b0-42bd-98f2-1152669c536a"
         }
     ]

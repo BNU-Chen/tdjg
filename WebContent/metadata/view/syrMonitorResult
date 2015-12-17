@@ -93,7 +93,7 @@
                                     "userConfig": {
                                         "dock": "top"
                                     },
-                                    "name": "MyToolbar93",
+                                    "name": "MyToolbar95",
                                     "designerId": "bf39b3d8-ca14-4d37-bee9-ba77d2a54dc4",
                                     "cn": [
                                         {
@@ -110,7 +110,7 @@
                                                 "text": "返回项目列表",
                                                 "width": 100
                                             },
-                                            "name": "MyButton346",
+                                            "name": "MyButton363",
                                             "designerId": "7b0247f4-d018-47b9-9255-5476720b940e",
                                             "customConfigs": [
                                                 {
@@ -303,7 +303,7 @@
                                                 "layout|flex": null,
                                                 "text": "地块范围异常"
                                             },
-                                            "name": "MyButton347",
+                                            "name": "MyButton364",
                                             "designerId": "a05f34ed-9a9a-47d3-8eac-1069d10a6c40"
                                         },
                                         {
@@ -320,7 +320,7 @@
                                                 "text": "项目编号",
                                                 "width": 100
                                             },
-                                            "name": "MyLabel17",
+                                            "name": "MyLabel18",
                                             "designerId": "92b4558d-6946-4a55-abd7-f48b17d73a3d"
                                         }
                                     ]
@@ -414,7 +414,7 @@
                                                 "id": "monitorResult_graphicsGrid",
                                                 "title": null
                                             },
-                                            "name": "MyGridPanel76",
+                                            "name": "MyGridPanel77",
                                             "designerId": "497869e1-fa9c-40a2-9859-3eeb95d726bc",
                                             "cn": [
                                                 {
@@ -424,7 +424,7 @@
                                                         "type": "array"
                                                     },
                                                     "codeClass": null,
-                                                    "name": "MyRowNumberer68",
+                                                    "name": "MyRowNumberer69",
                                                     "designerId": "afe25120-1951-4842-9bd8-05d984c83467"
                                                 },
                                                 {
@@ -439,7 +439,7 @@
                                                         "text": "地块编号",
                                                         "width": 120
                                                     },
-                                                    "name": "MyColumn322",
+                                                    "name": "MyColumn328",
                                                     "designerId": "fc7a7984-0d5c-4829-ba43-792dd3ee160f"
                                                 },
                                                 {
@@ -463,7 +463,7 @@
                                                         "type": "object"
                                                     },
                                                     "codeClass": null,
-                                                    "name": "MyGridView76",
+                                                    "name": "MyGridView77",
                                                     "designerId": "c3cf01cd-d447-4333-a53f-061c7941a82e"
                                                 },
                                                 {
@@ -535,7 +535,7 @@
                                                 "subGridXType": "",
                                                 "title": ""
                                             },
-                                            "name": "MyGridPanel77",
+                                            "name": "MyGridPanel78",
                                             "designerId": "9891266b-7593-44de-abf6-3aa6fab040cd",
                                             "cn": [
                                                 {
@@ -549,7 +549,7 @@
                                                         "text": "序号",
                                                         "width": 36
                                                     },
-                                                    "name": "MyRowNumberer69",
+                                                    "name": "MyRowNumberer70",
                                                     "designerId": "a379ab7f-4d81-4d01-bddb-7e62defaacdb"
                                                 },
                                                 {
@@ -565,7 +565,7 @@
                                                         "text": "记录号",
                                                         "width": 52
                                                     },
-                                                    "name": "MyColumn323",
+                                                    "name": "MyColumn329",
                                                     "designerId": "e20116e3-2694-4516-b655-c62b4eef6819"
                                                 },
                                                 {
@@ -579,7 +579,7 @@
                                                         "dataIndex": "landId",
                                                         "text": "地块编号"
                                                     },
-                                                    "name": "MyColumn324",
+                                                    "name": "MyColumn330",
                                                     "designerId": "659f4d4c-0081-404e-951b-3e527945a8e6"
                                                 },
                                                 {
@@ -594,7 +594,7 @@
                                                         "hidden": true,
                                                         "text": "项目编号"
                                                     },
-                                                    "name": "MyColumn325",
+                                                    "name": "MyColumn331",
                                                     "designerId": "bcc76716-6187-4f27-9073-9e0637617a3d"
                                                 },
                                                 {
@@ -609,7 +609,7 @@
                                                         "hidden": true,
                                                         "text": "项目名称"
                                                     },
-                                                    "name": "MyColumn326",
+                                                    "name": "MyColumn332",
                                                     "designerId": "9d743525-f7f7-4384-b554-2058c2385be8"
                                                 },
                                                 {
@@ -624,7 +624,7 @@
                                                         "hidden": true,
                                                         "text": "片块面积"
                                                     },
-                                                    "name": "MyColumn327",
+                                                    "name": "MyColumn333",
                                                     "designerId": "b4ac5d7d-add7-4f16-b8d7-2975eb113a58"
                                                 },
                                                 {
@@ -639,7 +639,7 @@
                                                         "hidden": true,
                                                         "text": "复垦前土地利用类型"
                                                     },
-                                                    "name": "MyColumn328",
+                                                    "name": "MyColumn334",
                                                     "designerId": "1ac3a68a-9d39-4aa1-8bfa-367822b3db30"
                                                 },
                                                 {
@@ -649,7 +649,7 @@
                                                         "type": "object"
                                                     },
                                                     "codeClass": null,
-                                                    "name": "MyGridView77",
+                                                    "name": "MyGridView78",
                                                     "designerId": "e5f0a8e5-4b3d-4027-877d-1ec8a870d8eb"
                                                 },
                                                 {
@@ -678,7 +678,7 @@
                                                         "type": "object"
                                                     },
                                                     "codeClass": "Ext.selection.CheckboxModel",
-                                                    "name": "MyCheckboxSelectionModel68",
+                                                    "name": "MyCheckboxSelectionModel69",
                                                     "designerId": "31c4c96c-c9ff-42e6-aff8-02794826f88b"
                                                 }
                                             ]
@@ -859,7 +859,7 @@
                                 "store": "yqprjmonitorInfoStore",
                                 "title": ""
                             },
-                            "name": "MyGridPanel78",
+                            "name": "MyGridPanel79",
                             "designerId": "54ea25b2-4f7e-4b29-8db5-dd1833ce3a96",
                             "cn": [
                                 {
@@ -872,7 +872,7 @@
                                     "userConfig": {
                                         "height": 100
                                     },
-                                    "name": "MyGridView78",
+                                    "name": "MyGridView79",
                                     "designerId": "3fa0b2da-2c7a-41b4-8271-4c7572979555"
                                 },
                                 {
@@ -888,7 +888,7 @@
                                         "text": "项目名称",
                                         "width": 400
                                     },
-                                    "name": "MyColumn329",
+                                    "name": "MyColumn335",
                                     "designerId": "8b3deee5-929a-48a1-8896-680cb76806ce"
                                 },
                                 {
@@ -904,7 +904,7 @@
                                         "text": "监测时间",
                                         "width": 150
                                     },
-                                    "name": "MyColumn330",
+                                    "name": "MyColumn336",
                                     "designerId": "490bcf05-7a6a-4723-9ac1-ec4a84dcb2b0"
                                 },
                                 {
@@ -929,7 +929,7 @@
                                         "type": "object"
                                     },
                                     "codeClass": "Ext.selection.CheckboxModel",
-                                    "name": "MyCheckboxSelectionModel69",
+                                    "name": "MyCheckboxSelectionModel70",
                                     "designerId": "1ca0f420-7b40-48c5-b441-ac55aba7f634"
                                 },
                                 {
@@ -943,7 +943,7 @@
                                         "text": "土地平整工程",
                                         "width": null
                                     },
-                                    "name": "MyColumn331",
+                                    "name": "MyColumn337",
                                     "designerId": "fada7466-d1ed-4d79-9896-ab492f89967f",
                                     "cn": [
                                         {
@@ -993,7 +993,7 @@
                                         "text": "田间道路工程",
                                         "width": null
                                     },
-                                    "name": "MyColumn332",
+                                    "name": "MyColumn338",
                                     "designerId": "554e003d-9552-4699-84f7-9178690d894b",
                                     "cn": [
                                         {
@@ -1043,7 +1043,7 @@
                                         "text": "农田水利工程",
                                         "width": null
                                     },
-                                    "name": "MyColumn333",
+                                    "name": "MyColumn339",
                                     "designerId": "ab76a656-4e8f-44b8-ab5d-d48e525d26de",
                                     "cn": [
                                         {
@@ -1126,7 +1126,7 @@
                                         "hidden": true,
                                         "text": "完成时间"
                                     },
-                                    "name": "MyDateColumn70",
+                                    "name": "MyDateColumn71",
                                     "designerId": "27378393-a52e-4d62-9acd-8ddda8188d4d"
                                 },
                                 {
@@ -1159,7 +1159,7 @@
                                         "hidden": true,
                                         "width": 950
                                     },
-                                    "name": "MyToolbar94",
+                                    "name": "MyToolbar96",
                                     "designerId": "766fa7ba-9b57-47b0-a136-290685820bb1",
                                     "cn": [
                                         {
@@ -1176,7 +1176,7 @@
                                                 "layout|flex": null,
                                                 "width": 281
                                             },
-                                            "name": "MyTextField287",
+                                            "name": "MyTextField291",
                                             "designerId": "bd37168c-802e-4d17-86d7-f396c8775ad5"
                                         },
                                         {
@@ -1194,7 +1194,7 @@
                                                 "layout|flex": null,
                                                 "width": 186
                                             },
-                                            "name": "MyDateField85",
+                                            "name": "MyDateField86",
                                             "designerId": "91b13b38-0299-4c9e-931b-75039e7f4256"
                                         },
                                         {
@@ -1213,7 +1213,7 @@
                                                 "layout|flex": null,
                                                 "width": 103
                                             },
-                                            "name": "MyDateField86",
+                                            "name": "MyDateField87",
                                             "designerId": "3925baaf-4e8f-405c-8e2e-bbcd4598a22d"
                                         },
                                         {
@@ -1229,7 +1229,7 @@
                                                 "id": "projectname10",
                                                 "layout|flex": null
                                             },
-                                            "name": "MyTextField288",
+                                            "name": "MyTextField292",
                                             "designerId": "c6e27d05-3d81-4c86-bb9f-c4d186abc9e0"
                                         },
                                         {
@@ -1246,7 +1246,7 @@
                                                 "text": "搜索",
                                                 "width": 55
                                             },
-                                            "name": "MyButton348",
+                                            "name": "MyButton365",
                                             "designerId": "b3113639-9961-44ab-b13f-89051b5121fb",
                                             "customConfigs": [
                                                 {
@@ -1302,7 +1302,7 @@
                                                 "layout|flex": null,
                                                 "text": "显示全部"
                                             },
-                                            "name": "MyButton349",
+                                            "name": "MyButton366",
                                             "designerId": "9b18c7de-0894-4de9-ab3a-cb8429677f2c",
                                             "cn": [
                                                 {
@@ -1351,7 +1351,7 @@
                                                 "layout|flex": null,
                                                 "text": "删除"
                                             },
-                                            "name": "MyButton350",
+                                            "name": "MyButton367",
                                             "designerId": "eb7618af-d731-4888-8d48-96c8ed96cd31",
                                             "cn": [
                                                 {
@@ -1461,7 +1461,7 @@
                             "userConfig": {
                                 "dock": "top"
                             },
-                            "name": "MyToolbar95",
+                            "name": "MyToolbar97",
                             "designerId": "bdffb133-e029-4e87-991d-8d748e6638b4",
                             "cn": [
                                 {
@@ -1474,7 +1474,7 @@
                                     "userConfig": {
                                         "layout|flex": 1
                                     },
-                                    "name": "MyFill10",
+                                    "name": "MyFill11",
                                     "designerId": "494c8a78-fdc1-45a3-ba73-b776474029e4"
                                 },
                                 {
@@ -1489,7 +1489,7 @@
                                         "layout|flex": 3,
                                         "text": "My Label"
                                     },
-                                    "name": "MyLabel18",
+                                    "name": "MyLabel19",
                                     "designerId": "b60d9599-c472-4316-bbcf-5cd28b96ea5e"
                                 }
                             ]

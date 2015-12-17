@@ -32,7 +32,7 @@
                 ],
                 "url": "get_abdktsList"
             },
-            "name": "MyAjaxProxy72",
+            "name": "MyAjaxProxy73",
             "designerId": "7a69f934-6517-4add-92cd-1b5016834c37",
             "cn": [
                 {
@@ -45,7 +45,7 @@
                     "userConfig": {
                         "root": "root"
                     },
-                    "name": "MyJsonReader72",
+                    "name": "MyJsonReader73",
                     "designerId": "c194f60c-647e-449c-bf7b-ad9628231f88"
                 }
             ]

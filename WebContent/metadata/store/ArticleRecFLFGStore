@@ -31,7 +31,7 @@
                 ],
                 "url": "get_recycleArticleList?channelId=15"
             },
-            "name": "MyAjaxProxy59",
+            "name": "MyAjaxProxy60",
             "designerId": "182bb5f4-f82e-4ecd-a8e0-e7f3cfd2bc64",
             "cn": [
                 {
@@ -44,7 +44,7 @@
                     "userConfig": {
                         "root": "root"
                     },
-                    "name": "MyJsonReader59",
+                    "name": "MyJsonReader60",
                     "designerId": "7cfed195-530b-41b9-8c26-89a7b3a72d88"
                 }
             ]

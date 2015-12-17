@@ -30,7 +30,7 @@
                 "layout|region": "north",
                 "title": "选择查询条件"
             },
-            "name": "MyForm9",
+            "name": "MyForm10",
             "designerId": "68506adf-8f58-4526-aefd-df2e6ad1eb13",
             "cn": [
                 {
@@ -49,7 +49,7 @@
                         "layout|y": 20,
                         "width": 180
                     },
-                    "name": "MyTextField52",
+                    "name": "MyTextField56",
                     "designerId": "12e68735-e696-4676-be77-4a6f4cfb2e4b"
                 },
                 {
@@ -69,7 +69,7 @@
                         "layout|y": 20,
                         "width": 180
                     },
-                    "name": "MyDateField2",
+                    "name": "MyDateField3",
                     "designerId": "2b719bcf-9533-4d6f-a359-c27234ffb6d7"
                 },
                 {
@@ -89,7 +89,7 @@
                         "layout|y": 20,
                         "width": 180
                     },
-                    "name": "MyDateField3",
+                    "name": "MyDateField4",
                     "designerId": "b28058f5-2566-4afb-bf22-0c115d5a23a5"
                 },
                 {
@@ -105,7 +105,7 @@
                         "text": "查询",
                         "width": 60
                     },
-                    "name": "MyButton31",
+                    "name": "MyButton37",
                     "designerId": "2d0dc339-f238-4490-a140-e886dcdd45e7",
                     "cn": [
                         {
@@ -167,7 +167,7 @@
                 "store": "ShouyiStat_Jianshe",
                 "title": "建设单位收益分配统计表"
             },
-            "name": "MyGridPanel5",
+            "name": "MyGridPanel6",
             "designerId": "955a9756-06bc-42fa-abec-aa1e5eb56b75",
             "cn": [
                 {
@@ -181,7 +181,7 @@
                         "text": "序号",
                         "width": 45
                     },
-                    "name": "MyRowNumberer4",
+                    "name": "MyRowNumberer5",
                     "designerId": "058f4f7a-119b-4645-a5d1-6961e4c4e734"
                 },
                 {
@@ -195,7 +195,7 @@
                         "dataIndex": "dwmc",
                         "text": "单位名称"
                     },
-                    "name": "MyColumn13",
+                    "name": "MyColumn18",
                     "designerId": "7e2bb4fc-7554-4a00-b0bf-b1ee1436b05c"
                 },
                 {
@@ -209,7 +209,7 @@
                         "dataIndex": "sjdkbh",
                         "text": "所建地块编号"
                     },
-                    "name": "MyColumn14",
+                    "name": "MyColumn19",
                     "designerId": "61945ba8-eefd-4bef-95d2-fed5c7db8ee9"
                 },
                 {
@@ -223,7 +223,7 @@
                         "dataIndex": "cyrw",
                         "text": "参与任务"
                     },
-                    "name": "MyColumn15",
+                    "name": "MyColumn20",
                     "designerId": "70570616-470b-4e6c-a82d-315d33186bc7"
                 },
                 {
@@ -237,7 +237,7 @@
                         "dataIndex": "cysj",
                         "text": "参与时间"
                     },
-                    "name": "MyDateColumn1",
+                    "name": "MyDateColumn2",
                     "designerId": "a0879dc2-6ed6-4387-9423-3cca83e3487e"
                 },
                 {
@@ -276,7 +276,7 @@
                         "type": "object"
                     },
                     "codeClass": null,
-                    "name": "MyGridView5",
+                    "name": "MyGridView6",
                     "designerId": "d52ad8e6-8102-4419-be99-1236eaedbc7a"
                 }
             ]

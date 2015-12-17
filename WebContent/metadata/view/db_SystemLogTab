@@ -40,7 +40,7 @@
                     "userConfig": {
                         "dock": "top"
                     },
-                    "name": "MyToolbar28",
+                    "name": "MyToolbar30",
                     "designerId": "55946df6-9b56-45d4-857a-f1ccbe9d1222",
                     "cn": [
                         {
@@ -54,7 +54,7 @@
                                 "fieldLabel": null,
                                 "layout|flex": null
                             },
-                            "name": "MyTextField125",
+                            "name": "MyTextField129",
                             "designerId": "7ac516fe-bd20-4ffd-b442-a66f8fdb988d"
                         },
                         {
@@ -68,7 +68,7 @@
                                 "layout|flex": null,
                                 "text": "查询"
                             },
-                            "name": "MyButton110",
+                            "name": "MyButton116",
                             "designerId": "c05c9ee2-4947-4517-9951-638ebd4b1594"
                         },
                         {
@@ -82,7 +82,7 @@
                                 "layout|flex": null,
                                 "text": "删除"
                             },
-                            "name": "MyButton111",
+                            "name": "MyButton117",
                             "designerId": "a6a910f7-1275-4dcd-aa4f-e9878aa83263"
                         }
                     ]
@@ -98,7 +98,7 @@
                         "store": "dbBackupRecoveryStore",
                         "title": null
                     },
-                    "name": "MyGridPanel22",
+                    "name": "MyGridPanel23",
                     "designerId": "53ae2fc9-d581-41fa-bc9a-bb9478750f6d",
                     "cn": [
                         {
@@ -113,7 +113,7 @@
                                 "text": "序号",
                                 "width": 40
                             },
-                            "name": "MyRowNumberer16",
+                            "name": "MyRowNumberer17",
                             "designerId": "5a6c5615-bc2e-4f0e-a9d6-e8e3dbcb851b"
                         },
                         {
@@ -141,7 +141,7 @@
                                 "dataIndex": "date",
                                 "text": "执行时间"
                             },
-                            "name": "MyDateColumn19",
+                            "name": "MyDateColumn20",
                             "designerId": "ec66e22c-642f-411b-ad80-4baf721cb142"
                         },
                         {
@@ -171,7 +171,7 @@
                                 "text": "进行的操作",
                                 "width": 200
                             },
-                            "name": "MyColumn127",
+                            "name": "MyColumn132",
                             "designerId": "6594c05e-ad62-40c2-8097-c33b10ec89a5"
                         },
                         {
@@ -181,7 +181,7 @@
                                 "type": "object"
                             },
                             "codeClass": null,
-                            "name": "MyGridView22",
+                            "name": "MyGridView23",
                             "designerId": "e3891752-4c39-4d93-9287-648d4fa2b686"
                         },
                         {
@@ -194,7 +194,7 @@
                             "userConfig": {
                                 "designer|displayName": null
                             },
-                            "name": "MyCheckboxSelectionModel15",
+                            "name": "MyCheckboxSelectionModel16",
                             "designerId": "6ed3d2b2-e5b2-4f2f-a409-7b13b5c333bb"
                         }
                     ]

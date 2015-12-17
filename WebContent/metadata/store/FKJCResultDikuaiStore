@@ -28,7 +28,7 @@
                 ],
                 "url": "result_selectDikuai"
             },
-            "name": "MyAjaxProxy83",
+            "name": "MyAjaxProxy84",
             "designerId": "1f72fd89-cf4f-4860-b059-86cc2d725ac7",
             "cn": [
                 {
@@ -41,7 +41,7 @@
                     "userConfig": {
                         "root": "root"
                     },
-                    "name": "MyJsonReader83",
+                    "name": "MyJsonReader84",
                     "designerId": "50b1111a-4854-475d-b224-9d56107c7469"
                 }
             ]

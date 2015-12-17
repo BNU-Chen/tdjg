@@ -20,7 +20,7 @@
             "userConfig": {
                 "name": "abwsId"
             },
-            "name": "MyField311",
+            "name": "MyField318",
             "designerId": "34eb7960-c5b7-4bb5-aa4e-52023badfbee"
         },
         {
@@ -33,7 +33,7 @@
             "userConfig": {
                 "name": "abwsTitle"
             },
-            "name": "MyField312",
+            "name": "MyField319",
             "designerId": "3a8840cb-da29-43f1-aca8-05ee3b115f5d"
         },
         {
@@ -46,7 +46,7 @@
             "userConfig": {
                 "name": "abwsClass"
             },
-            "name": "MyField313",
+            "name": "MyField320",
             "designerId": "5e05fe4e-e544-4dab-bd69-b6ab607314d5"
         },
         {
@@ -59,7 +59,7 @@
             "userConfig": {
                 "name": "abwsDate"
             },
-            "name": "MyField314",
+            "name": "MyField321",
             "designerId": "c4eb0283-0516-4946-b9cb-06c9221aedee"
         },
         {
@@ -72,7 +72,7 @@
             "userConfig": {
                 "name": "abwsContent"
             },
-            "name": "MyField315",
+            "name": "MyField322",
             "designerId": "14afc847-1e56-49eb-8eda-1db7e32689ae"
         },
         {
@@ -85,7 +85,7 @@
             "userConfig": {
                 "name": "abwsIsSolved"
             },
-            "name": "MyField316",
+            "name": "MyField323",
             "designerId": "e89cfcfb-c906-4095-9a8e-a347d466ca71"
         },
         {
@@ -98,7 +98,7 @@
             "userConfig": {
                 "name": "abwsOpinion"
             },
-            "name": "MyField317",
+            "name": "MyField324",
             "designerId": "f7b86525-04b0-40a3-a0db-5dabeccc180e"
         },
         {
@@ -111,7 +111,7 @@
             "userConfig": {
                 "name": "abwsPhotopath"
             },
-            "name": "MyField318",
+            "name": "MyField325",
             "designerId": "b452f061-e2fa-4b9b-9e37-d8ab4ff8933e"
         },
         {
@@ -124,7 +124,7 @@
             "userConfig": {
                 "name": "abwsCollector"
             },
-            "name": "MyField319",
+            "name": "MyField326",
             "designerId": "725c9da2-629f-4660-bf4d-8bd698369c1d"
         },
         {
@@ -137,7 +137,7 @@
             "userConfig": {
                 "name": "abwsCollecttime"
             },
-            "name": "MyField320",
+            "name": "MyField327",
             "designerId": "74f76ac0-523f-4fdc-9292-6d89dfbd45f9"
         },
         {
@@ -150,7 +150,7 @@
             "userConfig": {
                 "name": "projectName"
             },
-            "name": "MyField321",
+            "name": "MyField328",
             "designerId": "cfc06399-eb72-4fd0-8e99-0cebefa387b7"
         },
         {
@@ -163,7 +163,7 @@
             "userConfig": {
                 "name": "abwsIsTaskAssigned"
             },
-            "name": "MyField322",
+            "name": "MyField329",
             "designerId": "b8799fa2-ba35-440f-ae66-b843a10aecc3"
         },
         {
@@ -176,7 +176,7 @@
             "userConfig": {
                 "name": "rwId"
             },
-            "name": "MyField323",
+            "name": "MyField330",
             "designerId": "05823051-262f-4701-9aa8-b41290c3cfd3"
         },
         {
@@ -189,7 +189,7 @@
             "userConfig": {
                 "name": "projectId"
             },
-            "name": "MyField324",
+            "name": "MyField331",
             "designerId": "37e7d7b6-32d4-474f-b08e-a39ab95d0947"
         },
         {
@@ -202,7 +202,7 @@
             "userConfig": {
                 "name": "sourceRecordid"
             },
-            "name": "MyField325",
+            "name": "MyField332",
             "designerId": "8c178e3f-88d2-42c7-924b-f22a60654dd4"
         },
         {
@@ -215,7 +215,7 @@
             "userConfig": {
                 "name": "abwsXunchacontent"
             },
-            "name": "MyField326",
+            "name": "MyField333",
             "designerId": "de8e004c-828e-40b7-903f-04ebdc18a337"
         }
     ]

@@ -29,7 +29,7 @@
                 "title": "",
                 "url": "addEvaluateResult"
             },
-            "name": "MyForm29",
+            "name": "MyForm30",
             "designerId": "cd670ddb-9169-42fa-b0e0-acba37adee6d",
             "cn": [
                 {
@@ -45,7 +45,7 @@
                         "layout|y": 10,
                         "text": "复垦土壤质量评价结果"
                     },
-                    "name": "MyLabel10",
+                    "name": "MyLabel11",
                     "designerId": "dc354db3-19d0-4335-8a4a-0476e49fcd53"
                 },
                 {
@@ -65,7 +65,7 @@
                         "readOnly": true,
                         "width": 270
                     },
-                    "name": "MyTextField170",
+                    "name": "MyTextField174",
                     "designerId": "07c9045d-9ecc-4af6-8b60-ad19e6e3e2a6"
                 },
                 {
@@ -85,7 +85,7 @@
                         "readOnly": true,
                         "width": 270
                     },
-                    "name": "MyTextField171",
+                    "name": "MyTextField175",
                     "designerId": "bc8a29ec-db9b-4e31-bcf7-73cc69f87d2e"
                 },
                 {
@@ -105,7 +105,7 @@
                         "readOnly": true,
                         "width": 340
                     },
-                    "name": "MyTextField172",
+                    "name": "MyTextField176",
                     "designerId": "67e3aa54-2187-441c-bd67-14c3c2b6d3bf"
                 },
                 {
@@ -124,7 +124,7 @@
                         "name": "evaluators",
                         "width": 340
                     },
-                    "name": "MyTextField173",
+                    "name": "MyTextField177",
                     "designerId": "684e9927-6d63-4d12-b51c-dc154ecda8e0"
                 },
                 {
@@ -163,7 +163,7 @@
                         "name": "auditDate",
                         "width": 340
                     },
-                    "name": "MyDateField35",
+                    "name": "MyDateField36",
                     "designerId": "52ee1735-ebaa-419d-9ae7-e47ba47ac8ac"
                 },
                 {
@@ -181,7 +181,7 @@
                         "text": "保存",
                         "width": 60
                     },
-                    "name": "MyButton170",
+                    "name": "MyButton187",
                     "designerId": "a4181d5e-7748-4461-97f3-466b5d9ae372",
                     "cn": [
                         {
@@ -245,7 +245,7 @@
                         "text": "返回",
                         "width": 60
                     },
-                    "name": "MyButton171",
+                    "name": "MyButton188",
                     "designerId": "b0b3d648-c456-4f75-aa2f-023e7ae60ad3",
                     "cn": [
                         {
@@ -306,7 +306,7 @@
                         "store": "auditResultsStore",
                         "width": 270
                     },
-                    "name": "MyComboBox18",
+                    "name": "MyComboBox19",
                     "designerId": "b8bfe454-4b62-46dd-84fa-e8e07448a568"
                 }
             ]

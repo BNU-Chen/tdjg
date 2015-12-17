@@ -26,7 +26,7 @@
                 "extraParams": null,
                 "url": "abnmGetPublicProject"
             },
-            "name": "MyAjaxProxy77",
+            "name": "MyAjaxProxy78",
             "designerId": "3de32eee-3401-47e7-a852-da5ba024254f",
             "cn": [
                 {
@@ -39,7 +39,7 @@
                     "userConfig": {
                         "root": "root"
                     },
-                    "name": "MyJsonReader77",
+                    "name": "MyJsonReader78",
                     "designerId": "4382827c-9860-4231-b682-43bd6eac68df"
                 }
             ]

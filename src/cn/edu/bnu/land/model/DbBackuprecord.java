@@ -1,6 +1,6 @@
 package cn.edu.bnu.land.model;
 
-// Generated 2015-4-17 17:01:56 by Hibernate Tools 4.0.0
+// Generated 2013-10-14 10:05:29 by Hibernate Tools 4.0.0
 
 import java.util.Date;
 
@@ -9,34 +9,38 @@ import java.util.Date;
  */
 public class DbBackuprecord implements java.io.Serializable {
 
-	private Integer id;
-	private Date bkdate;
+	private Integer version;
+	private Date date;
 	private Integer size;
-	private String description;
+	private String comment;
 
 	public DbBackuprecord() {
 	}
 
-	public DbBackuprecord(Date bkdate, Integer size, String description) {
-		this.bkdate = bkdate;
+	public DbBackuprecord(Date date) {
+		this.date = date;
+	}
+
+	public DbBackuprecord(Date date, Integer size, String comment) {
+		this.date = date;
 		this.size = size;
-		this.description = description;
+		this.comment = comment;
 	}
 
-	public Integer getId() {
-		return this.id;
+	public Integer getVersion() {
+		return this.version;
 	}
 
-	public void setId(Integer id) {
-		this.id = id;
+	public void setVersion(Integer version) {
+		this.version = version;
 	}
 
-	public Date getBkdate() {
-		return this.bkdate;
+	public Date getDate() {
+		return this.date;
 	}
 
-	public void setBkdate(Date bkdate) {
-		this.bkdate = bkdate;
+	public void setDate(Date date) {
+		this.date = date;
 	}
 
 	public Integer getSize() {
@@ -47,12 +51,12 @@ public class DbBackuprecord implements java.io.Serializable {
 		this.size = size;
 	}
 
-	public String getDescription() {
-		return this.description;
+	public String getComment() {
+		return this.comment;
 	}
 
-	public void setDescription(String description) {
-		this.description = description;
+	public void setComment(String comment) {
+		this.comment = comment;
 	}
 
 }

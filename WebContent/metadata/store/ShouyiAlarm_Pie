@@ -32,7 +32,7 @@
                 ],
                 "url": "getBenefitList13"
             },
-            "name": "MyAjaxProxy87",
+            "name": "MyAjaxProxy88",
             "designerId": "21b6ef80-c086-42d2-88c3-42dec3c168c1",
             "cn": [
                 {
@@ -42,7 +42,7 @@
                         "type": "object"
                     },
                     "codeClass": null,
-                    "name": "MyJsonReader87",
+                    "name": "MyJsonReader88",
                     "designerId": "11afaad5-97d1-4997-bedd-2b54e86ffb8b"
                 }
             ]

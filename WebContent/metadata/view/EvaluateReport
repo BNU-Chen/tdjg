@@ -23,7 +23,7 @@
             "userConfig": {
                 "dock": "top"
             },
-            "name": "MyToolbar19",
+            "name": "MyToolbar21",
             "designerId": "4059b38a-b756-4bfd-9573-2a87c7bf205a",
             "cn": [
                 {
@@ -38,7 +38,7 @@
                         "id": "EvaluateID",
                         "layout|flex": null
                     },
-                    "name": "MyTextField115",
+                    "name": "MyTextField119",
                     "designerId": "2eba1d58-7b97-470a-95f0-5f0e85389a1c"
                 },
                 {
@@ -53,7 +53,7 @@
                         "layout|flex": null,
                         "text": "查询"
                     },
-                    "name": "MyButton79",
+                    "name": "MyButton85",
                     "designerId": "5dcc63ed-752f-4302-a123-1ffc4b51f60e",
                     "cn": [
                         {
@@ -98,7 +98,7 @@
                         "layout|flex": null,
                         "text": "上传验收文档"
                     },
-                    "name": "MyButton80",
+                    "name": "MyButton86",
                     "designerId": "99436d17-03c1-401c-b337-1c3f27a609f1",
                     "cn": [
                         {
@@ -226,7 +226,7 @@
                         "layout|flex": null,
                         "text": "竣工报告"
                     },
-                    "name": "MyButton81",
+                    "name": "MyButton87",
                     "designerId": "b21d9d6d-279f-4c1c-bc2e-a418bbb2550b",
                     "cn": [
                         {
@@ -292,7 +292,7 @@
                         "layout|flex": null,
                         "text": "专家意见扫描件"
                     },
-                    "name": "MyButton82",
+                    "name": "MyButton88",
                     "designerId": "c4a80c0d-fd6c-4264-82bf-f353a890325e",
                     "cn": [
                         {
@@ -358,7 +358,7 @@
                         "layout|flex": null,
                         "text": "返回到项目管理"
                     },
-                    "name": "MyButton83",
+                    "name": "MyButton89",
                     "designerId": "bb59d077-0ce8-4152-b24c-07d843645411",
                     "cn": [
                         {
@@ -399,7 +399,7 @@
                 "store": "EvaluateReportStore",
                 "title": ""
             },
-            "name": "MyGridPanel15",
+            "name": "MyGridPanel16",
             "designerId": "edc52d67-8f8e-4790-b631-f24c16d58af7",
             "cn": [
                 {
@@ -413,7 +413,7 @@
                         "dataIndex": "projectId",
                         "text": "项目编号"
                     },
-                    "name": "MyColumn82",
+                    "name": "MyColumn87",
                     "designerId": "cf66b8e5-788f-43ae-bc4c-29d74b17c76d"
                 },
                 {
@@ -427,7 +427,7 @@
                         "dataIndex": "projectname",
                         "text": "项目名称"
                     },
-                    "name": "MyColumn83",
+                    "name": "MyColumn88",
                     "designerId": "7d01b990-3d41-4f18-abb3-1a97011f102f"
                 },
                 {
@@ -442,7 +442,7 @@
                         "text": "土壤质量审核意见",
                         "width": 130
                     },
-                    "name": "MyColumn84",
+                    "name": "MyColumn89",
                     "designerId": "b47426db-3618-478b-b6a0-c3b9f7c3fa5e"
                 },
                 {
@@ -457,7 +457,7 @@
                         "text": "工程质量验收结果",
                         "width": 130
                     },
-                    "name": "MyColumn85",
+                    "name": "MyColumn90",
                     "designerId": "e20d0625-5b4b-4f59-9529-1ec800a686d5"
                 },
                 {
@@ -472,7 +472,7 @@
                         "text": "专家综合评价结果",
                         "width": 150
                     },
-                    "name": "MyColumn86",
+                    "name": "MyColumn91",
                     "designerId": "882413db-5192-45fc-9077-70e3186d6a8f"
                 },
                 {
@@ -486,7 +486,7 @@
                         "dataIndex": "soilQualityGrade",
                         "text": "土壤质量结果"
                     },
-                    "name": "MyColumn87",
+                    "name": "MyColumn92",
                     "designerId": "0e97462d-33a4-4232-a674-4c12baff7b75"
                 },
                 {
@@ -501,7 +501,7 @@
                         "text": "土壤质量备注说明",
                         "width": 140
                     },
-                    "name": "MyColumn88",
+                    "name": "MyColumn93",
                     "designerId": "55a4bf71-27f6-44f0-8590-0dd3d330c43b"
                 },
                 {
@@ -515,7 +515,7 @@
                         "dataIndex": "gongCqgc",
                         "text": "拆迁工程质量"
                     },
-                    "name": "MyColumn89",
+                    "name": "MyColumn94",
                     "designerId": "47f8afd4-b985-4706-853f-d9bc402bfee0"
                 },
                 {
@@ -530,7 +530,7 @@
                         "text": "农田水利工程质量",
                         "width": 130
                     },
-                    "name": "MyColumn90",
+                    "name": "MyColumn95",
                     "designerId": "6d690b03-afe8-4aa3-9ef5-82f766d4f926"
                 },
                 {
@@ -545,7 +545,7 @@
                         "text": "土地平整工程质量",
                         "width": 130
                     },
-                    "name": "MyColumn91",
+                    "name": "MyColumn96",
                     "designerId": "33b7ef5e-e765-42ac-81b3-d966f31b1939"
                 },
                 {
@@ -560,7 +560,7 @@
                         "text": "田间道路工程质量",
                         "width": 130
                     },
-                    "name": "MyColumn92",
+                    "name": "MyColumn97",
                     "designerId": "ade2bdd4-6887-4e48-afb0-5f37b0d8c6b7"
                 },
                 {
@@ -575,7 +575,7 @@
                         "text": "专家微地貌描述",
                         "width": 120
                     },
-                    "name": "MyColumn93",
+                    "name": "MyColumn98",
                     "designerId": "2bf9fdb4-8cae-4753-aef2-e74c56888295"
                 },
                 {
@@ -590,7 +590,7 @@
                         "text": "项目交通条件专家意见",
                         "width": 150
                     },
-                    "name": "MyColumn94",
+                    "name": "MyColumn99",
                     "designerId": "49c174a0-3f8a-454a-9310-00357ce0ea15"
                 },
                 {
@@ -605,7 +605,7 @@
                         "text": "沟粪函坎质量专家意见",
                         "width": 150
                     },
-                    "name": "MyColumn95",
+                    "name": "MyColumn100",
                     "designerId": "7b57d43f-2844-43b9-b5fd-157c247e228d"
                 },
                 {
@@ -620,7 +620,7 @@
                         "text": "田土比重",
                         "width": 100
                     },
-                    "name": "MyColumn96",
+                    "name": "MyColumn101",
                     "designerId": "b6681e95-c90d-4dab-a71b-716225d938d7"
                 },
                 {
@@ -635,7 +635,7 @@
                         "text": "蓄水能力",
                         "width": 100
                     },
-                    "name": "MyColumn97",
+                    "name": "MyColumn102",
                     "designerId": "e6d56175-eefb-435a-ba9e-99669d2a7ae6"
                 },
                 {
@@ -650,7 +650,7 @@
                         "text": "土壤肥力专家意见",
                         "width": 150
                     },
-                    "name": "MyColumn98",
+                    "name": "MyColumn103",
                     "designerId": "bd492b5a-f66b-4685-ba22-14f2552fc81a"
                 },
                 {
@@ -665,7 +665,7 @@
                         "text": "主体田块成型度",
                         "width": 150
                     },
-                    "name": "MyColumn99",
+                    "name": "MyColumn104",
                     "designerId": "d0a45665-10f7-430b-8ee3-4db0e98179a8"
                 },
                 {
@@ -680,7 +680,7 @@
                         "text": "专家姓名与单位",
                         "width": 150
                     },
-                    "name": "MyColumn100",
+                    "name": "MyColumn105",
                     "designerId": "f5a8b61a-c8e7-43c6-972a-7e412533a0e8"
                 },
                 {
@@ -693,7 +693,7 @@
                     "userConfig": {
                         "id": "EvaluateReportView"
                     },
-                    "name": "MyGridView15",
+                    "name": "MyGridView16",
                     "designerId": "1b9ab24d-060f-4aee-a26b-e8b5e885f1e6"
                 },
                 {
@@ -719,7 +719,7 @@
                         "type": "object"
                     },
                     "codeClass": "Ext.selection.CheckboxModel",
-                    "name": "MyCheckboxSelectionModel9",
+                    "name": "MyCheckboxSelectionModel10",
                     "designerId": "1863e1ee-f6f9-46bd-9367-ed4e0209db56"
                 }
             ]

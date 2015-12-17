@@ -28,7 +28,7 @@
                 ],
                 "url": "get_infoAreaCityList"
             },
-            "name": "MyAjaxProxy74",
+            "name": "MyAjaxProxy75",
             "designerId": "fded4d4b-f00a-4831-b436-35708f0c5836",
             "cn": [
                 {
@@ -41,7 +41,7 @@
                     "userConfig": {
                         "root": null
                     },
-                    "name": "MyJsonReader74",
+                    "name": "MyJsonReader75",
                     "designerId": "8a1c3124-b31e-476d-9a8e-ed4d7e60e49f"
                 }
             ]

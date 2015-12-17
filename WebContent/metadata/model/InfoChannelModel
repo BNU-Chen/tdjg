@@ -20,7 +20,7 @@
             "userConfig": {
                 "name": "channelId"
             },
-            "name": "MyField304",
+            "name": "MyField311",
             "designerId": "baa519ea-7eff-4a89-b124-682cbe86a3d5"
         },
         {
@@ -33,7 +33,7 @@
             "userConfig": {
                 "name": "channelName"
             },
-            "name": "MyField305",
+            "name": "MyField312",
             "designerId": "9f9dd637-8fef-41ee-9d04-54eb7a969b82"
         }
     ]

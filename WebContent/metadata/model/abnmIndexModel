@@ -20,7 +20,7 @@
             "userConfig": {
                 "name": "abiId"
             },
-            "name": "MyField357",
+            "name": "MyField364",
             "designerId": "d0fab54d-6bc2-4a16-9641-9f0be5b9b788"
         },
         {
@@ -33,7 +33,7 @@
             "userConfig": {
                 "name": "abiName"
             },
-            "name": "MyField358",
+            "name": "MyField365",
             "designerId": "c19e98c8-f20a-4a54-b1b7-96696e28285f"
         },
         {
@@ -46,7 +46,7 @@
             "userConfig": {
                 "name": "abiValue"
             },
-            "name": "MyField359",
+            "name": "MyField366",
             "designerId": "cb85941f-b01a-4a84-bc95-8b476fa7b05b"
         },
         {
@@ -59,7 +59,7 @@
             "userConfig": {
                 "name": "abiWeight"
             },
-            "name": "MyField360",
+            "name": "MyField367",
             "designerId": "42075986-a8bd-4736-bae7-7d6a2b20c3f0"
         },
         {
@@ -72,7 +72,7 @@
             "userConfig": {
                 "name": "abiClass"
             },
-            "name": "MyField361",
+            "name": "MyField368",
             "designerId": "e17f1148-9c6a-4651-8f7e-604320bada40"
         },
         {
@@ -85,7 +85,7 @@
             "userConfig": {
                 "name": "dkId"
             },
-            "name": "MyField362",
+            "name": "MyField369",
             "designerId": "6140646b-bb5b-4530-b2e4-b86a050db4db"
         }
     ]

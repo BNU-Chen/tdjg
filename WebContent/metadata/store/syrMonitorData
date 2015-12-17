@@ -31,7 +31,7 @@
                 ],
                 "url": "get_MonitorData"
             },
-            "name": "MyAjaxProxy84",
+            "name": "MyAjaxProxy85",
             "designerId": "c3b782ea-021b-40a9-ae02-32679054a5b0",
             "cn": [
                 {
@@ -44,7 +44,7 @@
                     "userConfig": {
                         "root": "root"
                     },
-                    "name": "MyJsonReader84",
+                    "name": "MyJsonReader85",
                     "designerId": "b428e59f-2dc5-4948-aba5-31cbbd75240a"
                 }
             ]

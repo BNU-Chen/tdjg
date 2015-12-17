@@ -208,7 +208,7 @@
                                                 "layout|margins": "2,0,0,0",
                                                 "readOnly": true
                                             },
-                                            "name": "MyTextField23",
+                                            "name": "MyTextField27",
                                             "designerId": "46e6c47f-307d-4e3c-b415-e62717cfa360"
                                         },
                                         {
@@ -225,7 +225,7 @@
                                                 "layout|flex": 1,
                                                 "readOnly": true
                                             },
-                                            "name": "MyTextField24",
+                                            "name": "MyTextField28",
                                             "designerId": "ce26e142-bb0c-468d-9ab7-1f7c5abbaf59"
                                         },
                                         {
@@ -242,7 +242,7 @@
                                                 "layout|flex": 1,
                                                 "readOnly": true
                                             },
-                                            "name": "MyTextField25",
+                                            "name": "MyTextField29",
                                             "designerId": "f7056334-58fe-47c5-8e32-7587cdfc3767"
                                         },
                                         {
@@ -258,7 +258,7 @@
                                                 "labelWidth": 60,
                                                 "readOnly": true
                                             },
-                                            "name": "MyTextField26",
+                                            "name": "MyTextField30",
                                             "designerId": "f7351167-4919-41e3-b459-7f58ad78ef43"
                                         },
                                         {
@@ -274,7 +274,7 @@
                                                 "labelWidth": 60,
                                                 "readOnly": true
                                             },
-                                            "name": "MyTextField27",
+                                            "name": "MyTextField31",
                                             "designerId": "abf6e4c8-3c5c-46aa-bb91-73296ab27a9f"
                                         }
                                     ]
@@ -307,7 +307,7 @@
                                                 "margin": "2,2,2,2",
                                                 "text": "浏览"
                                             },
-                                            "name": "MyButton16",
+                                            "name": "MyButton22",
                                             "designerId": "9868a240-5c81-4aeb-a9f4-ea2fb8f11945",
                                             "cn": [
                                                 {
@@ -344,7 +344,7 @@
                                                 "margin": "3,2,2,2",
                                                 "text": "浏览"
                                             },
-                                            "name": "MyButton17",
+                                            "name": "MyButton23",
                                             "designerId": "45b78edc-f05d-4084-9e9e-490829368b80",
                                             "cn": [
                                                 {
@@ -381,7 +381,7 @@
                                                 "margin": "3,2,2,2",
                                                 "text": "浏览"
                                             },
-                                            "name": "MyButton18",
+                                            "name": "MyButton24",
                                             "designerId": "3d5deb20-d733-46a5-bfdf-c5adaf2225c7",
                                             "cn": [
                                                 {
@@ -418,7 +418,7 @@
                                                 "margin": "3,2,2,2",
                                                 "text": "浏览"
                                             },
-                                            "name": "MyButton19",
+                                            "name": "MyButton25",
                                             "designerId": "4f669c1d-3c3e-4d21-96cc-c74259b86724",
                                             "cn": [
                                                 {
@@ -455,7 +455,7 @@
                                                 "margin": "3,2,2,2",
                                                 "text": "浏览"
                                             },
-                                            "name": "MyButton20",
+                                            "name": "MyButton26",
                                             "designerId": "056ff328-3415-47ff-b28b-1e81adb045a7",
                                             "cn": [
                                                 {
@@ -530,7 +530,7 @@
                                                 "margin": "3,5,3,5",
                                                 "width": 130
                                             },
-                                            "name": "MyTextField28",
+                                            "name": "MyTextField32",
                                             "designerId": "5fefa92a-0b81-4699-96c3-8ffd1f0d5e29"
                                         },
                                         {
@@ -547,7 +547,7 @@
                                                 "margin": "3,5,3,5",
                                                 "width": 130
                                             },
-                                            "name": "MyTextField29",
+                                            "name": "MyTextField33",
                                             "designerId": "a711c175-4578-416f-a7c6-f4cfd83d383f"
                                         },
                                         {
@@ -577,7 +577,7 @@
                                                 ],
                                                 "width": 130
                                             },
-                                            "name": "MyComboBox1",
+                                            "name": "MyComboBox2",
                                             "configAlternates": {
                                                 "store": "array"
                                             },
@@ -597,7 +597,7 @@
                                                 "margin": "3,5,3,5",
                                                 "width": 130
                                             },
-                                            "name": "MyTextField30",
+                                            "name": "MyTextField34",
                                             "designerId": "7b1d314e-624b-4fe9-80cd-e75cfba8ad06"
                                         },
                                         {
@@ -662,7 +662,7 @@
                                                 "margin": "3,5,3,5",
                                                 "width": 130
                                             },
-                                            "name": "MyTextField31",
+                                            "name": "MyTextField35",
                                             "designerId": "73284029-04e0-4c43-bea5-ec899e5bc68e"
                                         },
                                         {
@@ -680,7 +680,7 @@
                                                 "margin": "3,5,3,5",
                                                 "width": 130
                                             },
-                                            "name": "MyTextField32",
+                                            "name": "MyTextField36",
                                             "designerId": "caa2af3f-ff76-416c-9757-49385479adbf"
                                         },
                                         {
@@ -698,7 +698,7 @@
                                                 "margin": "3,5,3,5",
                                                 "width": 130
                                             },
-                                            "name": "MyTextField33",
+                                            "name": "MyTextField37",
                                             "designerId": "ca17169d-b8c8-439c-9fb2-18684f57a172"
                                         }
                                     ]
@@ -717,7 +717,7 @@
                                         "title": null,
                                         "width": null
                                     },
-                                    "name": "MyGridPanel3",
+                                    "name": "MyGridPanel4",
                                     "designerId": "c6d88dca-7179-41e7-a775-395a86f6e7c4",
                                     "cn": [
                                         {
@@ -731,7 +731,7 @@
                                                 "dataIndex": "layername",
                                                 "text": "层名"
                                             },
-                                            "name": "MyColumn8",
+                                            "name": "MyColumn13",
                                             "designerId": "c4bec4b2-f5ca-43d4-a4a2-69e31e49e2ed"
                                         },
                                         {
@@ -746,7 +746,7 @@
                                                 "text": "平方根",
                                                 "width": 60
                                             },
-                                            "name": "MyColumn9",
+                                            "name": "MyColumn14",
                                             "designerId": "6733182f-03c2-4841-a370-b8819b4489cf",
                                             "cn": [
                                                 {
@@ -773,7 +773,7 @@
                                                 "text": "费用",
                                                 "width": 60
                                             },
-                                            "name": "MyColumn10",
+                                            "name": "MyColumn15",
                                             "designerId": "ecca1a6f-af2d-41e3-ae5f-e7b23b753f42",
                                             "cn": [
                                                 {
@@ -783,7 +783,7 @@
                                                         "type": "object"
                                                     },
                                                     "codeClass": null,
-                                                    "name": "MyTextField34",
+                                                    "name": "MyTextField38",
                                                     "designerId": "e966d032-e052-45cd-849b-6a29567aaff5"
                                                 }
                                             ]
@@ -795,7 +795,7 @@
                                                 "type": "object"
                                             },
                                             "codeClass": null,
-                                            "name": "MyGridView3",
+                                            "name": "MyGridView4",
                                             "designerId": "f8cd6ea4-d50e-4a52-81b2-e6cbdc3f7c0a"
                                         },
                                         {
@@ -853,7 +853,7 @@
                                         "text": "生成抽样点并计算样本量",
                                         "width": null
                                     },
-                                    "name": "MyButton21",
+                                    "name": "MyButton27",
                                     "designerId": "70b04361-5752-4000-9a4d-37e13003adb5",
                                     "cn": [
                                         {

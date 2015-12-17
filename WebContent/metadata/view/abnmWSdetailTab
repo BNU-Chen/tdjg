@@ -28,7 +28,7 @@
                 "layout": "absolute",
                 "title": null
             },
-            "name": "MyForm48",
+            "name": "MyForm49",
             "designerId": "721507d0-f4d9-472f-b6cd-288d2cc5441a",
             "cn": [
                 {
@@ -99,7 +99,7 @@
                         "layout|y": 80,
                         "width": 780
                     },
-                    "name": "MyTextField242",
+                    "name": "MyTextField246",
                     "designerId": "dfbeb6af-9f89-4218-95da-5fa43c405df4"
                 },
                 {
@@ -153,7 +153,7 @@
                         "text": "确定",
                         "width": 90
                     },
-                    "name": "MyButton303",
+                    "name": "MyButton320",
                     "designerId": "14cde41f-19dd-4dd8-b05b-3efc5ac8fe10",
                     "cn": [
                         {
@@ -191,7 +191,7 @@
                         "text": "取消",
                         "width": 90
                     },
-                    "name": "MyButton304",
+                    "name": "MyButton321",
                     "designerId": "e052daa0-d350-4693-ac65-dcf106e34a69",
                     "cn": [
                         {

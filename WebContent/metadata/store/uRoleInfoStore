@@ -31,7 +31,7 @@
                 ],
                 "url": "get_RoleInfo"
             },
-            "name": "MyAjaxProxy1",
+            "name": "MyAjaxProxy2",
             "designerId": "f750d98f-a5d1-4a55-9358-2bfb10d2878f",
             "cn": [
                 {
@@ -44,7 +44,7 @@
                     "userConfig": {
                         "root": "root"
                     },
-                    "name": "MyJsonReader1",
+                    "name": "MyJsonReader2",
                     "designerId": "8410f35e-31f8-44a7-aaf7-bd922c94fa24"
                 }
             ]

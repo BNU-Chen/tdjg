@@ -22,7 +22,7 @@
                 "name": "name",
                 "type": "string"
             },
-            "name": "MyField77",
+            "name": "MyField84",
             "designerId": "d0a142e8-2f01-4a78-a03b-4171b05f5ff1"
         },
         {
@@ -36,7 +36,7 @@
                 "name": "value",
                 "type": "string"
             },
-            "name": "MyField78",
+            "name": "MyField85",
             "designerId": "cfb3f3df-de7e-44c3-82f4-0c3c49e83da9"
         }
     ]

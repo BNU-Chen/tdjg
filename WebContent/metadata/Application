@@ -61,7 +61,9 @@
             "uDeptInfoModel",
             "map_fkSampleManagementModel",
             "yqprjmonitorInfoModel",
-            "TaishiFormPanelEdit"
+            "TaishiFormPanelEdit",
+            "dbBlacklistModel",
+            "uOptLogModel"
         ],
         "name": "MyApp",
         "stores": [
@@ -172,7 +174,9 @@
             "ApplyprojectStore",
             "ApplyIdStore",
             "FKJCResultDikuaiStore",
-            "useMapResourceStore"
+            "useMapResourceStore",
+            "dbBlacklistStore",
+            "uOptLogStore"
         ],
         "views": [
             "ManagAcceptApply",
@@ -277,7 +281,10 @@
             "FieldFqdPanel",
             "TaishiFormPanelEdit",
             "use_SelectLayerWindow",
-            "use_MonitorResult"
+            "use_MonitorResult",
+            "db_BlacklistTab",
+            "db_BlacklistWindow",
+            "db_RoleRightSettingWindow"
         ]
     },
     "name": "Application",

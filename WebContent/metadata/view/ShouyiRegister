@@ -37,7 +37,7 @@
                 "layout|y": 140,
                 "name": "zjlcf"
             },
-            "name": "MyTextField53",
+            "name": "MyTextField57",
             "designerId": "cefd9328-5ed3-4e33-9af9-d3f215258185"
         },
         {
@@ -55,7 +55,7 @@
                 "layout|y": 200,
                 "name": "yt"
             },
-            "name": "MyTextField54",
+            "name": "MyTextField58",
             "designerId": "ce8d3fa3-9a0f-47ef-866d-7b111a645e37"
         },
         {
@@ -73,7 +73,7 @@
                 "layout|y": 140,
                 "name": "zjlrf"
             },
-            "name": "MyTextField55",
+            "name": "MyTextField59",
             "designerId": "cc2e3831-57d5-48b0-a8aa-c4885531d3b6"
         },
         {
@@ -91,7 +91,7 @@
                 "layout|y": 200,
                 "name": "jbr"
             },
-            "name": "MyTextField56",
+            "name": "MyTextField60",
             "designerId": "cd2abf79-b10b-4054-813c-a9bd83fabd6a"
         },
         {
@@ -109,7 +109,7 @@
                 "layout|y": 20,
                 "name": "pjh"
             },
-            "name": "MyTextField57",
+            "name": "MyTextField61",
             "designerId": "dc1bb1cb-2fb1-4c76-a097-7b4b9e264ba6"
         },
         {
@@ -127,7 +127,7 @@
                 "layout|y": 80,
                 "name": "je"
             },
-            "name": "MyTextField58",
+            "name": "MyTextField62",
             "designerId": "f94b6ce2-e8ff-4f23-97d1-9a812ed9b2e2"
         },
         {
@@ -146,7 +146,7 @@
                 "layout|y": 80,
                 "name": "jysj"
             },
-            "name": "MyDateField4",
+            "name": "MyDateField5",
             "designerId": "acb8f2a3-b085-46a0-bc80-a5f9a2d10e4e"
         },
         {
@@ -168,7 +168,7 @@
                 "store": "ShouyiCombox",
                 "valueField": "value"
             },
-            "name": "MyComboBox2",
+            "name": "MyComboBox3",
             "designerId": "6c5d45b1-9864-4426-a7ba-f0e9098cdec4"
         },
         {
@@ -190,7 +190,7 @@
                 "store": "ShouyiRegisterHtbh",
                 "valueField": "value"
             },
-            "name": "MyComboBox3",
+            "name": "MyComboBox4",
             "designerId": "e66ceef5-0ca7-4b60-9531-0efe41869cec"
         },
         {
@@ -226,7 +226,7 @@
                 "text": "保存",
                 "width": 90
             },
-            "name": "MyButton32",
+            "name": "MyButton38",
             "designerId": "8e7ffc5b-84fd-43a9-8621-49c4c4dce2f5",
             "cn": [
                 {

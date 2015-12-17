@@ -24,7 +24,7 @@
             "userConfig": {
                 "url": "get_xunchaRWList"
             },
-            "name": "MyAjaxProxy71",
+            "name": "MyAjaxProxy72",
             "designerId": "d75bef4f-4ed9-4d9b-be68-fd8763dd4cbc",
             "cn": [
                 {
@@ -37,7 +37,7 @@
                     "userConfig": {
                         "root": "root"
                     },
-                    "name": "MyJsonReader71",
+                    "name": "MyJsonReader72",
                     "designerId": "5c26f4f8-288e-44f0-ba85-810d055e8cce"
                 }
             ]

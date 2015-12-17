@@ -26,7 +26,7 @@
             "userConfig": {
                 "url": "get_BackupRecoveryList"
             },
-            "name": "MyAjaxProxy25",
+            "name": "MyAjaxProxy26",
             "designerId": "681a8b2c-a4d0-45f2-b7c5-3e1186191926",
             "cn": [
                 {
@@ -39,7 +39,7 @@
                     "userConfig": {
                         "root": "root"
                     },
-                    "name": "MyJsonReader25",
+                    "name": "MyJsonReader26",
                     "designerId": "77b6bb06-40fb-47ad-8ccd-03a77d456bb3"
                 }
             ]

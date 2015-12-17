@@ -28,7 +28,7 @@
             "userConfig": {
                 "name": "resourceId"
             },
-            "name": "MyField462",
+            "name": "MyField475",
             "designerId": "129c0f46-f3a2-41d4-9738-57f268cc2660"
         },
         {
@@ -41,7 +41,7 @@
             "userConfig": {
                 "name": "resourceName"
             },
-            "name": "MyField463",
+            "name": "MyField476",
             "designerId": "958eb784-9b05-413b-a64c-8033c7e462c5"
         },
         {
@@ -54,7 +54,7 @@
             "userConfig": {
                 "name": "resourceType"
             },
-            "name": "MyField464",
+            "name": "MyField477",
             "designerId": "b2e00830-9de7-4206-94af-9a9f9076510e"
         },
         {
@@ -67,7 +67,7 @@
             "userConfig": {
                 "name": "resourceUrl"
             },
-            "name": "MyField465",
+            "name": "MyField478",
             "designerId": "73734ef8-e69a-487e-ba57-c9fa699ae9a3"
         },
         {
@@ -80,7 +80,7 @@
             "userConfig": {
                 "name": "enabled"
             },
-            "name": "MyField466",
+            "name": "MyField479",
             "designerId": "a87a3f05-bd9b-40d6-a416-5eb18b956eea"
         },
         {
@@ -93,7 +93,7 @@
             "userConfig": {
                 "name": "description"
             },
-            "name": "MyField467",
+            "name": "MyField480",
             "designerId": "afec1533-4662-4622-9694-1f49500fe535"
         }
     ]

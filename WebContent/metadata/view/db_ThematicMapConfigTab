@@ -192,7 +192,7 @@
                     "userConfig": {
                         "dock": "top"
                     },
-                    "name": "MyToolbar33",
+                    "name": "MyToolbar35",
                     "designerId": "a4b209e7-98c5-4dc0-a5e9-425691a43781",
                     "cn": [
                         {
@@ -206,7 +206,7 @@
                                 "layout|flex": null,
                                 "text": "刷新"
                             },
-                            "name": "MyButton124",
+                            "name": "MyButton141",
                             "designerId": "38c8cb76-1c80-400e-85b5-bda75f4dcd57"
                         },
                         {
@@ -220,7 +220,7 @@
                                 "layout|flex": null,
                                 "text": "保存"
                             },
-                            "name": "MyButton125",
+                            "name": "MyButton142",
                             "designerId": "d1558e9c-d71c-48ec-9b7e-e9b03d99f763"
                         },
                         {
@@ -234,7 +234,7 @@
                                 "layout|flex": null,
                                 "text": "发布成地图"
                             },
-                            "name": "MyButton126",
+                            "name": "MyButton143",
                             "designerId": "bcf06fb5-39f8-4578-a877-21312a760255"
                         }
                     ]

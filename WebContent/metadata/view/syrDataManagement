@@ -34,7 +34,7 @@
                 "title": "",
                 "width": null
             },
-            "name": "MyForm22",
+            "name": "MyForm23",
             "designerId": "b46e8f7f-b557-48d3-8f09-716e2b80d5a5",
             "cn": [
                 {
@@ -55,7 +55,7 @@
                         "subGridXType": "",
                         "title": ""
                     },
-                    "name": "MyGridPanel18",
+                    "name": "MyGridPanel19",
                     "designerId": "401580bd-78b1-48ad-809e-7b0f88fdddd3",
                     "cn": [
                         {
@@ -70,7 +70,7 @@
                                 "dock": "top",
                                 "fixed": true
                             },
-                            "name": "MyToolbar23",
+                            "name": "MyToolbar25",
                             "designerId": "4d918b7b-6ca3-48e8-85aa-7686178ca739",
                             "cn": [
                                 {
@@ -87,7 +87,7 @@
                                         "layout|flex": null,
                                         "width": 171
                                     },
-                                    "name": "MyTextField121",
+                                    "name": "MyTextField125",
                                     "designerId": "76669c6c-3b91-40f0-be5f-590ad32c0f0a"
                                 },
                                 {
@@ -113,7 +113,7 @@
                                         "valueField": "areaCode",
                                         "width": 75
                                     },
-                                    "name": "MyComboBox11",
+                                    "name": "MyComboBox12",
                                     "designerId": "8176e53c-21d0-42e2-9f15-217e712d39cd",
                                     "cn": [
                                         {
@@ -199,7 +199,7 @@
                                         "valueField": "areaCode",
                                         "width": 75
                                     },
-                                    "name": "MyComboBox12",
+                                    "name": "MyComboBox13",
                                     "designerId": "7aeceb66-2797-4d9e-93ee-cd9431641ff5",
                                     "cn": [
                                         {
@@ -267,7 +267,7 @@
                                         "valueField": "areaCode",
                                         "width": 76
                                     },
-                                    "name": "MyComboBox13",
+                                    "name": "MyComboBox14",
                                     "designerId": "a416d2b1-80e9-4434-843e-7f8a3c15505b",
                                     "cn": [
                                         {
@@ -331,7 +331,7 @@
                                         "valueField": "areaCode",
                                         "width": 112
                                     },
-                                    "name": "MyComboBox14",
+                                    "name": "MyComboBox15",
                                     "designerId": "47f8a88b-bbd3-4db8-b044-6b800067c37e"
                                 },
                                 {
@@ -349,7 +349,7 @@
                                         "layout|flex": null,
                                         "width": 191
                                     },
-                                    "name": "MyDateField28",
+                                    "name": "MyDateField29",
                                     "designerId": "3ed0862f-ceb4-4170-ad54-23c8e73cce25"
                                 },
                                 {
@@ -368,7 +368,7 @@
                                         "layout|flex": null,
                                         "width": 140
                                     },
-                                    "name": "MyDateField29",
+                                    "name": "MyDateField30",
                                     "designerId": "5b8e4610-dce3-4efa-9fd2-0786e8448d05"
                                 },
                                 {
@@ -385,7 +385,7 @@
                                         "text": "搜索",
                                         "width": 50
                                     },
-                                    "name": "MyButton94",
+                                    "name": "MyButton100",
                                     "designerId": "429051a9-3067-46b8-9fc6-24220266cfe5",
                                     "customConfigs": [
                                         {
@@ -457,7 +457,7 @@
                             "userConfig": {
                                 "dock": "top"
                             },
-                            "name": "MyToolbar24",
+                            "name": "MyToolbar26",
                             "designerId": "7bff4000-c47f-4eee-a62c-198356dd9216",
                             "cn": [
                                 {
@@ -472,7 +472,7 @@
                                         "text": "监测任务计划表",
                                         "width": 123
                                     },
-                                    "name": "MyButton95",
+                                    "name": "MyButton101",
                                     "designerId": "22a02987-d369-476e-ae0f-b6ce3ee4c058",
                                     "cn": [
                                         {
@@ -562,7 +562,7 @@
                                         "text": "现场调查数据",
                                         "width": 124
                                     },
-                                    "name": "MyButton96",
+                                    "name": "MyButton102",
                                     "designerId": "06715b4f-e167-4f40-a678-df47429d9aa6",
                                     "cn": [
                                         {
@@ -648,7 +648,7 @@
                                         "text": "动态监测分析",
                                         "width": 121
                                     },
-                                    "name": "MyButton97",
+                                    "name": "MyButton103",
                                     "designerId": "3dc540c3-5d35-470c-a4f2-9878d89ebabb",
                                     "cn": [
                                         {
@@ -733,7 +733,7 @@
                                 "hidden": true,
                                 "text": "记录号"
                             },
-                            "name": "MyColumn108",
+                            "name": "MyColumn113",
                             "designerId": "a26681f7-443c-42d8-88ac-b845d893ddc0"
                         },
                         {
@@ -743,7 +743,7 @@
                                 "type": "array"
                             },
                             "codeClass": null,
-                            "name": "MyRowNumberer14",
+                            "name": "MyRowNumberer15",
                             "designerId": "bc882496-e8c0-47e7-ae8a-a4b512df520c"
                         },
                         {
@@ -758,7 +758,7 @@
                                 "dataIndex": "projectId",
                                 "text": "项目编号"
                             },
-                            "name": "MyColumn109",
+                            "name": "MyColumn114",
                             "designerId": "0516e003-4b9b-4d97-8671-dacf6c1394af"
                         },
                         {
@@ -773,7 +773,7 @@
                                 "text": "项目名称",
                                 "width": 300
                             },
-                            "name": "MyColumn110",
+                            "name": "MyColumn115",
                             "designerId": "4de9f822-67b3-4ef0-8014-d111ec1213b8"
                         },
                         {
@@ -788,7 +788,7 @@
                                 "hidden": true,
                                 "text": "行政区位"
                             },
-                            "name": "MyColumn111",
+                            "name": "MyColumn116",
                             "designerId": "8ed47099-3c84-457a-a47e-8de1c0d75839"
                         },
                         {
@@ -804,7 +804,7 @@
                                 "format": "Y-m-d",
                                 "text": "施工时间"
                             },
-                            "name": "MyDateColumn14",
+                            "name": "MyDateColumn15",
                             "designerId": "0e40513e-8361-49a9-87cf-45d123165e97"
                         },
                         {
@@ -820,7 +820,7 @@
                                 "format": "Y-m-d",
                                 "text": "最新监测时间"
                             },
-                            "name": "MyDateColumn15",
+                            "name": "MyDateColumn16",
                             "designerId": "d06af1a2-96cf-4927-8b0a-976e1e3a8426"
                         },
                         {
@@ -895,7 +895,7 @@
                                 "type": "object"
                             },
                             "codeClass": null,
-                            "name": "MyGridView18",
+                            "name": "MyGridView19",
                             "designerId": "44e7f99c-787a-461c-b44c-5e82b261eeae"
                         },
                         {
@@ -905,7 +905,7 @@
                                 "type": "object"
                             },
                             "codeClass": "Ext.selection.CheckboxModel",
-                            "name": "MyCheckboxSelectionModel11",
+                            "name": "MyCheckboxSelectionModel12",
                             "designerId": "aed4f5be-e52f-4b61-8029-aa96fdfe9438"
                         },
                         {

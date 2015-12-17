@@ -69,7 +69,7 @@
                                 "store": "ArticlePubYWJSStore",
                                 "title": ""
                             },
-                            "name": "MyGridPanel49",
+                            "name": "MyGridPanel50",
                             "designerId": "5dd39969-b2a3-4c10-9889-4087df4dc894",
                             "cn": [
                                 {
@@ -83,7 +83,7 @@
                                         "text": "记录号",
                                         "width": 47
                                     },
-                                    "name": "MyRowNumberer41",
+                                    "name": "MyRowNumberer42",
                                     "designerId": "2630251b-5abf-4708-89e6-1660629b0307"
                                 },
                                 {
@@ -98,7 +98,7 @@
                                         "text": "信息标题",
                                         "tooltip": "点击查看详细信息"
                                     },
-                                    "name": "MyColumn232",
+                                    "name": "MyColumn238",
                                     "designerId": "71c6f908-cc44-406c-9e63-9b444f270739"
                                 },
                                 {
@@ -112,7 +112,7 @@
                                         "dataIndex": "articleAuthor",
                                         "text": "作者"
                                     },
-                                    "name": "MyColumn233",
+                                    "name": "MyColumn239",
                                     "designerId": "9a1f43a4-a468-4343-a0f9-093ac204a758"
                                 },
                                 {
@@ -127,7 +127,7 @@
                                         "format": "Y-m-d",
                                         "text": "发布时间"
                                     },
-                                    "name": "MyDateColumn43",
+                                    "name": "MyDateColumn44",
                                     "designerId": "6342a37a-e8d7-4d10-8b9c-c5500e6c277b"
                                 },
                                 {
@@ -137,7 +137,7 @@
                                         "type": "object"
                                     },
                                     "codeClass": null,
-                                    "name": "MyGridView49",
+                                    "name": "MyGridView50",
                                     "designerId": "4cb08b60-2920-4594-b6d9-4f231df4e89d"
                                 },
                                 {
@@ -147,7 +147,7 @@
                                         "type": "object"
                                     },
                                     "codeClass": "Ext.selection.CheckboxModel",
-                                    "name": "MyCheckboxSelectionModel41",
+                                    "name": "MyCheckboxSelectionModel42",
                                     "designerId": "9a6f0927-4dc7-4da9-a8e3-06964e4efe6a"
                                 },
                                 {
@@ -163,7 +163,7 @@
                                         "frame": false,
                                         "height": null
                                     },
-                                    "name": "MyToolbar63",
+                                    "name": "MyToolbar65",
                                     "designerId": "7c92466b-4210-44d2-ab29-98f79ed00699",
                                     "cn": [
                                         {
@@ -181,7 +181,7 @@
                                                 "layout|flex": null,
                                                 "width": 204
                                             },
-                                            "name": "MyDateField54",
+                                            "name": "MyDateField55",
                                             "designerId": "ab76f8b2-418d-4f06-a79a-362fb4bd0bff"
                                         },
                                         {
@@ -199,7 +199,7 @@
                                                 "layout|flex": null,
                                                 "width": 211
                                             },
-                                            "name": "MyTextField218",
+                                            "name": "MyTextField222",
                                             "designerId": "6e31c0d7-e142-4b2c-a145-8b76d476a327"
                                         },
                                         {
@@ -214,7 +214,7 @@
                                                 "layout|flex": null,
                                                 "text": "搜索"
                                             },
-                                            "name": "MyButton243",
+                                            "name": "MyButton260",
                                             "designerId": "17d7dd9e-d1f0-49ec-b2a7-24be02d3c82e",
                                             "cn": [
                                                 {
@@ -284,7 +284,7 @@
                                                 "layout|flex": null,
                                                 "text": "发表新信息"
                                             },
-                                            "name": "MyButton244",
+                                            "name": "MyButton261",
                                             "designerId": "60da969a-04cc-4d35-babf-6d8800ada909",
                                             "cn": [
                                                 {
@@ -499,7 +499,7 @@
                                                 "text": "移入回收站",
                                                 "width": null
                                             },
-                                            "name": "MyButton245",
+                                            "name": "MyButton262",
                                             "designerId": "a3b802c9-ac76-40fd-b139-048dfdac3d05",
                                             "cn": [
                                                 {
@@ -738,7 +738,7 @@
                                 "store": "ArticleDraftYWJSStore",
                                 "title": ""
                             },
-                            "name": "MyGridPanel50",
+                            "name": "MyGridPanel51",
                             "designerId": "866ce9f1-3a88-4dd1-9499-021c3b376553",
                             "cn": [
                                 {
@@ -752,7 +752,7 @@
                                         "text": "记录号",
                                         "width": 47
                                     },
-                                    "name": "MyRowNumberer42",
+                                    "name": "MyRowNumberer43",
                                     "designerId": "af5f35d0-d2e2-46ab-a72f-e67f9ea8b611"
                                 },
                                 {
@@ -766,7 +766,7 @@
                                         "dataIndex": "articleName",
                                         "text": "标题"
                                     },
-                                    "name": "MyColumn234",
+                                    "name": "MyColumn240",
                                     "designerId": "8a3d3805-203a-4d09-be13-6e9987b585ca"
                                 },
                                 {
@@ -780,7 +780,7 @@
                                         "dataIndex": "articleAuthor",
                                         "text": "作者"
                                     },
-                                    "name": "MyColumn235",
+                                    "name": "MyColumn241",
                                     "designerId": "7bf35631-e8df-44a6-aa70-c811c7139a39"
                                 },
                                 {
@@ -795,7 +795,7 @@
                                         "text": "内容",
                                         "width": 420
                                     },
-                                    "name": "MyColumn236",
+                                    "name": "MyColumn242",
                                     "designerId": "c15ab7bb-2635-4c9c-af68-7b0bb1c4a6c1"
                                 },
                                 {
@@ -805,7 +805,7 @@
                                         "type": "object"
                                     },
                                     "codeClass": null,
-                                    "name": "MyGridView50",
+                                    "name": "MyGridView51",
                                     "designerId": "20254a83-4eff-434e-8507-c07d8bf0fd1b"
                                 },
                                 {
@@ -815,7 +815,7 @@
                                         "type": "object"
                                     },
                                     "codeClass": "Ext.selection.CheckboxModel",
-                                    "name": "MyCheckboxSelectionModel42",
+                                    "name": "MyCheckboxSelectionModel43",
                                     "designerId": "67c45d74-d65d-40be-9b86-076246756bd8"
                                 },
                                 {
@@ -831,7 +831,7 @@
                                         "frame": false,
                                         "height": null
                                     },
-                                    "name": "MyToolbar64",
+                                    "name": "MyToolbar66",
                                     "designerId": "d1b01d0f-ba85-437d-8efe-ebbfca15cae7",
                                     "cn": [
                                         {
@@ -850,7 +850,7 @@
                                                 "layout|flex": null,
                                                 "width": 204
                                             },
-                                            "name": "MyDateField55",
+                                            "name": "MyDateField56",
                                             "designerId": "4672bf89-1dfa-4754-a404-1c271211176a"
                                         },
                                         {
@@ -868,7 +868,7 @@
                                                 "layout|flex": null,
                                                 "width": 211
                                             },
-                                            "name": "MyTextField219",
+                                            "name": "MyTextField223",
                                             "designerId": "dc79ba6a-dabc-4681-a2e5-0983e8757809"
                                         },
                                         {
@@ -883,7 +883,7 @@
                                                 "layout|flex": null,
                                                 "text": "搜索"
                                             },
-                                            "name": "MyButton246",
+                                            "name": "MyButton263",
                                             "designerId": "5d0e428b-0bd6-4f1d-9eba-4fc199bd04ba",
                                             "cn": [
                                                 {
@@ -953,7 +953,7 @@
                                                 "layout|flex": null,
                                                 "text": "信息发布"
                                             },
-                                            "name": "MyButton247",
+                                            "name": "MyButton264",
                                             "designerId": "0f9947ed-2162-414f-bfe6-5c8af14c0bfa",
                                             "cn": [
                                                 {
@@ -1024,7 +1024,7 @@
                                                 "layout|flex": null,
                                                 "text": "彻底删除"
                                             },
-                                            "name": "MyButton248",
+                                            "name": "MyButton265",
                                             "designerId": "4ce78214-e7d0-40ea-b134-c15a8a403fe0",
                                             "cn": [
                                                 {
@@ -1334,7 +1334,7 @@
                                 "store": "ArticleRecYWJSStore",
                                 "title": ""
                             },
-                            "name": "MyGridPanel51",
+                            "name": "MyGridPanel52",
                             "designerId": "8ee7269f-5378-4acc-b535-49d75c183f82",
                             "cn": [
                                 {
@@ -1348,7 +1348,7 @@
                                         "text": "记录号",
                                         "width": 47
                                     },
-                                    "name": "MyRowNumberer43",
+                                    "name": "MyRowNumberer44",
                                     "designerId": "942f6659-d568-4464-b92a-1cd066b74d55"
                                 },
                                 {
@@ -1362,7 +1362,7 @@
                                         "dataIndex": "articleName",
                                         "text": "标题"
                                     },
-                                    "name": "MyColumn237",
+                                    "name": "MyColumn243",
                                     "designerId": "be9e4f7b-2783-4391-8c09-9c81d8e804b4"
                                 },
                                 {
@@ -1376,7 +1376,7 @@
                                         "dataIndex": "articleAuthor",
                                         "text": "作者"
                                     },
-                                    "name": "MyColumn238",
+                                    "name": "MyColumn244",
                                     "designerId": "3d3da61f-561f-4365-989c-fabf9dace5d9"
                                 },
                                 {
@@ -1391,7 +1391,7 @@
                                         "format": "Y-m-d",
                                         "text": "发布时间"
                                     },
-                                    "name": "MyDateColumn44",
+                                    "name": "MyDateColumn45",
                                     "designerId": "c82751bd-559a-40dd-ad30-76d077fcda37"
                                 },
                                 {
@@ -1401,7 +1401,7 @@
                                         "type": "object"
                                     },
                                     "codeClass": null,
-                                    "name": "MyGridView51",
+                                    "name": "MyGridView52",
                                     "designerId": "d2750be7-908b-419b-b472-c36f58c46bfd"
                                 },
                                 {
@@ -1411,7 +1411,7 @@
                                         "type": "object"
                                     },
                                     "codeClass": "Ext.selection.CheckboxModel",
-                                    "name": "MyCheckboxSelectionModel43",
+                                    "name": "MyCheckboxSelectionModel44",
                                     "designerId": "11440d7a-1593-4d47-a742-f4803e2e7d38"
                                 },
                                 {
@@ -1427,7 +1427,7 @@
                                         "frame": false,
                                         "height": null
                                     },
-                                    "name": "MyToolbar65",
+                                    "name": "MyToolbar67",
                                     "designerId": "d5768d0c-10b5-48c1-849b-5c9c033574e1",
                                     "cn": [
                                         {
@@ -1445,7 +1445,7 @@
                                                 "layout|flex": null,
                                                 "width": 204
                                             },
-                                            "name": "MyDateField56",
+                                            "name": "MyDateField57",
                                             "designerId": "28830355-7f8a-438a-8f44-8e8299fb4c72"
                                         },
                                         {
@@ -1463,7 +1463,7 @@
                                                 "layout|flex": null,
                                                 "width": 211
                                             },
-                                            "name": "MyTextField220",
+                                            "name": "MyTextField224",
                                             "designerId": "8fba9915-39c3-40e5-8685-c8ad5dbc3572"
                                         },
                                         {
@@ -1478,7 +1478,7 @@
                                                 "layout|flex": null,
                                                 "text": "搜索"
                                             },
-                                            "name": "MyButton249",
+                                            "name": "MyButton266",
                                             "designerId": "3808a36b-ebdd-436f-99cf-a356227aff02",
                                             "cn": [
                                                 {
@@ -1548,7 +1548,7 @@
                                                 "layout|flex": null,
                                                 "text": "恢复"
                                             },
-                                            "name": "MyButton250",
+                                            "name": "MyButton267",
                                             "designerId": "4b0e8108-fda1-4298-a8b6-828ff4c0e9d7",
                                             "cn": [
                                                 {
@@ -1619,7 +1619,7 @@
                                                 "layout|flex": null,
                                                 "text": "彻底删除"
                                             },
-                                            "name": "MyButton251",
+                                            "name": "MyButton268",
                                             "designerId": "f22a59f2-a4aa-43fc-988f-d6948fc59763",
                                             "cn": [
                                                 {

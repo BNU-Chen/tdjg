@@ -30,7 +30,7 @@
                 "layout": "absolute",
                 "title": null
             },
-            "name": "MyForm40",
+            "name": "MyForm41",
             "designerId": "06b153de-6f61-4b4b-9c0d-6585488876f1",
             "cn": [
                 {
@@ -429,7 +429,7 @@
                         "layout|y": 550,
                         "text": "确定并发送邮件"
                     },
-                    "name": "MyButton215",
+                    "name": "MyButton232",
                     "designerId": "2db27e80-6a08-4d26-a87f-32ca6aaef5d7",
                     "cn": [
                         {
@@ -483,7 +483,7 @@
                         "text": "取消",
                         "width": 90
                     },
-                    "name": "MyButton216",
+                    "name": "MyButton233",
                     "designerId": "6c07e423-514c-45da-af9c-5c65de4146ba",
                     "cn": [
                         {

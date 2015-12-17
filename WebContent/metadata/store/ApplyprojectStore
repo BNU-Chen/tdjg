@@ -27,7 +27,7 @@
                 "extraParams": null,
                 "url": "ApplyListname"
             },
-            "name": "MyAjaxProxy32",
+            "name": "MyAjaxProxy33",
             "designerId": "423a3785-e0fb-4222-a9e9-e5ac517bafd1",
             "cn": [
                 {
@@ -40,7 +40,7 @@
                     "userConfig": {
                         "root": "root"
                     },
-                    "name": "MyJsonReader32",
+                    "name": "MyJsonReader33",
                     "designerId": "b5537710-fef0-431e-8f0f-b0b7d9c4cd1b"
                 }
             ]

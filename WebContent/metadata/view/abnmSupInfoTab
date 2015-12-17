@@ -69,7 +69,7 @@
                                 "store": "ArticlePubWFJCStore",
                                 "title": ""
                             },
-                            "name": "MyGridPanel69",
+                            "name": "MyGridPanel70",
                             "designerId": "0ae13927-d661-4d89-92a9-9b05e72496cc",
                             "cn": [
                                 {
@@ -83,7 +83,7 @@
                                         "text": "记录号",
                                         "width": 47
                                     },
-                                    "name": "MyRowNumberer61",
+                                    "name": "MyRowNumberer62",
                                     "designerId": "555f6a4d-68e2-484d-85bc-fd34fbda09ea"
                                 },
                                 {
@@ -98,7 +98,7 @@
                                         "text": "信息标题",
                                         "tooltip": "点击查看详细信息"
                                     },
-                                    "name": "MyColumn302",
+                                    "name": "MyColumn308",
                                     "designerId": "64d23f15-e601-49b4-9178-6e562aad6445"
                                 },
                                 {
@@ -112,7 +112,7 @@
                                         "dataIndex": "articleAuthor",
                                         "text": "作者"
                                     },
-                                    "name": "MyColumn303",
+                                    "name": "MyColumn309",
                                     "designerId": "240d3f0e-ad2f-406b-9946-fcf10fbfe255"
                                 },
                                 {
@@ -127,7 +127,7 @@
                                         "format": "Y-m-d",
                                         "text": "发布时间"
                                     },
-                                    "name": "MyDateColumn65",
+                                    "name": "MyDateColumn66",
                                     "designerId": "2839ca6c-7b3a-418d-a494-596af7c97245"
                                 },
                                 {
@@ -143,7 +143,7 @@
                                         "id": null,
                                         "text": "评论数"
                                     },
-                                    "name": "MyColumn304",
+                                    "name": "MyColumn310",
                                     "designerId": "bd3d800f-39be-47bb-a1cc-d970c979268d"
                                 },
                                 {
@@ -153,7 +153,7 @@
                                         "type": "object"
                                     },
                                     "codeClass": null,
-                                    "name": "MyGridView69",
+                                    "name": "MyGridView70",
                                     "designerId": "37a5a087-9805-4fd2-86f3-b5ba1793068f"
                                 },
                                 {
@@ -163,7 +163,7 @@
                                         "type": "object"
                                     },
                                     "codeClass": "Ext.selection.CheckboxModel",
-                                    "name": "MyCheckboxSelectionModel61",
+                                    "name": "MyCheckboxSelectionModel62",
                                     "designerId": "aeb1935c-cb39-4108-98b9-a5cb518a52bc"
                                 },
                                 {
@@ -179,7 +179,7 @@
                                         "frame": false,
                                         "height": null
                                     },
-                                    "name": "MyToolbar86",
+                                    "name": "MyToolbar88",
                                     "designerId": "35131f81-275e-4654-b10a-0043619951b0",
                                     "cn": [
                                         {
@@ -197,7 +197,7 @@
                                                 "layout|flex": null,
                                                 "width": 204
                                             },
-                                            "name": "MyDateField77",
+                                            "name": "MyDateField78",
                                             "designerId": "a12b9f92-fb63-4a30-9c1a-02265722896d"
                                         },
                                         {
@@ -215,7 +215,7 @@
                                                 "layout|flex": null,
                                                 "width": 211
                                             },
-                                            "name": "MyTextField281",
+                                            "name": "MyTextField285",
                                             "designerId": "6f02747b-5fba-45a3-b3a9-19c8c7109e34"
                                         },
                                         {
@@ -230,7 +230,7 @@
                                                 "layout|flex": null,
                                                 "text": "搜索"
                                             },
-                                            "name": "MyButton325",
+                                            "name": "MyButton342",
                                             "designerId": "2efbc0a1-4e9d-4743-aa39-3be11ac0966b",
                                             "cn": [
                                                 {
@@ -302,7 +302,7 @@
                                                 "layout|flex": null,
                                                 "text": "添加新信息"
                                             },
-                                            "name": "MyButton326",
+                                            "name": "MyButton343",
                                             "designerId": "12031ca8-a9d0-4b1e-9189-9ed903919787",
                                             "cn": [
                                                 {
@@ -517,7 +517,7 @@
                                                 "text": "移入回收站",
                                                 "width": null
                                             },
-                                            "name": "MyButton327",
+                                            "name": "MyButton344",
                                             "designerId": "cd19edc1-4983-422b-86f4-743ff33d7e50",
                                             "cn": [
                                                 {
@@ -534,51 +534,51 @@
                                                         ],
                                                         "fn": "handler",
                                                         "implHandler": [
-                                                            "var grid = Ext.getCmp('abnmSupInfoPubGrid');",
-                                                            "//var gird = this.down('grid');",
-                                                            "var record = grid.getSelectionModel().getSelection();",
-                                                            "",
-                                                            "if(record.length === 0){",
-                                                            "    Ext.Msg.alert('提示','请先选择您要操作的行！');",
-                                                            "    return;",
-                                                            "",
-                                                            "}else{",
-                                                            "",
-                                                            "",
-                                                            "    //var articleIds='';",
-                                                            "    //for(var i=0;i<record.length;i++)",
-                                                            "    //{",
-                                                            "    //    articleIds+=record[i].get(\"articleId\");",
-                                                            "    //    if(i<record.length-1)articleIds=articleIds+\",\";",
-                                                            "    //}",
-                                                            "    //Ext.Msg.alert('提示',articleIds);",
-                                                            "",
-                                                            "",
-                                                            "",
-                                                            "    var  articleIds =new Array(record.length);",
-                                                            "    for(var i = 0;i<record.length;i++){",
-                                                            "        articleIds[i] = record[i].get(\"articleId\");",
-                                                            "",
-                                                            "    }",
-                                                            "    //Ext.Msg.alert('提示',articleIds);",
-                                                            "",
-                                                            "",
-                                                            "",
-                                                            "    Ext.Ajax.request({",
-                                                            "        url:'update_articleToRecycle',",
-                                                            "        params:{articleIds:articleIds},",
-                                                            "",
-                                                            "        success:function(response){",
-                                                            "            Ext.Msg.alert('成功','文章放入到回收站');",
-                                                            "            var mystore = Ext.StoreMgr.get('ArticleRecWFJCStore');",
-                                                            "            mystore.load();",
-                                                            "            var mystore2 = Ext.StoreMgr.get('ArticlePubWFJCStore');",
-                                                            "            mystore2.load();",
-                                                            "",
-                                                            "        }",
-                                                            "",
-                                                            "    });",
-                                                            "",
+                                                            "var grid = Ext.getCmp('articlePubGrid12');\r",
+                                                            "//var gird = this.down('grid');\r",
+                                                            "var record = grid.getSelectionModel().getSelection();\r",
+                                                            "\r",
+                                                            "if(record.length === 0){\r",
+                                                            "    Ext.Msg.alert('提示','请先选择您要操作的行！');    \r",
+                                                            "    return;\r",
+                                                            "\r",
+                                                            "}else{\r",
+                                                            "\r",
+                                                            "\r",
+                                                            "    //var articleIds='';\r",
+                                                            "    //for(var i=0;i<record.length;i++)\r",
+                                                            "    //{\r",
+                                                            "    //    articleIds+=record[i].get(\"articleId\");\r",
+                                                            "    //    if(i<record.length-1)articleIds=articleIds+\",\";\r",
+                                                            "    //}\r",
+                                                            "    //Ext.Msg.alert('提示',articleIds);\r",
+                                                            "\r",
+                                                            "\r",
+                                                            "\r",
+                                                            "    var  articleIds =new Array(record.length);\r",
+                                                            "    for(var i = 0;i<record.length;i++){\r",
+                                                            "        articleIds[i] = record[i].get(\"articleId\");\r",
+                                                            "\r",
+                                                            "    }\r",
+                                                            "    //Ext.Msg.alert('提示',articleIds);\r",
+                                                            "\r",
+                                                            "\r",
+                                                            "\r",
+                                                            "    Ext.Ajax.request({\r",
+                                                            "        url:'update_articleToRecycle',\r",
+                                                            "        params:{articleIds:articleIds},\r",
+                                                            "\r",
+                                                            "        success:function(response){\r",
+                                                            "            Ext.Msg.alert('成功','文章放入到回收站');\r",
+                                                            "            var mystore = Ext.StoreMgr.get('ArticleRecWFJCStore');\r",
+                                                            "            mystore.load();\r",
+                                                            "            var mystore2 = Ext.StoreMgr.get('ArticlePubWFJCStore');\r",
+                                                            "            mystore2.load();\r",
+                                                            "\r",
+                                                            "        }\r",
+                                                            "\r",
+                                                            "    });\r",
+                                                            "\r",
                                                             "}"
                                                         ]
                                                     },
@@ -891,7 +891,7 @@
                                 "store": "ArticleDraftWFJCStore",
                                 "title": ""
                             },
-                            "name": "MyGridPanel70",
+                            "name": "MyGridPanel71",
                             "designerId": "4162dc57-73eb-441d-8ed9-186c2f9d5a5a",
                             "cn": [
                                 {
@@ -905,7 +905,7 @@
                                         "text": "记录号",
                                         "width": 47
                                     },
-                                    "name": "MyRowNumberer62",
+                                    "name": "MyRowNumberer63",
                                     "designerId": "d476239a-3892-4693-ba8a-cebdde81718b"
                                 },
                                 {
@@ -919,7 +919,7 @@
                                         "dataIndex": "articleName",
                                         "text": "标题"
                                     },
-                                    "name": "MyColumn305",
+                                    "name": "MyColumn311",
                                     "designerId": "8b5a1fc3-014e-49c0-9af2-feab5946af4b"
                                 },
                                 {
@@ -933,7 +933,7 @@
                                         "dataIndex": "articleAuthor",
                                         "text": "作者"
                                     },
-                                    "name": "MyColumn306",
+                                    "name": "MyColumn312",
                                     "designerId": "ff172a2a-97a7-4440-8505-14e865089a54"
                                 },
                                 {
@@ -948,7 +948,7 @@
                                         "text": "内容",
                                         "width": 420
                                     },
-                                    "name": "MyColumn307",
+                                    "name": "MyColumn313",
                                     "designerId": "09364c21-e48f-41ed-b47b-98ba2cfe82a6"
                                 },
                                 {
@@ -958,7 +958,7 @@
                                         "type": "object"
                                     },
                                     "codeClass": null,
-                                    "name": "MyGridView70",
+                                    "name": "MyGridView71",
                                     "designerId": "a9d25b7e-60c2-4d4d-ac67-beddb814e280"
                                 },
                                 {
@@ -968,7 +968,7 @@
                                         "type": "object"
                                     },
                                     "codeClass": "Ext.selection.CheckboxModel",
-                                    "name": "MyCheckboxSelectionModel62",
+                                    "name": "MyCheckboxSelectionModel63",
                                     "designerId": "0902b8c4-120b-4e8d-99a9-7f5e26f44b6a"
                                 },
                                 {
@@ -984,7 +984,7 @@
                                         "frame": false,
                                         "height": null
                                     },
-                                    "name": "MyToolbar87",
+                                    "name": "MyToolbar89",
                                     "designerId": "cf609dcf-fc0c-420d-987f-0e15bcfd2ffc",
                                     "cn": [
                                         {
@@ -1003,7 +1003,7 @@
                                                 "layout|flex": null,
                                                 "width": 204
                                             },
-                                            "name": "MyDateField78",
+                                            "name": "MyDateField79",
                                             "designerId": "46e95c0b-a5ab-4716-999e-981f5638d241"
                                         },
                                         {
@@ -1021,7 +1021,7 @@
                                                 "layout|flex": null,
                                                 "width": 211
                                             },
-                                            "name": "MyTextField282",
+                                            "name": "MyTextField286",
                                             "designerId": "e23353c3-c642-424f-b198-45935670dae7"
                                         },
                                         {
@@ -1036,7 +1036,7 @@
                                                 "layout|flex": null,
                                                 "text": "搜索"
                                             },
-                                            "name": "MyButton328",
+                                            "name": "MyButton345",
                                             "designerId": "0a68a905-a893-42ac-9e5b-c8ae68cbf05a",
                                             "cn": [
                                                 {
@@ -1106,7 +1106,7 @@
                                                 "layout|flex": null,
                                                 "text": "信息发布"
                                             },
-                                            "name": "MyButton329",
+                                            "name": "MyButton346",
                                             "designerId": "8ea2b2a8-6938-4892-a48e-2233795b44f6",
                                             "cn": [
                                                 {
@@ -1177,7 +1177,7 @@
                                                 "layout|flex": null,
                                                 "text": "彻底删除"
                                             },
-                                            "name": "MyButton330",
+                                            "name": "MyButton347",
                                             "designerId": "7bed4f2e-151b-45ab-9510-78f99b1c2268",
                                             "cn": [
                                                 {
@@ -1194,39 +1194,39 @@
                                                         ],
                                                         "fn": "handler",
                                                         "implHandler": [
-                                                            "var grid = Ext.getCmp('abnmSupInfoDraftGrid');",
-                                                            "",
-                                                            "var record = grid.getSelectionModel().getSelection();",
-                                                            "",
-                                                            "if(record.length === 0){",
-                                                            "    Ext.Msg.alert('提示','请先选择您要操作的行！');",
-                                                            "    return;",
-                                                            "",
-                                                            "}else{",
-                                                            "",
-                                                            "    var  articleIds =new Array(record.length);",
-                                                            "    for(var i = 0;i<record.length;i++){",
-                                                            "        articleIds[i] = record[i].get(\"articleId\");",
-                                                            "",
-                                                            "    }",
-                                                            "    //Ext.Msg.alert('提示',articleIds);",
-                                                            "",
-                                                            "",
-                                                            "",
-                                                            "    Ext.Ajax.request({",
-                                                            "        url:'del_articleByIds',",
-                                                            "        params:{articleIds:articleIds},",
-                                                            "",
-                                                            "        success:function(response){",
-                                                            "            Ext.Msg.alert('失败','文章已删除');",
-                                                            "            var mystore = Ext.StoreMgr.get('ArticleDraftWFJCStore');",
-                                                            "            mystore.load();",
-                                                            "",
-                                                            "",
-                                                            "        }",
-                                                            "",
-                                                            "    });",
-                                                            "",
+                                                            "var grid = Ext.getCmp('articleDraftGrid12');\r",
+                                                            "\r",
+                                                            "var record = grid.getSelectionModel().getSelection();\r",
+                                                            "\r",
+                                                            "if(record.length === 0){\r",
+                                                            "    Ext.Msg.alert('提示','请先选择您要操作的行！');    \r",
+                                                            "    return;\r",
+                                                            "\r",
+                                                            "}else{\r",
+                                                            "\r",
+                                                            "    var  articleIds =new Array(record.length);\r",
+                                                            "    for(var i = 0;i<record.length;i++){\r",
+                                                            "        articleIds[i] = record[i].get(\"articleId\");\r",
+                                                            "\r",
+                                                            "    }\r",
+                                                            "    //Ext.Msg.alert('提示',articleIds);\r",
+                                                            "\r",
+                                                            "\r",
+                                                            "\r",
+                                                            "    Ext.Ajax.request({\r",
+                                                            "        url:'del_articleByIds',\r",
+                                                            "        params:{articleIds:articleIds},\r",
+                                                            "\r",
+                                                            "        success:function(response){\r",
+                                                            "            Ext.Msg.alert('失败','文章已删除');\r",
+                                                            "            var mystore = Ext.StoreMgr.get('ArticleDraftWFJCStore');\r",
+                                                            "            mystore.load();\r",
+                                                            "\r",
+                                                            "\r",
+                                                            "        }\r",
+                                                            "\r",
+                                                            "    });\r",
+                                                            "\r",
                                                             "}"
                                                         ]
                                                     },
@@ -1487,7 +1487,7 @@
                                 "store": "ArticleRecWFJCStore",
                                 "title": ""
                             },
-                            "name": "MyGridPanel71",
+                            "name": "MyGridPanel72",
                             "designerId": "b4c1b9e6-388f-43be-930b-d3ba573e8a11",
                             "cn": [
                                 {
@@ -1501,7 +1501,7 @@
                                         "text": "记录号",
                                         "width": 47
                                     },
-                                    "name": "MyRowNumberer63",
+                                    "name": "MyRowNumberer64",
                                     "designerId": "263eb057-5dec-480f-9dd7-dc1002dc913e"
                                 },
                                 {
@@ -1515,7 +1515,7 @@
                                         "dataIndex": "articleName",
                                         "text": "标题"
                                     },
-                                    "name": "MyColumn308",
+                                    "name": "MyColumn314",
                                     "designerId": "3977b51b-74b0-4781-9776-5ea9fc0f97ec"
                                 },
                                 {
@@ -1529,7 +1529,7 @@
                                         "dataIndex": "articleAuthor",
                                         "text": "作者"
                                     },
-                                    "name": "MyColumn309",
+                                    "name": "MyColumn315",
                                     "designerId": "2b3c9c02-ca24-49cb-b15b-a28438928e5d"
                                 },
                                 {
@@ -1544,7 +1544,7 @@
                                         "format": "Y-m-d",
                                         "text": "发布时间"
                                     },
-                                    "name": "MyDateColumn66",
+                                    "name": "MyDateColumn67",
                                     "designerId": "8ce470ca-c1d5-43eb-b619-c7f7c65c62b1"
                                 },
                                 {
@@ -1560,7 +1560,7 @@
                                         "id": null,
                                         "text": "评论数"
                                     },
-                                    "name": "MyColumn310",
+                                    "name": "MyColumn316",
                                     "designerId": "64799372-f066-426d-a6a9-90206ee9b8d6"
                                 },
                                 {
@@ -1570,7 +1570,7 @@
                                         "type": "object"
                                     },
                                     "codeClass": null,
-                                    "name": "MyGridView71",
+                                    "name": "MyGridView72",
                                     "designerId": "c7edefec-9978-430f-90a5-6fed06530ad9"
                                 },
                                 {
@@ -1580,7 +1580,7 @@
                                         "type": "object"
                                     },
                                     "codeClass": "Ext.selection.CheckboxModel",
-                                    "name": "MyCheckboxSelectionModel63",
+                                    "name": "MyCheckboxSelectionModel64",
                                     "designerId": "eeb25776-f73c-4fa0-ba10-d4022cd22e8d"
                                 },
                                 {
@@ -1596,7 +1596,7 @@
                                         "frame": false,
                                         "height": null
                                     },
-                                    "name": "MyToolbar88",
+                                    "name": "MyToolbar90",
                                     "designerId": "26392604-12da-4470-8982-4851a9624fa6",
                                     "cn": [
                                         {
@@ -1614,7 +1614,7 @@
                                                 "layout|flex": null,
                                                 "width": 204
                                             },
-                                            "name": "MyDateField79",
+                                            "name": "MyDateField80",
                                             "designerId": "e380b38f-ec3c-46ee-9dbd-1fd1f74a3942"
                                         },
                                         {
@@ -1632,7 +1632,7 @@
                                                 "layout|flex": null,
                                                 "width": 211
                                             },
-                                            "name": "MyTextField283",
+                                            "name": "MyTextField287",
                                             "designerId": "cfcf31be-9832-48ed-a01b-48c40ecc6873"
                                         },
                                         {
@@ -1647,7 +1647,7 @@
                                                 "layout|flex": null,
                                                 "text": "搜索"
                                             },
-                                            "name": "MyButton331",
+                                            "name": "MyButton348",
                                             "designerId": "86691237-a3a8-4893-91d4-cde007e4607a",
                                             "cn": [
                                                 {
@@ -1717,7 +1717,7 @@
                                                 "layout|flex": null,
                                                 "text": "恢复"
                                             },
-                                            "name": "MyButton332",
+                                            "name": "MyButton349",
                                             "designerId": "42ec698f-03a9-484b-afa4-b8840ff613f4",
                                             "cn": [
                                                 {
@@ -1734,40 +1734,40 @@
                                                         ],
                                                         "fn": "handler",
                                                         "implHandler": [
-                                                            "var grid = Ext.getCmp('abnmSupInfoRecGrid');",
-                                                            "",
-                                                            "var record = grid.getSelectionModel().getSelection();",
-                                                            "",
-                                                            "if(record.length === 0){",
-                                                            "    Ext.Msg.alert('提示','请先选择您要操作的行！');",
-                                                            "    return;",
-                                                            "",
-                                                            "}else{",
-                                                            "",
-                                                            "    var  articleIds =new Array(record.length);",
-                                                            "    for(var i = 0;i<record.length;i++){",
-                                                            "        articleIds[i] = record[i].get(\"articleId\");",
-                                                            "",
-                                                            "    }",
-                                                            "    //Ext.Msg.alert('提示',articleIds);",
-                                                            "",
-                                                            "",
-                                                            "",
-                                                            "    Ext.Ajax.request({",
-                                                            "        url:'update_articleToPubFromRec',",
-                                                            "        params:{articleIds:articleIds},",
-                                                            "",
-                                                            "        success:function(response){",
-                                                            "            Ext.Msg.alert('成功','文章恢复到已发布');",
-                                                            "            var mystore = Ext.StoreMgr.get('ArticleRecWFJCStore');",
-                                                            "            mystore.load();",
-                                                            "            var mystore2 = Ext.StoreMgr.get('ArticlePubWFJCStore');",
-                                                            "            mystore2.load();",
-                                                            "",
-                                                            "        }",
-                                                            "",
-                                                            "    });",
-                                                            "",
+                                                            "var grid = Ext.getCmp('articleRecGrid12');\r",
+                                                            "\r",
+                                                            "var record = grid.getSelectionModel().getSelection();\r",
+                                                            "\r",
+                                                            "if(record.length === 0){\r",
+                                                            "    Ext.Msg.alert('提示','请先选择您要操作的行！');    \r",
+                                                            "    return;\r",
+                                                            "\r",
+                                                            "}else{\r",
+                                                            "\r",
+                                                            "    var  articleIds =new Array(record.length);\r",
+                                                            "    for(var i = 0;i<record.length;i++){\r",
+                                                            "        articleIds[i] = record[i].get(\"articleId\");\r",
+                                                            "\r",
+                                                            "    }\r",
+                                                            "    //Ext.Msg.alert('提示',articleIds);\r",
+                                                            "\r",
+                                                            "\r",
+                                                            "\r",
+                                                            "    Ext.Ajax.request({\r",
+                                                            "        url:'update_articleToPubFromRec',\r",
+                                                            "        params:{articleIds:articleIds},\r",
+                                                            "\r",
+                                                            "        success:function(response){\r",
+                                                            "            Ext.Msg.alert('成功','文章恢复到已发布');\r",
+                                                            "            var mystore = Ext.StoreMgr.get('ArticleRecWFJCStore');\r",
+                                                            "            mystore.load();\r",
+                                                            "            var mystore2 = Ext.StoreMgr.get('ArticlePubWFJCStore');\r",
+                                                            "            mystore2.load();\r",
+                                                            "\r",
+                                                            "        }\r",
+                                                            "\r",
+                                                            "    });\r",
+                                                            "\r",
                                                             "}"
                                                         ]
                                                     },
@@ -1788,7 +1788,7 @@
                                                 "layout|flex": null,
                                                 "text": "彻底删除"
                                             },
-                                            "name": "MyButton333",
+                                            "name": "MyButton350",
                                             "designerId": "30f49845-3a75-40bd-98b2-7ada8168a3e1",
                                             "cn": [
                                                 {
@@ -1805,39 +1805,39 @@
                                                         ],
                                                         "fn": "handler",
                                                         "implHandler": [
-                                                            "var grid = Ext.getCmp('abnmSupInfoRecGrid');",
-                                                            "",
-                                                            "var record = grid.getSelectionModel().getSelection();",
-                                                            "",
-                                                            "if(record.length === 0){",
-                                                            "    Ext.Msg.alert('提示','请先选择您要操作的行！');",
-                                                            "    return;",
-                                                            "",
-                                                            "}else{",
-                                                            "",
-                                                            "    var  articleIds =new Array(record.length);",
-                                                            "    for(var i = 0;i<record.length;i++){",
-                                                            "        articleIds[i] = record[i].get(\"articleId\");",
-                                                            "",
-                                                            "    }",
-                                                            "    //Ext.Msg.alert('提示',articleIds);",
-                                                            "",
-                                                            "",
-                                                            "",
-                                                            "    Ext.Ajax.request({",
-                                                            "        url:'del_articleByIds',",
-                                                            "        params:{articleIds:articleIds},",
-                                                            "",
-                                                            "        success:function(response){",
-                                                            "            Ext.Msg.alert('成功','文章已删除');",
-                                                            "            var mystore = Ext.StoreMgr.get('ArticleRecWFJCStore');",
-                                                            "            mystore.load();",
-                                                            "",
-                                                            "",
-                                                            "        }",
-                                                            "",
-                                                            "    });",
-                                                            "",
+                                                            "var grid = Ext.getCmp('articleRecGrid12');\r",
+                                                            "\r",
+                                                            "var record = grid.getSelectionModel().getSelection();\r",
+                                                            "\r",
+                                                            "if(record.length === 0){\r",
+                                                            "    Ext.Msg.alert('提示','请先选择您要操作的行！');    \r",
+                                                            "    return;\r",
+                                                            "\r",
+                                                            "}else{\r",
+                                                            "\r",
+                                                            "    var  articleIds =new Array(record.length);\r",
+                                                            "    for(var i = 0;i<record.length;i++){\r",
+                                                            "        articleIds[i] = record[i].get(\"articleId\");\r",
+                                                            "\r",
+                                                            "    }\r",
+                                                            "    //Ext.Msg.alert('提示',articleIds);\r",
+                                                            "\r",
+                                                            "\r",
+                                                            "\r",
+                                                            "    Ext.Ajax.request({\r",
+                                                            "        url:'del_articleByIds',\r",
+                                                            "        params:{articleIds:articleIds},\r",
+                                                            "\r",
+                                                            "        success:function(response){\r",
+                                                            "            Ext.Msg.alert('成功','文章已删除');\r",
+                                                            "            var mystore = Ext.StoreMgr.get('ArticleRecWFJCStore');\r",
+                                                            "            mystore.load();\r",
+                                                            "\r",
+                                                            "\r",
+                                                            "        }\r",
+                                                            "\r",
+                                                            "    });\r",
+                                                            "\r",
                                                             "}"
                                                         ]
                                                     },

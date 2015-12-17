@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Oct 25, 2015 6:06:14 PM by Hibernate Tools 4.0.0 -->
+<hibernate-mapping>
+    <class name="cn.edu.bnu.land.model.TestUser" table="test_user" catalog="tdlz">
+        <composite-id name="id" class="cn.edu.bnu.land.model.TestUserId">
+            <key-property name="id" type="int">
+                <column name="id" />
+            </key-property>
+            <key-property name="userName" type="string">
+                <column name="user_name" length="20" />
+            </key-property>
+            <key-property name="password" type="string">
+                <column name="password" length="20" />
+            </key-property>
+            <key-property name="email" type="string">
+                <column name="email" length="50" />
+            </key-property>
+            <key-property name="telNum" type="string">
+                <column name="tel_num" length="20" />
+            </key-property>
+            <key-property name="address" type="string">
+                <column name="address" length="100" />
+            </key-property>
+            <key-property name="isEnable" type="java.lang.Boolean">
+                <column name="is_enable" />
+            </key-property>
+            <key-property name="age" type="java.lang.Integer">
+                <column name="age" />
+            </key-property>
+        </composite-id>
+    </class>
+</hibernate-mapping>

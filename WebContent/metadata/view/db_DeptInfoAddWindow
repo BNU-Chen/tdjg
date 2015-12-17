@@ -30,7 +30,7 @@
                 "layout": "auto",
                 "title": null
             },
-            "name": "MyForm5",
+            "name": "MyForm6",
             "designerId": "6ed5bfd9-73ed-44ac-9cb4-a6cd91db06ce",
             "cn": [
                 {
@@ -43,7 +43,7 @@
                     "userConfig": {
                         "title": "上一级部门信息"
                     },
-                    "name": "MyFieldSet3",
+                    "name": "MyFieldSet4",
                     "designerId": "3ca994ed-4fb0-46f5-93bd-22b5cef47b9f",
                     "cn": [
                         {
@@ -60,7 +60,7 @@
                                 "readOnly": true,
                                 "width": 400
                             },
-                            "name": "MyTextField35",
+                            "name": "MyTextField39",
                             "designerId": "00601775-c0f3-4cfd-9233-6494a6b888c7"
                         },
                         {
@@ -78,7 +78,7 @@
                                 "validateOnChange": false,
                                 "width": 400
                             },
-                            "name": "MyTextField36",
+                            "name": "MyTextField40",
                             "designerId": "90352808-8257-4fed-b3d0-9c1d381f5c9a"
                         }
                     ]
@@ -94,7 +94,7 @@
                         "height": 258,
                         "title": "新部门信息"
                     },
-                    "name": "MyFieldSet4",
+                    "name": "MyFieldSet5",
                     "designerId": "37ebd21d-6872-4684-a6df-f852a7892697",
                     "cn": [
                         {
@@ -129,7 +129,7 @@
                                 "name": "deptName",
                                 "width": 400
                             },
-                            "name": "MyTextField37",
+                            "name": "MyTextField41",
                             "designerId": "e48a2909-73e8-4cab-9da3-a2f9bc4655d1"
                         },
                         {
@@ -166,7 +166,7 @@
                                 "layout|anchor": "100%",
                                 "name": "description"
                             },
-                            "name": "MyHtmlEditor5",
+                            "name": "MyHtmlEditor6",
                             "designerId": "7213e934-6861-4197-b1fd-aa666a2a49cd"
                         }
                     ]
@@ -199,7 +199,7 @@
                     "userConfig": {
                         "dock": "bottom"
                     },
-                    "name": "MyToolbar6",
+                    "name": "MyToolbar8",
                     "designerId": "9f117c3d-f176-445c-8fab-2ac01fd6fd8d",
                     "cn": [
                         {
@@ -212,7 +212,7 @@
                             "userConfig": {
                                 "layout|flex": null
                             },
-                            "name": "MyFill6",
+                            "name": "MyFill7",
                             "designerId": "bb82a182-dd8f-4b23-a6ce-69e46a1faa47"
                         },
                         {
@@ -226,7 +226,7 @@
                                 "layout|flex": null,
                                 "text": "取消"
                             },
-                            "name": "MyButton22",
+                            "name": "MyButton28",
                             "designerId": "abc4c616-f24b-4a4e-bdfd-2b69a3330877",
                             "cn": [
                                 {
@@ -261,7 +261,7 @@
                                 "layout|flex": null,
                                 "width": 30
                             },
-                            "name": "MySpacer6",
+                            "name": "MySpacer7",
                             "designerId": "5b58c71d-ebd8-43b3-9f35-206162402e8d"
                         },
                         {
@@ -275,7 +275,7 @@
                                 "layout|flex": null,
                                 "text": "确定"
                             },
-                            "name": "MyButton23",
+                            "name": "MyButton29",
                             "designerId": "3cf44d49-a2b3-48fd-952e-ed2026ac8667",
                             "cn": [
                                 {

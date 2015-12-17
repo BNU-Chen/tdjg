@@ -28,7 +28,7 @@
             "userConfig": {
                 "name": "rightId"
             },
-            "name": "MyField",
+            "name": "MyField6",
             "designerId": "c68b9d98-8376-4608-9c50-d403acc31a31"
         },
         {
@@ -41,8 +41,21 @@
             "userConfig": {
                 "name": "rightName"
             },
-            "name": "MyField1",
+            "name": "MyField7",
             "designerId": "de299822-21b6-4e99-a3d3-5ed5b4953d6c"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "rightIndex"
+            },
+            "name": "MyField8",
+            "designerId": "37bb16ad-2cff-468c-b6d3-bdbeace88b27"
         },
         {
             "type": "Ext.data.Field",
@@ -54,7 +67,7 @@
             "userConfig": {
                 "name": "url"
             },
-            "name": "MyField2",
+            "name": "MyField9",
             "designerId": "4258bbd8-3268-4472-acf5-e49d8f7290cc"
         },
         {
@@ -67,7 +80,7 @@
             "userConfig": {
                 "name": "enabled"
             },
-            "name": "MyField3",
+            "name": "MyField10",
             "designerId": "fbe47c4a-0a12-4687-8dcd-5a7ef4eae997"
         },
         {
@@ -80,7 +93,7 @@
             "userConfig": {
                 "name": "description"
             },
-            "name": "MyField4",
+            "name": "MyField11",
             "designerId": "b36ad461-fdfd-4c90-aedc-8a737c8ea106"
         }
     ]

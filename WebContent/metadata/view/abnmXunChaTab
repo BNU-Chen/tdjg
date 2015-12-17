@@ -28,7 +28,7 @@
                 "store": "abnmXunChaStore",
                 "title": ""
             },
-            "name": "MyGridPanel66",
+            "name": "MyGridPanel67",
             "designerId": "49d2e31b-cccc-45b8-ba2a-42a3e8470eed",
             "cn": [
                 {
@@ -38,7 +38,7 @@
                         "type": "array"
                     },
                     "codeClass": null,
-                    "name": "MyRowNumberer58",
+                    "name": "MyRowNumberer59",
                     "designerId": "26feac50-56bd-4f2c-afb9-8a1a85492d43"
                 },
                 {
@@ -52,7 +52,7 @@
                         "dataIndex": "rwId",
                         "text": "任务编号"
                     },
-                    "name": "MyColumn284",
+                    "name": "MyColumn290",
                     "designerId": "dda00c80-5922-48de-a2d1-e92b5bb013f1"
                 },
                 {
@@ -66,7 +66,7 @@
                         "dataIndex": "projectId",
                         "text": "项目编号"
                     },
-                    "name": "MyColumn285",
+                    "name": "MyColumn291",
                     "designerId": "85c7507e-eae5-4d16-9046-7928b16950cb"
                 },
                 {
@@ -80,7 +80,7 @@
                         "dataIndex": "projectName",
                         "text": "项目名称"
                     },
-                    "name": "MyColumn286",
+                    "name": "MyColumn292",
                     "designerId": "09e923ee-e054-48bb-9424-6eb62e49ffe2"
                 },
                 {
@@ -94,7 +94,7 @@
                         "dataIndex": "rwContent",
                         "text": "任务内容"
                     },
-                    "name": "MyColumn287",
+                    "name": "MyColumn293",
                     "designerId": "2d10a793-4dd6-4720-9eb3-515d450e2fa4"
                 },
                 {
@@ -108,7 +108,7 @@
                         "dataIndex": "rwClass",
                         "text": "任务类别"
                     },
-                    "name": "MyColumn288",
+                    "name": "MyColumn294",
                     "designerId": "9731fcbe-506b-4814-8791-e8daf3523025"
                 },
                 {
@@ -123,7 +123,7 @@
                         "format": "Y-m-d",
                         "text": "任务生成时间"
                     },
-                    "name": "MyDateColumn59",
+                    "name": "MyDateColumn60",
                     "designerId": "e851f7b6-0a16-4cb1-b315-b456ba291c89"
                 },
                 {
@@ -138,7 +138,7 @@
                         "format": "Y-m-d",
                         "text": "任务执行时间"
                     },
-                    "name": "MyDateColumn60",
+                    "name": "MyDateColumn61",
                     "designerId": "c07c4c79-4d93-437f-8373-895c4f3a242d"
                 },
                 {
@@ -153,7 +153,7 @@
                         "format": "Y-m-d",
                         "text": "任务结束时间"
                     },
-                    "name": "MyDateColumn61",
+                    "name": "MyDateColumn62",
                     "designerId": "3fe3d868-21fd-4fac-bdff-1667a82d45a3"
                 },
                 {
@@ -168,7 +168,7 @@
                         "format": "Y-m-d",
                         "text": "任务提交时间"
                     },
-                    "name": "MyDateColumn62",
+                    "name": "MyDateColumn63",
                     "designerId": "0bfcabb5-a414-415f-8390-65b4abc3797a"
                 },
                 {
@@ -196,7 +196,7 @@
                         "dataIndex": "rwResponsiblePerson",
                         "text": "下达任务人"
                     },
-                    "name": "MyColumn289",
+                    "name": "MyColumn295",
                     "designerId": "1bc133fa-40d6-4ee1-9131-af2aa81086d0"
                 },
                 {
@@ -206,7 +206,7 @@
                         "type": "object"
                     },
                     "codeClass": null,
-                    "name": "MyGridView66",
+                    "name": "MyGridView67",
                     "designerId": "acf3a067-d989-4980-853d-2a01da0733e5"
                 },
                 {
@@ -235,7 +235,7 @@
                     "userConfig": {
                         "dock": "top"
                     },
-                    "name": "MyToolbar80",
+                    "name": "MyToolbar82",
                     "designerId": "bf350362-3703-4ef7-91b3-7fce0a8bb63e",
                     "cn": [
                         {
@@ -250,7 +250,7 @@
                                 "layout|flex": null,
                                 "text": "任务下达"
                             },
-                            "name": "MyButton298",
+                            "name": "MyButton315",
                             "designerId": "497ddd12-a1e8-47b7-b0b7-3625222e1bfe",
                             "cn": [
                                 {
@@ -288,7 +288,7 @@
                                 "layout|flex": null,
                                 "text": "删除"
                             },
-                            "name": "MyButton299",
+                            "name": "MyButton316",
                             "designerId": "a5525638-5a3e-42a3-a3be-d05abd1cf655",
                             "cn": [
                                 {
@@ -379,7 +379,7 @@
                         "type": "object"
                     },
                     "codeClass": "Ext.selection.CheckboxModel",
-                    "name": "MyCheckboxSelectionModel58",
+                    "name": "MyCheckboxSelectionModel59",
                     "designerId": "8bbd9695-5332-40dd-8ca6-b42da1ea9588"
                 }
             ]

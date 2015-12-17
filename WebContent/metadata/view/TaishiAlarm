@@ -25,7 +25,7 @@
             "userConfig": {
                 "dock": "top"
             },
-            "name": "MyToolbar12",
+            "name": "MyToolbar14",
             "designerId": "84b34c6d-25d7-4150-9692-a01e21701e6d",
             "cn": [
                 {
@@ -48,7 +48,7 @@
                         "useStrict": false,
                         "width": 165
                     },
-                    "name": "MyDateField21",
+                    "name": "MyDateField22",
                     "designerId": "2058c87d-57fe-4a09-ba82-53faa96df7dd"
                 },
                 {
@@ -68,7 +68,7 @@
                         "layout|flex": null,
                         "width": 165
                     },
-                    "name": "MyDateField22",
+                    "name": "MyDateField23",
                     "designerId": "11e69ea9-6641-46a9-8ab1-377d03045998"
                 },
                 {
@@ -92,7 +92,7 @@
                         "valueField": "value",
                         "width": 165
                     },
-                    "name": "MyComboBox9",
+                    "name": "MyComboBox10",
                     "designerId": "358941c4-16b1-4981-b48b-b3e95aefa4eb"
                 },
                 {
@@ -107,7 +107,7 @@
                         "text": "查询",
                         "width": 40
                     },
-                    "name": "MyButton50",
+                    "name": "MyButton56",
                     "designerId": "aae35419-36bd-4d49-b6d0-295ec8aeb0a9",
                     "cn": [
                         {
@@ -166,7 +166,7 @@
                         "text": "统计分析",
                         "width": 60
                     },
-                    "name": "MyButton51",
+                    "name": "MyButton57",
                     "designerId": "471d4991-c81e-443e-becf-c1a6ee438505",
                     "cn": [
                         {
@@ -230,7 +230,7 @@
                         "text": "阈值设置",
                         "width": 60
                     },
-                    "name": "MyButton52",
+                    "name": "MyButton58",
                     "designerId": "5da5272e-7144-4319-9239-12d08f55e6fc",
                     "cn": [
                         {
@@ -272,7 +272,7 @@
                         "text": "导出报告",
                         "width": 60
                     },
-                    "name": "MyButton53",
+                    "name": "MyButton59",
                     "designerId": "cad0a321-b2f5-4ac3-9264-6f1e0911624f",
                     "cn": [
                         {
@@ -311,7 +311,7 @@
                 "store": "TaishiAlarmTable",
                 "title": "交易态势异常分析列表"
             },
-            "name": "MyGridPanel11",
+            "name": "MyGridPanel12",
             "designerId": "6f1973e0-c861-4553-a8c0-a05af6696d6d",
             "cn": [
                 {
@@ -325,7 +325,7 @@
                         "text": "序号",
                         "width": 39
                     },
-                    "name": "MyRowNumberer9",
+                    "name": "MyRowNumberer10",
                     "designerId": "b7f88b54-e0cb-45a3-aac0-f90c673f1e36"
                 },
                 {
@@ -340,7 +340,7 @@
                         "text": "异常类型",
                         "width": 150
                     },
-                    "name": "MyColumn45",
+                    "name": "MyColumn50",
                     "designerId": "784a9385-cef9-44f9-8792-690e40d6d2a0"
                 },
                 {
@@ -355,7 +355,7 @@
                         "text": "异常详情",
                         "width": 183
                     },
-                    "name": "MyColumn46",
+                    "name": "MyColumn51",
                     "designerId": "a9dd8fc3-1843-43fd-bb12-94d7d6e31d10"
                 },
                 {
@@ -370,7 +370,7 @@
                         "text": "交易区域",
                         "width": 134
                     },
-                    "name": "MyColumn47",
+                    "name": "MyColumn52",
                     "designerId": "33c55b6f-69e5-4c22-8919-3a3530f49b95"
                 },
                 {
@@ -385,7 +385,7 @@
                         "text": "合同编号",
                         "width": 66
                     },
-                    "name": "MyColumn48",
+                    "name": "MyColumn53",
                     "designerId": "cf6f339a-c89b-47ee-8f76-1a6e0994f886"
                 },
                 {
@@ -400,7 +400,7 @@
                         "text": "合同名称",
                         "width": 68
                     },
-                    "name": "MyColumn49",
+                    "name": "MyColumn54",
                     "designerId": "11eeb033-3294-4dd5-a094-024571151f2d"
                 },
                 {
@@ -415,7 +415,7 @@
                         "text": "复垦项目编号",
                         "width": 90
                     },
-                    "name": "MyColumn50",
+                    "name": "MyColumn55",
                     "designerId": "2cd5d6f8-8377-4fc1-ad9c-5860d9a2f232"
                 },
                 {
@@ -430,7 +430,7 @@
                         "text": "复垦项目名称",
                         "width": 93
                     },
-                    "name": "MyColumn51",
+                    "name": "MyColumn56",
                     "designerId": "db42a279-ebad-4b4d-a35d-aaed8b552b1c"
                 },
                 {
@@ -445,7 +445,7 @@
                         "text": "发现时间",
                         "width": 94
                     },
-                    "name": "MyDateColumn10",
+                    "name": "MyDateColumn11",
                     "designerId": "683d646e-3920-476c-a51c-a034ef8a6381"
                 },
                 {
@@ -455,7 +455,7 @@
                         "type": "object"
                     },
                     "codeClass": null,
-                    "name": "MyGridView11",
+                    "name": "MyGridView12",
                     "designerId": "3d58da53-4e5d-4aea-9005-0e72abf16259"
                 },
                 {

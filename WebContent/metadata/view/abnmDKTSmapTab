@@ -26,7 +26,7 @@
             "userConfig": {
                 "dock": "top"
             },
-            "name": "MyToolbar83",
+            "name": "MyToolbar85",
             "designerId": "cd2282fc-42ee-41fa-aef0-2910f1ccb8d8",
             "cn": [
                 {
@@ -40,7 +40,7 @@
                         "layout|flex": null,
                         "text": "返回"
                     },
-                    "name": "MyButton315",
+                    "name": "MyButton332",
                     "designerId": "3ac3608e-8038-41e9-87b0-9d796bea3fe7",
                     "cn": [
                         {

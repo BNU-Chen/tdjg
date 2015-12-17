@@ -29,7 +29,7 @@
                 "subGridXType": "",
                 "title": ""
             },
-            "name": "MyGridPanel13",
+            "name": "MyGridPanel14",
             "designerId": "cef02c48-7d52-4ac2-8327-a7401594e11b",
             "cn": [
                 {
@@ -44,7 +44,7 @@
                         "hidden": true,
                         "text": "记录号"
                     },
-                    "name": "MyColumn57",
+                    "name": "MyColumn62",
                     "designerId": "4a080d70-d8c6-4b02-a85a-46d858e4699a"
                 },
                 {
@@ -54,7 +54,7 @@
                         "type": "array"
                     },
                     "codeClass": null,
-                    "name": "MyRowNumberer10",
+                    "name": "MyRowNumberer11",
                     "designerId": "7dbfe7a2-55b7-4b6c-a9e1-620c1b8e214a"
                 },
                 {
@@ -68,7 +68,7 @@
                         "dataIndex": "landId",
                         "text": "片块号"
                     },
-                    "name": "MyColumn58",
+                    "name": "MyColumn63",
                     "designerId": "9afc5f4c-b95e-4900-9a5b-d99864507339"
                 },
                 {
@@ -82,7 +82,7 @@
                         "dataIndex": "projectId",
                         "text": "项目编号"
                     },
-                    "name": "MyColumn59",
+                    "name": "MyColumn64",
                     "designerId": "dd67b4ae-73ef-456d-a050-86dbe8b36641"
                 },
                 {
@@ -96,7 +96,7 @@
                         "dataIndex": "projectname",
                         "text": "项目名称"
                     },
-                    "name": "MyColumn60",
+                    "name": "MyColumn65",
                     "designerId": "4679220c-d887-4d24-904c-90852e29e25e"
                 },
                 {
@@ -110,7 +110,7 @@
                         "dataIndex": "personRights",
                         "text": "权利人"
                     },
-                    "name": "MyColumn61",
+                    "name": "MyColumn66",
                     "designerId": "9cf04c73-3606-4f8e-bfb5-cc85cac0fc09"
                 },
                 {
@@ -124,7 +124,7 @@
                         "dataIndex": "ownershipUnits",
                         "text": "土地产权属性"
                     },
-                    "name": "MyColumn62",
+                    "name": "MyColumn67",
                     "designerId": "c7362e68-d625-4e7c-8dd2-07781dfad1e0"
                 },
                 {
@@ -138,7 +138,7 @@
                         "dataIndex": "propertyNumber",
                         "text": "宅基地产权证号"
                     },
-                    "name": "MyColumn63",
+                    "name": "MyColumn68",
                     "designerId": "a2dce556-5939-4087-9bdd-bc697c923ac3"
                 },
                 {
@@ -152,7 +152,7 @@
                         "dataIndex": "fuKenhouPropertyNumber",
                         "text": "复垦后产权证号"
                     },
-                    "name": "MyColumn64",
+                    "name": "MyColumn69",
                     "designerId": "f1bbdfe1-c380-4191-bf6f-3a39be40da09"
                 },
                 {
@@ -166,7 +166,7 @@
                         "dataIndex": "landLocation",
                         "text": "片块位置"
                     },
-                    "name": "MyColumn65",
+                    "name": "MyColumn70",
                     "designerId": "e2d12630-b8e3-4aa9-92f7-2ebfb8e6611b"
                 },
                 {
@@ -180,7 +180,7 @@
                         "dataIndex": "fukenArea",
                         "text": "片块面积"
                     },
-                    "name": "MyColumn66",
+                    "name": "MyColumn71",
                     "designerId": "bf9c76fa-2167-44dd-8c89-98dc47b7e5a9"
                 },
                 {
@@ -194,7 +194,7 @@
                         "dataIndex": "mapSheetNumber",
                         "text": "图幅号"
                     },
-                    "name": "MyColumn67",
+                    "name": "MyColumn72",
                     "designerId": "0ecff10b-cf62-4182-bb8b-815279db8241"
                 },
                 {
@@ -208,7 +208,7 @@
                         "dataIndex": "polygonNumber",
                         "text": "图斑号"
                     },
-                    "name": "MyColumn68",
+                    "name": "MyColumn73",
                     "designerId": "78c7412d-01de-4e35-a296-0e8272a07c0f"
                 },
                 {
@@ -222,7 +222,7 @@
                         "dataIndex": "fukenqianLandUse",
                         "text": "复垦前土地利用类型"
                     },
-                    "name": "MyColumn69",
+                    "name": "MyColumn74",
                     "designerId": "14df6c68-0006-40f0-a509-9ff45d1b8879"
                 },
                 {
@@ -236,7 +236,7 @@
                         "dataIndex": "newHousingArea",
                         "text": "新建住房占地"
                     },
-                    "name": "MyColumn70",
+                    "name": "MyColumn75",
                     "designerId": "27265886-c224-49e4-b507-d40f29d964bd"
                 },
                 {
@@ -250,7 +250,7 @@
                         "dataIndex": "newHousingArea",
                         "text": "增加耕地面积"
                     },
-                    "name": "MyColumn71",
+                    "name": "MyColumn76",
                     "designerId": "3bfaca94-3a97-46cb-bd03-5f1775d86bb9"
                 },
                 {
@@ -264,7 +264,7 @@
                         "dataIndex": "whereAbouts",
                         "text": "去向"
                     },
-                    "name": "MyColumn72",
+                    "name": "MyColumn77",
                     "designerId": "0897e982-4835-4e48-a09c-057256708c05"
                 },
                 {
@@ -277,7 +277,7 @@
                     "userConfig": {
                         "text": "土地使用证"
                     },
-                    "name": "MyColumn73",
+                    "name": "MyColumn78",
                     "designerId": "2521b831-54be-4639-8bd7-d4789a09226f",
                     "cn": [
                         {
@@ -314,7 +314,7 @@
                         "type": "object"
                     },
                     "codeClass": null,
-                    "name": "MyGridView13",
+                    "name": "MyGridView14",
                     "designerId": "e24c3785-e29b-45b6-a747-5c103bb9c0e2"
                 },
                 {
@@ -327,7 +327,7 @@
                     "userConfig": {
                         "dock": "top"
                     },
-                    "name": "MyToolbar15",
+                    "name": "MyToolbar17",
                     "designerId": "d14a4596-76bf-46b2-b3a6-6c60b393a1f7",
                     "cn": [
                         {
@@ -342,7 +342,7 @@
                                 "layout|flex": null,
                                 "text": "添加片块信息"
                             },
-                            "name": "MyButton62",
+                            "name": "MyButton68",
                             "designerId": "288e4ec2-fb18-4bac-b801-41d2d332ef59",
                             "cn": [
                                 {
@@ -383,7 +383,7 @@
                                 "layout|flex": null,
                                 "text": "编辑地块信息"
                             },
-                            "name": "MyButton63",
+                            "name": "MyButton69",
                             "designerId": "584e6155-0939-4bc3-bc97-885fa18ad247",
                             "cn": [
                                 {
@@ -453,7 +453,7 @@
                                 "layout|flex": null,
                                 "text": "删除片块信息"
                             },
-                            "name": "MyButton64",
+                            "name": "MyButton70",
                             "designerId": "4cbf9d6c-2841-48a7-97c5-94b1f4e7daa0",
                             "cn": [
                                 {
@@ -520,7 +520,7 @@
                                 "layout|flex": null,
                                 "text": "返回到项目管理"
                             },
-                            "name": "MyButton65",
+                            "name": "MyButton71",
                             "designerId": "c7e44420-6db1-47d8-b77b-b60dc57d7815",
                             "cn": [
                                 {
@@ -562,7 +562,7 @@
                                 "layout|flex": null,
                                 "name": "searchKeyword1"
                             },
-                            "name": "MyTextField89",
+                            "name": "MyTextField93",
                             "designerId": "89557a04-cdab-4c36-a928-71e19c8c99aa"
                         },
                         {
@@ -578,7 +578,7 @@
                                 "layout|flex": null,
                                 "text": "查询"
                             },
-                            "name": "MyButton66",
+                            "name": "MyButton72",
                             "designerId": "0bc77f4a-a1f2-4ba0-9fbc-b5c605443fe5",
                             "cn": [
                                 {
@@ -629,7 +629,7 @@
                                 "layout|flex": null,
                                 "text": "高级查询"
                             },
-                            "name": "MyButton67",
+                            "name": "MyButton73",
                             "designerId": "6dc42f5c-f8e3-4aa5-99b7-c1417e70944b",
                             "cn": [
                                 {
@@ -758,7 +758,7 @@
                         "type": "object"
                     },
                     "codeClass": "Ext.selection.CheckboxModel",
-                    "name": "MyCheckboxSelectionModel7",
+                    "name": "MyCheckboxSelectionModel8",
                     "designerId": "08d7b9ee-f323-4c71-b3bf-6b78818e00e1"
                 }
             ]

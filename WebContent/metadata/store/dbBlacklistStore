@@ -1,0 +1,53 @@
+{
+    "type": "jsonstore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoLoad": true,
+        "autoSync": true,
+        "designer|userAlias": "dbBlacklistStore",
+        "designer|userClassName": "dbBlacklistStore",
+        "model": "dbBlacklistModel",
+        "pageSize": null,
+        "storeId": "dbBlacklistStore"
+    },
+    "designerId": "dcae5db3-3379-49b1-9b8e-738a7220c483",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.Ajax",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "extraParams": [
+                    "{\r",
+                    "    searchKeyword:''\r",
+                    "}"
+                ],
+                "url": "get_Blacklist"
+            },
+            "name": "MyAjaxProxy",
+            "designerId": "97b71765-cfcc-48eb-b22c-c1c044d9e271",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "root": "root"
+                    },
+                    "name": "MyJsonReader",
+                    "designerId": "9ce4dc82-75a0-4378-9215-98dbb85286b8"
+                }
+            ]
+        }
+    ]
+}

@@ -74,7 +74,7 @@
                                             "231"
                                         ]
                                     },
-                                    "name": "MyTextField4",
+                                    "name": "MyTextField7",
                                     "designerId": "dd7d2038-3873-4ad4-ac03-4b942bfb5690"
                                 },
                                 {
@@ -92,7 +92,7 @@
                                             "\"83.3%\""
                                         ]
                                     },
-                                    "name": "MyTextField5",
+                                    "name": "MyTextField8",
                                     "designerId": "2ad5d0e6-faf9-40e2-ae2b-2b061e2ca721"
                                 },
                                 {
@@ -110,7 +110,7 @@
                                             "11240"
                                         ]
                                     },
-                                    "name": "MyTextField6",
+                                    "name": "MyTextField9",
                                     "designerId": "805f221c-47db-4ad3-b0f2-e77a6cb39ac9"
                                 },
                                 {
@@ -257,7 +257,7 @@
                                         "id": "grid_useMonitorResult_SamplesAttr",
                                         "title": null
                                     },
-                                    "name": "MyGridPanel1",
+                                    "name": "MyGridPanel2",
                                     "designerId": "9a8dc75a-4bb7-49e6-bd80-55aea3251bba",
                                     "cn": [
                                         {
@@ -267,7 +267,7 @@
                                                 "type": "array"
                                             },
                                             "codeClass": null,
-                                            "name": "MyRowNumberer1",
+                                            "name": "MyRowNumberer2",
                                             "designerId": "f515f601-3a79-4c67-9f16-86724cac3b83"
                                         },
                                         {
@@ -282,7 +282,7 @@
                                                 "text": "权属单位名称",
                                                 "width": 150
                                             },
-                                            "name": "MyColumn3",
+                                            "name": "MyColumn7",
                                             "designerId": "da7a21cc-386d-4aad-99b6-fd10fae046f4"
                                         },
                                         {
@@ -311,7 +311,7 @@
                                                 "dataIndex": "dlmc",
                                                 "text": "地类名称"
                                             },
-                                            "name": "MyColumn4",
+                                            "name": "MyColumn8",
                                             "designerId": "e7533311-ab06-4e72-af63-ea0d8152d992"
                                         },
                                         {
@@ -368,7 +368,7 @@
                                                 "type": "object"
                                             },
                                             "codeClass": null,
-                                            "name": "MyGridView1",
+                                            "name": "MyGridView2",
                                             "designerId": "3a3c81e9-b5af-4609-844a-855cf9c6f4b4"
                                         }
                                     ]

@@ -30,7 +30,7 @@
                 ],
                 "url": "get_infoVoteList"
             },
-            "name": "MyAjaxProxy41",
+            "name": "MyAjaxProxy42",
             "designerId": "f45c82b5-71e7-44e7-ab3e-5d89df3eff92",
             "cn": [
                 {
@@ -43,7 +43,7 @@
                     "userConfig": {
                         "root": "root"
                     },
-                    "name": "MyJsonReader41",
+                    "name": "MyJsonReader42",
                     "designerId": "05921e58-68ce-4fc2-8562-21860534840d"
                 }
             ]

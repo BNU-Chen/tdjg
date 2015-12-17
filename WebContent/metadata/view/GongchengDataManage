@@ -27,7 +27,7 @@
                 "layout": "fit",
                 "title": ""
             },
-            "name": "MyForm20",
+            "name": "MyForm21",
             "designerId": "c6485190-0985-482a-a91e-c95f31efcbcf",
             "cn": [
                 {
@@ -42,7 +42,7 @@
                         "store": "FkYanshouGongchengStore",
                         "title": ""
                     },
-                    "name": "MyGridPanel14",
+                    "name": "MyGridPanel15",
                     "designerId": "b47a8061-974f-40e3-a88f-8a81ac24db45",
                     "cn": [
                         {
@@ -52,7 +52,7 @@
                                 "type": "array"
                             },
                             "codeClass": null,
-                            "name": "MyRowNumberer11",
+                            "name": "MyRowNumberer12",
                             "designerId": "6a1afbdd-e577-463d-bbcf-18c1988fd163"
                         },
                         {
@@ -66,7 +66,7 @@
                                 "dataIndex": "projectId",
                                 "text": "项目编号"
                             },
-                            "name": "MyColumn74",
+                            "name": "MyColumn79",
                             "designerId": "0fbe14e0-8df2-4a3f-9f34-fac0eba2d649"
                         },
                         {
@@ -80,7 +80,7 @@
                                 "dataIndex": "projectName",
                                 "text": "项目名称"
                             },
-                            "name": "MyColumn75",
+                            "name": "MyColumn80",
                             "designerId": "0c6be242-6f16-4e29-9a83-787f0bea3109"
                         },
                         {
@@ -94,7 +94,7 @@
                                 "dataIndex": "area",
                                 "text": "项目实际规模"
                             },
-                            "name": "MyColumn76",
+                            "name": "MyColumn81",
                             "designerId": "7e5fa5b7-2a6a-4ec8-a216-94fcb788f57a"
                         },
                         {
@@ -109,7 +109,7 @@
                                 "text": "拆除工程完成质量描述",
                                 "width": 200
                             },
-                            "name": "MyColumn77",
+                            "name": "MyColumn82",
                             "designerId": "46f8daca-a292-4653-af2d-aaec00293eea"
                         },
                         {
@@ -124,7 +124,7 @@
                                 "text": "土地平整工程完成质量描述",
                                 "width": 200
                             },
-                            "name": "MyColumn78",
+                            "name": "MyColumn83",
                             "designerId": "ea9292b5-a7ec-4553-a4f3-40823e3bde30"
                         },
                         {
@@ -139,7 +139,7 @@
                                 "text": "农田水利工程完成质量描述",
                                 "width": 200
                             },
-                            "name": "MyColumn79",
+                            "name": "MyColumn84",
                             "designerId": "80c7ca9c-0d79-476b-9eaa-44358a26968c"
                         },
                         {
@@ -154,7 +154,7 @@
                                 "text": "田间道路工程完成质量描述",
                                 "width": 200
                             },
-                            "name": "MyColumn80",
+                            "name": "MyColumn85",
                             "designerId": "7631cd23-8ad2-4167-8816-f6d2638a879d"
                         },
                         {
@@ -168,7 +168,7 @@
                                 "dataIndex": "recorder",
                                 "text": "采样人"
                             },
-                            "name": "MyColumn81",
+                            "name": "MyColumn86",
                             "designerId": "1e7d2660-e4d5-4a60-884c-d14813f7ade0"
                         },
                         {
@@ -178,7 +178,7 @@
                                 "type": "object"
                             },
                             "codeClass": null,
-                            "name": "MyGridView14",
+                            "name": "MyGridView15",
                             "designerId": "669c15d9-1d6e-475a-b566-2bd905b8161c"
                         },
                         {
@@ -191,7 +191,7 @@
                             "userConfig": {
                                 "dock": "top"
                             },
-                            "name": "MyToolbar18",
+                            "name": "MyToolbar20",
                             "designerId": "913703de-db60-4a77-9854-a954dfd25c7e",
                             "cn": [
                                 {
@@ -207,7 +207,7 @@
                                         "layout|flex": null,
                                         "name": "sampleSearch"
                                     },
-                                    "name": "MyTextField114",
+                                    "name": "MyTextField118",
                                     "designerId": "f8a6fe7e-b74b-4a7e-b204-5a6387c6f9df"
                                 },
                                 {
@@ -221,7 +221,7 @@
                                         "layout|flex": null,
                                         "text": "查询"
                                     },
-                                    "name": "MyButton74",
+                                    "name": "MyButton80",
                                     "designerId": "a787a761-c9de-4555-9330-6e29a422ec63",
                                     "cn": [
                                         {
@@ -267,7 +267,7 @@
                                         "layout|flex": null,
                                         "text": "添加"
                                     },
-                                    "name": "MyButton75",
+                                    "name": "MyButton81",
                                     "designerId": "bf003773-7005-4288-808f-00d1a59b6a44",
                                     "cn": [
                                         {
@@ -307,7 +307,7 @@
                                         "layout|flex": null,
                                         "text": "编辑"
                                     },
-                                    "name": "MyButton76",
+                                    "name": "MyButton82",
                                     "designerId": "d0b22c7d-3ff2-4382-89c3-90ea876c5335",
                                     "cn": [
                                         {
@@ -380,7 +380,7 @@
                                         "layout|flex": null,
                                         "text": "删除"
                                     },
-                                    "name": "MyButton77",
+                                    "name": "MyButton83",
                                     "designerId": "4ab891db-01af-4bb2-9bc9-31fd02aa1a3c",
                                     "cn": [
                                         {
@@ -445,7 +445,7 @@
                                         "layout|flex": null,
                                         "text": "返回"
                                     },
-                                    "name": "MyButton78",
+                                    "name": "MyButton84",
                                     "designerId": "e6667440-f643-4972-be65-5059bc9c1d06",
                                     "cn": [
                                         {
@@ -497,7 +497,7 @@
                                 "type": "object"
                             },
                             "codeClass": "Ext.selection.CheckboxModel",
-                            "name": "MyCheckboxSelectionModel8",
+                            "name": "MyCheckboxSelectionModel9",
                             "designerId": "121e4232-19f5-4da4-a7b1-38222de550ac"
                         }
                     ]

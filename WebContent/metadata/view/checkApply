@@ -53,7 +53,7 @@
                         "readOnly": true,
                         "width": 150
                     },
-                    "name": "MyTextField151",
+                    "name": "MyTextField155",
                     "designerId": "903c4d1f-6145-4945-8474-0beeb6269d8e"
                 },
                 {
@@ -71,7 +71,7 @@
                         ],
                         "text": "验收申请编号："
                     },
-                    "name": "MyLabel6",
+                    "name": "MyLabel7",
                     "designerId": "57215812-b710-47e9-990f-231a709db702"
                 },
                 {
@@ -90,7 +90,7 @@
                         ],
                         "text": "项目编号："
                     },
-                    "name": "MyLabel7",
+                    "name": "MyLabel8",
                     "designerId": "af989a5c-ba3b-49a8-a66c-07da9ef1836f"
                 },
                 {
@@ -109,7 +109,7 @@
                         ],
                         "text": "项目名称："
                     },
-                    "name": "MyLabel8",
+                    "name": "MyLabel9",
                     "designerId": "5d815f93-1688-44fd-ba5e-626085023cf4"
                 },
                 {
@@ -128,7 +128,7 @@
                         ],
                         "text": "审核意见："
                     },
-                    "name": "MyLabel9",
+                    "name": "MyLabel10",
                     "designerId": "e788e79e-c590-469b-8ee7-cb49371c1690"
                 },
                 {
@@ -146,7 +146,7 @@
                         "readOnly": true,
                         "width": 150
                     },
-                    "name": "MyTextField152",
+                    "name": "MyTextField156",
                     "designerId": "7794064b-2256-4d28-b192-4480cb572f7e"
                 },
                 {
@@ -164,7 +164,7 @@
                         "readOnly": true,
                         "width": 150
                     },
-                    "name": "MyTextField153",
+                    "name": "MyTextField157",
                     "designerId": "b55a9ff2-53ad-4a93-bbeb-84506fe99ab0"
                 },
                 {
@@ -186,7 +186,7 @@
                         "store": "comboStore",
                         "width": 150
                     },
-                    "name": "MyComboBox15",
+                    "name": "MyComboBox16",
                     "designerId": "0b745b8a-b749-4af1-9e0d-f924b450dce3"
                 },
                 {
@@ -202,7 +202,7 @@
                         "layout|y": 310,
                         "text": "提交"
                     },
-                    "name": "MyButton150",
+                    "name": "MyButton167",
                     "designerId": "26f7fff3-0b2e-4559-9c80-2338e979beb7",
                     "cn": [
                         {
@@ -253,7 +253,7 @@
                         "layout|y": 310,
                         "text": "返回"
                     },
-                    "name": "MyButton151",
+                    "name": "MyButton168",
                     "designerId": "3ca34105-03f6-4432-b2b3-881bfeeb748b",
                     "cn": [
                         {
@@ -312,7 +312,7 @@
                         "autoScroll": true,
                         "dock": "top"
                     },
-                    "name": "MyToolbar38",
+                    "name": "MyToolbar40",
                     "designerId": "f1b97473-cccf-4d88-8cf0-41e2d624c2a7",
                     "cn": [
                         {
@@ -327,7 +327,7 @@
                                 "layout|flex": null,
                                 "text": "申请表"
                             },
-                            "name": "MyButton152",
+                            "name": "MyButton169",
                             "designerId": "2723eb0a-ff83-4bc3-a496-348ebaa33324",
                             "cn": [
                                 {
@@ -448,7 +448,7 @@
                                 "layout|flex": null,
                                 "text": "施工前后对比图"
                             },
-                            "name": "MyButton153",
+                            "name": "MyButton170",
                             "designerId": "66051638-20b9-4824-a1c8-acb8b68b867b",
                             "cn": [
                                 {
@@ -495,7 +495,7 @@
                                 "layout|flex": null,
                                 "text": "财务资料"
                             },
-                            "name": "MyButton154",
+                            "name": "MyButton171",
                             "designerId": "5c4db0de-8012-43ab-9438-8b6b84ddb9c9",
                             "cn": [
                                 {

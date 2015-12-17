@@ -25,7 +25,7 @@
             "userConfig": {
                 "url": null
             },
-            "name": "MyAjaxProxy90",
+            "name": "MyAjaxProxy91",
             "designerId": "cd4a1143-6c35-4a2a-b523-fd8b334eb3c1",
             "cn": [
                 {
@@ -38,7 +38,7 @@
                     "userConfig": {
                         "root": "root"
                     },
-                    "name": "MyJsonReader90",
+                    "name": "MyJsonReader91",
                     "designerId": "15dc0985-8296-4012-bbe8-a93c1bf40c97"
                 }
             ]

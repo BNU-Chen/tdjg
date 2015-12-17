@@ -32,7 +32,7 @@
                 ],
                 "url": null
             },
-            "name": "MyAjaxProxy100",
+            "name": "MyAjaxProxy101",
             "designerId": "1ca7f8e6-c326-44ee-bd43-e75f63c6bec7",
             "cn": [
                 {
@@ -45,7 +45,7 @@
                     "userConfig": {
                         "root": "root"
                     },
-                    "name": "MyJsonReader100",
+                    "name": "MyJsonReader101",
                     "designerId": "065aff9d-78ce-47ad-b83f-8a44255a075f"
                 }
             ]

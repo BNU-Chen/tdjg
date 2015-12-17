@@ -1,4 +1,3 @@
-console.log("in WarmMap.js");
 //规划功能地图js
 var jswNavToolbar, jswMap, jswInfoTemplate, jswDynamicMapServiceLayer, jswFJMD;
 var jswPortalUrl = "http://www.arcgis.com";
@@ -398,7 +397,7 @@ require([
 	    var imageParameters = new esri.layers.ImageParameters();
 	    imageParameters.format = "jpeg";  //set the image type to PNG24, note default is PNG8.
 
-	    jswDynamicMapServiceLayer = new esri.layers.ArcGISDynamicMapServiceLayer("http://localhost:6080/arcgis/rest/services/tdlzmap/testData/MapServer", {     
+	    jswDynamicMapServiceLayer = new esri.layers.ArcGISDynamicMapServiceLayer("http://localhost:6080/arcgis/rest/services/guihua/MapServer", {     
 	    	"imageParameters":imageParameters
 	    });
 

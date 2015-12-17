@@ -1,5 +1,4 @@
 //js
-console.log("in finalMap.js");
 var jsfNavToolbar, jsfMap, jsfInfoTemplate, jsfDynamicMapServiceLayer, jsfLayer1, jsfLayer2, jsfGP;
 var jsPortalUrl = "http://www.arcgis.com";
 require([
@@ -114,7 +113,7 @@ require([
 	    var imageParameters = new esri.layers.ImageParameters();
 	    imageParameters.format = "jpeg";  //set the image type to PNG24, note default is PNG8.
 
-	    jsfDynamicMapServiceLayer = new esri.layers.ArcGISDynamicMapServiceLayer("http://localhost:6080/arcgis/rest/services/tdlzmap/testData/MapServer", {     
+	    jsfDynamicMapServiceLayer = new esri.layers.ArcGISDynamicMapServiceLayer("http://localhost:6080/arcgis/rest/services/guihua/MapServer", {     
 	    	"imageParameters":imageParameters
 	    });
 	    

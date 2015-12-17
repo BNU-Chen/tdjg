@@ -18,7 +18,6 @@ Ext.define('MyApp.view.db_BackupRecoveryData', {
     alias: 'widget.db_BackupRecoveryData',
 
     requires: [
-        'Ext.form.Panel',
         'Ext.button.Button',
         'Ext.form.Label',
         'Ext.form.field.Checkbox',
@@ -48,130 +47,121 @@ Ext.define('MyApp.view.db_BackupRecoveryData', {
                     height: 150,
                     width: 1177,
                     title: '备份数据库',
+                    layout: {
+                        type: 'hbox',
+                        align: 'stretch'
+                    },
                     items: [
                         {
-                            xtype: 'form',
-                            margin: 0,
-                            layout: {
-                                type: 'hbox',
-                                align: 'stretchmax'
-                            },
+                            xtype: 'panel',
+                            width: 126,
+                            layout: 'fit',
+                            title: '',
                             items: [
                                 {
-                                    xtype: 'panel',
-                                    width: 126,
-                                    layout: 'fit',
-                                    title: '',
-                                    items: [
+                                    xtype: 'button',
+                                    handler: function(button, event) {
+                                        Ext.Ajax.request(
                                         {
-                                            xtype: 'button',
-                                            handler: function(button, event) {
-                                                var description = Ext.getCmp("txt_backup_description").getValue( );
-
-                                                Ext.Ajax.request(
-                                                {
-                                                    url : 'add_databseBackup',
-                                                    params :
-                                                    {
-                                                        bkCommnet : description
-                                                    },
-                                                    success : function (response){
-                                                        Ext.Msg.alert('成功提示', '数据库备份成功。');
-                                                        //successResult();
-                                                        var mystore = Ext.StoreMgr.get('dbBackupRecoveryStore');
-                                                        mystore.load();
-                                                    },
-                                                    failure : function (response){
-                                                        //failedResult();
-                                                        Ext.Msg.alert('失败提示', '数据库备份失败，请重试。');
-                                                    }
-                                                });
-
-
-                                                //Ext.MessageBox.show({
-                                                //		    title : 'Please wait',
-                                                //		    msg : 'Loading items...',
-                                                //		    progressText : 'Initializing...',
-                                                //		    width : 300,
-                                                //		    progress : true,
-                                                //		    closable : false,
-                                                //		    animateTarget : 'mb6'
-                                                //		});
-                                                //
-                                                //		// this hideous block creates the bogus progress
-                                                //		var f = function (v)
-                                                //		{
-                                                //		    return function ()
-                                                //		    {
-                                                //		        if (v == 12)
-                                                //		        {
-                                                //		            Ext.MessageBox.hide();
-                                                //		            Ext.example.msg('Done', 'Your fake items were loaded!');
-                                                //		        }
-                                                //		        else
-                                                //		        {
-                                                //		            var i = v / 11;
-                                                //		            Ext.MessageBox.updateProgress(i, Math.round(100 * i) + '% completed');
-                                                //		        }
-                                                //		    };
-                                                //		};
-                                                //		for (var i = 1; i < 13; i++)
-                                                //		{
-                                                //		    setTimeout(f(i), i * 500);
-                                                //		}
+                                            url : 'databse_backup',
+                                            params :
+                                            {
+                                                // userId : userId
                                             },
-                                            id: 'db_btn_StartBackup',
-                                            text: '开始备份'
-                                        }
-                                    ]
+                                            success : function (response){
+                                                Ext.Msg.alert('成功提示', '数据库备份成功。');
+                                                //successResult();
+                                                var mystore = Ext.StoreMgr.get('uUserInfoStore');
+                                                mystore.load();
+                                            },
+                                            failure : function (response){
+                                                //failedResult();
+                                                Ext.Msg.alert('成功提示', '数据库备份成功。');
+                                            }
+                                        });
+
+
+                                        //Ext.MessageBox.show({
+                                        //		    title : 'Please wait',
+                                        //		    msg : 'Loading items...',
+                                        //		    progressText : 'Initializing...',
+                                        //		    width : 300,
+                                        //		    progress : true,
+                                        //		    closable : false,
+                                        //		    animateTarget : 'mb6'
+                                        //		});
+                                        //
+                                        //		// this hideous block creates the bogus progress
+                                        //		var f = function (v)
+                                        //		{
+                                        //		    return function ()
+                                        //		    {
+                                        //		        if (v == 12)
+                                        //		        {
+                                        //		            Ext.MessageBox.hide();
+                                        //		            Ext.example.msg('Done', 'Your fake items were loaded!');
+                                        //		        }
+                                        //		        else
+                                        //		        {
+                                        //		            var i = v / 11;
+                                        //		            Ext.MessageBox.updateProgress(i, Math.round(100 * i) + '% completed');
+                                        //		        }
+                                        //		    };
+                                        //		};
+                                        //		for (var i = 1; i < 13; i++)
+                                        //		{
+                                        //		    setTimeout(f(i), i * 500);
+                                        //		}
+                                    },
+                                    id: 'db_btn_StartBackup',
+                                    text: '开始备份'
+                                }
+                            ]
+                        },
+                        {
+                            xtype: 'panel',
+                            flex: 1,
+                            height: 120,
+                            layout: 'absolute',
+                            title: '备份设置',
+                            items: [
+                                {
+                                    xtype: 'textfield',
+                                    x: 30,
+                                    y: 5,
+                                    fieldLabel: '备份频率',
+                                    emptyText: '7'
                                 },
                                 {
-                                    xtype: 'panel',
-                                    flex: 1,
-                                    height: 120,
-                                    layout: 'absolute',
-                                    title: '备份设置',
-                                    items: [
-                                        {
-                                            xtype: 'textfield',
-                                            x: 30,
-                                            y: 5,
-                                            fieldLabel: '备份频率',
-                                            emptyText: '7'
-                                        },
-                                        {
-                                            xtype: 'label',
-                                            x: 270,
-                                            y: 10,
-                                            text: '天'
-                                        },
-                                        {
-                                            xtype: 'checkboxfield',
-                                            x: 310,
-                                            y: 5,
-                                            fieldLabel: '自动备份',
-                                            boxLabel: '',
-                                            checked: true
-                                        },
-                                        {
-                                            xtype: 'filefield',
-                                            x: 30,
-                                            y: 30,
-                                            width: 400,
-                                            fieldLabel: '备份设置',
-                                            emptyText: '202.112.95.210/DatabaseBackup/',
-                                            buttonText: '浏览'
-                                        },
-                                        {
-                                            xtype: 'textareafield',
-                                            x: 30,
-                                            y: 55,
-                                            height: 40,
-                                            id: 'txt_backup_description',
-                                            width: 400,
-                                            fieldLabel: '备注信息'
-                                        }
-                                    ]
+                                    xtype: 'label',
+                                    x: 270,
+                                    y: 10,
+                                    text: '天'
+                                },
+                                {
+                                    xtype: 'checkboxfield',
+                                    x: 310,
+                                    y: 5,
+                                    fieldLabel: '自动备份',
+                                    boxLabel: '',
+                                    checked: true
+                                },
+                                {
+                                    xtype: 'filefield',
+                                    x: 30,
+                                    y: 30,
+                                    width: 400,
+                                    fieldLabel: '备份设置',
+                                    emptyText: '202.112.95.210/DatabaseBackup/',
+                                    buttonText: '浏览'
+                                },
+                                {
+                                    xtype: 'textareafield',
+                                    x: 30,
+                                    y: 55,
+                                    height: 40,
+                                    width: 400,
+                                    fieldLabel: '备注信息'
                                 }
                             ]
                         }
@@ -228,7 +218,7 @@ Ext.define('MyApp.view.db_BackupRecoveryData', {
                                 },
                                 {
                                     xtype: 'datecolumn',
-                                    dataIndex: 'bkdate',
+                                    dataIndex: 'date',
                                     text: '备份日期'
                                 },
                                 {
@@ -240,7 +230,7 @@ Ext.define('MyApp.view.db_BackupRecoveryData', {
                                     xtype: 'gridcolumn',
                                     width: 200,
                                     defaultWidth: 200,
-                                    dataIndex: 'description',
+                                    dataIndex: 'comment',
                                     text: '备注说明'
                                 }
                             ],

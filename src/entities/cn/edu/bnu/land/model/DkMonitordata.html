@@ -71,7 +71,7 @@
 								Column
 							</td>
 							<td>
-								Integer
+								int
 							</td>
 							<td>
 									&nbsp;
@@ -110,14 +110,14 @@
 	
 						<tr>
 							<td rowspan="1">
-								<a href="#property_detail_coordinateXy">
-									coordinateXy
+								<a href="#property_detail_attribute">
+									attribute
 								</a>
 							</td>
 	
 									<td>
 										<a href="#property_summary">
-											coordinate_xy
+											attribute
 										</a>
 									</td>
 	
@@ -160,14 +160,14 @@
 						</tr>
 						<tr>
 							<td rowspan="1">
-								<a href="#property_detail_head">
-									head
+								<a href="#property_detail_finishArea">
+									finishArea
 								</a>
 							</td>
 	
 									<td>
 										<a href="#property_summary">
-											head
+											finish_area
 										</a>
 									</td>
 	
@@ -176,7 +176,7 @@
 							</td>
 	
 							<td rowspan="1">
-									String
+									Float
 							</td>
 	
 							<td rowspan="1">
@@ -185,14 +185,39 @@
 						</tr>
 						<tr>
 							<td rowspan="1">
-								<a href="#property_detail_monitorContent">
-									monitorContent
+								<a href="#property_detail_finishPercent">
+									finishPercent
 								</a>
 							</td>
 	
 									<td>
 										<a href="#property_summary">
-											monitor_content
+											finish_percent
+										</a>
+									</td>
+	
+							<td rowspan="1">
+								property (<a href="#property_summary">get</a> / <a href="#property_summary">set</a>)
+							</td>
+	
+							<td rowspan="1">
+									Float
+							</td>
+	
+							<td rowspan="1">
+									&nbsp;
+							</td>
+						</tr>
+						<tr>
+							<td rowspan="1">
+								<a href="#property_detail_head">
+									head
+								</a>
+							</td>
+	
+									<td>
+										<a href="#property_summary">
+											head
 										</a>
 									</td>
 	
@@ -235,56 +260,6 @@
 						</tr>
 						<tr>
 							<td rowspan="1">
-								<a href="#property_detail_ntslPercent">
-									ntslPercent
-								</a>
-							</td>
-	
-									<td>
-										<a href="#property_summary">
-											ntsl_percent
-										</a>
-									</td>
-	
-							<td rowspan="1">
-								property (<a href="#property_summary">get</a> / <a href="#property_summary">set</a>)
-							</td>
-	
-							<td rowspan="1">
-									Float
-							</td>
-	
-							<td rowspan="1">
-									&nbsp;
-							</td>
-						</tr>
-						<tr>
-							<td rowspan="1">
-								<a href="#property_detail_photoPath">
-									photoPath
-								</a>
-							</td>
-	
-									<td>
-										<a href="#property_summary">
-											photo_path
-										</a>
-									</td>
-	
-							<td rowspan="1">
-								property (<a href="#property_summary">get</a> / <a href="#property_summary">set</a>)
-							</td>
-	
-							<td rowspan="1">
-									String
-							</td>
-	
-							<td rowspan="1">
-									&nbsp;
-							</td>
-						</tr>
-						<tr>
-							<td rowspan="1">
 								<a href="#property_detail_projectName">
 									projectName
 								</a>
@@ -308,81 +283,6 @@
 									&nbsp;
 							</td>
 						</tr>
-						<tr>
-							<td rowspan="1">
-								<a href="#property_detail_rwId">
-									rwId
-								</a>
-							</td>
-	
-									<td>
-										<a href="#property_summary">
-											rw_id
-										</a>
-									</td>
-	
-							<td rowspan="1">
-								property (<a href="#property_summary">get</a> / <a href="#property_summary">set</a>)
-							</td>
-	
-							<td rowspan="1">
-									String
-							</td>
-	
-							<td rowspan="1">
-									&nbsp;
-							</td>
-						</tr>
-						<tr>
-							<td rowspan="1">
-								<a href="#property_detail_tdpzPercent">
-									tdpzPercent
-								</a>
-							</td>
-	
-									<td>
-										<a href="#property_summary">
-											tdpz_percent
-										</a>
-									</td>
-	
-							<td rowspan="1">
-								property (<a href="#property_summary">get</a> / <a href="#property_summary">set</a>)
-							</td>
-	
-							<td rowspan="1">
-									Float
-							</td>
-	
-							<td rowspan="1">
-									&nbsp;
-							</td>
-						</tr>
-						<tr>
-							<td rowspan="1">
-								<a href="#property_detail_tjdlPercent">
-									tjdlPercent
-								</a>
-							</td>
-	
-									<td>
-										<a href="#property_summary">
-											tjdl_percent
-										</a>
-									</td>
-	
-							<td rowspan="1">
-								property (<a href="#property_summary">get</a> / <a href="#property_summary">set</a>)
-							</td>
-	
-							<td rowspan="1">
-									Float
-							</td>
-	
-							<td rowspan="1">
-									&nbsp;
-							</td>
-						</tr>
 	
 				</tbody>
 			</table>
@@ -397,27 +297,19 @@
 			<p id="property_detail" class="MainTableHeading">
 				Property Detail
 			</p>
-				<h3 id="property_detail_rwId">rwId</h3>
-				<hr/>
 				<h3 id="property_detail_projectName">projectName</h3>
 				<hr/>
 				<h3 id="property_detail_dkId">dkId</h3>
 				<hr/>
 				<h3 id="property_detail_monitorTime">monitorTime</h3>
 				<hr/>
-				<h3 id="property_detail_tdpzPercent">tdpzPercent</h3>
-				<hr/>
-				<h3 id="property_detail_ntslPercent">ntslPercent</h3>
-				<hr/>
-				<h3 id="property_detail_tjdlPercent">tjdlPercent</h3>
+				<h3 id="property_detail_attribute">attribute</h3>
 				<hr/>
 				<h3 id="property_detail_head">head</h3>
 				<hr/>
-				<h3 id="property_detail_photoPath">photoPath</h3>
+				<h3 id="property_detail_finishPercent">finishPercent</h3>
 				<hr/>
-				<h3 id="property_detail_monitorContent">monitorContent</h3>
-				<hr/>
-				<h3 id="property_detail_coordinateXy">coordinateXy</h3>
+				<h3 id="property_detail_finishArea">finishArea</h3>
 				<hr/>
 
 	</body>

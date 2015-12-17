@@ -27,7 +27,7 @@
                 "extraParams": null,
                 "url": "FKSchemeShow1"
             },
-            "name": "MyAjaxProxy94",
+            "name": "MyAjaxProxy95",
             "designerId": "c059e7d1-7ae2-40c7-8da5-05133b5380c8",
             "cn": [
                 {
@@ -40,7 +40,7 @@
                     "userConfig": {
                         "root": "root"
                     },
-                    "name": "MyJsonReader94",
+                    "name": "MyJsonReader95",
                     "designerId": "8026f54f-b944-4acf-88e3-552617cb9cbb"
                 }
             ]

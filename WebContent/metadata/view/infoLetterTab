@@ -31,7 +31,7 @@
                 "pollForChanges": null,
                 "title": null
             },
-            "name": "MyForm41",
+            "name": "MyForm42",
             "designerId": "55f311ee-0b75-4f82-9d38-e10be9829b79",
             "cn": [
                 {
@@ -49,7 +49,7 @@
                         "store": "InfoLetterStore",
                         "title": ""
                     },
-                    "name": "MyGridPanel40",
+                    "name": "MyGridPanel41",
                     "designerId": "6d2b82ab-e42d-4370-b0bc-fd629715b4b2",
                     "cn": [
                         {
@@ -63,7 +63,7 @@
                                 "text": null,
                                 "width": 37
                             },
-                            "name": "MyRowNumberer33",
+                            "name": "MyRowNumberer34",
                             "designerId": "c23d391c-1dfd-4935-b441-db4daa02fe6b"
                         },
                         {
@@ -77,7 +77,7 @@
                                 "dataIndex": "letterTitle",
                                 "text": "来信主题"
                             },
-                            "name": "MyColumn207",
+                            "name": "MyColumn213",
                             "designerId": "6b8314a2-df0f-439f-839c-e1395265ad03"
                         },
                         {
@@ -91,7 +91,7 @@
                                 "dataIndex": "letterAuthor",
                                 "text": "来信人"
                             },
-                            "name": "MyColumn208",
+                            "name": "MyColumn214",
                             "designerId": "fc2d0ffd-4c86-4075-b56f-52910eb2e2d3"
                         },
                         {
@@ -106,7 +106,7 @@
                                 "format": "Y-m-d",
                                 "text": "来信时间"
                             },
-                            "name": "MyDateColumn37",
+                            "name": "MyDateColumn38",
                             "designerId": "b0747767-0497-469f-be9c-66bb05386ca8"
                         },
                         {
@@ -120,7 +120,7 @@
                                 "dataIndex": "letterIsreply",
                                 "text": "是否回复"
                             },
-                            "name": "MyColumn209",
+                            "name": "MyColumn215",
                             "designerId": "b30f5e52-c600-4651-bacf-9e6b3bfba23a"
                         },
                         {
@@ -134,7 +134,7 @@
                                 "dataIndex": "letterIsshow",
                                 "text": "是否公示"
                             },
-                            "name": "MyColumn210",
+                            "name": "MyColumn216",
                             "designerId": "f563acaa-4ef7-460b-843f-1a7cf2fe8ac3"
                         },
                         {
@@ -144,7 +144,7 @@
                                 "type": "object"
                             },
                             "codeClass": null,
-                            "name": "MyGridView40",
+                            "name": "MyGridView41",
                             "designerId": "4d2ac806-0185-4479-b143-553e44d9feba"
                         },
                         {
@@ -154,7 +154,7 @@
                                 "type": "object"
                             },
                             "codeClass": "Ext.selection.CheckboxModel",
-                            "name": "MyCheckboxSelectionModel32",
+                            "name": "MyCheckboxSelectionModel33",
                             "designerId": "086106e9-016e-4f58-900c-710212e41b1c"
                         },
                         {
@@ -170,7 +170,7 @@
                                 "frame": false,
                                 "height": null
                             },
-                            "name": "MyToolbar54",
+                            "name": "MyToolbar56",
                             "designerId": "485c68dd-4023-420d-bf23-09e34234324f",
                             "cn": [
                                 {
@@ -188,7 +188,7 @@
                                         "layout|flex": null,
                                         "width": 234
                                     },
-                                    "name": "MyDateField47",
+                                    "name": "MyDateField48",
                                     "designerId": "4dad52cb-8736-48a2-9a20-76f7661aa56b"
                                 },
                                 {
@@ -207,7 +207,7 @@
                                         "layout|flex": null,
                                         "width": 159
                                     },
-                                    "name": "MyTextField211",
+                                    "name": "MyTextField215",
                                     "designerId": "2d3a6892-5103-41f2-ba64-67bf254043dc"
                                 },
                                 {
@@ -222,7 +222,7 @@
                                         "layout|flex": null,
                                         "text": "搜索"
                                     },
-                                    "name": "MyButton217",
+                                    "name": "MyButton234",
                                     "designerId": "5f5d037b-8a9a-46ca-a32d-ff50f620fdc1",
                                     "cn": [
                                         {
@@ -292,7 +292,7 @@
                                         "layout|flex": null,
                                         "text": "删除来信"
                                     },
-                                    "name": "MyButton218",
+                                    "name": "MyButton235",
                                     "designerId": "5815dd7b-ccad-4e1d-a286-f88917200250",
                                     "cn": [
                                         {

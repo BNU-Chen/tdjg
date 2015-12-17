@@ -1,4 +1,3 @@
-console.log("in ProjectMap.js");
 //规划功能地图js
 var jsNavToolbar, jsMap, jsSymbol, jsInfoTemplate, jsDynamicMapServiceLayer, jsLayer1, jsLayer2, jsQuery, jsGP, jsSelect;
 var jsFeatureLayer,jsFeatureSet,jsExtent,jsDrawingInfo,jsFields, jsFJMD;
@@ -119,7 +118,7 @@ require([
 	    var imageParameters = new esri.layers.ImageParameters();
 	    imageParameters.format = "jpeg";  //set the image type to PNG24, note default is PNG8.
 
-	    jsDynamicMapServiceLayer = new esri.layers.ArcGISDynamicMapServiceLayer("http://localhost:6080/arcgis/rest/services/tdlzmap/testData/MapServer", {     
+	    jsDynamicMapServiceLayer = new esri.layers.ArcGISDynamicMapServiceLayer("http://localhost:6080/arcgis/rest/services/guihua/MapServer", {     
 	    	"imageParameters":imageParameters
 	    });
 	    
@@ -129,9 +128,9 @@ require([
 	    var ftLayer = 
 	    { mode: esri.layers.FeatureLayer.MODE_ONDEMAND, infoTemplate: InfoTemplate, outFields: ["*"] } 
 	    FeatureLayer1 = 
-	    	new esri.layers.FeatureLayer("http://localhost:6080/arcgis/rest/services/tdlzmap/testData/MapServer/10", ftLayer); 
+	    	new esri.layers.FeatureLayer("http://localhost:6080/arcgis/rest/services/guihua/MapServer/10", ftLayer); 
 	    FeatureLayer2 = 
-	    	new esri.layers.FeatureLayer("http://localhost:6080/arcgis/rest/services/tdlzmap/testData/MapServer/7", ftLayer); 
+	    	new esri.layers.FeatureLayer("http://localhost:6080/arcgis/rest/services/guihua/MapServer/7", ftLayer); 
 	    
 	    
 	  
@@ -318,7 +317,7 @@ require([
     window.jsSelectJMD = function(){
     	
 		var jsQueryTask = 
-			new QueryTask("http://localhost:6080/arcgis/rest/services/tdlzmap/testData/MapServer/7");
+			new QueryTask("http://localhost:6080/arcgis/rest/services/guihua/MapServer/7");
 		var jsQuery = new Query();
 		
 		jsQuery.returnGeometry = false;
@@ -420,7 +419,7 @@ require([
     //叠加
     window.jsOverlay = function(overData){
 
-		var gpUrl = 'http://localhost:6080/arcgis/rest/services/GP/InterTest/GPServer/Intersect';
+		var gpUrl = 'http://localhost:6080/arcgis/rest/services/GP/Intersect/GPServer/Intersect';
 		jsGP = new esri.tasks.Geoprocessor(gpUrl);
 			
 		
@@ -713,7 +712,7 @@ require([
 	
 	window.jsEditOnline = function(projectID, ids){
 
-		var featureServer = new FeatureLayer("http://localhost:6080/arcgis/rest/services/tdlzmap/testData/FeatureServer/7");
+		var featureServer = new FeatureLayer("http://localhost:6080/arcgis/rest/services/guihua/FeatureServer/7");
 		var voteRecord = [];
 		var id = ids.split(",");
 		for ( var int = 0; int < id.length; int++) {

@@ -28,7 +28,7 @@
                 "title": null,
                 "width": 800
             },
-            "name": "MyForm44",
+            "name": "MyForm45",
             "designerId": "233c846d-bb85-4659-b13a-f47f869013b3",
             "cn": [
                 {
@@ -45,7 +45,7 @@
                         "store": "InfoCommentStore",
                         "title": ""
                     },
-                    "name": "MyGridPanel42",
+                    "name": "MyGridPanel43",
                     "designerId": "3461b30b-5d7a-42e2-9d18-c653e8641c77",
                     "cn": [
                         {
@@ -58,7 +58,7 @@
                             "userConfig": {
                                 "width": 38
                             },
-                            "name": "MyRowNumberer34",
+                            "name": "MyRowNumberer35",
                             "designerId": "ea48453f-49f6-4af6-baaa-2f76a8cc9459"
                         },
                         {
@@ -73,7 +73,7 @@
                                 "text": "评论人",
                                 "width": 103
                             },
-                            "name": "MyColumn214",
+                            "name": "MyColumn220",
                             "designerId": "fc3a3bb0-cac4-46b6-9410-9fbc2a37f4dc"
                         },
                         {
@@ -88,7 +88,7 @@
                                 "text": "评论时间",
                                 "width": 100
                             },
-                            "name": "MyDateColumn38",
+                            "name": "MyDateColumn39",
                             "designerId": "d3c21326-7662-49e5-bc64-f57dcb57219b"
                         },
                         {
@@ -103,7 +103,7 @@
                                 "text": "评论内容",
                                 "width": 556
                             },
-                            "name": "MyColumn215",
+                            "name": "MyColumn221",
                             "designerId": "0db9e4cf-3ea7-408c-aaca-9bb97d31b4cf"
                         },
                         {
@@ -113,7 +113,7 @@
                                 "type": "object"
                             },
                             "codeClass": null,
-                            "name": "MyGridView42",
+                            "name": "MyGridView43",
                             "designerId": "41ac05cf-0a4d-4d6c-a5e1-13154bba5e3b"
                         },
                         {
@@ -127,7 +127,7 @@
                                 "dock": "top",
                                 "enableOverflow": true
                             },
-                            "name": "MyToolbar56",
+                            "name": "MyToolbar58",
                             "designerId": "b5be926f-2472-4922-936a-9c636bf6a10d",
                             "cn": [
                                 {
@@ -142,7 +142,7 @@
                                         "layout|flex": null,
                                         "text": "删除"
                                     },
-                                    "name": "MyButton224",
+                                    "name": "MyButton241",
                                     "designerId": "785d8d10-5d6b-40fe-8471-f2dd7d1be047",
                                     "cn": [
                                         {
@@ -209,7 +209,7 @@
                                 "type": "object"
                             },
                             "codeClass": "Ext.selection.CheckboxModel",
-                            "name": "MyCheckboxSelectionModel34",
+                            "name": "MyCheckboxSelectionModel35",
                             "designerId": "57b06958-87b5-413f-af7c-ca99840b1488"
                         }
                     ]

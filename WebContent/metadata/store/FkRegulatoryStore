@@ -28,7 +28,7 @@
                 ],
                 "url": "findYJinformation"
             },
-            "name": "MyAjaxProxy34",
+            "name": "MyAjaxProxy35",
             "designerId": "da0dc0d7-fdc6-4777-8ac7-31819f2baffa",
             "cn": [
                 {
@@ -41,7 +41,7 @@
                     "userConfig": {
                         "root": "root"
                     },
-                    "name": "MyJsonReader34",
+                    "name": "MyJsonReader35",
                     "designerId": "bb5e5504-e609-482b-9043-df383ea5264c"
                 }
             ]

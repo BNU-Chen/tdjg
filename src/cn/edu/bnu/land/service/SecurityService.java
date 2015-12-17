@@ -12,7 +12,7 @@ import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.stereotype.Service;
 
-import cn.edu.bnu.land.model.URoleRight;
+import cn.edu.bnu.land.model.SystemMap;
 import cn.edu.bnu.land.model.Users;
 
 @Service

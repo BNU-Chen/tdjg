@@ -29,7 +29,7 @@
                 ],
                 "url": "selectEvaluateReport"
             },
-            "name": "MyAjaxProxy18",
+            "name": "MyAjaxProxy19",
             "designerId": "4afc5894-af08-487e-b451-7f2e25ac5cea",
             "cn": [
                 {
@@ -42,7 +42,7 @@
                     "userConfig": {
                         "root": "root"
                     },
-                    "name": "MyJsonReader18",
+                    "name": "MyJsonReader19",
                     "designerId": "a808b94e-5d56-43ca-bed5-c5d380dcc331"
                 }
             ]

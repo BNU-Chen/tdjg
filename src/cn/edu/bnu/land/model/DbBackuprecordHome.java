@@ -1,26 +1,37 @@
 package cn.edu.bnu.land.model;
 
-// Generated 2015-4-17 17:01:56 by Hibernate Tools 4.0.0
+// Generated 2013-10-14 10:05:30 by Hibernate Tools 4.0.0
 
 import java.util.List;
+
 import javax.naming.InitialContext;
+
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.hibernate.LockMode;
 import org.hibernate.SessionFactory;
 import org.hibernate.criterion.Example;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
 
 /**
  * Home object for domain model class DbBackuprecord.
  * @see cn.edu.bnu.land.model.DbBackuprecord
  * @author Hibernate Tools
  */
+@Repository
 public class DbBackuprecordHome {
 
 	private static final Log log = LogFactory.getLog(DbBackuprecordHome.class);
 
-	private final SessionFactory sessionFactory = getSessionFactory();
+	//private final SessionFactory sessionFactory = getSessionFactory();
+	private SessionFactory sessionFactory;
 
+	@Autowired
+	public void setSessionFactory(SessionFactory sessionFactory) {
+		this.sessionFactory = sessionFactory;
+	}
+	
 	protected SessionFactory getSessionFactory() {
 		try {
 			return (SessionFactory) new InitialContext()

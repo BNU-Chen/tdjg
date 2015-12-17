@@ -31,7 +31,7 @@
                 "sortType": null,
                 "type": null
             },
-            "name": "MyField443",
+            "name": "MyField450",
             "designerId": "f27534bb-f936-4d57-b156-0b427aa3409e"
         },
         {
@@ -45,7 +45,7 @@
                 "name": "username",
                 "type": "string"
             },
-            "name": "MyField444",
+            "name": "MyField451",
             "designerId": "a2ad8c01-219b-4498-89a5-b5b682472520"
         },
         {
@@ -59,7 +59,7 @@
                 "name": "password",
                 "type": "string"
             },
-            "name": "MyField445",
+            "name": "MyField452",
             "designerId": "f1d0c5b2-8bbd-4ff4-80bb-39afc6da4637"
         },
         {
@@ -73,7 +73,7 @@
                 "name": "enabled",
                 "type": "boolean"
             },
-            "name": "MyField446",
+            "name": "MyField453",
             "designerId": "24256a45-2a63-4a72-aaaa-50931c3c80ba"
         },
         {
@@ -88,7 +88,7 @@
                 "name": "registerdate",
                 "type": "date"
             },
-            "name": "MyField447",
+            "name": "MyField454",
             "designerId": "968cf65e-038d-476a-b2a9-ed317090220e"
         },
         {
@@ -102,7 +102,7 @@
                 "name": "truename",
                 "type": null
             },
-            "name": "MyField448",
+            "name": "MyField455",
             "designerId": "4f33d6d4-2516-48ff-9378-2ba3682e7659"
         },
         {
@@ -116,7 +116,7 @@
                 "name": "email",
                 "type": "string"
             },
-            "name": "MyField449",
+            "name": "MyField456",
             "designerId": "21805801-a726-4d51-829f-854a1b5a4747"
         },
         {
@@ -130,7 +130,7 @@
                 "name": "mobilenum",
                 "type": "string"
             },
-            "name": "MyField450",
+            "name": "MyField457",
             "designerId": "302ae91c-ee7f-47b2-b470-69bec998defd"
         },
         {
@@ -144,7 +144,7 @@
                 "name": "phonenum",
                 "type": "string"
             },
-            "name": "MyField451",
+            "name": "MyField458",
             "designerId": "66686c61-ec8c-4a4a-82f2-5d0861a03752"
         },
         {
@@ -158,7 +158,7 @@
                 "name": "description",
                 "type": "auto"
             },
-            "name": "MyField452",
+            "name": "MyField459",
             "designerId": "7662b5cd-877a-4c2f-a8b8-263ee70948ec"
         }
     ]

@@ -31,7 +31,7 @@
                 ],
                 "url": "yqprojectmonitorInfo"
             },
-            "name": "MyAjaxProxy14",
+            "name": "MyAjaxProxy15",
             "designerId": "9cf21f21-20fd-4686-aa7e-0803095f5edf",
             "cn": [
                 {
@@ -44,7 +44,7 @@
                     "userConfig": {
                         "root": "root"
                     },
-                    "name": "MyJsonReader14",
+                    "name": "MyJsonReader15",
                     "designerId": "3eb3098b-aab7-4e7c-ac21-4eb4cf81bdb9"
                 }
             ]

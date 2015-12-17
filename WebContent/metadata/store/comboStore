@@ -22,7 +22,7 @@
                 "type": "object"
             },
             "codeClass": null,
-            "name": "MyAjaxProxy30",
+            "name": "MyAjaxProxy31",
             "designerId": "783b39b6-081e-4269-895b-43e474152e2c",
             "cn": [
                 {
@@ -32,7 +32,7 @@
                         "type": "object"
                     },
                     "codeClass": null,
-                    "name": "MyJsonReader30",
+                    "name": "MyJsonReader31",
                     "designerId": "e7dedcfe-04d0-47d2-9aa4-458c5b0ad0c1"
                 }
             ]
@@ -47,7 +47,7 @@
             "userConfig": {
                 "name": "id"
             },
-            "name": "MyField236",
+            "name": "MyField243",
             "designerId": "a16a25cc-1c33-4f18-92c3-3185904e2d84"
         },
         {
@@ -60,7 +60,7 @@
             "userConfig": {
                 "name": "text"
             },
-            "name": "MyField237",
+            "name": "MyField244",
             "designerId": "a8289234-0c4f-4a00-92b7-7d6d1662ad0c"
         }
     ]

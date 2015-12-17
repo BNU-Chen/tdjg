@@ -30,7 +30,7 @@
                 ],
                 "url": "searchCheckApply"
             },
-            "name": "MyAjaxProxy19",
+            "name": "MyAjaxProxy20",
             "designerId": "7238cc3f-4610-4e3b-95cd-e2881bf67e95",
             "cn": [
                 {
@@ -43,7 +43,7 @@
                     "userConfig": {
                         "root": "root"
                     },
-                    "name": "MyJsonReader19",
+                    "name": "MyJsonReader20",
                     "designerId": "5177ec9d-b3e1-428f-aec1-30d34d11dcab"
                 }
             ]

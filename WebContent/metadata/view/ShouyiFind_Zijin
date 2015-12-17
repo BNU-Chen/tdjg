@@ -49,7 +49,7 @@
                         "layout|y": 20,
                         "width": 180
                     },
-                    "name": "MyTextField59",
+                    "name": "MyTextField63",
                     "designerId": "5c8e5faf-041e-4e5f-b311-3eb8e178adf0"
                 },
                 {
@@ -69,7 +69,7 @@
                         "layout|y": 20,
                         "width": 180
                     },
-                    "name": "MyDateField5",
+                    "name": "MyDateField6",
                     "designerId": "97853411-24df-46a3-8127-1f2ec51e3258"
                 },
                 {
@@ -89,7 +89,7 @@
                         "layout|y": 20,
                         "width": 180
                     },
-                    "name": "MyDateField6",
+                    "name": "MyDateField7",
                     "designerId": "133f5416-1774-468d-9989-9dfcfc7fed3b"
                 },
                 {
@@ -105,7 +105,7 @@
                         "text": "查询",
                         "width": 60
                     },
-                    "name": "MyButton33",
+                    "name": "MyButton39",
                     "designerId": "a7b8c3ae-7b9b-49ef-8b3d-3faafe0ffb33",
                     "cn": [
                         {
@@ -165,7 +165,7 @@
                         "text": "删除",
                         "width": 60
                     },
-                    "name": "MyButton34",
+                    "name": "MyButton40",
                     "designerId": "71db40f8-0ce0-4fec-a65b-690dcccf6776",
                     "cn": [
                         {
@@ -234,7 +234,7 @@
                 "store": "ShouyiFind_Zijin",
                 "title": "资金流动列表"
             },
-            "name": "MyGridPanel6",
+            "name": "MyGridPanel7",
             "designerId": "83a44995-ba1b-4c7a-a8b5-c771751ebf5a",
             "cn": [
                 {
@@ -248,7 +248,7 @@
                         "text": "序号",
                         "width": 39
                     },
-                    "name": "MyRowNumberer5",
+                    "name": "MyRowNumberer6",
                     "designerId": "e5e0f23a-b4c6-4b56-bc34-81e47cb18b0c"
                 },
                 {
@@ -262,7 +262,7 @@
                         "dataIndex": "htbh",
                         "text": "合同编号"
                     },
-                    "name": "MyColumn16",
+                    "name": "MyColumn21",
                     "designerId": "27c7db7b-2846-4b96-b23f-ad52cd5e6cda"
                 },
                 {
@@ -276,7 +276,7 @@
                         "dataIndex": "pjh",
                         "text": "票据号"
                     },
-                    "name": "MyColumn17",
+                    "name": "MyColumn22",
                     "designerId": "a298f741-b0ea-4b7c-b145-a034c5a025e1"
                 },
                 {
@@ -290,7 +290,7 @@
                         "dataIndex": "jysj",
                         "text": "交易时间"
                     },
-                    "name": "MyDateColumn2",
+                    "name": "MyDateColumn3",
                     "designerId": "36113b4e-b528-4820-aa30-ad90a5c09215"
                 },
                 {
@@ -304,7 +304,7 @@
                         "dataIndex": "zjlcf",
                         "text": "资金流出方"
                     },
-                    "name": "MyColumn18",
+                    "name": "MyColumn23",
                     "designerId": "4de6ae32-dd96-4d3f-a78f-67b1e4f25ee1"
                 },
                 {
@@ -318,7 +318,7 @@
                         "dataIndex": "zjlrf",
                         "text": "资金流入方"
                     },
-                    "name": "MyColumn19",
+                    "name": "MyColumn24",
                     "designerId": "cc73901f-ec98-4e2d-8570-d196b7a8b434"
                 },
                 {
@@ -347,7 +347,7 @@
                         "dataIndex": "yt",
                         "text": "用途"
                     },
-                    "name": "MyColumn20",
+                    "name": "MyColumn25",
                     "designerId": "5c92483c-16af-48f5-aa1f-a3a0ef4d525e"
                 },
                 {
@@ -361,7 +361,7 @@
                         "dataIndex": "jbr",
                         "text": "经办人"
                     },
-                    "name": "MyColumn21",
+                    "name": "MyColumn26",
                     "designerId": "e54f0d4b-eee4-478b-b03d-bf8c58943581"
                 },
                 {
@@ -375,7 +375,7 @@
                         "dataIndex": "scsmj",
                         "text": "扫描件"
                     },
-                    "name": "MyColumn22",
+                    "name": "MyColumn27",
                     "designerId": "68968ce7-01f1-4359-9508-11a105e34a11"
                 },
                 {
@@ -389,7 +389,7 @@
                         "dataIndex": "dzqr",
                         "text": "到账确认"
                     },
-                    "name": "MyColumn23",
+                    "name": "MyColumn28",
                     "designerId": "dd9f29ad-fe9b-42eb-aa9d-2095ddf85f1d"
                 },
                 {
@@ -399,7 +399,7 @@
                         "type": "object"
                     },
                     "codeClass": null,
-                    "name": "MyGridView6",
+                    "name": "MyGridView7",
                     "designerId": "336e635a-e87a-41c7-8b55-9dea42d936f1"
                 },
                 {
@@ -425,7 +425,7 @@
                         "type": "object"
                     },
                     "codeClass": "Ext.selection.CheckboxModel",
-                    "name": "MyCheckboxSelectionModel2",
+                    "name": "MyCheckboxSelectionModel3",
                     "designerId": "0eda1881-e563-4d89-9186-182c7ac091f8"
                 }
             ]

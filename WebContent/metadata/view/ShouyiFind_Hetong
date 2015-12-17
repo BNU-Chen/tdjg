@@ -31,7 +31,7 @@
                 "layout|region": "north",
                 "title": "选择查询条件"
             },
-            "name": "MyForm10",
+            "name": "MyForm11",
             "designerId": "a4716529-645f-4adc-8f95-787fe8055337",
             "cn": [
                 {
@@ -51,7 +51,7 @@
                         "layout|y": 20,
                         "width": 180
                     },
-                    "name": "MyTextField60",
+                    "name": "MyTextField64",
                     "designerId": "db825ff0-c3eb-40e1-bb0e-7e2e550d79dd"
                 },
                 {
@@ -71,7 +71,7 @@
                         "layout|y": 20,
                         "width": 180
                     },
-                    "name": "MyDateField7",
+                    "name": "MyDateField8",
                     "designerId": "1ed680d2-283e-476a-8383-9902036196ee"
                 },
                 {
@@ -91,7 +91,7 @@
                         "layout|y": 20,
                         "width": 180
                     },
-                    "name": "MyDateField8",
+                    "name": "MyDateField9",
                     "designerId": "fd9ae976-083c-43dc-8d19-e48df0f4982e"
                 },
                 {
@@ -107,7 +107,7 @@
                         "text": "查询",
                         "width": 60
                     },
-                    "name": "MyButton35",
+                    "name": "MyButton41",
                     "designerId": "e2c96b70-8e63-49e6-b98a-f2345f68efb9",
                     "cn": [
                         {
@@ -167,7 +167,7 @@
                         "text": "删除",
                         "width": 60
                     },
-                    "name": "MyButton36",
+                    "name": "MyButton42",
                     "designerId": "a565969b-6177-4696-b290-2bbac0b6cdcc",
                     "cn": [
                         {
@@ -237,7 +237,7 @@
                 "store": "ShouyiFind",
                 "title": "合同信息列表"
             },
-            "name": "MyGridPanel7",
+            "name": "MyGridPanel8",
             "designerId": "219482ad-a665-4788-86a1-e4509f555935",
             "cn": [
                 {
@@ -251,7 +251,7 @@
                         "text": "序号",
                         "width": 39
                     },
-                    "name": "MyRowNumberer6",
+                    "name": "MyRowNumberer7",
                     "designerId": "be2e688a-77ce-4d89-b810-baf6c59c51fe"
                 },
                 {
@@ -266,7 +266,7 @@
                         "text": "合同编号",
                         "width": 69
                     },
-                    "name": "MyColumn24",
+                    "name": "MyColumn29",
                     "designerId": "1bd269ec-d87e-41bb-8bb7-04cd60223c05"
                 },
                 {
@@ -281,7 +281,7 @@
                         "text": "交易时间",
                         "width": 76
                     },
-                    "name": "MyDateColumn3",
+                    "name": "MyDateColumn4",
                     "designerId": "ffc834e5-1406-4732-81c5-0b4c987b5050"
                 },
                 {
@@ -311,7 +311,7 @@
                         "text": "交易区域",
                         "width": 71
                     },
-                    "name": "MyColumn25",
+                    "name": "MyColumn30",
                     "designerId": "d83a63d5-1396-4b5b-917d-f5500c8fd669"
                 },
                 {
@@ -326,7 +326,7 @@
                         "text": "购买单位名称",
                         "width": 83
                     },
-                    "name": "MyColumn26",
+                    "name": "MyColumn31",
                     "designerId": "b9d32c88-b40d-465c-b675-4ae0608d6fa8"
                 },
                 {
@@ -341,7 +341,7 @@
                         "text": "单位性质",
                         "width": 83
                     },
-                    "name": "MyColumn27",
+                    "name": "MyColumn32",
                     "designerId": "2a40c7f6-a9ed-4e8a-b8a4-fe4493fc8f4e"
                 },
                 {
@@ -411,7 +411,7 @@
                         "type": "object"
                     },
                     "codeClass": null,
-                    "name": "MyGridView7",
+                    "name": "MyGridView8",
                     "designerId": "c6323a62-4574-4923-a25d-b11117b244b6"
                 },
                 {
@@ -437,7 +437,7 @@
                         "type": "object"
                     },
                     "codeClass": "Ext.selection.CheckboxModel",
-                    "name": "MyCheckboxSelectionModel3",
+                    "name": "MyCheckboxSelectionModel4",
                     "designerId": "126e0a29-c34a-4a0f-92c4-c296587f5010"
                 }
             ]

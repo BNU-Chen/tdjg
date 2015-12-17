@@ -21,7 +21,7 @@ function init()
    map = new esri.Map("map", {
        logo: false
    });
-   dynamicMapServiceLayer = new esri.layers.ArcGISDynamicMapServiceLayer("http://localhost:6080/arcgis/rest/services/tdlzmap/tdlz6/MapServer");
+   dynamicMapServiceLayer = new esri.layers.ArcGISDynamicMapServiceLayer("http://localhost:6080/arcgis/rest/services/xianzhuang/MapServer");
    //添加图层载入后监听方法loadLayerList
    dojo.connect(dynamicMapServiceLayer,"onLoad",loadLayerList);
    //添加到地图控件进行显示
@@ -40,7 +40,7 @@ function queryDk(){
 
         //build query task
         //queryTask = new esri.tasks.QueryTask("http://localhost:8399/arcgis/rest/services/fangsjjxxg_qy/MapServer/9");
-		queryTask = new esri.tasks.QueryTask("http://localhost:6080/arcgis/rest/services/tdlzmap/tdlz6/MapServer/3");
+		queryTask = new esri.tasks.QueryTask("http://localhost:6080/arcgis/rest/services/xianzhuang/MapServer/3");
         
         //Can listen for onComplete event to process results or can use the callback option in the queryTask.execute method.
         //dojo.connect(queryTask, "onComplete", showResults);
@@ -105,7 +105,7 @@ function showResults(featureSet) {
 //模糊查询---begin
 function findmultilayerbyattr(){
    //实例化FindTask
-   findTask = new esri.tasks.FindTask("http://localhost:6080/arcgis/rest/services/tdlzmap/tdlz6/MapServer");
+   findTask = new esri.tasks.FindTask("http://localhost:6080/arcgis/rest/services/xianzhuang/MapServer");
    //FindTask的参数
    findParams = new esri.tasks.FindParameters();
    //返回Geometry

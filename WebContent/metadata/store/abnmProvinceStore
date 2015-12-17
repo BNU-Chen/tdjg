@@ -26,7 +26,7 @@
                 "extraParams": null,
                 "url": "get_infoAreaProvinceList"
             },
-            "name": "MyAjaxProxy73",
+            "name": "MyAjaxProxy74",
             "designerId": "a4e164f8-0ce2-470c-8fd4-9f9306d4d07b",
             "cn": [
                 {
@@ -39,7 +39,7 @@
                     "userConfig": {
                         "root": null
                     },
-                    "name": "MyJsonReader73",
+                    "name": "MyJsonReader74",
                     "designerId": "0955d54a-747c-4791-9dcc-9358c52c6a4f"
                 }
             ]

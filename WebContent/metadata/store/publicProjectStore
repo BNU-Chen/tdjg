@@ -34,7 +34,7 @@
                 ],
                 "url": "findUser"
             },
-            "name": "MyAjaxProxy31",
+            "name": "MyAjaxProxy32",
             "designerId": "a9049353-0538-45f4-b3da-a17590365f9b",
             "cn": [
                 {
@@ -47,7 +47,7 @@
                     "userConfig": {
                         "root": "root"
                     },
-                    "name": "MyJsonReader31",
+                    "name": "MyJsonReader32",
                     "designerId": "047a1172-b57c-4992-9504-b8a11ccf3a7f"
                 }
             ]

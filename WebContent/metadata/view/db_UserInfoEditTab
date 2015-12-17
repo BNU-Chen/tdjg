@@ -28,7 +28,7 @@
                 "layout": "auto",
                 "title": null
             },
-            "name": "MyForm57",
+            "name": "MyForm58",
             "designerId": "e83ce882-a969-40db-9d6b-509ba3f6d3b0",
             "cn": [
                 {
@@ -41,7 +41,7 @@
                     "userConfig": {
                         "title": "帐户信息"
                     },
-                    "name": "MyFieldSet8",
+                    "name": "MyFieldSet9",
                     "designerId": "9635dbde-b4a0-414d-9cc3-4d8748e8e401",
                     "cn": [
                         {
@@ -58,7 +58,7 @@
                                 "readOnly": true,
                                 "width": 400
                             },
-                            "name": "MyTextField311",
+                            "name": "MyTextField315",
                             "designerId": "ebb91483-0ee6-4ac2-9868-63728ec03545"
                         },
                         {
@@ -75,7 +75,7 @@
                                 "readOnly": true,
                                 "width": 400
                             },
-                            "name": "MyTextField312",
+                            "name": "MyTextField316",
                             "designerId": "73b20bb8-0a2c-4e32-9018-627ec6cd4258"
                         },
                         {
@@ -92,7 +92,7 @@
                                 "readOnly": true,
                                 "width": 400
                             },
-                            "name": "MyTextField313",
+                            "name": "MyTextField317",
                             "designerId": "bfcf2c32-0dcd-4995-8057-018f56f97b23"
                         }
                     ]
@@ -107,7 +107,7 @@
                     "userConfig": {
                         "title": "密码修改"
                     },
-                    "name": "MyFieldSet9",
+                    "name": "MyFieldSet10",
                     "designerId": "1cfe9579-dc7e-411e-b328-12522c47e7a9",
                     "cn": [
                         {
@@ -124,7 +124,7 @@
                                 "name": "userPwd",
                                 "width": 400
                             },
-                            "name": "MyTextField314",
+                            "name": "MyTextField318",
                             "designerId": "1f435ac0-0680-4dbe-ab8e-b78c71d6da97"
                         },
                         {
@@ -140,7 +140,7 @@
                                 "inputType": "password",
                                 "width": 400
                             },
-                            "name": "MyTextField315",
+                            "name": "MyTextField319",
                             "designerId": "39c6a569-ddae-4bfe-9ce0-3212c8a48784"
                         },
                         {
@@ -175,7 +175,7 @@
                     "userConfig": {
                         "title": "用户信息"
                     },
-                    "name": "MyFieldSet10",
+                    "name": "MyFieldSet11",
                     "designerId": "df58ebc0-7c8d-4644-a97a-890bd9d6e838",
                     "cn": [
                         {
@@ -191,7 +191,7 @@
                                 "name": "trueName",
                                 "width": 400
                             },
-                            "name": "MyTextField316",
+                            "name": "MyTextField320",
                             "designerId": "f344d600-27a1-4f67-805f-44d3f5bd64d2"
                         },
                         {
@@ -207,7 +207,7 @@
                                 "name": "mobileNum",
                                 "width": 400
                             },
-                            "name": "MyTextField317",
+                            "name": "MyTextField321",
                             "designerId": "f12f722f-a4ba-4dee-8e40-c929cd11e924"
                         },
                         {
@@ -223,7 +223,7 @@
                                 "name": "phoneNum",
                                 "width": 400
                             },
-                            "name": "MyTextField318",
+                            "name": "MyTextField322",
                             "designerId": "678eb455-00e7-4166-88a2-f0ea9ac10c72"
                         },
                         {
@@ -240,7 +240,7 @@
                                 "name": "email",
                                 "width": 400
                             },
-                            "name": "MyTextField319",
+                            "name": "MyTextField323",
                             "designerId": "8c8d562a-3a17-4a16-80a1-fc8d38415c31"
                         },
                         {
@@ -257,7 +257,7 @@
                                 "layout|anchor": "100%",
                                 "name": "description"
                             },
-                            "name": "MyHtmlEditor8",
+                            "name": "MyHtmlEditor9",
                             "designerId": "78a14ca2-d94f-4765-a9ef-c03a0a1303ac"
                         }
                     ]
@@ -272,7 +272,7 @@
                     "userConfig": {
                         "text": "确认修改"
                     },
-                    "name": "MyButton359",
+                    "name": "MyButton376",
                     "designerId": "23b16b94-6e5f-470e-96d2-8abb023e6e6b",
                     "cn": [
                         {
@@ -339,7 +339,7 @@
                     "userConfig": {
                         "text": "取消"
                     },
-                    "name": "MyButton360",
+                    "name": "MyButton377",
                     "designerId": "5d201a88-9df3-4456-b75b-b4482a6680d5",
                     "cn": [
                         {

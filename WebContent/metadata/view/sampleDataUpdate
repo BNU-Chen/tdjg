@@ -32,7 +32,7 @@
                 "title": "",
                 "url": "update_sample"
             },
-            "name": "MyForm56",
+            "name": "MyForm57",
             "designerId": "a50e0bae-e019-4ebb-b0dd-61cdddcafe2b",
             "cn": [
                 {
@@ -49,7 +49,7 @@
                         "layout|y": 90,
                         "name": "sampleId"
                     },
-                    "name": "MyTextField295",
+                    "name": "MyTextField299",
                     "designerId": "1a822f88-7370-42b8-b816-a608764b6ef0"
                 },
                 {
@@ -67,7 +67,7 @@
                         "layout|y": 160,
                         "name": "recordId"
                     },
-                    "name": "MyTextField296",
+                    "name": "MyTextField300",
                     "designerId": "4cff8f38-f76f-44e4-9e2a-ec3ca85ba21d"
                 },
                 {
@@ -84,7 +84,7 @@
                         "name": "sampleAddresss",
                         "width": 240
                     },
-                    "name": "MyTextField297",
+                    "name": "MyTextField301",
                     "designerId": "a5c3f814-c0b9-4b80-921b-2bb7aff99e36"
                 },
                 {
@@ -102,7 +102,7 @@
                         "layout|y": 40,
                         "name": "projectId"
                     },
-                    "name": "MyTextField298",
+                    "name": "MyTextField302",
                     "designerId": "50611d38-424d-4125-8a59-3402ee5bfa77"
                 },
                 {
@@ -120,7 +120,7 @@
                         "name": "projectName",
                         "width": 240
                     },
-                    "name": "MyTextField299",
+                    "name": "MyTextField303",
                     "designerId": "d2ea861a-e834-4ceb-8857-a6494fdf23f6"
                 },
                 {
@@ -137,7 +137,7 @@
                         "layout|y": 140,
                         "name": "longitude"
                     },
-                    "name": "MyTextField300",
+                    "name": "MyTextField304",
                     "designerId": "c9c7710f-4e13-4bc1-a797-4342ee92cbce"
                 },
                 {
@@ -154,7 +154,7 @@
                         "name": "latitude",
                         "width": 240
                     },
-                    "name": "MyTextField301",
+                    "name": "MyTextField305",
                     "designerId": "bfa39706-b96c-4a26-9284-73ba196d27af"
                 },
                 {
@@ -171,7 +171,7 @@
                         "layout|y": 290,
                         "name": "organicmatter"
                     },
-                    "name": "MyTextField302",
+                    "name": "MyTextField306",
                     "designerId": "183899e8-36ca-4ebb-8e47-fb9c647d315e"
                 },
                 {
@@ -188,7 +188,7 @@
                         "layout|y": 340,
                         "name": "soiltexture"
                     },
-                    "name": "MyTextField303",
+                    "name": "MyTextField307",
                     "designerId": "1b648639-f290-43f2-ad3b-ac08a5c9caee"
                 },
                 {
@@ -205,7 +205,7 @@
                         "layout|y": 390,
                         "name": "recorder"
                     },
-                    "name": "MyTextField304",
+                    "name": "MyTextField308",
                     "designerId": "a205a271-c28d-44a9-b620-98aa6c040ea6"
                 },
                 {
@@ -222,7 +222,7 @@
                         "name": "phvalue",
                         "width": 240
                     },
-                    "name": "MyTextField305",
+                    "name": "MyTextField309",
                     "designerId": "0b0aebb4-a6d6-4342-a51b-a19fb06d5b4e"
                 },
                 {
@@ -239,7 +239,7 @@
                         "layout|y": 190,
                         "name": "soilThickness"
                     },
-                    "name": "MyTextField306",
+                    "name": "MyTextField310",
                     "designerId": "7c52e76d-f629-4120-9ba0-0cbf9c5a4224"
                 },
                 {
@@ -256,7 +256,7 @@
                         "layout|y": 240,
                         "name": "soilmoisture"
                     },
-                    "name": "MyTextField307",
+                    "name": "MyTextField311",
                     "designerId": "b0c871bf-1a50-4ca4-9b37-61fd0fcda462"
                 },
                 {
@@ -273,7 +273,7 @@
                         "name": "totalnitrogen",
                         "width": 240
                     },
-                    "name": "MyTextField308",
+                    "name": "MyTextField312",
                     "designerId": "eb4cfeff-7ccb-4621-8345-3e97306a5cc9"
                 },
                 {
@@ -290,7 +290,7 @@
                         "name": "totalphosphorus",
                         "width": 240
                     },
-                    "name": "MyTextField309",
+                    "name": "MyTextField313",
                     "designerId": "12ecd15a-99b0-427c-8889-673251f3638e"
                 },
                 {
@@ -307,7 +307,7 @@
                         "name": "totalpotassium",
                         "width": 240
                     },
-                    "name": "MyTextField310",
+                    "name": "MyTextField314",
                     "designerId": "0a4ac538-4d91-4aa6-b2bb-926cd82b9ff6"
                 },
                 {
@@ -324,7 +324,7 @@
                         "layout|y": 390,
                         "name": "sampletime"
                     },
-                    "name": "MyDateField90",
+                    "name": "MyDateField91",
                     "designerId": "d3409420-38e4-4974-8112-e8594deeed2d"
                 },
                 {
@@ -339,7 +339,7 @@
                         "layout|x": 73,
                         "layout|y": 9
                     },
-                    "name": "MyToolbar97",
+                    "name": "MyToolbar99",
                     "designerId": "ab9c7040-eab9-4794-bc74-4b6c3e6f7950",
                     "cn": [
                         {
@@ -354,7 +354,7 @@
                                 "layout|flex": null,
                                 "text": "保存"
                             },
-                            "name": "MyButton357",
+                            "name": "MyButton374",
                             "designerId": "27ed580a-00cd-4e72-92a2-40ae735c00f8",
                             "cn": [
                                 {
@@ -403,7 +403,7 @@
                                 "layout|flex": null,
                                 "text": "返回"
                             },
-                            "name": "MyButton358",
+                            "name": "MyButton375",
                             "designerId": "bde8db91-b667-4914-a57d-faa5e69deecf",
                             "cn": [
                                 {

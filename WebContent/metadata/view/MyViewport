@@ -54,7 +54,7 @@
                     "userConfig": {
                         "dock": "top"
                     },
-                    "name": "MyToolbar48",
+                    "name": "MyToolbar50",
                     "designerId": "574eaa28-d46b-4610-98f1-5eb727195690",
                     "cn": [
                         {
@@ -69,7 +69,7 @@
                                 "layout|flex": null,
                                 "text": "农村土地交易中心"
                             },
-                            "name": "MyButton192",
+                            "name": "MyButton209",
                             "designerId": "f12a9695-78c5-4884-87e1-00b71793dd41"
                         },
                         {
@@ -84,7 +84,7 @@
                                 "layout|flex": null,
                                 "text": "电子交易系统"
                             },
-                            "name": "MyButton193",
+                            "name": "MyButton210",
                             "designerId": "e17ec464-6d07-4c4d-a367-9bddb6e8c53e"
                         },
                         {
@@ -97,7 +97,7 @@
                             "userConfig": {
                                 "layout|flex": null
                             },
-                            "name": "MyFill9",
+                            "name": "MyFill10",
                             "designerId": "9c1cca9c-7fa9-4e1a-b3bf-8858acf3f7b0"
                         },
                         {
@@ -113,7 +113,7 @@
                                 "layout|flex": null,
                                 "text": "欢迎："
                             },
-                            "name": "MyLabel12",
+                            "name": "MyLabel13",
                             "designerId": "f87f4694-aab0-4b5e-8522-18f244a004b6"
                         },
                         {
@@ -128,7 +128,7 @@
                                 "layout|flex": null,
                                 "text": "用户"
                             },
-                            "name": "MyButton194",
+                            "name": "MyButton211",
                             "designerId": "c5372667-ed6d-4cc9-998a-506382e13dd6",
                             "cn": [
                                 {
@@ -192,7 +192,7 @@
                                 "layout|flex": null,
                                 "text": "退出"
                             },
-                            "name": "MyButton195",
+                            "name": "MyButton212",
                             "designerId": "a74f0956-e20b-47e1-9990-042a8bb7d909"
                         }
                     ]
@@ -310,9 +310,9 @@
                             "userConfig": {
                                 "fn": "onTreepanelSelectionChange1",
                                 "implHandler": [
-                                    "var xtype = selected[0].get('id');   \r",
-                                    "var tabPanel = Ext.getCmp('myTabPanel');\r",
-                                    "tabPanel.removeAll(true);\r",
+                                    "var xtype = selected[0].get('id');",
+                                    "var tabPanel = Ext.getCmp('myTabPanel');",
+                                    "tabPanel.removeAll(true);",
                                     "tabPanel.add(Ext.widget(xtype));"
                                 ],
                                 "name": "selectionchange",
@@ -320,6 +320,70 @@
                             },
                             "name": "onTreepanelSelectionChange1",
                             "designerId": "b3d2062e-ac6f-48a7-a68b-e004195dca70"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.tree.Panel",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|displayName": "测试",
+                        "id": "tree_infoPubManager1",
+                        "root": [
+                            "{expanded: true,",
+                            "children: [",
+                            "    ",
+                            "    {",
+                            "        id: 'infoArticleJYXCTab',",
+                            "        text: '建言献策',",
+                            "        icon:'',",
+                            "        leaf: true",
+                            "    }",
+                            "    ",
+                            "]}"
+                        ],
+                        "rootVisible": false,
+                        "title": "测试"
+                    },
+                    "name": "MyTreePanel",
+                    "designerId": "03017159-8bdf-4353-8ae0-085da895a63a",
+                    "cn": [
+                        {
+                            "type": "Ext.tree.View",
+                            "reference": {
+                                "name": "viewConfig",
+                                "type": "object"
+                            },
+                            "codeClass": null,
+                            "name": "MyTreeView2",
+                            "designerId": "08494ad3-1001-45d7-9329-44ffeba76421"
+                        },
+                        {
+                            "type": "basiceventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "onTree_infoPubManager1ItemClick",
+                                "implHandler": [
+                                    "",
+                                    "var xtype = record.internalId;",
+                                    "var tabPanel = Ext.getCmp('myTabPanel');",
+                                    "tabPanel.removeAll(true);",
+                                    "tabPanel.add(Ext.widget(xtype));",
+                                    "//console.log(xtype);"
+                                ],
+                                "name": "itemclick",
+                                "scope": "me"
+                            },
+                            "name": "onTree_infoPubManager1ItemClick",
+                            "designerId": "0976619d-9fbd-4dfa-a17c-3a0d63dc45aa"
                         }
                     ]
                 },
@@ -418,7 +482,7 @@
                             "    expanded: true,\r",
                             "    children: [\r",
                             "        {\r",
-                            "            id: '',\r",
+                            "            id: 'xiangmu_guihua',\r",
                             "            text: '项目与规划',\r",
                             "            icon: '',\r",
                             "            children: [\r",
@@ -450,7 +514,7 @@
                             "            ]\r",
                             "        },\r",
                             "        {\r",
-                            "            id: '',\r",
+                            "            id: 'fukenshenqingguanli',\r",
                             "            text: '复垦申请管理',\r",
                             "            icon: '',\r",
                             "            children: [\r",
@@ -488,7 +552,7 @@
                             "            ]\r",
                             "        },\r",
                             "        {\r",
-                            "            id: '',\r",
+                            "            id: 'gonggao_yijian',\r",
                             "            text: '公告及意见',\r",
                             "            icon: '',\r",
                             "            children: [\r",
@@ -830,7 +894,7 @@
                             "    expanded: true,\r",
                             "    children: [                                         \r",
                             "        {\r",
-                            "            id: '',\r",
+                            "            id: 'cq_chaiqianguochengguanli',\r",
                             "            text: '拆迁过程管理',\r",
                             "            icon: '',\r",
                             "            children: [\r",
@@ -868,7 +932,7 @@
                             "            ]\r",
                             "        },\r",
                             "        {\r",
-                            "            id: '',\r",
+                            "            id: 'cq_jiancejiankong',\r",
                             "            text: '监测监控',\r",
                             "            icon: '',\r",
                             "            children: [\r",
@@ -899,7 +963,7 @@
                             "            ]\r",
                             "                },\r",
                             "                {\r",
-                            "                id: '',\r",
+                            "                id: 'cq_yujingguanli',\r",
                             "                text: '预警管理',\r",
                             "                icon: '',\r",
                             "                children: [\r",
@@ -918,7 +982,7 @@
                             "            ]\r",
                             "        },\r",
                             "        {\r",
-                            "            id: '',\r",
+                            "            id: 'cq_rukubeian',\r",
                             "            text: '入库备案',\r",
                             "            icon: '',\r",
                             "            children: [\r",
@@ -1227,7 +1291,7 @@
                             "        icon:'',\r",
                             "        leaf: true\r",
                             "    },{\r",
-                            "        id: '',\r",
+                            "        id: 'fk_fukenyanshoupingjia',\r",
                             "        text: '复垦验收评价',\r",
                             "        icon:'',\r",
                             "        children:[\r",
@@ -1483,7 +1547,7 @@
                             "\r",
                             "    \r",
                             "    {\r",
-                            "        \r",
+                            "        id:'jg_yijianzhengji',\r",
                             "        text: '意见征集与舆情分析',\r",
                             "        children: [\r",
                             "        {\r",
@@ -1592,6 +1656,11 @@
                             "    },{\r",
                             "        id: 'db_SystemLogTab',\r",
                             "        text: '系统运行日志',\r",
+                            "        icon:'',\r",
+                            "        leaf: true\r",
+                            "    },{\r",
+                            "        id: 'db_BlacklistTab',\r",
+                            "        text: '企业黑名单',\r",
                             "        icon:'',\r",
                             "        leaf: true\r",
                             "    }\r",

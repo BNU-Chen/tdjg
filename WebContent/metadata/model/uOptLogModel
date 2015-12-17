@@ -1,0 +1,93 @@
+{
+    "type": "Ext.data.Model",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "uOptLogModel",
+        "designer|userClassName": "uOptLogModel"
+    },
+    "designerId": "6eb0d025-8195-4da3-8ff5-decc8494826f",
+    "cn": [
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "id"
+            },
+            "name": "MyField469",
+            "designerId": "df30ada7-3d1b-473d-93be-f4cc1deb9f25"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "username"
+            },
+            "name": "MyField470",
+            "designerId": "8c715692-eb27-4c4f-8071-b62e4ea26067"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "executetime"
+            },
+            "name": "MyField471",
+            "designerId": "054e8653-4c8f-4597-b5b8-406b3bdf21a9"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "classname"
+            },
+            "name": "MyField472",
+            "designerId": "a1b68582-3efe-44f2-acf8-d2fb15a54369"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "functionname"
+            },
+            "name": "MyField473",
+            "designerId": "5de29bc6-d42a-412f-a10a-8a76db2da876"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "parameters"
+            },
+            "name": "MyField474",
+            "designerId": "4619ac84-6662-423e-b76a-1a4883a5e087"
+        }
+    ]
+}

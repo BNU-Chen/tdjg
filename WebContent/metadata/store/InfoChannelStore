@@ -24,7 +24,7 @@
             "userConfig": {
                 "url": "get_infoChannelList"
             },
-            "name": "MyAjaxProxy46",
+            "name": "MyAjaxProxy47",
             "designerId": "69dbfa9f-40aa-432a-b6b1-73e950371a1c",
             "cn": [
                 {
@@ -37,7 +37,7 @@
                     "userConfig": {
                         "root": null
                     },
-                    "name": "MyJsonReader46",
+                    "name": "MyJsonReader47",
                     "designerId": "b0d23b5c-78fb-4905-bfd1-2a3fa9449453"
                 }
             ]

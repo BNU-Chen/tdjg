@@ -29,7 +29,7 @@
                 "store": "abnmWholeSupervisionStore",
                 "title": ""
             },
-            "name": "MyGridPanel64",
+            "name": "MyGridPanel65",
             "designerId": "bf22f7e2-9122-4643-bf5f-161b6a499204",
             "cn": [
                 {
@@ -43,7 +43,7 @@
                         "text": "记录号",
                         "width": 47
                     },
-                    "name": "MyRowNumberer56",
+                    "name": "MyRowNumberer57",
                     "designerId": "06b99df8-ec6b-4810-b71f-2fbf5ca60254"
                 },
                 {
@@ -58,7 +58,7 @@
                         "text": "项目编号",
                         "tooltip": ""
                     },
-                    "name": "MyColumn267",
+                    "name": "MyColumn273",
                     "designerId": "b42c7032-d7a7-41ee-a9b3-45e877d15d4e"
                 },
                 {
@@ -73,7 +73,7 @@
                         "text": "项目名称",
                         "tooltip": ""
                     },
-                    "name": "MyColumn268",
+                    "name": "MyColumn274",
                     "designerId": "fb2fb352-1cc1-4e3f-8c84-ca3a20b09e97"
                 },
                 {
@@ -88,7 +88,7 @@
                         "text": "标题",
                         "tooltip": ""
                     },
-                    "name": "MyColumn269",
+                    "name": "MyColumn275",
                     "designerId": "10b84b3c-1558-4351-9b25-de3bca442560"
                 },
                 {
@@ -102,7 +102,7 @@
                         "dataIndex": "abwsClass",
                         "text": "异常来源"
                     },
-                    "name": "MyColumn270",
+                    "name": "MyColumn276",
                     "designerId": "7258eb21-0da2-4598-836c-032b2a29c6e8"
                 },
                 {
@@ -116,7 +116,7 @@
                         "dataIndex": "abwsContent",
                         "text": "异常情况描述"
                     },
-                    "name": "MyColumn271",
+                    "name": "MyColumn277",
                     "designerId": "7916ea19-c90d-468a-b722-03b8fc70d056"
                 },
                 {
@@ -131,7 +131,7 @@
                         "format": "Y-m-d",
                         "text": "发布时间"
                     },
-                    "name": "MyDateColumn53",
+                    "name": "MyDateColumn54",
                     "designerId": "33fc91ca-87ab-4f3d-96af-d84bb3a19b8b"
                 },
                 {
@@ -145,7 +145,7 @@
                         "dataIndex": "abwsIsTaskAssigned",
                         "text": "任务下达"
                     },
-                    "name": "MyColumn272",
+                    "name": "MyColumn278",
                     "designerId": "e4798b08-33e7-43e2-9e1f-f50c7348968c"
                 },
                 {
@@ -159,7 +159,7 @@
                         "dataIndex": "rwId",
                         "text": "任务编号"
                     },
-                    "name": "MyColumn273",
+                    "name": "MyColumn279",
                     "designerId": "9d11cdec-282a-40ff-8d77-adb72d63db33"
                 },
                 {
@@ -173,7 +173,7 @@
                         "dataIndex": "abwsXunchacontent",
                         "text": "巡查情况描述"
                     },
-                    "name": "MyColumn274",
+                    "name": "MyColumn280",
                     "designerId": "56914179-6f96-4d9c-9784-d03275cf5923"
                 },
                 {
@@ -187,7 +187,7 @@
                         "dataIndex": "abwsOpinion",
                         "text": "处理意见"
                     },
-                    "name": "MyColumn275",
+                    "name": "MyColumn281",
                     "designerId": "894dbbb8-442f-4c82-8a55-7b3c972c772f"
                 },
                 {
@@ -201,7 +201,7 @@
                         "dataIndex": "abwsCollector",
                         "text": "意见填写人"
                     },
-                    "name": "MyColumn276",
+                    "name": "MyColumn282",
                     "designerId": "ca48d906-c201-4af9-989f-2f5c09283c67"
                 },
                 {
@@ -216,7 +216,7 @@
                         "format": "Y-m-d",
                         "text": "意见填写时间"
                     },
-                    "name": "MyDateColumn54",
+                    "name": "MyDateColumn55",
                     "designerId": "d332521d-5f03-46d0-b495-a09905987d33"
                 },
                 {
@@ -226,7 +226,7 @@
                         "type": "object"
                     },
                     "codeClass": null,
-                    "name": "MyGridView64",
+                    "name": "MyGridView65",
                     "designerId": "2609ab9c-fb1d-4b61-9ab6-0ae129fcd77c"
                 },
                 {
@@ -236,7 +236,7 @@
                         "type": "object"
                     },
                     "codeClass": "Ext.selection.CheckboxModel",
-                    "name": "MyCheckboxSelectionModel56",
+                    "name": "MyCheckboxSelectionModel57",
                     "designerId": "4ab1490e-3f9f-46ce-9e63-b3624f78ea2f"
                 },
                 {
@@ -252,7 +252,7 @@
                         "frame": false,
                         "height": null
                     },
-                    "name": "MyToolbar78",
+                    "name": "MyToolbar80",
                     "designerId": "6c3ffe29-ce69-4f2e-8788-474b9dc94aa5",
                     "cn": [
                         {
@@ -270,7 +270,7 @@
                                 "layout|flex": null,
                                 "width": 204
                             },
-                            "name": "MyDateField69",
+                            "name": "MyDateField70",
                             "designerId": "95e7f7ce-8bfb-4539-8c42-b8511dee49b2"
                         },
                         {
@@ -288,7 +288,7 @@
                                 "layout|flex": null,
                                 "width": 211
                             },
-                            "name": "MyTextField233",
+                            "name": "MyTextField237",
                             "designerId": "5cb3097e-afac-4a74-834e-39bbfe6bb68b"
                         },
                         {
@@ -303,7 +303,7 @@
                                 "layout|flex": null,
                                 "text": "搜索"
                             },
-                            "name": "MyButton288",
+                            "name": "MyButton305",
                             "designerId": "b2fb369f-10c8-4f41-9f0e-dde6d627ebcf",
                             "cn": [
                                 {
@@ -373,7 +373,7 @@
                                 "layout|flex": null,
                                 "text": "删除"
                             },
-                            "name": "MyButton289",
+                            "name": "MyButton306",
                             "designerId": "760736a8-9280-4189-8161-142435ef0bca",
                             "cn": [
                                 {
@@ -444,7 +444,7 @@
                                 "layout|flex": null,
                                 "text": "任务下达"
                             },
-                            "name": "MyButton290",
+                            "name": "MyButton307",
                             "designerId": "9ebd3d07-3983-4da5-b8a7-2ee79bbde3c2",
                             "cn": [
                                 {
@@ -534,7 +534,7 @@
                                 "layout|flex": null,
                                 "text": "任务管理"
                             },
-                            "name": "MyButton291",
+                            "name": "MyButton308",
                             "designerId": "4762ae14-2dae-48f5-81b6-d986f179562e",
                             "cn": [
                                 {

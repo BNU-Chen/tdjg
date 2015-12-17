@@ -22,7 +22,7 @@
                 "name": "abwsTitle",
                 "type": "string"
             },
-            "name": "MyField238",
+            "name": "MyField245",
             "designerId": "f9031e24-c63f-48f5-8c31-17dc4ee039b3"
         },
         {
@@ -36,7 +36,7 @@
                 "name": "abwsContent",
                 "type": "string"
             },
-            "name": "MyField239",
+            "name": "MyField246",
             "designerId": "2b73da1e-7c27-42f2-920e-134c28ec9bf4"
         },
         {
@@ -50,7 +50,7 @@
                 "name": "abwsClass",
                 "type": "string"
             },
-            "name": "MyField240",
+            "name": "MyField247",
             "designerId": "4c559959-2aad-4bc3-8479-7ea2c0b1e4ad"
         },
         {
@@ -64,7 +64,7 @@
                 "name": "abwsOpinion",
                 "type": "string"
             },
-            "name": "MyField241",
+            "name": "MyField248",
             "designerId": "1942c1a5-8830-425d-ba6f-58b6d0c5b01f"
         },
         {
@@ -78,7 +78,7 @@
                 "name": "abwsDate",
                 "type": "date"
             },
-            "name": "MyField242",
+            "name": "MyField249",
             "designerId": "5fbbb223-645d-44d5-9aa0-9e5f059e5a4e"
         },
         {
@@ -92,7 +92,7 @@
                 "name": "abwsIsSolved",
                 "type": "string"
             },
-            "name": "MyField243",
+            "name": "MyField250",
             "designerId": "73897b7a-91e0-4cb2-8e83-4dfe1e32c934"
         }
     ]

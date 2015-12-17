@@ -21,7 +21,7 @@
                 "name": "xh",
                 "type": "int"
             },
-            "name": "MyField18",
+            "name": "MyField25",
             "designerId": "a4055119-5ff4-4018-a5d2-cdd60c5b61e1"
         },
         {
@@ -35,7 +35,7 @@
                 "name": "dwmc",
                 "type": "string"
             },
-            "name": "MyField19",
+            "name": "MyField26",
             "designerId": "ba6e5c53-e75b-4d88-bc1e-1a35d12aa075"
         },
         {
@@ -49,7 +49,7 @@
                 "name": "sjdkbh",
                 "type": "string"
             },
-            "name": "MyField20",
+            "name": "MyField27",
             "designerId": "56803d9b-739c-4404-934e-5d12020afe06"
         },
         {
@@ -63,7 +63,7 @@
                 "name": "cyrw",
                 "type": "string"
             },
-            "name": "MyField21",
+            "name": "MyField28",
             "designerId": "d7f0244c-561c-4f8c-be1c-c960c766a78f"
         },
         {
@@ -77,7 +77,7 @@
                 "name": "cysj",
                 "type": "date"
             },
-            "name": "MyField22",
+            "name": "MyField29",
             "designerId": "dcc98f72-7d1d-4dcd-bd78-75a0af5eed5e"
         },
         {
@@ -91,7 +91,7 @@
                 "name": "sy",
                 "type": "int"
             },
-            "name": "MyField23",
+            "name": "MyField30",
             "designerId": "cc1d1a3b-db12-4e8a-9389-ce56eb149ce7"
         },
         {
@@ -105,7 +105,7 @@
                 "name": "sybl",
                 "type": "int"
             },
-            "name": "MyField24",
+            "name": "MyField31",
             "designerId": "843fc252-e855-4722-b64d-52780050adb0"
         }
     ]

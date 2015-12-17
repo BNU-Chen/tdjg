@@ -29,7 +29,7 @@
                 ],
                 "url": "findsample"
             },
-            "name": "MyAjaxProxy29",
+            "name": "MyAjaxProxy30",
             "designerId": "c8b2efdf-11ab-42b9-90e1-269e183f276f",
             "cn": [
                 {
@@ -42,7 +42,7 @@
                     "userConfig": {
                         "root": "root"
                     },
-                    "name": "MyJsonReader29",
+                    "name": "MyJsonReader30",
                     "designerId": "c15030cf-1782-4d30-8800-423cea0f0f8e"
                 }
             ]

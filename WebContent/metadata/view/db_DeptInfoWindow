@@ -30,7 +30,7 @@
                 "layout": "auto",
                 "title": null
             },
-            "name": "MyForm6",
+            "name": "MyForm7",
             "designerId": "8a0e02aa-511d-4f0e-8a3f-89aedd48cb18",
             "cn": [
                 {
@@ -44,7 +44,7 @@
                         "height": 258,
                         "title": "部门信息"
                     },
-                    "name": "MyFieldSet5",
+                    "name": "MyFieldSet6",
                     "designerId": "217a046a-0714-4b65-9ea1-77dbe2678795",
                     "cn": [
                         {
@@ -61,7 +61,7 @@
                                 "readOnly": true,
                                 "width": 400
                             },
-                            "name": "MyTextField38",
+                            "name": "MyTextField42",
                             "designerId": "9df27854-5e74-408c-944c-20d083b02a0f"
                         },
                         {
@@ -77,7 +77,7 @@
                                 "name": "deptName",
                                 "width": 400
                             },
-                            "name": "MyTextField39",
+                            "name": "MyTextField43",
                             "designerId": "b7f37df8-5dad-4ef9-a9f9-3a5a661b915e"
                         },
                         {
@@ -113,7 +113,7 @@
                                 "layout|anchor": "100%",
                                 "name": "description"
                             },
-                            "name": "MyHtmlEditor6",
+                            "name": "MyHtmlEditor7",
                             "designerId": "cfe44b52-dc14-4856-9f33-09b5ea744655"
                         }
                     ]
@@ -146,7 +146,7 @@
                     "userConfig": {
                         "dock": "bottom"
                     },
-                    "name": "MyToolbar7",
+                    "name": "MyToolbar9",
                     "designerId": "b060e045-d24c-4540-aa53-03b107aa13db",
                     "cn": [
                         {
@@ -159,7 +159,7 @@
                             "userConfig": {
                                 "layout|flex": null
                             },
-                            "name": "MyFill7",
+                            "name": "MyFill8",
                             "designerId": "eb6454ce-22f6-4042-9ecd-2fdb074a172b"
                         },
                         {
@@ -173,7 +173,7 @@
                                 "layout|flex": null,
                                 "text": "取消"
                             },
-                            "name": "MyButton24",
+                            "name": "MyButton30",
                             "designerId": "9c1322f3-08a9-4039-8aa4-410e6a6c7638",
                             "cn": [
                                 {
@@ -208,7 +208,7 @@
                                 "layout|flex": null,
                                 "width": 30
                             },
-                            "name": "MySpacer7",
+                            "name": "MySpacer8",
                             "designerId": "924c08cc-384d-4abc-a7e3-50345b2a5dd1"
                         },
                         {
@@ -222,7 +222,7 @@
                                 "layout|flex": null,
                                 "text": "确定"
                             },
-                            "name": "MyButton25",
+                            "name": "MyButton31",
                             "designerId": "7fed616a-147a-43d9-bc07-f237a7551618",
                             "cn": [
                                 {

@@ -30,7 +30,7 @@
                 ],
                 "url": "syrProgress"
             },
-            "name": "MyAjaxProxy98",
+            "name": "MyAjaxProxy99",
             "designerId": "60685c0d-2e6e-47c4-ab3d-b167e25fbe42",
             "cn": [
                 {
@@ -43,7 +43,7 @@
                     "userConfig": {
                         "root": "root"
                     },
-                    "name": "MyJsonReader98",
+                    "name": "MyJsonReader99",
                     "designerId": "5dbe33db-1f8d-43e2-863a-82fec49853f4"
                 }
             ]

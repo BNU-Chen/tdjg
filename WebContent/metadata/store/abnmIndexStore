@@ -28,7 +28,7 @@
                 ],
                 "url": "get_abiList"
             },
-            "name": "MyAjaxProxy78",
+            "name": "MyAjaxProxy79",
             "designerId": "206b2e97-6cd4-49fc-a131-d96ed3511b82",
             "cn": [
                 {
@@ -41,7 +41,7 @@
                     "userConfig": {
                         "root": "root"
                     },
-                    "name": "MyJsonReader78",
+                    "name": "MyJsonReader79",
                     "designerId": "13b8ccad-50aa-4c94-ad52-f07d8ebf2ba1"
                 }
             ]

@@ -31,7 +31,7 @@
                 ],
                 "url": "get_draftArticleList?channelId=16"
             },
-            "name": "MyAjaxProxy61",
+            "name": "MyAjaxProxy62",
             "designerId": "ec5f9c24-ca00-41f1-b1ed-b35cd0649bd8",
             "cn": [
                 {
@@ -44,7 +44,7 @@
                     "userConfig": {
                         "root": "root"
                     },
-                    "name": "MyJsonReader61",
+                    "name": "MyJsonReader62",
                     "designerId": "209c3ba4-e26d-42b8-be1d-9791d92faa4c"
                 }
             ]

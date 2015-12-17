@@ -35,7 +35,7 @@
                 ],
                 "url": "FKSchemeShow4"
             },
-            "name": "MyAjaxProxy82",
+            "name": "MyAjaxProxy83",
             "designerId": "e4c77397-d39e-428d-90d8-401a8802278a",
             "cn": [
                 {
@@ -48,7 +48,7 @@
                     "userConfig": {
                         "root": "root"
                     },
-                    "name": "MyJsonReader82",
+                    "name": "MyJsonReader83",
                     "designerId": "53b8597d-2fb3-4aa8-9e9d-4c2a472e7c24"
                 }
             ]

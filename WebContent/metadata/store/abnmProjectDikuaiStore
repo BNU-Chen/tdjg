@@ -26,7 +26,7 @@
                 "extraParams": null,
                 "url": "abnmGetDikuai"
             },
-            "name": "MyAjaxProxy76",
+            "name": "MyAjaxProxy77",
             "designerId": "a25b093f-b7d0-432c-85f9-0064fcca986c",
             "cn": [
                 {
@@ -39,7 +39,7 @@
                     "userConfig": {
                         "root": "root"
                     },
-                    "name": "MyJsonReader76",
+                    "name": "MyJsonReader77",
                     "designerId": "13145c18-1e85-482b-9d2d-ec81cb35e164"
                 }
             ]

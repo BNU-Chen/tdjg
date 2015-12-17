@@ -25,7 +25,7 @@
             "userConfig": {
                 "url": "findtask"
             },
-            "name": "MyAjaxProxy8",
+            "name": "MyAjaxProxy9",
             "designerId": "9ff13a42-ca75-4bf8-b077-05af9b57dede",
             "cn": [
                 {
@@ -35,7 +35,7 @@
                         "type": "object"
                     },
                     "codeClass": null,
-                    "name": "MyJsonReader8",
+                    "name": "MyJsonReader9",
                     "designerId": "911f6af9-0b92-4269-b8d1-5cf2101e1194"
                 }
             ]

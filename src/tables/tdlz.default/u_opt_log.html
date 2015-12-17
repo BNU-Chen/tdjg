@@ -66,6 +66,31 @@
 							</a>
 						</td>
 						<td>
+							varchar(10)
+						</td>
+						<td>
+							10
+						</td>
+						<td>
+							19
+						</td>
+						<td>
+							2
+						</td>
+						<td>
+							false
+						</td>
+						<td>
+							true
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="#column_detail_user_id">
+								user_id
+							</a>
+						</td>
+						<td>
 							integer
 						</td>
 						<td>
@@ -81,20 +106,20 @@
 							false
 						</td>
 						<td>
-							true
+							false
 						</td>
 					</tr>
 					<tr>
 						<td>
-							<a href="#column_detail_username">
-								username
+							<a href="#column_detail_execut_time">
+								execut_time
 							</a>
 						</td>
 						<td>
-							varchar(30)
+							datetime
 						</td>
 						<td>
-							30
+							19
 						</td>
 						<td>
 							19
@@ -111,15 +136,15 @@
 					</tr>
 					<tr>
 						<td>
-							<a href="#column_detail_executetime">
-								executetime
+							<a href="#column_detail_task_id">
+								task_id
 							</a>
 						</td>
 						<td>
-							varchar(20)
+							integer
 						</td>
 						<td>
-							20
+							255
 						</td>
 						<td>
 							19
@@ -136,65 +161,15 @@
 					</tr>
 					<tr>
 						<td>
-							<a href="#column_detail_classname">
-								classname
+							<a href="#column_detail_ip_addr">
+								ip_addr
 							</a>
 						</td>
 						<td>
-							varchar(30)
+							varchar(15)
 						</td>
 						<td>
-							30
-						</td>
-						<td>
-							19
-						</td>
-						<td>
-							2
-						</td>
-						<td>
-							true
-						</td>
-						<td>
-							false
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<a href="#column_detail_functionname">
-								functionname
-							</a>
-						</td>
-						<td>
-							varchar(30)
-						</td>
-						<td>
-							30
-						</td>
-						<td>
-							19
-						</td>
-						<td>
-							2
-						</td>
-						<td>
-							true
-						</td>
-						<td>
-							false
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<a href="#column_detail_parameters">
-								parameters
-							</a>
-						</td>
-						<td>
-							varchar(50)
-						</td>
-						<td>
-							50
+							15
 						</td>
 						<td>
 							19
@@ -282,10 +257,10 @@
 				
 				<ul>
 					<li>
-						<strong>Type:</strong> integer
+						<strong>Type:</strong> varchar(10)
 					</li>
 					<li>
-						<strong>Length:</strong> 255
+						<strong>Length:</strong> 10
 					</li>
 					<li>
 						<strong>Precision:</strong> 19
@@ -306,14 +281,14 @@
 
 
 				<hr/>
-				<h3 id="column_detail_username">username</h3>
+				<h3 id="column_detail_user_id">user_id</h3>
 				
 				<ul>
 					<li>
-						<strong>Type:</strong> varchar(30)
+						<strong>Type:</strong> integer
 					</li>
 					<li>
-						<strong>Length:</strong> 30
+						<strong>Length:</strong> 255
 					</li>
 					<li>
 						<strong>Precision:</strong> 19
@@ -322,26 +297,26 @@
 						<strong>Scale:</strong> 2
 					</li>
 					<li>
-						<strong>Nullable:</strong> true
+						<strong>Nullable:</strong> false
 					</li>
 					<li>
 						<strong>Unique:</strong> false
 					</li>
 					<li>
-						<strong>Comment:</strong> 用户名称
+						<strong>Comment:</strong> 用户id
 					</li>
 				</ul>
 
 
 				<hr/>
-				<h3 id="column_detail_executetime">executetime</h3>
+				<h3 id="column_detail_execut_time">execut_time</h3>
 				
 				<ul>
 					<li>
-						<strong>Type:</strong> varchar(20)
+						<strong>Type:</strong> datetime
 					</li>
 					<li>
-						<strong>Length:</strong> 20
+						<strong>Length:</strong> 19
 					</li>
 					<li>
 						<strong>Precision:</strong> 19
@@ -362,14 +337,14 @@
 
 
 				<hr/>
-				<h3 id="column_detail_classname">classname</h3>
+				<h3 id="column_detail_task_id">task_id</h3>
 				
 				<ul>
 					<li>
-						<strong>Type:</strong> varchar(30)
+						<strong>Type:</strong> integer
 					</li>
 					<li>
-						<strong>Length:</strong> 30
+						<strong>Length:</strong> 255
 					</li>
 					<li>
 						<strong>Precision:</strong> 19
@@ -384,20 +359,20 @@
 						<strong>Unique:</strong> false
 					</li>
 					<li>
-						<strong>Comment:</strong> 操作的类名
+						<strong>Comment:</strong> 任务id编号
 					</li>
 				</ul>
 
 
 				<hr/>
-				<h3 id="column_detail_functionname">functionname</h3>
+				<h3 id="column_detail_ip_addr">ip_addr</h3>
 				
 				<ul>
 					<li>
-						<strong>Type:</strong> varchar(30)
+						<strong>Type:</strong> varchar(15)
 					</li>
 					<li>
-						<strong>Length:</strong> 30
+						<strong>Length:</strong> 15
 					</li>
 					<li>
 						<strong>Precision:</strong> 19
@@ -412,35 +387,7 @@
 						<strong>Unique:</strong> false
 					</li>
 					<li>
-						<strong>Comment:</strong> 方法名
-					</li>
-				</ul>
-
-
-				<hr/>
-				<h3 id="column_detail_parameters">parameters</h3>
-				
-				<ul>
-					<li>
-						<strong>Type:</strong> varchar(50)
-					</li>
-					<li>
-						<strong>Length:</strong> 50
-					</li>
-					<li>
-						<strong>Precision:</strong> 19
-					</li>
-					<li>
-						<strong>Scale:</strong> 2
-					</li>
-					<li>
-						<strong>Nullable:</strong> true
-					</li>
-					<li>
-						<strong>Unique:</strong> false
-					</li>
-					<li>
-						<strong>Comment:</strong> 参数
+						<strong>Comment:</strong> ip地址
 					</li>
 				</ul>
 

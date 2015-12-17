@@ -28,7 +28,7 @@
                 ],
                 "url": "get_projectIDList"
             },
-            "name": "MyAjaxProxy93",
+            "name": "MyAjaxProxy94",
             "designerId": "2cc04773-6cfb-45d8-875b-22fb99c226d0",
             "cn": [
                 {
@@ -41,7 +41,7 @@
                     "userConfig": {
                         "root": "root"
                     },
-                    "name": "MyJsonReader93",
+                    "name": "MyJsonReader94",
                     "designerId": "a3ccfb53-192f-4a7d-ba37-966fc6a16a1d"
                 }
             ]

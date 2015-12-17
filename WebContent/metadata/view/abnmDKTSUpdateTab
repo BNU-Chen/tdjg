@@ -27,7 +27,7 @@
                 "layout": "absolute",
                 "title": null
             },
-            "name": "MyForm52",
+            "name": "MyForm53",
             "designerId": "cc2abc55-1a44-468f-bcad-d4589e22c61c",
             "cn": [
                 {
@@ -47,7 +47,7 @@
                         "name": "tbbh",
                         "width": null
                     },
-                    "name": "MyTextField264",
+                    "name": "MyTextField268",
                     "designerId": "08a7ea71-6a7b-4785-8ac5-b9dde918223b"
                 },
                 {
@@ -67,7 +67,7 @@
                         "name": "abdkSeller",
                         "width": null
                     },
-                    "name": "MyTextField265",
+                    "name": "MyTextField269",
                     "designerId": "83112c66-1890-42bb-aca4-b937eaaaf030"
                 },
                 {
@@ -87,7 +87,7 @@
                         "name": "abdkBx",
                         "width": null
                     },
-                    "name": "MyTextField266",
+                    "name": "MyTextField270",
                     "designerId": "baf47072-9164-42de-9230-07c042753f00"
                 },
                 {
@@ -107,7 +107,7 @@
                         "name": "abdkBprice",
                         "width": null
                     },
-                    "name": "MyTextField267",
+                    "name": "MyTextField271",
                     "designerId": "86d2afa9-6a48-4481-a726-c419471c40e6"
                 },
                 {
@@ -127,7 +127,7 @@
                         "name": "abdkAx",
                         "width": null
                     },
-                    "name": "MyTextField268",
+                    "name": "MyTextField272",
                     "designerId": "4f2949e3-d0e7-497e-9be2-75fb750a6a09"
                 },
                 {
@@ -147,7 +147,7 @@
                         "name": "dgcl",
                         "width": null
                     },
-                    "name": "MyTextField269",
+                    "name": "MyTextField273",
                     "designerId": "57604842-4dbc-4756-aaa3-f72714390af3"
                 },
                 {
@@ -167,7 +167,7 @@
                         "name": "abdkAarea",
                         "width": null
                     },
-                    "name": "MyTextField270",
+                    "name": "MyTextField274",
                     "designerId": "899189f1-c77e-46d4-b384-4b4e8ba86273"
                 },
                 {
@@ -190,7 +190,7 @@
                         "weight": null,
                         "width": null
                     },
-                    "name": "MyTextField271",
+                    "name": "MyTextField275",
                     "designerId": "4cc8f3e6-392e-4062-a4fb-17ee7b34b96b"
                 },
                 {
@@ -209,7 +209,7 @@
                         "name": "xzqdm",
                         "width": null
                     },
-                    "name": "MyTextField272",
+                    "name": "MyTextField276",
                     "designerId": "e7f7fbbb-5276-4280-b91a-0e22672fa609"
                 },
                 {
@@ -229,7 +229,7 @@
                         "name": "xmbh",
                         "width": null
                     },
-                    "name": "MyTextField273",
+                    "name": "MyTextField277",
                     "designerId": "f7e1b6ff-4d03-4416-86f8-c0ac0ea61281"
                 },
                 {
@@ -249,7 +249,7 @@
                         "name": "abdkSlope",
                         "width": null
                     },
-                    "name": "MyTextField274",
+                    "name": "MyTextField278",
                     "designerId": "7f2060cc-5fc1-4f17-8d12-ac8fa1268a6f"
                 },
                 {
@@ -269,7 +269,7 @@
                         "name": "abdkSlopevariance",
                         "width": null
                     },
-                    "name": "MyTextField275",
+                    "name": "MyTextField279",
                     "designerId": "467be159-aef6-4561-810c-f85a67934a98"
                 },
                 {
@@ -289,7 +289,7 @@
                         "name": "abdkBuyer",
                         "width": null
                     },
-                    "name": "MyTextField276",
+                    "name": "MyTextField280",
                     "designerId": "37f59d0d-600f-4e2c-b433-03b53fa04404"
                 },
                 {
@@ -309,7 +309,7 @@
                         "name": "abdkBy",
                         "width": null
                     },
-                    "name": "MyTextField277",
+                    "name": "MyTextField281",
                     "designerId": "4ef8b2f0-c0ba-4e67-a9ec-fd0a51fd23ca"
                 },
                 {
@@ -329,7 +329,7 @@
                         "name": "abdkAprice",
                         "width": null
                     },
-                    "name": "MyTextField278",
+                    "name": "MyTextField282",
                     "designerId": "bd88b6ea-8195-41ae-b619-f1c4ae883fa8"
                 },
                 {
@@ -349,7 +349,7 @@
                         "name": "abdkAy",
                         "width": null
                     },
-                    "name": "MyTextField279",
+                    "name": "MyTextField283",
                     "designerId": "3fdfcd8f-454d-435f-b795-f0684479096f"
                 },
                 {
@@ -369,7 +369,7 @@
                         "name": "dgjj",
                         "width": null
                     },
-                    "name": "MyTextField280",
+                    "name": "MyTextField284",
                     "designerId": "eea48179-1d28-4a4c-87e8-5252d2d8a57d"
                 },
                 {
@@ -465,7 +465,7 @@
                         "text": "确定",
                         "width": 100
                     },
-                    "name": "MyButton318",
+                    "name": "MyButton335",
                     "designerId": "cba1410c-c8aa-435c-afea-c939d9e2f38b",
                     "cn": [
                         {
@@ -503,7 +503,7 @@
                         "text": "取消",
                         "width": 90
                     },
-                    "name": "MyButton319",
+                    "name": "MyButton336",
                     "designerId": "d0346d92-cfda-45af-97d4-9cd58e0d9f25",
                     "cn": [
                         {
@@ -547,7 +547,7 @@
                         "store": "abnmIndexStore",
                         "title": "预警参数设置"
                     },
-                    "name": "MyGridPanel68",
+                    "name": "MyGridPanel69",
                     "designerId": "264c71ff-5dd9-466d-9968-e5ec573a9663",
                     "cn": [
                         {
@@ -561,7 +561,7 @@
                                 "text": "记录号",
                                 "width": 47
                             },
-                            "name": "MyRowNumberer60",
+                            "name": "MyRowNumberer61",
                             "designerId": "bcdd5498-39bd-473a-9de1-c15b8bdbe146"
                         },
                         {
@@ -575,7 +575,7 @@
                                 "dataIndex": "abiClass",
                                 "text": "指标类别"
                             },
-                            "name": "MyColumn298",
+                            "name": "MyColumn304",
                             "designerId": "f1326d1d-402d-4863-90c0-3296f7a5194d"
                         },
                         {
@@ -590,7 +590,7 @@
                                 "text": "指标名称",
                                 "tooltip": ""
                             },
-                            "name": "MyColumn299",
+                            "name": "MyColumn305",
                             "designerId": "cd3b667c-93c8-4e83-9f00-7faabe79494b"
                         },
                         {
@@ -604,7 +604,7 @@
                                 "dataIndex": "abiValue",
                                 "text": "指标值"
                             },
-                            "name": "MyColumn300",
+                            "name": "MyColumn306",
                             "designerId": "d98b9f8d-7fc1-45eb-ad5a-398ac739376a"
                         },
                         {
@@ -618,7 +618,7 @@
                                 "dataIndex": "abiWeight",
                                 "text": "指标权重"
                             },
-                            "name": "MyColumn301",
+                            "name": "MyColumn307",
                             "designerId": "8872a878-23ed-44b3-9e7f-bec7fab6cad2"
                         },
                         {
@@ -631,7 +631,7 @@
                             "userConfig": {
                                 "height": null
                             },
-                            "name": "MyGridView68",
+                            "name": "MyGridView69",
                             "designerId": "e64a242d-d594-4825-8d94-de60f59c4d2f"
                         },
                         {
@@ -641,7 +641,7 @@
                                 "type": "object"
                             },
                             "codeClass": "Ext.selection.CheckboxModel",
-                            "name": "MyCheckboxSelectionModel60",
+                            "name": "MyCheckboxSelectionModel61",
                             "designerId": "0c72eea5-3e36-401a-bff9-b322b35af7c9"
                         },
                         {
@@ -658,7 +658,7 @@
                                 "frame": false,
                                 "height": null
                             },
-                            "name": "MyToolbar84",
+                            "name": "MyToolbar86",
                             "designerId": "1809f608-987f-4289-a7cc-348b0ba7962c",
                             "cn": [
                                 {
@@ -673,7 +673,7 @@
                                         "layout|flex": null,
                                         "text": "增加指标"
                                     },
-                                    "name": "MyButton320",
+                                    "name": "MyButton337",
                                     "designerId": "bf55c4ca-2e08-4277-95eb-799329a4aebc",
                                     "cn": [
                                         {
@@ -710,7 +710,7 @@
                                         "layout|flex": null,
                                         "text": "删除指标"
                                     },
-                                    "name": "MyButton321",
+                                    "name": "MyButton338",
                                     "designerId": "29c69671-8238-4f59-9bd0-7e8f9b5450d6",
                                     "cn": [
                                         {
@@ -780,7 +780,7 @@
                                         "layout|flex": null,
                                         "text": "修改指标"
                                     },
-                                    "name": "MyButton322",
+                                    "name": "MyButton339",
                                     "designerId": "d4505090-bc9a-4dcb-b358-ecabd838703f",
                                     "cn": [
                                         {
@@ -821,7 +821,7 @@
                                 "frame": false,
                                 "height": null
                             },
-                            "name": "MyToolbar85",
+                            "name": "MyToolbar87",
                             "designerId": "43ca40a0-8029-4b3a-b514-d4d806019547",
                             "cn": [
                                 {
@@ -836,7 +836,7 @@
                                         "layout|flex": null,
                                         "text": "确定"
                                     },
-                                    "name": "MyButton323",
+                                    "name": "MyButton340",
                                     "designerId": "4c5f8b6d-3ce6-4768-a9fd-65509c9bebe7",
                                     "cn": [
                                         {
@@ -873,7 +873,7 @@
                                         "layout|flex": null,
                                         "text": "取消"
                                     },
-                                    "name": "MyButton324",
+                                    "name": "MyButton341",
                                     "designerId": "2de8dc58-4331-46f4-8fc6-d434a9bd6e51",
                                     "cn": [
                                         {
@@ -915,7 +915,7 @@
                         "layout|y": 576,
                         "text": "My Label"
                     },
-                    "name": "MyLabel16",
+                    "name": "MyLabel17",
                     "designerId": "8f4568d1-86a3-43f7-be97-2ea23cdeb934"
                 }
             ]

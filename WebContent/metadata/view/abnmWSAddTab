@@ -31,7 +31,7 @@
                 "layout": "absolute",
                 "title": null
             },
-            "name": "MyForm50",
+            "name": "MyForm51",
             "designerId": "a076dd8e-9069-4e04-8ef2-8b342d3eaf4a",
             "cn": [
                 {
@@ -71,7 +71,7 @@
                         "name": "abwsTitle",
                         "width": 780
                     },
-                    "name": "MyTextField245",
+                    "name": "MyTextField249",
                     "designerId": "69693e13-b03f-430e-b5ec-91f086fcaea4"
                 },
                 {
@@ -92,7 +92,7 @@
                         "name": "sourceRecordid",
                         "width": 300
                     },
-                    "name": "MyTextField246",
+                    "name": "MyTextField250",
                     "designerId": "5796547d-0e0f-4b18-a12e-94245165bcf2"
                 },
                 {
@@ -169,7 +169,7 @@
                         "text": "确定",
                         "width": 100
                     },
-                    "name": "MyButton307",
+                    "name": "MyButton324",
                     "designerId": "f4711e7c-6814-4d5d-a567-e18924f7b503",
                     "cn": [
                         {
@@ -227,7 +227,7 @@
                         "text": "取消",
                         "width": 90
                     },
-                    "name": "MyButton308",
+                    "name": "MyButton325",
                     "designerId": "66de9fba-84f1-4376-8265-45bd714d9c4a",
                     "cn": [
                         {

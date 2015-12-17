@@ -44,7 +44,7 @@
                 "type": "object"
             },
             "codeClass": null,
-            "name": "MyAjaxProxy7",
+            "name": "MyAjaxProxy8",
             "designerId": "2eabf809-524b-4079-adf6-6cc7cb9cf662",
             "cn": [
                 {
@@ -54,7 +54,7 @@
                         "type": "object"
                     },
                     "codeClass": null,
-                    "name": "MyJsonReader7",
+                    "name": "MyJsonReader8",
                     "designerId": "1cf6d1a3-8f17-49c0-9ffa-9c65f4b91106"
                 }
             ]

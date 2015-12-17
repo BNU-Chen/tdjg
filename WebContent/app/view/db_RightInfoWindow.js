@@ -28,7 +28,7 @@ Ext.define('MyApp.view.db_RightInfoWindow', {
         'Ext.toolbar.Spacer'
     ],
 
-    height: 342,
+    height: 367,
     id: 'db_RightInfoWindow',
     width: 630,
     layout: 'fit',
@@ -69,9 +69,18 @@ Ext.define('MyApp.view.db_RightInfoWindow', {
                         },
                         {
                             xtype: 'textfield',
-                            id: 'w_rightUrl',
+                            id: 'w_rightIndex',
                             width: 400,
                             fieldLabel: '权限代码',
+                            labelWidth: 70,
+                            name: 'rightIndex',
+                            submitValue: false
+                        },
+                        {
+                            xtype: 'textfield',
+                            id: 'w_rightUrl',
+                            width: 400,
+                            fieldLabel: '权限地址',
                             labelWidth: 70,
                             name: 'url'
                         },

@@ -20,7 +20,7 @@ import cn.edu.bnu.land.common.Encoder;
 import cn.edu.bnu.land.model.UDeptInfo;
 import cn.edu.bnu.land.model.URightInfo;
 import cn.edu.bnu.land.model.URoleInfo;
-import cn.edu.bnu.land.model.URoleRight;
+import cn.edu.bnu.land.model.SystemMap;
 import cn.edu.bnu.land.model.UUserInfo;
 import cn.edu.bnu.land.model.Users;
 import cn.edu.bnu.land.service.UsersManagerService;
@@ -36,13 +36,12 @@ public class UsersManagerController {
 
 	// ---------------------------------数据库备份与还原---------------------------
 	// 备份数据库
-	@RequestMapping(value = "/add_databseBackup")
+	@RequestMapping(value = "/databse_backup")
 	@ResponseBody
-	public Map<String, Object> databaseBackup(@RequestParam("bkCommnet") String bkCommnet,
-			HttpServletRequest request,
+	public void databaseBackup(HttpServletRequest request,
 			HttpServletResponse response) throws SQLException {
 		System.out.println("进入数据库备份与还原--------------");
-		return this.userManagerService.backupDatabase(bkCommnet);
+		this.userManagerService.backupDatabase(request, response);
 		//
 	}
 
@@ -119,9 +118,9 @@ public class UsersManagerController {
 	@RequestMapping(value = "/del_DeptInfoById")
 	// ,method=RequestMethod.POST)
 	@ResponseBody
-	public void deldeptInfoById(@RequestParam("deptId") String deptId)
+	public void deldeptInfoById(@RequestParam("deptIds") String[] deptIds)
 			throws IOException {
-		this.userManagerService.deleteDeptInfoById(deptId);
+		this.userManagerService.deleteDeptInfoById(deptIds);
 	}
 
 	// 添加部门信息
@@ -165,10 +164,9 @@ public class UsersManagerController {
 	@RequestMapping(value = "/del_UserInfoById")
 	// ,method=RequestMethod.POST)
 	@ResponseBody
-	public void delUserInfoById(@RequestParam("userId") String userId)
+	public void delUserInfoById(@RequestParam("userIds") String[] userIds)
 			throws IOException {
-
-		this.userManagerService.deleteUserInfoById(userId);
+		this.userManagerService.deleteUserInfoById(userIds);
 	}
 
 	// 添加用户信息
@@ -212,9 +210,9 @@ public class UsersManagerController {
 	@RequestMapping(value = "/del_RightInfoById")
 	// ,method=RequestMethod.POST)
 	@ResponseBody
-	public void delRightInfoById(@RequestParam("rightId") String rightId)
+	public void delRightInfoById(@RequestParam("rightIds") String[] rightIds)
 			throws IOException {
-		this.userManagerService.deleteRightInfoById(rightId);
+		this.userManagerService.deleteRightInfoById(rightIds);
 	}
 
 	// 添加权限信息
@@ -259,9 +257,9 @@ public class UsersManagerController {
 	@RequestMapping(value = "/del_RoleInfoById")
 	// ,method=RequestMethod.POST)
 	@ResponseBody
-	public void delRoleInfoById(@RequestParam("roleId") String roleId)
+	public void delRoleInfoById(@RequestParam("roleIds") String[] roleIds)
 			throws IOException {
-		this.userManagerService.deleteRoleInfoById(roleId);
+		this.userManagerService.deleteRoleInfoById(roleIds);
 	}
 
 	// 添加角色信息
@@ -289,7 +287,7 @@ public class UsersManagerController {
 	// ,method=RequestMethod.POST
 	@ResponseBody
 	public Map<String, Object> getUserRoleList(
-			@RequestParam("username") String username)
+			@RequestParam("userName") String username)
 			throws IOException {
 		return this.userManagerService.getUserRoleList(username);
 	}
@@ -299,59 +297,95 @@ public class UsersManagerController {
 	@ResponseBody
 	public Map<String, Object> updateUserRole(
 			@RequestParam("username") String username,
-			@RequestParam("userRole") String[] userRole) throws IOException {
+			@RequestParam("userRoles") String[] userRoles) throws IOException {
 		// System.out.println("addRoleRight :"+roleRight);
-		this.userManagerService.updateUserRole(username, userRole);
-		Map<String, Object> roleRightResults = new HashMap<String, Object>();
-		roleRightResults.put("success", true);
-		roleRightResults.put("msg", ",successfully saved");
-		return (roleRightResults);
+		this.userManagerService.updateUserRole(username, userRoles);
+		Map<String, Object> userRoleResults = new HashMap<String, Object>();
+		userRoleResults.put("success", true);
+		userRoleResults.put("msg", ",successfully saved");
+		return (userRoleResults);
 	}
 
 	// ----------------------------------角色权限信息-------------------------------
-	// 查询角色权限信息
-	@RequestMapping(value = "/get_RoleRight")
-	// ,method=RequestMethod.POST
-	@ResponseBody
-	public Map<String, Object> getRoleRight(
-			@RequestParam("searchKeyword") String searchKeyword)
-			throws IOException {
-		System.out.println("searchKeyword : " + searchKeyword);
-		searchKeyword = Encoder.encode(searchKeyword);
-		// this.userManagerService.addUser(user);
-		return this.userManagerService.getRoleRightList(searchKeyword);
-	}
+	// 查询用户角色信息
+		@RequestMapping(value = "/get_RoleRightList")
+		// ,method=RequestMethod.POST
+		@ResponseBody
+		public Map<String, Object> getRoleRightList(
+				@RequestParam("roleId") String roleId)
+				throws IOException {
+			return this.userManagerService.getRoleRightSettingList(roleId);
+		}
 
-	// 删除角色权限信息
-	@RequestMapping(value = "/del_RoleRightById")
-	// ,method=RequestMethod.POST)
-	@ResponseBody
-	public void delRoleRightById(@RequestParam("roleId") String roleId)
-			throws IOException {
-		this.userManagerService.deleteRoleRightById(roleId);
-	}
+		// 添加用户角色信息
+		@RequestMapping(value = "/update_RoleRight")
+		@ResponseBody
+		public Map<String, Object> updateRoleRight(
+				@RequestParam("roleId") String roleId,
+				@RequestParam("rightIds") String[] rightIds) throws IOException {
+			// System.out.println("addRoleRight :"+roleRight);
+			this.userManagerService.updateRoleRight(roleId, rightIds);
+			Map<String, Object> roleRightResults = new HashMap<String, Object>();
+			roleRightResults.put("success", true);
+			roleRightResults.put("msg", ",successfully saved");
+			return (roleRightResults);
+		}
 
-	// 添加角色权限信息
-	@RequestMapping(value = "/add_RoleRight")
-	@ResponseBody
-	public Map<String, Object> addRoleRight(@RequestBody URoleRight roleRight)
-			throws IOException {
-		// System.out.println("addRoleRight :"+roleRight);
-		this.userManagerService.addRoleRight(roleRight);
-		Map<String, Object> roleRightResults = new HashMap<String, Object>();
-		roleRightResults.put("success", true);
-		roleRightResults.put("msg", ",successfully saved");
-		return (roleRightResults);
-	}
+//	// 删除角色权限信息
+//	@RequestMapping(value = "/del_RoleRightById")
+//	// ,method=RequestMethod.POST)
+//	@ResponseBody
+//	public void delRoleRightById(@RequestParam("roleId") String roleId)
+//			throws IOException {
+//		this.userManagerService.deleteRoleRightById(roleId);
+//	}
+//
+//	// 添加角色权限信息
+//	@RequestMapping(value = "/add_RoleRight")
+//	@ResponseBody
+//	public Map<String, Object> addRoleRight(@RequestBody URoleRight roleRight)
+//			throws IOException {
+//		// System.out.println("addRoleRight :"+roleRight);
+//		this.userManagerService.addRoleRight(roleRight);
+//		Map<String, Object> roleRightResults = new HashMap<String, Object>();
+//		roleRightResults.put("success", true);
+//		roleRightResults.put("msg", ",successfully saved");
+//		return (roleRightResults);
+//	}
+//
+//	// 修改角色权限信息
+//	@RequestMapping(value = "/update_RoleRight")
+//	// ,method=RequestMethod.POST)
+//	@ResponseBody
+//	public void updateRoleRight(@RequestBody URoleRight roleRight)
+//			throws IOException {
+//		System.out.println("update_roleRight: " + roleRight.getRightId());
+//		this.userManagerService.updateOneRoleRight(roleRight);
+//	}
+	
+		// ----------------------------------用户部门信息-------------------------------
+		// 查询用户角色信息
+			@RequestMapping(value = "/get_DeptInfoList")
+			// ,method=RequestMethod.POST
+			@ResponseBody
+			public Map<String, Object> getDeptInfoList(
+					@RequestParam("userId") String userId)
+					throws IOException {
+				return this.userManagerService.getUserDeptList(userId);
+			}
 
-	// 修改角色权限信息
-	@RequestMapping(value = "/update_RoleRight")
-	// ,method=RequestMethod.POST)
-	@ResponseBody
-	public void updateRoleRight(@RequestBody URoleRight roleRight)
-			throws IOException {
-		System.out.println("update_roleRight: " + roleRight.getRightId());
-		this.userManagerService.updateOneRoleRight(roleRight);
-	}
+			// 添加用户角色信息
+			@RequestMapping(value = "/update_DeptInfo")
+			@ResponseBody
+			public Map<String, Object> updateDeptInfo(
+					@RequestParam("userInfo") UUserInfo userInfo
+					) throws IOException {
+				// System.out.println("addRoleRight :"+roleRight);
+				this.userManagerService.updateUserDept(userInfo);
+				Map<String, Object> roleRightResults = new HashMap<String, Object>();
+				roleRightResults.put("success", true);
+				roleRightResults.put("msg", ",successfully saved");
+				return (roleRightResults);
+			}
 
 }

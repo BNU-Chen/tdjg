@@ -31,7 +31,7 @@
                 ],
                 "url": "map_getMapResources"
             },
-            "name": "MyAjaxProxy",
+            "name": "MyAjaxProxy1",
             "designerId": "b50c82df-cbd6-4495-99d5-4e58c9289230",
             "cn": [
                 {
@@ -44,7 +44,7 @@
                     "userConfig": {
                         "root": "root"
                     },
-                    "name": "MyJsonReader",
+                    "name": "MyJsonReader1",
                     "designerId": "58076ec0-5d63-4339-a00f-9f0ec0a7f54a"
                 }
             ]

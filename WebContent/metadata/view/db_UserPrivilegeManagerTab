@@ -61,7 +61,7 @@
                             "userConfig": {
                                 "dock": "top"
                             },
-                            "name": "MyToolbar29",
+                            "name": "MyToolbar31",
                             "designerId": "9fb62477-6399-460f-ba86-e931297b573e",
                             "cn": [
                                 {
@@ -77,7 +77,7 @@
                                         "id": "searchKeyword_UserInfo",
                                         "layout|flex": null
                                     },
-                                    "name": "MyTextField126",
+                                    "name": "MyTextField130",
                                     "designerId": "c222e6b6-cb27-4836-ba32-d07210c3b66a"
                                 },
                                 {
@@ -92,7 +92,7 @@
                                         "layout|flex": null,
                                         "text": "搜索"
                                     },
-                                    "name": "MyButton112",
+                                    "name": "MyButton118",
                                     "designerId": "8f59a17c-085a-40d0-bab0-ef12fd6a7df5",
                                     "cn": [
                                         {
@@ -139,7 +139,7 @@
                                         "layout|flex": null,
                                         "text": "刷新"
                                     },
-                                    "name": "MyButton113",
+                                    "name": "MyButton119",
                                     "designerId": "e841890e-bc14-4c85-aa77-54e047aa3c98",
                                     "cn": [
                                         {
@@ -175,9 +175,9 @@
                                     "userConfig": {
                                         "icon": "images/table_add.png",
                                         "layout|flex": null,
-                                        "text": "添加用户"
+                                        "text": "添加"
                                     },
-                                    "name": "MyButton114",
+                                    "name": "MyButton120",
                                     "designerId": "764ab4cb-a95b-42d6-ba7d-5a38a0e63c85",
                                     "cn": [
                                         {
@@ -200,6 +200,274 @@
                                             "designerId": "5fee67f0-5768-4d8b-ab62-0423490d69cf"
                                         }
                                     ]
+                                },
+                                {
+                                    "type": "Ext.button.Button",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "icon": "images/table_add.png",
+                                        "layout|flex": null,
+                                        "text": "编辑"
+                                    },
+                                    "name": "MyButton121",
+                                    "designerId": "eb0c556d-cc4f-4a1b-bdb8-c590f80dc05e",
+                                    "cn": [
+                                        {
+                                            "type": "basiceventbinding",
+                                            "reference": {
+                                                "name": "listeners",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "fn": "onButtonClick22",
+                                                "implHandler": [
+                                                    "var grid = Ext.getCmp('db_UserInfoGrid');\r",
+                                                    "\r",
+                                                    "var record = grid.getSelectionModel().getSelection();\r",
+                                                    "\r",
+                                                    "if(record.length === 0){\r",
+                                                    "    Ext.Msg.alert('提示','请先选择您要操作的行！');\r",
+                                                    "    return;\r",
+                                                    "}else if(record.length >1){\r",
+                                                    "    Ext.Msg.alert('提示','您只能编辑一个用户，请重新选择。');\r",
+                                                    "    return;\r",
+                                                    "}else {\r",
+                                                    "\r",
+                                                    "    var win = Ext.widget('db_UserInfoWindow');\r",
+                                                    "    win.show();\r",
+                                                    "\r",
+                                                    "    var form = Ext.getCmp('db_UserWindowForm');\r",
+                                                    "    form.loadRecord(record[0]);\r",
+                                                    "\r",
+                                                    "    //对显示的结果进行处理\r",
+                                                    "    //注册日期的处理\r",
+                                                    "    var registerdateField = Ext.getCmp('users_registerdatew');\r",
+                                                    "    var value = registerdateField.getValue();\r",
+                                                    "    var date = new Date(value);\r",
+                                                    "    console.log('date',date);\r",
+                                                    "    if(date instanceof Date){   \r",
+                                                    "        var str = date.getFullYear()+'-'+(date.getMonth()+1)+'-'+date.getDate();    \r",
+                                                    "        console.log('date2',str);\r",
+                                                    "        registerdateField.setValue(str);\r",
+                                                    "    }\r",
+                                                    "    //密码框的处理\r",
+                                                    "    var pwdField = Ext.getCmp('users_passwordw');\r",
+                                                    "    pwdField.setValue(\"\");\r",
+                                                    "}\r",
+                                                    "\r",
+                                                    "\r",
+                                                    ""
+                                                ],
+                                                "name": "click",
+                                                "scope": "me"
+                                            },
+                                            "name": "onButtonClick22",
+                                            "designerId": "1f30ea2a-8183-4f4b-a9a0-11dffa7293bf"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Ext.button.Button",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "icon": "images/table_add.png",
+                                        "layout|flex": null,
+                                        "text": "删除"
+                                    },
+                                    "name": "MyButton122",
+                                    "designerId": "d941d042-d2db-4fb3-831a-720a1fa439c6",
+                                    "cn": [
+                                        {
+                                            "type": "basiceventbinding",
+                                            "reference": {
+                                                "name": "listeners",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "fn": "onButtonClick221",
+                                                "implHandler": [
+                                                    "var grid = Ext.getCmp('db_UserInfoGrid');\r",
+                                                    "\r",
+                                                    "var record = grid.getSelectionModel().getSelection();\r",
+                                                    "\r",
+                                                    "if(record.length === 0){\r",
+                                                    "    Ext.Msg.alert('提示','请先选择您要操作的行！');\r",
+                                                    "    return;\r",
+                                                    "}else{\r",
+                                                    "    var  userIds =new Array(record.length);\r",
+                                                    "    var msg = '';\r",
+                                                    "    for(var i = 0;i<record.length;i++){\r",
+                                                    "        userIds[i] = record[i].get(\"userId\");\r",
+                                                    "        msg += record[i].get(\"userName\") + '<br/>';\r",
+                                                    "    }        \r",
+                                                    "    \r",
+                                                    "    Ext.Msg.confirm('提示', '您正在删除以下用户：<br/>' + msg+'确认删除？', getResult);\r",
+                                                    "    function getResult(confirm)\r",
+                                                    "    {\r",
+                                                    "        if (confirm == \"yes\"){\r",
+                                                    "            Ext.Ajax.request(\r",
+                                                    "                {\r",
+                                                    "                    url : 'del_UserInfoById',\r",
+                                                    "                    params :\r",
+                                                    "                    {\r",
+                                                    "                        userIds : userIds\r",
+                                                    "                    },\r",
+                                                    "                    success : function (response){\r",
+                                                    "                        Ext.Msg.alert('成功提示', '记录删除成功。');\r",
+                                                    "                        //successResult();\r",
+                                                    "                        var mystore = Ext.StoreMgr.get('uUserInfoStore');\r",
+                                                    "                        mystore.load();\r",
+                                                    "                    },\r",
+                                                    "                    failure : function (response){\r",
+                                                    "                        //failedResult();\r",
+                                                    "                        // Ext.Msg.alert('失败提示', '记录删除失败。');\r",
+                                                    "                    }\r",
+                                                    "                });\r",
+                                                    "        }\r",
+                                                    "    }\r",
+                                                    "}\r",
+                                                    "\r",
+                                                    "\r",
+                                                    ""
+                                                ],
+                                                "name": "click",
+                                                "scope": "me"
+                                            },
+                                            "name": "onButtonClick221",
+                                            "designerId": "9f641954-e31d-4a66-81ad-de40c6ff1b34"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Ext.resizer.Splitter",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "layout|flex": null
+                                    },
+                                    "name": "MySplitter",
+                                    "designerId": "60b4d754-75ef-4ec5-9da1-3143412558bb"
+                                },
+                                {
+                                    "type": "Ext.button.Button",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "icon": "images/table_add.png",
+                                        "layout|flex": null,
+                                        "text": "设置部门"
+                                    },
+                                    "name": "MyButton123",
+                                    "designerId": "60f3b464-1687-4e96-b238-aac6acedf107",
+                                    "cn": [
+                                        {
+                                            "type": "basiceventbinding",
+                                            "reference": {
+                                                "name": "listeners",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "fn": "onButtonClick2211",
+                                                "implHandler": [
+                                                    "var grid = Ext.getCmp('db_UserInfoGrid');\r",
+                                                    "\r",
+                                                    "var record = grid.getSelectionModel().getSelection();\r",
+                                                    "\r",
+                                                    "if(record.length === 0 ){\r",
+                                                    "    Ext.Msg.alert('提示','请先选择您要操作的行！');\r",
+                                                    "    return;\r",
+                                                    "}else if(record.length < 1){\r",
+                                                    "    Ext.Msg.alert('提示','您只能同时编辑一个用户信息，请重新选择。');\r",
+                                                    "    return;\r",
+                                                    "}else{\r",
+                                                    "    var win = Ext.widget('db_UserRoleSettingWindow');\r",
+                                                    "    //设置window中的用户名，便于查询\r",
+                                                    "    var userName = record[0].get('userName');\r",
+                                                    "    Ext.getCmp('urSet_userName').setText(userName);\r",
+                                                    "    win.show();\r",
+                                                    "\r",
+                                                    "}\r",
+                                                    "\r",
+                                                    "\r",
+                                                    ""
+                                                ],
+                                                "name": "click",
+                                                "scope": "me"
+                                            },
+                                            "name": "onButtonClick2211",
+                                            "designerId": "2adfa555-ff9f-41e6-a88e-bca9c53714d5"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Ext.button.Button",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "icon": "images/table_role.png",
+                                        "layout|flex": null,
+                                        "text": "用户角色设置"
+                                    },
+                                    "name": "MyButton124",
+                                    "designerId": "5867711e-c62a-47e1-88db-ba784ef9dd91",
+                                    "cn": [
+                                        {
+                                            "type": "basiceventbinding",
+                                            "reference": {
+                                                "name": "listeners",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "fn": "onButtonClick22111",
+                                                "implHandler": [
+                                                    "var grid = Ext.getCmp('db_UserInfoGrid');\t\t//获取表格grid\r",
+                                                    "var recordsSelected = grid.getSelectionModel().getSelection();\t//获取选中的记录\r",
+                                                    "\r",
+                                                    "if(recordsSelected.length === 0){\r",
+                                                    "    Ext.Msg.alert('提示','请先选择您要操作的用户！');    \r",
+                                                    "    return;    \r",
+                                                    "}else if(recordsSelected.length > 1){\r",
+                                                    "    Ext.Msg.alert('提示','请选中单个用户进行操作！');    \r",
+                                                    "    return;\r",
+                                                    "}else{\r",
+                                                    "    var win = Ext.widget('db_UserRoleSettingWindow');\r",
+                                                    "\r",
+                                                    "    //设置window中的用户名，便于查询\r",
+                                                    "    var userName = recordsSelected[0].get('userName');\r",
+                                                    "    Ext.getCmp('urSet_userName').setText(userName);\r",
+                                                    "\r",
+                                                    "    //显示window\r",
+                                                    "    win.show();\r",
+                                                    "}"
+                                                ],
+                                                "name": "click",
+                                                "scope": "me"
+                                            },
+                                            "name": "onButtonClick22111",
+                                            "designerId": "7cfd4289-21ea-470e-b62c-2843a079467b"
+                                        }
+                                    ]
                                 }
                             ]
                         },
@@ -212,10 +480,11 @@
                             "codeClass": null,
                             "userConfig": {
                                 "autoScroll": true,
+                                "id": "db_UserInfoGrid",
                                 "store": "uUserInfoStore",
                                 "title": null
                             },
-                            "name": "MyGridPanel23",
+                            "name": "MyGridPanel24",
                             "designerId": "ca59c920-0783-44a0-a97f-6e27b1ee5e39",
                             "cn": [
                                 {
@@ -230,7 +499,7 @@
                                         "text": "序号",
                                         "width": 40
                                     },
-                                    "name": "MyRowNumberer17",
+                                    "name": "MyRowNumberer18",
                                     "designerId": "20f2d57e-6634-4f69-8f92-de3d6d6d4237"
                                 },
                                 {
@@ -245,7 +514,7 @@
                                         "text": "用户编号",
                                         "width": 70
                                     },
-                                    "name": "MyColumn128",
+                                    "name": "MyColumn133",
                                     "designerId": "9491a566-1140-45e6-bfc9-e742f0d6632b"
                                 },
                                 {
@@ -260,8 +529,23 @@
                                         "text": "用户名",
                                         "width": 100
                                     },
-                                    "name": "MyColumn129",
+                                    "name": "MyColumn134",
                                     "designerId": "6c66cf59-9e64-4162-b940-ca64e80ac587"
+                                },
+                                {
+                                    "type": "Ext.grid.column.Column",
+                                    "reference": {
+                                        "name": "columns",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "dataIndex": "deptId",
+                                        "text": "部门",
+                                        "width": 100
+                                    },
+                                    "name": "MyColumn135",
+                                    "designerId": "2e844137-4039-4453-b9a1-bc215a8aa3b3"
                                 },
                                 {
                                     "type": "Ext.grid.column.Action",
@@ -392,145 +676,6 @@
                                     ]
                                 },
                                 {
-                                    "type": "Ext.grid.column.Action",
-                                    "reference": {
-                                        "name": "columns",
-                                        "type": "array"
-                                    },
-                                    "codeClass": null,
-                                    "userConfig": {
-                                        "dataIndex": "date",
-                                        "designer|displayName": "编辑",
-                                        "emptyCellText": null,
-                                        "icon": "images/table_edit.png",
-                                        "menuText": "",
-                                        "width": 50
-                                    },
-                                    "name": "MyActionColumn1",
-                                    "designerId": "d9195325-97c5-4d04-82ff-2c418678dee6",
-                                    "cn": [
-                                        {
-                                            "type": "basicfunction",
-                                            "reference": {
-                                                "name": "items",
-                                                "type": "array"
-                                            },
-                                            "codeClass": null,
-                                            "userConfig": {
-                                                "designer|params": [
-                                                    "grid",
-                                                    "rowIndex",
-                                                    "colIndex",
-                                                    "actionItem",
-                                                    "event",
-                                                    "record",
-                                                    "row"
-                                                ],
-                                                "fn": "handler",
-                                                "implHandler": [
-                                                    "if (colIndex === undefined || colIndex < 2) {\r",
-                                                    "    return;\r",
-                                                    "}\r",
-                                                    "var win = Ext.widget('db_UserInfoWindow');\r",
-                                                    "win.show();\r",
-                                                    "\r",
-                                                    "//var form = Ext.widget('db_UserWindowForm');\r",
-                                                    "var form = Ext.getCmp('db_UserWindowForm');\r",
-                                                    "console.log(\"form:\",form);\r",
-                                                    "form.loadRecord(record);\r",
-                                                    "\r",
-                                                    "\r",
-                                                    "//对显示的结果进行处理\r",
-                                                    "//注册日期的处理\r",
-                                                    "var registerdateField = Ext.getCmp('users_registerdatew');\r",
-                                                    "var value = registerdateField.getValue();\r",
-                                                    "var date = new Date(value);\r",
-                                                    "console.log('date',date);\r",
-                                                    "if(date instanceof Date){   \r",
-                                                    "    var str = date.getFullYear()+'-'+(date.getMonth()+1)+'-'+date.getDate();    \r",
-                                                    "    console.log('date2',str);\r",
-                                                    "    registerdateField.setValue(str);\r",
-                                                    "}\r",
-                                                    "//密码框的处理\r",
-                                                    "var pwdField = Ext.getCmp('users_passwordw');\r",
-                                                    "pwdField.setValue(\"\");"
-                                                ]
-                                            },
-                                            "name": "handler",
-                                            "designerId": "e7135d02-1cd3-4328-8a12-923fcac2dde7"
-                                        }
-                                    ]
-                                },
-                                {
-                                    "type": "Ext.grid.column.Action",
-                                    "reference": {
-                                        "name": "columns",
-                                        "type": "array"
-                                    },
-                                    "codeClass": null,
-                                    "userConfig": {
-                                        "dataIndex": "date",
-                                        "designer|displayName": "删除",
-                                        "icon": "images/table_delete.png",
-                                        "width": 50
-                                    },
-                                    "name": "MyActionColumn2",
-                                    "designerId": "65f6b7e9-2321-4860-b483-403322b921d2",
-                                    "cn": [
-                                        {
-                                            "type": "basicfunction",
-                                            "reference": {
-                                                "name": "items",
-                                                "type": "array"
-                                            },
-                                            "codeClass": null,
-                                            "userConfig": {
-                                                "designer|params": [
-                                                    "grid",
-                                                    "rowIndex",
-                                                    "colIndex",
-                                                    "actionItem",
-                                                    "event",
-                                                    "record",
-                                                    "row"
-                                                ],
-                                                "fn": "handler",
-                                                "implHandler": [
-                                                    "Ext.Msg.confirm('您正在删除', '用户：' + record.get('trueName') + '，用户编号为：'+record.get('userId')+'，<br/> 确认删除？', getResult);\r",
-                                                    "function getResult(confirm)\r",
-                                                    "{\r",
-                                                    "    console.log('confirm:', confirm);\r",
-                                                    "    if (confirm == \"yes\"){\r",
-                                                    "        var userId = record.get(\"userId\");\r",
-                                                    "        console.log('userId:',userId);\r",
-                                                    "        Ext.Ajax.request(\r",
-                                                    "        {\r",
-                                                    "            url : 'del_UserInfoById',\r",
-                                                    "            params :\r",
-                                                    "            {\r",
-                                                    "                userId : userId\r",
-                                                    "            },            \r",
-                                                    "            success : function (response){\r",
-                                                    "                Ext.Msg.alert('成功提示', '记录删除成功。');\r",
-                                                    "                //successResult();\r",
-                                                    "                var mystore = Ext.StoreMgr.get('uUserInfoStore');\r",
-                                                    "                mystore.load();\r",
-                                                    "            },\r",
-                                                    "            failure : function (response){\r",
-                                                    "                //failedResult();\r",
-                                                    "                // Ext.Msg.alert('失败提示', '记录删除失败。');\r",
-                                                    "            }\r",
-                                                    "        });\r",
-                                                    "    }\r",
-                                                    "}"
-                                                ]
-                                            },
-                                            "name": "handler",
-                                            "designerId": "69607a2c-ac9e-4b11-b216-6133aec13255"
-                                        }
-                                    ]
-                                },
-                                {
                                     "type": "Ext.grid.column.Column",
                                     "reference": {
                                         "name": "columns",
@@ -542,7 +687,7 @@
                                         "text": "真实姓名",
                                         "width": 80
                                     },
-                                    "name": "MyColumn130",
+                                    "name": "MyColumn136",
                                     "designerId": "b3609680-dca2-4be8-95c6-4c59320360f5"
                                 },
                                 {
@@ -557,7 +702,7 @@
                                         "text": "邮箱地址",
                                         "width": 120
                                     },
-                                    "name": "MyColumn131",
+                                    "name": "MyColumn137",
                                     "designerId": "b47c0a8b-88af-4b0f-ab17-bc81dbbeb641"
                                 },
                                 {
@@ -572,7 +717,7 @@
                                         "text": "手机号码",
                                         "width": 100
                                     },
-                                    "name": "MyColumn132",
+                                    "name": "MyColumn138",
                                     "designerId": "bed9af22-9165-4905-a7ff-c3708abf6d88"
                                 },
                                 {
@@ -586,7 +731,7 @@
                                         "dataIndex": "phoneNum",
                                         "text": "固定电话"
                                     },
-                                    "name": "MyColumn133",
+                                    "name": "MyColumn139",
                                     "designerId": "473e5bc7-5092-409d-931a-c3ce1f6dbd57"
                                 },
                                 {
@@ -601,7 +746,7 @@
                                         "text": "用户描述",
                                         "width": 200
                                     },
-                                    "name": "MyColumn134",
+                                    "name": "MyColumn140",
                                     "designerId": "0f85d7f4-6c5c-4e6a-8ff0-bee5443ee49a"
                                 },
                                 {
@@ -616,7 +761,7 @@
                                         "format": "Y-m-d",
                                         "text": "注册日期"
                                     },
-                                    "name": "MyDateColumn20",
+                                    "name": "MyDateColumn21",
                                     "designerId": "dcbfde45-4ec0-4986-99c7-bc61cfc0be5f"
                                 },
                                 {
@@ -643,7 +788,7 @@
                                         "type": "object"
                                     },
                                     "codeClass": null,
-                                    "name": "MyGridView23",
+                                    "name": "MyGridView24",
                                     "designerId": "11293e83-3be8-4261-9d59-7d9b79c8694f"
                                 },
                                 {
@@ -656,7 +801,7 @@
                                     "userConfig": {
                                         "designer|displayName": null
                                     },
-                                    "name": "MyCheckboxSelectionModel16",
+                                    "name": "MyCheckboxSelectionModel17",
                                     "designerId": "b79dca21-58e3-49ca-9fa4-738d4f3986d5"
                                 },
                                 {
@@ -723,7 +868,7 @@
                             "userConfig": {
                                 "dock": "top"
                             },
-                            "name": "MyToolbar30",
+                            "name": "MyToolbar32",
                             "designerId": "8ff96b1e-fce8-4d68-8fe8-939ac7eea977",
                             "cn": [
                                 {
@@ -739,7 +884,7 @@
                                         "id": "searchKeyword_roleInfo",
                                         "layout|flex": null
                                     },
-                                    "name": "MyTextField127",
+                                    "name": "MyTextField131",
                                     "designerId": "ab7899ae-eb3d-4375-835c-a761d4e83d61"
                                 },
                                 {
@@ -754,7 +899,7 @@
                                         "layout|flex": null,
                                         "text": "搜索"
                                     },
-                                    "name": "MyButton115",
+                                    "name": "MyButton125",
                                     "designerId": "e4c0c983-3888-49d6-bd23-7519ec25eff8",
                                     "cn": [
                                         {
@@ -799,7 +944,7 @@
                                         "layout|flex": null,
                                         "text": "刷新"
                                     },
-                                    "name": "MyButton116",
+                                    "name": "MyButton126",
                                     "designerId": "e7512311-2ff6-42ac-a785-9b269ee86705",
                                     "cn": [
                                         {
@@ -837,7 +982,7 @@
                                         "layout|flex": null,
                                         "text": "添加角色"
                                     },
-                                    "name": "MyButton117",
+                                    "name": "MyButton127",
                                     "designerId": "ef7f10d3-cdca-4f76-ad09-8bf34b4f8b11",
                                     "cn": [
                                         {
@@ -861,6 +1006,199 @@
                                             "designerId": "1b74c6e5-c207-4049-a412-6808802aa37d"
                                         }
                                     ]
+                                },
+                                {
+                                    "type": "Ext.button.Button",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "icon": "images/table_add.png",
+                                        "layout|flex": null,
+                                        "text": "编辑"
+                                    },
+                                    "name": "MyButton128",
+                                    "designerId": "f2400420-5dfe-4c92-bdb2-639bef5b72e9",
+                                    "cn": [
+                                        {
+                                            "type": "basiceventbinding",
+                                            "reference": {
+                                                "name": "listeners",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "fn": "onButtonClick212",
+                                                "implHandler": [
+                                                    "var grid = Ext.getCmp('db_RoleInfoGrid');\r",
+                                                    "\r",
+                                                    "var record = grid.getSelectionModel().getSelection();\r",
+                                                    "\r",
+                                                    "if(record.length === 0){\r",
+                                                    "    Ext.Msg.alert('提示','请先选择您要操作的行！');\r",
+                                                    "    return;\r",
+                                                    "}else if(record.length >1){\r",
+                                                    "    Ext.Msg.alert('提示','您只能编辑一个角色信息，请重新选择。');\r",
+                                                    "    return;\r",
+                                                    "}else {\r",
+                                                    "    \r",
+                                                    "    var win = Ext.widget('db_RoleInfoWindow');\r",
+                                                    "    win.show();\r",
+                                                    "    \r",
+                                                    "    var form = Ext.getCmp('db_RoleInfoWindowForm').getForm();\r",
+                                                    "    form.loadRecord(record[0]);\r",
+                                                    "}"
+                                                ],
+                                                "name": "click",
+                                                "scope": "me"
+                                            },
+                                            "name": "onButtonClick212",
+                                            "designerId": "2f7a0c96-f889-4d2a-a1a7-a60cb319079d"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Ext.button.Button",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "icon": "images/table_add.png",
+                                        "layout|flex": null,
+                                        "text": "删除"
+                                    },
+                                    "name": "MyButton129",
+                                    "designerId": "05fa1f2f-ef16-41a0-a2e2-69e65c5c7744",
+                                    "cn": [
+                                        {
+                                            "type": "basiceventbinding",
+                                            "reference": {
+                                                "name": "listeners",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "fn": "onButtonClick2121",
+                                                "implHandler": [
+                                                    "var grid = Ext.getCmp('db_RoleInfoGrid');\r",
+                                                    "\r",
+                                                    "var record = grid.getSelectionModel().getSelection();\r",
+                                                    "\r",
+                                                    "if(record.length === 0){\r",
+                                                    "    Ext.Msg.alert('提示','请先选择您要操作的行！');\r",
+                                                    "    return;\r",
+                                                    "}else{\r",
+                                                    "    var  roleIds =new Array(record.length);\r",
+                                                    "    var msg = '';\r",
+                                                    "    for(var i = 0;i<record.length;i++){\r",
+                                                    "        roleIds[i] = record[i].get(\"roleId\");\r",
+                                                    "        msg += record[i].get(\"roleName\") + '<br/>';\r",
+                                                    "    }\r",
+                                                    "    \r",
+                                                    "    Ext.Msg.confirm('提示', '您正在删除以下角色：<br/>' + msg+'确认删除？', getResult);\r",
+                                                    "    function getResult(confirm)\r",
+                                                    "    {\r",
+                                                    "        console.log('confirm:', confirm);\r",
+                                                    "        if (confirm == \"yes\"){\r",
+                                                    "            \r",
+                                                    "            Ext.Ajax.request(\r",
+                                                    "                {\r",
+                                                    "                    url : 'del_RoleInfoById',\r",
+                                                    "                    params :\r",
+                                                    "                    {\r",
+                                                    "                        roleIds : roleIds\r",
+                                                    "                    },\r",
+                                                    "                    success : function (response){\r",
+                                                    "                        Ext.Msg.alert('成功提示', '角色删除成功。');                \r",
+                                                    "                        var mystore = Ext.StoreMgr.get('uRoleInfoStore');\r",
+                                                    "                        mystore.load();\r",
+                                                    "                    },\r",
+                                                    "                    failure : function (response){\r",
+                                                    "                        \r",
+                                                    "                    }\r",
+                                                    "                });\r",
+                                                    "        }\r",
+                                                    "    }\r",
+                                                    "}"
+                                                ],
+                                                "name": "click",
+                                                "scope": "me"
+                                            },
+                                            "name": "onButtonClick2121",
+                                            "designerId": "4f194504-516e-4a79-b525-981024056aac"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Ext.resizer.Splitter",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "layout|flex": null
+                                    },
+                                    "name": "MySplitter1",
+                                    "designerId": "c8e00d8d-8935-4dbe-9a43-5909929911ab"
+                                },
+                                {
+                                    "type": "Ext.button.Button",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "icon": "images/table_right.png",
+                                        "layout|flex": null,
+                                        "text": "修改权限"
+                                    },
+                                    "name": "MyButton130",
+                                    "designerId": "37f1e4a1-4eaa-4e93-a195-b9219a76ac52",
+                                    "cn": [
+                                        {
+                                            "type": "basiceventbinding",
+                                            "reference": {
+                                                "name": "listeners",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "fn": "onButtonClick21211",
+                                                "implHandler": [
+                                                    "var grid = Ext.getCmp('db_RoleInfoGrid');\t\t//获取表格grid\r",
+                                                    "var recordsSelected = grid.getSelectionModel().getSelection();\t//获取选中的记录\r",
+                                                    "\r",
+                                                    "if(recordsSelected.length === 0){\r",
+                                                    "    Ext.Msg.alert('提示','请先选择您要操作的角色！');    \r",
+                                                    "    return;    \r",
+                                                    "}else if(recordsSelected.length > 1){\r",
+                                                    "    Ext.Msg.alert('提示','请选中单个角色进行操作！');    \r",
+                                                    "    return;\r",
+                                                    "}else{\r",
+                                                    "    var win = Ext.widget('db_RoleRightSettingWindow');\r",
+                                                    "\r",
+                                                    "    //设置window中的角色id，便于查询\r",
+                                                    "    var roleId = recordsSelected[0].get('roleId');\r",
+                                                    "    Ext.getCmp('rrSet_roleId').setText(roleId);\r",
+                                                    "\r",
+                                                    "    //显示window\r",
+                                                    "    win.show();\r",
+                                                    "}\r",
+                                                    ""
+                                                ],
+                                                "name": "click",
+                                                "scope": "me"
+                                            },
+                                            "name": "onButtonClick21211",
+                                            "designerId": "4f4b556e-49ef-4b70-9ab7-c26f8cb92aea"
+                                        }
+                                    ]
                                 }
                             ]
                         },
@@ -872,10 +1210,11 @@
                             },
                             "codeClass": null,
                             "userConfig": {
+                                "id": "db_RoleInfoGrid",
                                 "store": "uRoleInfoStore",
                                 "title": null
                             },
-                            "name": "MyGridPanel24",
+                            "name": "MyGridPanel25",
                             "designerId": "4dce6d12-9ed7-4621-9bbf-b0e1182a95d6",
                             "cn": [
                                 {
@@ -890,7 +1229,7 @@
                                         "text": "序号",
                                         "width": 40
                                     },
-                                    "name": "MyRowNumberer18",
+                                    "name": "MyRowNumberer19",
                                     "designerId": "3028f517-2576-4ec7-9a7b-ea0b1d943a91"
                                 },
                                 {
@@ -905,7 +1244,7 @@
                                         "text": "角色名称",
                                         "width": 120
                                     },
-                                    "name": "MyColumn135",
+                                    "name": "MyColumn141",
                                     "designerId": "21114578-7cbe-4efd-af58-c437f5feff2c"
                                 },
                                 {
@@ -920,7 +1259,7 @@
                                         "text": "角色标识",
                                         "width": 150
                                     },
-                                    "name": "MyColumn136",
+                                    "name": "MyColumn142",
                                     "designerId": "d23e58ed-0a23-4dba-a326-b32c79fc87b4"
                                 },
                                 {
@@ -952,127 +1291,8 @@
                                         "text": "描述",
                                         "width": 400
                                     },
-                                    "name": "MyColumn137",
+                                    "name": "MyColumn143",
                                     "designerId": "77d78333-00db-4f1a-b158-947626e402eb"
-                                },
-                                {
-                                    "type": "Ext.grid.column.Action",
-                                    "reference": {
-                                        "name": "columns",
-                                        "type": "array"
-                                    },
-                                    "codeClass": null,
-                                    "userConfig": {
-                                        "dataIndex": "date",
-                                        "designer|displayName": "编辑",
-                                        "emptyCellText": null,
-                                        "icon": "images/table_edit.png",
-                                        "menuText": "",
-                                        "width": 50
-                                    },
-                                    "name": "MyActionColumn3",
-                                    "designerId": "e29cc6a8-2e68-4da9-947d-c7576b291664",
-                                    "cn": [
-                                        {
-                                            "type": "basicfunction",
-                                            "reference": {
-                                                "name": "items",
-                                                "type": "array"
-                                            },
-                                            "codeClass": null,
-                                            "userConfig": {
-                                                "designer|params": [
-                                                    "grid",
-                                                    "rowIndex",
-                                                    "colIndex",
-                                                    "actionItem",
-                                                    "event",
-                                                    "record",
-                                                    "row"
-                                                ],
-                                                "fn": "handler",
-                                                "implHandler": [
-                                                    "if (colIndex === undefined || colIndex < 2) {\r",
-                                                    "    return;\r",
-                                                    "}\r",
-                                                    "var win = Ext.widget('db_RoleInfoWindow');\r",
-                                                    "win.show();\r",
-                                                    "\r",
-                                                    "var form = Ext.getCmp('db_RoleInfoWindowForm').getForm();\r",
-                                                    "form.loadRecord(record);\r",
-                                                    ""
-                                                ]
-                                            },
-                                            "name": "handler",
-                                            "designerId": "2c68c89d-cdde-4088-b017-a3b77f568dc5"
-                                        }
-                                    ]
-                                },
-                                {
-                                    "type": "Ext.grid.column.Action",
-                                    "reference": {
-                                        "name": "columns",
-                                        "type": "array"
-                                    },
-                                    "codeClass": null,
-                                    "userConfig": {
-                                        "dataIndex": "date",
-                                        "designer|displayName": "删除",
-                                        "icon": "images/table_delete.png",
-                                        "width": 50
-                                    },
-                                    "name": "MyActionColumn4",
-                                    "designerId": "acbf10cc-4fa2-4b37-8893-924e4e2333d6",
-                                    "cn": [
-                                        {
-                                            "type": "basicfunction",
-                                            "reference": {
-                                                "name": "items",
-                                                "type": "array"
-                                            },
-                                            "codeClass": null,
-                                            "userConfig": {
-                                                "designer|params": [
-                                                    "grid",
-                                                    "rowIndex",
-                                                    "colIndex",
-                                                    "actionItem",
-                                                    "event",
-                                                    "record",
-                                                    "row"
-                                                ],
-                                                "fn": "handler",
-                                                "implHandler": [
-                                                    "Ext.Msg.confirm('您正在删除', '角色：' + record.get('roleNameCn') + '，角色代码为：'+record.get('roleName')+'，<br/> 确认删除？', getResult);\r",
-                                                    "function getResult(confirm)\r",
-                                                    "{\r",
-                                                    "    console.log('confirm:', confirm);\r",
-                                                    "    if (confirm == \"yes\"){\r",
-                                                    "        var roleId = record.get(\"roleId\");\r",
-                                                    "        Ext.Ajax.request(\r",
-                                                    "        {\r",
-                                                    "            url : 'del_RoleInfoById',\r",
-                                                    "            params :\r",
-                                                    "            {\r",
-                                                    "                roleId : roleId\r",
-                                                    "            },\r",
-                                                    "            success : function (response){\r",
-                                                    "                Ext.Msg.alert('成功提示', '角色删除成功。');                \r",
-                                                    "                var mystore = Ext.StoreMgr.get('uRoleInfoStore');\r",
-                                                    "                mystore.load();\r",
-                                                    "            },\r",
-                                                    "            failure : function (response){\r",
-                                                    "                \r",
-                                                    "            }\r",
-                                                    "        });\r",
-                                                    "    }\r",
-                                                    "}"
-                                                ]
-                                            },
-                                            "name": "handler",
-                                            "designerId": "f0eb9e5a-190f-4bfe-ad7b-9d22ccd7f0f0"
-                                        }
-                                    ]
                                 },
                                 {
                                     "type": "Ext.grid.View",
@@ -1081,7 +1301,7 @@
                                         "type": "object"
                                     },
                                     "codeClass": null,
-                                    "name": "MyGridView24",
+                                    "name": "MyGridView25",
                                     "designerId": "cceb15da-66b1-4e62-9b47-0bceed572273"
                                 },
                                 {
@@ -1094,7 +1314,7 @@
                                     "userConfig": {
                                         "designer|displayName": null
                                     },
-                                    "name": "MyCheckboxSelectionModel17",
+                                    "name": "MyCheckboxSelectionModel18",
                                     "designerId": "4fd92818-68f8-4a3d-8b07-29169f50b052"
                                 }
                             ]
@@ -1136,7 +1356,7 @@
                             "userConfig": {
                                 "dock": "top"
                             },
-                            "name": "MyToolbar31",
+                            "name": "MyToolbar33",
                             "designerId": "5668ca30-6a3d-44db-8fcc-3451b8136e2b",
                             "cn": [
                                 {
@@ -1152,7 +1372,7 @@
                                         "id": "searchKeyword_RightInfo",
                                         "layout|flex": null
                                     },
-                                    "name": "MyTextField128",
+                                    "name": "MyTextField132",
                                     "designerId": "d7fc59b8-7cee-4103-aeda-c8bf2d73e0f8"
                                 },
                                 {
@@ -1167,7 +1387,7 @@
                                         "layout|flex": null,
                                         "text": "搜索"
                                     },
-                                    "name": "MyButton118",
+                                    "name": "MyButton131",
                                     "designerId": "e860eb4a-4b24-4df2-a1ff-9988f451a33d",
                                     "cn": [
                                         {
@@ -1212,7 +1432,7 @@
                                         "layout|flex": null,
                                         "text": "刷新"
                                     },
-                                    "name": "MyButton119",
+                                    "name": "MyButton132",
                                     "designerId": "0fae2535-c43f-4c11-a7bf-a717614c3e87",
                                     "cn": [
                                         {
@@ -1250,7 +1470,7 @@
                                         "layout|flex": null,
                                         "text": "添加权限"
                                     },
-                                    "name": "MyButton120",
+                                    "name": "MyButton133",
                                     "designerId": "7672c04d-b5f8-4602-ad2c-ec6fb925d679",
                                     "cn": [
                                         {
@@ -1314,6 +1534,151 @@
                                             "designerId": "2b88a55b-f2b2-4adc-9117-cf5586d22e11"
                                         }
                                     ]
+                                },
+                                {
+                                    "type": "Ext.button.Button",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "icon": "images/table_add.png",
+                                        "layout|flex": null,
+                                        "text": "编辑"
+                                    },
+                                    "name": "MyButton134",
+                                    "designerId": "fd8773f7-e00c-4768-8e21-6769990cc4ae",
+                                    "cn": [
+                                        {
+                                            "type": "basiceventbinding",
+                                            "reference": {
+                                                "name": "listeners",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "fn": "onButtonClick2111",
+                                                "implHandler": [
+                                                    "var grid = Ext.getCmp('rightInfoGrid');\r",
+                                                    "\r",
+                                                    "var record = grid.getSelectionModel().getSelection();\r",
+                                                    "\r",
+                                                    "if(record.length === 0){\r",
+                                                    "    Ext.Msg.alert('提示','请先选择您要操作的行！');\r",
+                                                    "    return;\r",
+                                                    "}else if(record.length >1){\r",
+                                                    "    Ext.Msg.alert('提示','您只能编辑一个权限信息，请重新选择。');\r",
+                                                    "    return;\r",
+                                                    "}else {    \r",
+                                                    "    var win = Ext.widget('db_RightInfoWindow');\r",
+                                                    "    win.show();\r",
+                                                    "    \r",
+                                                    "    var form = Ext.getCmp('db_RightInfoWindowForm');\r",
+                                                    "    form.loadRecord(record[0]);\r",
+                                                    "    \r",
+                                                    "    //对显示的内容进行处理\r",
+                                                    "    //对权限名称进行处理\r",
+                                                    "    var rightNameField = Ext.getCmp('w_rightName');\r",
+                                                    "    var value = rightNameField.getValue();\r",
+                                                    "    var index = value.lastIndexOf(\"&nbsp;\");\r",
+                                                    "    console.log(index);\r",
+                                                    "    if(index>=0){\r",
+                                                    "        var substr = value.substring(index+6,value.length);\r",
+                                                    "        rightNameField.setValue(substr);\r",
+                                                    "    }\r",
+                                                    "}\r",
+                                                    "\r",
+                                                    ""
+                                                ],
+                                                "name": "click",
+                                                "scope": "me"
+                                            },
+                                            "name": "onButtonClick2111",
+                                            "designerId": "d15ee2bb-a84a-4f93-80c3-b29fd173af9c"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Ext.button.Button",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "icon": "images/table_add.png",
+                                        "layout|flex": null,
+                                        "text": "删除"
+                                    },
+                                    "name": "MyButton135",
+                                    "designerId": "1ffc7a82-881f-4e7b-b014-3dbe8d19f9ac",
+                                    "cn": [
+                                        {
+                                            "type": "basiceventbinding",
+                                            "reference": {
+                                                "name": "listeners",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "fn": "onButtonClick21111",
+                                                "implHandler": [
+                                                    "var grid = Ext.getCmp('rightInfoGrid');\r",
+                                                    "\r",
+                                                    "var record = grid.getSelectionModel().getSelection();\r",
+                                                    "\r",
+                                                    "if(record.length === 0){\r",
+                                                    "    Ext.Msg.alert('提示','请先选择您要操作的行！');\r",
+                                                    "    return;\r",
+                                                    "}else{\r",
+                                                    "    var  rightIds =new Array(record.length);\r",
+                                                    "    var msg = '';\r",
+                                                    "    for(var i = 0;i<record.length;i++){\r",
+                                                    "        rightIds[i] = record[i].get(\"rightId\");\r",
+                                                    "        //去除权限名称的空格\r",
+                                                    "        var rightName = record[i].get('rightName');\r",
+                                                    "        var index = rightName.lastIndexOf(\"&nbsp;\");\r",
+                                                    "        var substr;\r",
+                                                    "        if(index>=0){\r",
+                                                    "            substr = rightName.substring(index+6,rightName.length);    \r",
+                                                    "        }\r",
+                                                    "        msg += substr + '<br/>';\r",
+                                                    "    }\r",
+                                                    "    \r",
+                                                    "    Ext.Msg.confirm('提示', '您正在删除以下权限：<br/>' + msg+'确认删除？', getResult);\r",
+                                                    "    function getResult(confirm)\r",
+                                                    "    {\r",
+                                                    "        if (confirm == \"yes\"){\r",
+                                                    "            Ext.Ajax.request(\r",
+                                                    "                {\r",
+                                                    "                    url : 'del_RightInfoById',\r",
+                                                    "                    params :\r",
+                                                    "                    {\r",
+                                                    "                        rightIds : rightIds\r",
+                                                    "                    },            \r",
+                                                    "                    success : function (response){\r",
+                                                    "                        Ext.Msg.alert('成功提示', '权限删除成功。');\r",
+                                                    "                        //successResult();\r",
+                                                    "                        var mystore = Ext.StoreMgr.get('uRightInfoStore');\r",
+                                                    "                        mystore.load();\r",
+                                                    "                    },\r",
+                                                    "                    failure : function (response){\r",
+                                                    "                        //failedResult();\r",
+                                                    "                        // Ext.Msg.alert('失败提示', '记录删除失败。');\r",
+                                                    "                    }\r",
+                                                    "                });\r",
+                                                    "        }\r",
+                                                    "    }\r",
+                                                    "}"
+                                                ],
+                                                "name": "click",
+                                                "scope": "me"
+                                            },
+                                            "name": "onButtonClick21111",
+                                            "designerId": "95ea9f56-ffa7-4a70-9e47-c20021d616eb"
+                                        }
+                                    ]
                                 }
                             ]
                         },
@@ -1330,7 +1695,7 @@
                                 "store": "uRightInfoStore",
                                 "title": null
                             },
-                            "name": "MyGridPanel25",
+                            "name": "MyGridPanel26",
                             "designerId": "866a2818-2c59-4fa1-a5c6-e1b7fe33e882",
                             "cn": [
                                 {
@@ -1345,7 +1710,7 @@
                                         "text": "序号",
                                         "width": 40
                                     },
-                                    "name": "MyRowNumberer19",
+                                    "name": "MyRowNumberer20",
                                     "designerId": "5594509b-acf5-44cf-b97d-21368ba64286"
                                 },
                                 {
@@ -1360,7 +1725,7 @@
                                         "text": "权限名称",
                                         "width": 200
                                     },
-                                    "name": "MyColumn138",
+                                    "name": "MyColumn144",
                                     "designerId": "4d249eee-43eb-4688-b50c-f014312f07f3"
                                 },
                                 {
@@ -1374,7 +1739,7 @@
                                         "dataIndex": "rightId",
                                         "text": "权限编号"
                                     },
-                                    "name": "MyColumn139",
+                                    "name": "MyColumn145",
                                     "designerId": "b1e81315-ce1e-4e4c-b0e0-5f3e17e5dbd4"
                                 },
                                 {
@@ -1389,7 +1754,7 @@
                                         "text": "权限地址",
                                         "width": 150
                                     },
-                                    "name": "MyColumn140",
+                                    "name": "MyColumn146",
                                     "designerId": "b7126866-59a8-4306-84cb-06c985484fa9"
                                 },
                                 {
@@ -1421,147 +1786,8 @@
                                         "text": "描述",
                                         "width": 400
                                     },
-                                    "name": "MyColumn141",
+                                    "name": "MyColumn147",
                                     "designerId": "701b40a4-ce3a-4b25-9f33-a49cc214274b"
-                                },
-                                {
-                                    "type": "Ext.grid.column.Action",
-                                    "reference": {
-                                        "name": "columns",
-                                        "type": "array"
-                                    },
-                                    "codeClass": null,
-                                    "userConfig": {
-                                        "dataIndex": "date",
-                                        "designer|displayName": "编辑",
-                                        "emptyCellText": null,
-                                        "icon": "images/table_edit.png",
-                                        "menuText": "",
-                                        "width": 50
-                                    },
-                                    "name": "MyActionColumn5",
-                                    "designerId": "bcae676a-2695-45f4-a44a-25f341643503",
-                                    "cn": [
-                                        {
-                                            "type": "basicfunction",
-                                            "reference": {
-                                                "name": "items",
-                                                "type": "array"
-                                            },
-                                            "codeClass": null,
-                                            "userConfig": {
-                                                "designer|params": [
-                                                    "grid",
-                                                    "rowIndex",
-                                                    "colIndex",
-                                                    "actionItem",
-                                                    "event",
-                                                    "record",
-                                                    "row"
-                                                ],
-                                                "fn": "handler",
-                                                "implHandler": [
-                                                    "if (colIndex === undefined || colIndex < 2) {\r",
-                                                    "    return;\r",
-                                                    "}\r",
-                                                    "var win = Ext.widget('db_RightInfoWindow');\r",
-                                                    "win.show();\r",
-                                                    "\r",
-                                                    "var form = Ext.getCmp('db_RightInfoWindowForm');\r",
-                                                    "form.loadRecord(record);\r",
-                                                    "\r",
-                                                    "//对显示的内容进行处理\r",
-                                                    "//对权限名称进行处理\r",
-                                                    "var rightNameField = Ext.getCmp('w_rightName');\r",
-                                                    "var value = rightNameField.getValue();\r",
-                                                    "var index = value.lastIndexOf(\"&nbsp;\");\r",
-                                                    "console.log(index);\r",
-                                                    "if(index>=0){\r",
-                                                    "    var substr = value.substring(index+6,value.length);\r",
-                                                    "    rightNameField.setValue(substr);\r",
-                                                    "}"
-                                                ]
-                                            },
-                                            "name": "handler",
-                                            "designerId": "08705ba7-d325-4707-b684-028ceab55b93"
-                                        }
-                                    ]
-                                },
-                                {
-                                    "type": "Ext.grid.column.Action",
-                                    "reference": {
-                                        "name": "columns",
-                                        "type": "array"
-                                    },
-                                    "codeClass": null,
-                                    "userConfig": {
-                                        "dataIndex": "date",
-                                        "designer|displayName": "删除",
-                                        "icon": "images/table_delete.png",
-                                        "width": 50
-                                    },
-                                    "name": "MyActionColumn6",
-                                    "designerId": "d7a68b4e-0a91-4f07-9dd2-10a7084c1ab0",
-                                    "cn": [
-                                        {
-                                            "type": "basicfunction",
-                                            "reference": {
-                                                "name": "items",
-                                                "type": "array"
-                                            },
-                                            "codeClass": null,
-                                            "userConfig": {
-                                                "designer|params": [
-                                                    "grid",
-                                                    "rowIndex",
-                                                    "colIndex",
-                                                    "actionItem",
-                                                    "event",
-                                                    "record",
-                                                    "row"
-                                                ],
-                                                "fn": "handler",
-                                                "implHandler": [
-                                                    "//去除权限名称的空格\r",
-                                                    "var rightName = record.get('rightName');\r",
-                                                    "var index = rightName.lastIndexOf(\"&nbsp;\");\r",
-                                                    "var substr;\r",
-                                                    "if(index>=0){\r",
-                                                    "    substr = rightName.substring(index+6,rightName.length);    \r",
-                                                    "}\r",
-                                                    "Ext.Msg.confirm('您正在删除', '权限：\"' + substr + '\"，权限代码为：\"'+record.get('url')+'\"，<br/> 确认删除？', getResult);\r",
-                                                    "\r",
-                                                    "function getResult(confirm)\r",
-                                                    "{\r",
-                                                    "    console.log('confirm:', confirm);\r",
-                                                    "    if (confirm == \"yes\"){\r",
-                                                    "        var rightId = record.get(\"rightId\");\r",
-                                                    "        Ext.Ajax.request(\r",
-                                                    "        {\r",
-                                                    "            url : 'del_RightInfoById',\r",
-                                                    "            params :\r",
-                                                    "            {\r",
-                                                    "                rightId : rightId\r",
-                                                    "            },            \r",
-                                                    "            success : function (response){\r",
-                                                    "                Ext.Msg.alert('成功提示', '权限删除成功。');\r",
-                                                    "                //successResult();\r",
-                                                    "                var mystore = Ext.StoreMgr.get('uRightInfoStore');\r",
-                                                    "                mystore.load();\r",
-                                                    "            },\r",
-                                                    "            failure : function (response){\r",
-                                                    "                //failedResult();\r",
-                                                    "                // Ext.Msg.alert('失败提示', '记录删除失败。');\r",
-                                                    "            }\r",
-                                                    "        });\r",
-                                                    "    }\r",
-                                                    "}"
-                                                ]
-                                            },
-                                            "name": "handler",
-                                            "designerId": "a63f67ca-5125-453d-a7f9-a72d1eb4b136"
-                                        }
-                                    ]
                                 },
                                 {
                                     "type": "Ext.grid.View",
@@ -1570,7 +1796,7 @@
                                         "type": "object"
                                     },
                                     "codeClass": null,
-                                    "name": "MyGridView25",
+                                    "name": "MyGridView26",
                                     "designerId": "a79baec1-a8d1-4184-a02f-f5f7da72567c"
                                 },
                                 {
@@ -1583,7 +1809,7 @@
                                     "userConfig": {
                                         "designer|displayName": null
                                     },
-                                    "name": "MyCheckboxSelectionModel18",
+                                    "name": "MyCheckboxSelectionModel19",
                                     "designerId": "2b791d0b-7f42-47b1-99b0-a838b4b66deb"
                                 }
                             ]
@@ -1625,7 +1851,7 @@
                             "userConfig": {
                                 "dock": "top"
                             },
-                            "name": "MyToolbar32",
+                            "name": "MyToolbar34",
                             "designerId": "df6d013d-7a58-45cd-b1cf-a71c37a8136f",
                             "cn": [
                                 {
@@ -1641,7 +1867,7 @@
                                         "id": "searchKeyword_DeptInfo",
                                         "layout|flex": null
                                     },
-                                    "name": "MyTextField129",
+                                    "name": "MyTextField133",
                                     "designerId": "157f5582-4952-4583-ae86-421de4c1198e"
                                 },
                                 {
@@ -1656,7 +1882,7 @@
                                         "layout|flex": null,
                                         "text": "搜索"
                                     },
-                                    "name": "MyButton121",
+                                    "name": "MyButton136",
                                     "designerId": "ed880cef-47a1-475f-bf47-48d63a711434",
                                     "cn": [
                                         {
@@ -1696,7 +1922,7 @@
                                         "layout|flex": null,
                                         "text": "刷新"
                                     },
-                                    "name": "MyButton122",
+                                    "name": "MyButton137",
                                     "designerId": "be777270-7020-48ee-a642-dd5bd984c685",
                                     "cn": [
                                         {
@@ -1734,7 +1960,7 @@
                                         "layout|flex": null,
                                         "text": "添加新部门"
                                     },
-                                    "name": "MyButton123",
+                                    "name": "MyButton138",
                                     "designerId": "708d18e7-506c-49c8-927b-00ed36e3d4f8",
                                     "cn": [
                                         {
@@ -1795,6 +2021,156 @@
                                             "designerId": "6bcf8f86-b574-4a2b-bd34-54398e0496bb"
                                         }
                                     ]
+                                },
+                                {
+                                    "type": "Ext.button.Button",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "icon": "images/table_add.png",
+                                        "layout|flex": null,
+                                        "text": "编辑"
+                                    },
+                                    "name": "MyButton139",
+                                    "designerId": "70815b88-d540-4b3c-af57-45cc028fa09b",
+                                    "cn": [
+                                        {
+                                            "type": "basiceventbinding",
+                                            "reference": {
+                                                "name": "listeners",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "fn": "onButtonClick2111111",
+                                                "implHandler": [
+                                                    "var grid = Ext.getCmp('deptInfoGrid');\r",
+                                                    "\r",
+                                                    "var record = grid.getSelectionModel().getSelection();\r",
+                                                    "\r",
+                                                    "if(record.length === 0){\r",
+                                                    "    Ext.Msg.alert('提示','请先选择您要操作的行！');\r",
+                                                    "    return;\r",
+                                                    "}else if(record.length >1){\r",
+                                                    "    Ext.Msg.alert('提示','您只能编辑一个部门信息，请重新选择。');\r",
+                                                    "    return;\r",
+                                                    "}else {    \r",
+                                                    "    var win = Ext.widget('db_DeptInfoWindow');\r",
+                                                    "    win.show();\r",
+                                                    "    \r",
+                                                    "    var form = Ext.getCmp('db_DeptInfoWindowForm');\r",
+                                                    "    form.loadRecord(record[0]);\r",
+                                                    "    \r",
+                                                    "    //对显示的内容进行处理\r",
+                                                    "    //对部门名称进行处理\r",
+                                                    "    var deptNameField = Ext.getCmp('deptWindow_deptName');\r",
+                                                    "    var value = deptNameField.getValue();\r",
+                                                    "    var index = value.lastIndexOf(\"&nbsp;\");\r",
+                                                    "    console.log(index);\r",
+                                                    "    if(index>=0){\r",
+                                                    "        var substr = value.substring(index+6,value.length);\r",
+                                                    "        deptNameField.setValue(substr);\r",
+                                                    "    }\r",
+                                                    "}\r",
+                                                    "\r",
+                                                    ""
+                                                ],
+                                                "name": "click",
+                                                "scope": "me"
+                                            },
+                                            "name": "onButtonClick2111111",
+                                            "designerId": "140ed718-a295-417d-a634-44c3d5737584"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Ext.button.Button",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "icon": "images/table_add.png",
+                                        "layout|flex": null,
+                                        "text": "删除"
+                                    },
+                                    "name": "MyButton140",
+                                    "designerId": "6547af44-573a-4e9f-8091-e68bfad6cc0a",
+                                    "cn": [
+                                        {
+                                            "type": "basiceventbinding",
+                                            "reference": {
+                                                "name": "listeners",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "fn": "onButtonClick21111111",
+                                                "implHandler": [
+                                                    "var grid = Ext.getCmp('deptInfoGrid');\r",
+                                                    "var record = grid.getSelectionModel().getSelection();\r",
+                                                    "\r",
+                                                    "if(record.length === 0){\r",
+                                                    "    Ext.Msg.alert('提示','请先选择您要操作的行！');\r",
+                                                    "    return;\r",
+                                                    "}else{\r",
+                                                    "    var  deptIds =new Array(record.length);\r",
+                                                    "    var msg = '';\r",
+                                                    "    for(var i = 0;i<record.length;i++){\r",
+                                                    "        deptIds[i] = record[i].get(\"deptId\");\r",
+                                                    "        //去除权限名称的空格\r",
+                                                    "        //去除名称的空格\r",
+                                                    "        var deptName = record[i].get('deptName');\r",
+                                                    "        var index = deptName.lastIndexOf(\"&nbsp;\");\r",
+                                                    "        var substr = '';\r",
+                                                    "        if(index>=0){\r",
+                                                    "            substr = deptName.substring(index+6,deptName.length);    \r",
+                                                    "        }\r",
+                                                    "        msg += substr + '<br/>';\r",
+                                                    "    }\r",
+                                                    "\r",
+                                                    "    Ext.Msg.confirm('提示', '您正在删除以下部门：<br/>' + msg+'确认删除？', getResult);\r",
+                                                    "    function getResult(confirm)\r",
+                                                    "    {\r",
+                                                    "        if (confirm == \"yes\"){            \r",
+                                                    "            Ext.Ajax.request(\r",
+                                                    "            {\r",
+                                                    "                url : 'del_DeptInfoById',\r",
+                                                    "                params :\r",
+                                                    "                {\r",
+                                                    "                    deptIds : deptIds\r",
+                                                    "                },            \r",
+                                                    "                success : function (response){\r",
+                                                    "                    Ext.Msg.alert('成功提示', '记录删除成功。');\r",
+                                                    "                    //successResult();\r",
+                                                    "                    var mystore = Ext.StoreMgr.get('uDeptInfoStore');\r",
+                                                    "                    mystore.load();\r",
+                                                    "                },\r",
+                                                    "                failure : function (response){\r",
+                                                    "                    //failedResult();\r",
+                                                    "                    // Ext.Msg.alert('失败提示', '记录删除失败。');\r",
+                                                    "                }\r",
+                                                    "            });\r",
+                                                    "        }\r",
+                                                    "    }\r",
+                                                    "}\r",
+                                                    "\r",
+                                                    "\r",
+                                                    "\r",
+                                                    "\r",
+                                                    ""
+                                                ],
+                                                "name": "click",
+                                                "scope": "me"
+                                            },
+                                            "name": "onButtonClick21111111",
+                                            "designerId": "bcef1a22-c0aa-4df0-ac0f-1f6ef0d2f4ff"
+                                        }
+                                    ]
                                 }
                             ]
                         },
@@ -1811,7 +2187,7 @@
                                 "store": "uDeptInfoStore",
                                 "title": null
                             },
-                            "name": "MyGridPanel26",
+                            "name": "MyGridPanel27",
                             "designerId": "0ffd5e96-11a4-4b6b-931c-114653d0bf80",
                             "cn": [
                                 {
@@ -1821,7 +2197,7 @@
                                         "type": "array"
                                     },
                                     "codeClass": null,
-                                    "name": "MyRowNumberer20",
+                                    "name": "MyRowNumberer21",
                                     "designerId": "39783ff0-5329-4e9f-baf1-ed375fc62785"
                                 },
                                 {
@@ -1836,7 +2212,7 @@
                                         "text": "部门名称",
                                         "width": 200
                                     },
-                                    "name": "MyColumn142",
+                                    "name": "MyColumn148",
                                     "designerId": "a9360d9c-94c5-46b6-b023-cc68606a5914"
                                 },
                                 {
@@ -1850,7 +2226,7 @@
                                         "dataIndex": "deptId",
                                         "text": "部门编号"
                                     },
-                                    "name": "MyColumn143",
+                                    "name": "MyColumn149",
                                     "designerId": "03e6b3fb-5aab-4237-bed8-e405f9d2770f"
                                 },
                                 {
@@ -1882,142 +2258,8 @@
                                         "text": "描述",
                                         "width": 400
                                     },
-                                    "name": "MyColumn144",
+                                    "name": "MyColumn150",
                                     "designerId": "fd696212-b2a4-4c52-b97f-3bcd6c1461c8"
-                                },
-                                {
-                                    "type": "Ext.grid.column.Action",
-                                    "reference": {
-                                        "name": "columns",
-                                        "type": "array"
-                                    },
-                                    "codeClass": null,
-                                    "userConfig": {
-                                        "designer|displayName": "编辑",
-                                        "icon": "images/table_edit.png",
-                                        "width": 50
-                                    },
-                                    "name": "MyActionColumn7",
-                                    "designerId": "7381851a-0c30-4b19-95e3-5405a2a2ba6f",
-                                    "cn": [
-                                        {
-                                            "type": "basicfunction",
-                                            "reference": {
-                                                "name": "items",
-                                                "type": "array"
-                                            },
-                                            "codeClass": null,
-                                            "userConfig": {
-                                                "designer|params": [
-                                                    "grid",
-                                                    "rowIndex",
-                                                    "colIndex",
-                                                    "actionItem",
-                                                    "event",
-                                                    "record",
-                                                    "row"
-                                                ],
-                                                "fn": "handler",
-                                                "implHandler": [
-                                                    "if (colIndex === undefined || colIndex < 2) {\r",
-                                                    "    return;\r",
-                                                    "}\r",
-                                                    "var win = Ext.widget('db_DeptInfoWindow');\r",
-                                                    "win.show();\r",
-                                                    "\r",
-                                                    "var form = Ext.getCmp('db_DeptInfoWindowForm');\r",
-                                                    "form.loadRecord(record);\r",
-                                                    "\r",
-                                                    "//对显示的内容进行处理\r",
-                                                    "//对部门名称进行处理\r",
-                                                    "var deptNameField = Ext.getCmp('deptWindow_deptName');\r",
-                                                    "var value = deptNameField.getValue();\r",
-                                                    "var index = value.lastIndexOf(\"&nbsp;\");\r",
-                                                    "console.log(index);\r",
-                                                    "if(index>=0){\r",
-                                                    "    var substr = value.substring(index+6,value.length);\r",
-                                                    "    deptNameField.setValue(substr);\r",
-                                                    "}"
-                                                ]
-                                            },
-                                            "name": "handler",
-                                            "designerId": "5f2658c3-a606-4a3d-b494-236b199a890f"
-                                        }
-                                    ]
-                                },
-                                {
-                                    "type": "Ext.grid.column.Action",
-                                    "reference": {
-                                        "name": "columns",
-                                        "type": "array"
-                                    },
-                                    "codeClass": null,
-                                    "userConfig": {
-                                        "designer|displayName": "删除",
-                                        "icon": "images/table_delete.png",
-                                        "width": 50
-                                    },
-                                    "name": "MyActionColumn8",
-                                    "designerId": "06ce6727-b4ae-4f86-89c8-d5f550e7651b",
-                                    "cn": [
-                                        {
-                                            "type": "basicfunction",
-                                            "reference": {
-                                                "name": "items",
-                                                "type": "array"
-                                            },
-                                            "codeClass": null,
-                                            "userConfig": {
-                                                "designer|params": [
-                                                    "grid",
-                                                    "rowIndex",
-                                                    "colIndex",
-                                                    "actionItem",
-                                                    "event",
-                                                    "record",
-                                                    "row"
-                                                ],
-                                                "fn": "handler",
-                                                "implHandler": [
-                                                    "//去除名称的空格\r",
-                                                    "var deptName = record.get('deptName');\r",
-                                                    "var index = deptName.lastIndexOf(\"&nbsp;\");\r",
-                                                    "var substr;\r",
-                                                    "if(index>=0){\r",
-                                                    "    substr = deptName.substring(index+6,deptName.length);    \r",
-                                                    "}\r",
-                                                    "Ext.Msg.confirm('您正在删除', '部门：\"' + substr + '\"，部门编号为：\"'+record.get('deptId')+'\"，<br/> 确认删除？', getResult);\r",
-                                                    "function getResult(confirm)\r",
-                                                    "{\r",
-                                                    "    console.log('confirm:', confirm);\r",
-                                                    "    if (confirm == \"yes\"){\r",
-                                                    "        var deptId = record.get(\"deptId\");\r",
-                                                    "        Ext.Ajax.request(\r",
-                                                    "        {\r",
-                                                    "            url : 'del_DeptInfoById',\r",
-                                                    "            params :\r",
-                                                    "            {\r",
-                                                    "                deptId : deptId\r",
-                                                    "            },            \r",
-                                                    "            success : function (response){\r",
-                                                    "                Ext.Msg.alert('成功提示', '记录删除成功。');\r",
-                                                    "                //successResult();\r",
-                                                    "                var mystore = Ext.StoreMgr.get('uDeptInfoStore');\r",
-                                                    "                mystore.load();\r",
-                                                    "            },\r",
-                                                    "            failure : function (response){\r",
-                                                    "                //failedResult();\r",
-                                                    "                // Ext.Msg.alert('失败提示', '记录删除失败。');\r",
-                                                    "            }\r",
-                                                    "        });\r",
-                                                    "    }\r",
-                                                    "}"
-                                                ]
-                                            },
-                                            "name": "handler",
-                                            "designerId": "8b0fdfb6-d159-4c0e-bae4-c2023ee973e6"
-                                        }
-                                    ]
                                 },
                                 {
                                     "type": "Ext.grid.View",
@@ -2026,7 +2268,7 @@
                                         "type": "object"
                                     },
                                     "codeClass": null,
-                                    "name": "MyGridView26",
+                                    "name": "MyGridView27",
                                     "designerId": "a20af8f2-16c4-44c3-9ddf-74d7dc5d38c6"
                                 },
                                 {
@@ -2036,7 +2278,7 @@
                                         "type": "object"
                                     },
                                     "codeClass": "Ext.selection.CheckboxModel",
-                                    "name": "MyCheckboxSelectionModel19",
+                                    "name": "MyCheckboxSelectionModel20",
                                     "designerId": "bf5341cf-bfec-4cae-b5ff-3697bd0ad8e9"
                                 }
                             ]

@@ -194,6 +194,32 @@ Ext.define('MyApp.view.MyViewport', {
                         },
                         {
                             xtype: 'treepanel',
+                            id: 'tree_infoPubManager1',
+                            title: '测试',
+                            root: {
+                                expanded: true,
+                                children: [
+                                    {
+                                        id: 'infoArticleJYXCTab',
+                                        text: '建言献策',
+                                        icon: '',
+                                        leaf: true
+                                    }
+                                ]
+                            },
+                            rootVisible: false,
+                            viewConfig: {
+
+                            },
+                            listeners: {
+                                itemclick: {
+                                    fn: me.onTree_infoPubManager1ItemClick,
+                                    scope: me
+                                }
+                            }
+                        },
+                        {
+                            xtype: 'treepanel',
                             id: 'tree_xianzhuang',
                             title: '现状',
                             root: {
@@ -244,7 +270,7 @@ Ext.define('MyApp.view.MyViewport', {
                                 expanded: true,
                                 children: [
                                     {
-                                        id: '',
+                                        id: 'xiangmu_guihua',
                                         text: '项目与规划',
                                         icon: '',
                                         children: [
@@ -275,7 +301,7 @@ Ext.define('MyApp.view.MyViewport', {
                                         ]
                                     },
                                     {
-                                        id: '',
+                                        id: 'fukenshenqingguanli',
                                         text: '复垦申请管理',
                                         icon: '',
                                         children: [
@@ -312,7 +338,7 @@ Ext.define('MyApp.view.MyViewport', {
                                         ]
                                     },
                                     {
-                                        id: '',
+                                        id: 'gonggao_yijian',
                                         text: '公告及意见',
                                         icon: '',
                                         children: [
@@ -417,7 +443,7 @@ Ext.define('MyApp.view.MyViewport', {
                                 expanded: true,
                                 children: [
                                     {
-                                        id: '',
+                                        id: 'cq_chaiqianguochengguanli',
                                         text: '拆迁过程管理',
                                         icon: '',
                                         children: [
@@ -454,7 +480,7 @@ Ext.define('MyApp.view.MyViewport', {
                                         ]
                                     },
                                     {
-                                        id: '',
+                                        id: 'cq_jiancejiankong',
                                         text: '监测监控',
                                         icon: '',
                                         children: [
@@ -485,7 +511,7 @@ Ext.define('MyApp.view.MyViewport', {
                                         ]
                                     },
                                     {
-                                        id: '',
+                                        id: 'cq_yujingguanli',
                                         text: '预警管理',
                                         icon: '',
                                         children: [
@@ -504,7 +530,7 @@ Ext.define('MyApp.view.MyViewport', {
                                         ]
                                     },
                                     {
-                                        id: '',
+                                        id: 'cq_rukubeian',
                                         text: '入库备案',
                                         icon: '',
                                         children: [
@@ -672,7 +698,7 @@ Ext.define('MyApp.view.MyViewport', {
                                         leaf: true
                                     },
                                     {
-                                        id: '',
+                                        id: 'fk_fukenyanshoupingjia',
                                         text: '复垦验收评价',
                                         icon: '',
                                         children: [
@@ -817,6 +843,7 @@ Ext.define('MyApp.view.MyViewport', {
                                         leaf: true
                                     },
                                     {
+                                        id: 'jg_yijianzhengji',
                                         text: '意见征集与舆情分析',
                                         children: [
                                             {
@@ -888,6 +915,12 @@ Ext.define('MyApp.view.MyViewport', {
                                         text: '系统运行日志',
                                         icon: '',
                                         leaf: true
+                                    },
+                                    {
+                                        id: 'db_BlacklistTab',
+                                        text: '企业黑名单',
+                                        icon: '',
+                                        leaf: true
                                     }
                                 ]
                             },
@@ -935,6 +968,15 @@ Ext.define('MyApp.view.MyViewport', {
         var tabPanel = Ext.getCmp('myTabPanel');
         tabPanel.removeAll(true);
         tabPanel.add(Ext.widget(xtype));
+    },
+
+    onTree_infoPubManager1ItemClick: function(dataview, record, item, index, e, eOpts) {
+
+        var xtype = record.internalId;
+        var tabPanel = Ext.getCmp('myTabPanel');
+        tabPanel.removeAll(true);
+        tabPanel.add(Ext.widget(xtype));
+        //console.log(xtype);
     },
 
     onTreepanelSelectionChange3: function(model, selected, eOpts) {

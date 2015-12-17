@@ -26,7 +26,7 @@
             "userConfig": {
                 "url": "get_Users"
             },
-            "name": "MyAjaxProxy99",
+            "name": "MyAjaxProxy100",
             "designerId": "59665851-5402-4e6d-8fed-7cd0aafeaca0",
             "cn": [
                 {
@@ -39,7 +39,7 @@
                     "userConfig": {
                         "root": "root"
                     },
-                    "name": "MyJsonReader99",
+                    "name": "MyJsonReader100",
                     "designerId": "ffd4597b-44b7-4620-80e6-70a378ef43c4"
                 }
             ]

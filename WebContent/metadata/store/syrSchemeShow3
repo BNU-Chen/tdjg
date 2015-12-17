@@ -37,7 +37,7 @@
                 ],
                 "url": "FKSchemeShow3"
             },
-            "name": "MyAjaxProxy15",
+            "name": "MyAjaxProxy16",
             "designerId": "62f7cd56-418b-4b52-a97f-d427d7df4eca",
             "cn": [
                 {
@@ -50,7 +50,7 @@
                     "userConfig": {
                         "root": "root"
                     },
-                    "name": "MyJsonReader15",
+                    "name": "MyJsonReader16",
                     "designerId": "2acee269-8c61-4e40-bab9-fd2d2391b125"
                 }
             ]

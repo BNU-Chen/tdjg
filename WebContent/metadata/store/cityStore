@@ -26,7 +26,7 @@
                 "extraParams": null,
                 "url": "get_infoAreaCityList"
             },
-            "name": "MyAjaxProxy21",
+            "name": "MyAjaxProxy22",
             "designerId": "7b77fcda-331b-4efb-a805-ad20bb7e0376",
             "cn": [
                 {
@@ -39,7 +39,7 @@
                     "userConfig": {
                         "root": null
                     },
-                    "name": "MyJsonReader21",
+                    "name": "MyJsonReader22",
                     "designerId": "8f7e2346-b1cc-406b-a718-df856237d525"
                 }
             ]

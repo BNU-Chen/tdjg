@@ -30,7 +30,7 @@
                 "layout": "auto",
                 "title": null
             },
-            "name": "MyForm1",
+            "name": "MyForm2",
             "designerId": "42cbae15-2397-42ce-b49b-a67ec5e344fa",
             "cn": [
                 {
@@ -43,7 +43,7 @@
                     "userConfig": {
                         "title": "帐户信息"
                     },
-                    "name": "MyFieldSet",
+                    "name": "MyFieldSet1",
                     "designerId": "1a251b5b-c982-4be5-a5ba-d6b07ae095b2",
                     "cn": [
                         {
@@ -61,7 +61,7 @@
                                 "name": "userName",
                                 "width": 400
                             },
-                            "name": "MyTextField7",
+                            "name": "MyTextField10",
                             "designerId": "c455a970-2493-4c4e-9e43-6fb11ad88f0b"
                         },
                         {
@@ -79,7 +79,7 @@
                                 "readOnly": true,
                                 "width": 400
                             },
-                            "name": "MyTextField8",
+                            "name": "MyTextField11",
                             "designerId": "084ef3f3-14b4-46fb-9498-04ce4acf9039"
                         },
                         {
@@ -111,7 +111,7 @@
                         "title": "安全设置",
                         "width": 660
                     },
-                    "name": "MyFieldSet1",
+                    "name": "MyFieldSet2",
                     "designerId": "f127b061-678c-4a08-b56c-d44ce8fc6dcc",
                     "cn": [
                         {
@@ -135,7 +135,7 @@
                                 "name": "userPwd",
                                 "width": 400
                             },
-                            "name": "MyTextField9",
+                            "name": "MyTextField12",
                             "designerId": "ae62f119-ccdc-44f6-b24f-d76d5c2b00be"
                         },
                         {
@@ -158,7 +158,7 @@
                                 "submitValue": false,
                                 "width": 400
                             },
-                            "name": "MyTextField10",
+                            "name": "MyTextField13",
                             "designerId": "6ff38db9-7151-4b24-859d-0ff8b9f85f78"
                         },
                         {
@@ -192,7 +192,7 @@
                     "userConfig": {
                         "title": "用户信息"
                     },
-                    "name": "MyFieldSet2",
+                    "name": "MyFieldSet3",
                     "designerId": "9b0139da-389a-45f8-9144-5b2cbafa1715",
                     "cn": [
                         {
@@ -208,7 +208,7 @@
                                 "name": "trueName",
                                 "width": 400
                             },
-                            "name": "MyTextField11",
+                            "name": "MyTextField14",
                             "designerId": "17d45c69-c70f-4f05-a512-dc934b24b073"
                         },
                         {
@@ -225,7 +225,7 @@
                                 "name": "mobileNum",
                                 "width": 400
                             },
-                            "name": "MyTextField12",
+                            "name": "MyTextField15",
                             "designerId": "6e9c6362-1f21-46af-9fd8-e52557216ca9"
                         },
                         {
@@ -242,7 +242,7 @@
                                 "name": "phoneNum",
                                 "width": 400
                             },
-                            "name": "MyTextField13",
+                            "name": "MyTextField16",
                             "designerId": "998ec3b1-6803-41a5-9923-95544d61aa82"
                         },
                         {
@@ -259,7 +259,7 @@
                                 "name": "email",
                                 "width": 400
                             },
-                            "name": "MyTextField14",
+                            "name": "MyTextField17",
                             "designerId": "3b335872-2048-414b-afcd-18c9aa36313c"
                         },
                         {
@@ -276,7 +276,7 @@
                                 "layout|anchor": "100%",
                                 "name": "description"
                             },
-                            "name": "MyHtmlEditor1",
+                            "name": "MyHtmlEditor2",
                             "designerId": "70413548-665d-4255-aa44-d846817ec4ea"
                         }
                     ]
@@ -316,7 +316,7 @@
                     "userConfig": {
                         "dock": "bottom"
                     },
-                    "name": "MyToolbar1",
+                    "name": "MyToolbar3",
                     "designerId": "45fb8db6-f45b-438e-a5d7-bb287852f84f",
                     "cn": [
                         {
@@ -329,7 +329,7 @@
                             "userConfig": {
                                 "layout|flex": null
                             },
-                            "name": "MyFill1",
+                            "name": "MyFill2",
                             "designerId": "15b77f03-679b-4966-b289-4e32d941e130"
                         },
                         {
@@ -343,7 +343,7 @@
                                 "layout|flex": null,
                                 "text": "取消"
                             },
-                            "name": "MyButton6",
+                            "name": "MyButton12",
                             "designerId": "f0da9ffa-4543-44be-a96c-847a54ff2a79",
                             "cn": [
                                 {
@@ -378,7 +378,7 @@
                                 "layout|flex": null,
                                 "width": 30
                             },
-                            "name": "MySpacer1",
+                            "name": "MySpacer2",
                             "designerId": "993dc640-ce3b-41aa-9976-aa5329e5a17e"
                         },
                         {
@@ -392,7 +392,7 @@
                                 "layout|flex": null,
                                 "text": "确认"
                             },
-                            "name": "MyButton7",
+                            "name": "MyButton13",
                             "designerId": "d329fc17-50c5-4a8c-8fbc-e9ad206211ef",
                             "cn": [
                                 {

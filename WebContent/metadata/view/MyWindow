@@ -28,7 +28,7 @@
                 "layout|x": 30,
                 "layout|y": 70
             },
-            "name": "MyTextField118",
+            "name": "MyTextField122",
             "designerId": "60064b87-56a8-4979-9f3b-5cd31758eafa"
         },
         {
@@ -44,7 +44,7 @@
                 "layout|x": 30,
                 "layout|y": 110
             },
-            "name": "MyTextField119",
+            "name": "MyTextField123",
             "designerId": "4c3ee4b6-23fe-4651-b934-a2e44edc9b69"
         },
         {
@@ -60,7 +60,7 @@
                 "layout|x": 30,
                 "layout|y": 230
             },
-            "name": "MyTextField120",
+            "name": "MyTextField124",
             "designerId": "ca5e5444-0c32-4e04-8336-d39ca1177faf"
         },
         {
@@ -76,7 +76,7 @@
                 "shrinkWrap": 3,
                 "text": "请设置项目高级查询参数："
             },
-            "name": "MyLabel1",
+            "name": "MyLabel2",
             "designerId": "12e61e77-d857-4342-8e53-82dd67c91d49"
         },
         {
@@ -92,7 +92,7 @@
                 "layout|x": 30,
                 "layout|y": 150
             },
-            "name": "MyDateField26",
+            "name": "MyDateField27",
             "designerId": "9eff9eb6-78fd-4c3d-a21e-977ab49b3c1e"
         },
         {
@@ -108,7 +108,7 @@
                 "layout|x": 30,
                 "layout|y": 190
             },
-            "name": "MyDateField27",
+            "name": "MyDateField28",
             "designerId": "6a4ac839-f436-4b66-8efb-5cd65b8738e9"
         },
         {
@@ -123,7 +123,7 @@
                 "layout|y": 300,
                 "text": "查询"
             },
-            "name": "MyButton92",
+            "name": "MyButton98",
             "designerId": "7e4d41d2-f228-4b5a-af70-9bd91d93f274",
             "cn": [
                 {

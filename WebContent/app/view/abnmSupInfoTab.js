@@ -339,7 +339,7 @@ Ext.define('MyApp.view.abnmSupInfoTab', {
                                                 {
                                                     xtype: 'button',
                                                     handler: function(button, event) {
-                                                        var grid = Ext.getCmp('abnmSupInfoPubGrid');
+                                                        var grid = Ext.getCmp('articlePubGrid12');
                                                         //var gird = this.down('grid');
                                                         var record = grid.getSelectionModel().getSelection();
 
@@ -557,7 +557,7 @@ Ext.define('MyApp.view.abnmSupInfoTab', {
                                                 {
                                                     xtype: 'button',
                                                     handler: function(button, event) {
-                                                        var grid = Ext.getCmp('abnmSupInfoDraftGrid');
+                                                        var grid = Ext.getCmp('articleDraftGrid12');
 
                                                         var record = grid.getSelectionModel().getSelection();
 
@@ -725,7 +725,7 @@ Ext.define('MyApp.view.abnmSupInfoTab', {
                                                 {
                                                     xtype: 'button',
                                                     handler: function(button, event) {
-                                                        var grid = Ext.getCmp('abnmSupInfoRecGrid');
+                                                        var grid = Ext.getCmp('articleRecGrid12');
 
                                                         var record = grid.getSelectionModel().getSelection();
 
@@ -767,7 +767,7 @@ Ext.define('MyApp.view.abnmSupInfoTab', {
                                                 {
                                                     xtype: 'button',
                                                     handler: function(button, event) {
-                                                        var grid = Ext.getCmp('abnmSupInfoRecGrid');
+                                                        var grid = Ext.getCmp('articleRecGrid12');
 
                                                         var record = grid.getSelectionModel().getSelection();
 

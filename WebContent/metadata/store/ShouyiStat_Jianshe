@@ -31,7 +31,7 @@
                 ],
                 "url": "getBenefitList16"
             },
-            "name": "MyAjaxProxy3",
+            "name": "MyAjaxProxy4",
             "designerId": "fd794ba6-b6c8-4cb0-aee3-7b4cc4138052",
             "cn": [
                 {
@@ -44,7 +44,7 @@
                     "userConfig": {
                         "root": "root"
                     },
-                    "name": "MyJsonReader3",
+                    "name": "MyJsonReader4",
                     "designerId": "799e41ba-8ed7-4ca3-a202-7a943fa140f0"
                 }
             ]

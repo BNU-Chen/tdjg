@@ -26,13 +26,13 @@ Ext.define('MyApp.model.dbBackupRecoveryModel', {
             name: 'version'
         },
         {
-            name: 'bkdate'
+            name: 'date'
         },
         {
             name: 'size'
         },
         {
-            name: 'description'
+            name: 'comment'
         }
     ]
 });

@@ -37,7 +37,6 @@ Ext.define('MyApp.view.abnmDKTSAddTab', {
                 {
                     xtype: 'form',
                     height: 600,
-                    id: 'abnmDKTSAddForm',
                     layout: 'absolute',
                     bodyPadding: 10,
                     jsonSubmit: true,
@@ -257,7 +256,7 @@ Ext.define('MyApp.view.abnmDKTSAddTab', {
                         {
                             xtype: 'button',
                             handler: function(button, event) {
-                                var myform = Ext.getCmp('abnmDKTSAddForm').getForm();
+                                var myform = this.up('form').getForm();
 
                                 if (myform.isValid()) { // make sure the form contains valid data before submitting
                                     myform.submit({
@@ -323,8 +322,8 @@ Ext.define('MyApp.view.abnmDKTSAddTab', {
         }
         );
         var abnmDikuaiIdField=Ext.getCmp("abnmDikuaiId");
-        if(abnmDikuaiIdField)
-        abnmDikuaiIdField.store= mystore;
+        if(abnmDikuaiIdField.view)
+        abnmDikuaiIdField.view.setStore(mystore);
     },
 
     onAbnmProjectNameSelect: function(combo, records, eOpts) {

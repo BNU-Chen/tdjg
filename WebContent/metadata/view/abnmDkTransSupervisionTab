@@ -29,7 +29,7 @@
                 "store": "abnmDkTransSupervisionStore",
                 "title": ""
             },
-            "name": "MyGridPanel67",
+            "name": "MyGridPanel68",
             "designerId": "d0ed9c51-a35d-42fe-a429-43e66f27a732",
             "cn": [
                 {
@@ -43,7 +43,7 @@
                         "text": "记录号",
                         "width": 47
                     },
-                    "name": "MyRowNumberer59",
+                    "name": "MyRowNumberer60",
                     "designerId": "623a5928-ad09-4810-9b67-5b4e38f9ec87"
                 },
                 {
@@ -58,7 +58,7 @@
                         "text": "地块编号",
                         "tooltip": ""
                     },
-                    "name": "MyColumn290",
+                    "name": "MyColumn296",
                     "designerId": "c326e8d3-dd58-4da5-ac8d-c1ab4e2afd43"
                 },
                 {
@@ -73,7 +73,7 @@
                         "text": "项目编号",
                         "tooltip": ""
                     },
-                    "name": "MyColumn291",
+                    "name": "MyColumn297",
                     "designerId": "51285cd6-0f80-4609-a637-4f289d37c281"
                 },
                 {
@@ -88,7 +88,7 @@
                         "text": "项目名称",
                         "tooltip": ""
                     },
-                    "name": "MyColumn292",
+                    "name": "MyColumn298",
                     "designerId": "8a4091fc-39c0-42d5-a4c3-9ad981a5c710"
                 },
                 {
@@ -102,7 +102,7 @@
                         "dataIndex": "abdkIswarning",
                         "text": "是否预警"
                     },
-                    "name": "MyColumn293",
+                    "name": "MyColumn299",
                     "designerId": "9eab1a64-d408-4863-bd08-42590106b8f6"
                 },
                 {
@@ -117,7 +117,7 @@
                         "format": "Y-m-d",
                         "text": "预警时间"
                     },
-                    "name": "MyDateColumn63",
+                    "name": "MyDateColumn64",
                     "designerId": "b4f14e44-7661-46f0-9357-7b5981fcb4f9"
                 },
                 {
@@ -131,7 +131,7 @@
                         "dataIndex": "abdkIsnormal",
                         "text": "交易是否异常"
                     },
-                    "name": "MyColumn294",
+                    "name": "MyColumn300",
                     "designerId": "5f6b9ac6-e2ba-40f9-ba48-04189128cd21"
                 },
                 {
@@ -145,7 +145,7 @@
                         "dataIndex": "abdkRisklevel",
                         "text": "风险等级"
                     },
-                    "name": "MyColumn295",
+                    "name": "MyColumn301",
                     "designerId": "7bd16bf6-8a85-4ea4-bc71-79fb43c450b6"
                 },
                 {
@@ -159,7 +159,7 @@
                         "dataIndex": "abdkIstowhole",
                         "text": "是否提交异常信息"
                     },
-                    "name": "MyColumn296",
+                    "name": "MyColumn302",
                     "designerId": "f7f7ba03-19bf-4ca9-a1e6-6ec1d1b90aae"
                 },
                 {
@@ -174,7 +174,7 @@
                         "format": "Y-m-d",
                         "text": "提交时间"
                     },
-                    "name": "MyDateColumn64",
+                    "name": "MyDateColumn65",
                     "designerId": "18a16696-a8ad-49b7-912c-dc0134e6d43c"
                 },
                 {
@@ -188,7 +188,7 @@
                         "dataIndex": "abdkOpinion",
                         "text": "备注"
                     },
-                    "name": "MyColumn297",
+                    "name": "MyColumn303",
                     "designerId": "f9485909-38ad-4d63-83eb-eedff896c634"
                 },
                 {
@@ -198,7 +198,7 @@
                         "type": "object"
                     },
                     "codeClass": null,
-                    "name": "MyGridView67",
+                    "name": "MyGridView68",
                     "designerId": "f2ee86f6-43c4-4295-8603-a7e3949a7904"
                 },
                 {
@@ -208,7 +208,7 @@
                         "type": "object"
                     },
                     "codeClass": "Ext.selection.CheckboxModel",
-                    "name": "MyCheckboxSelectionModel59",
+                    "name": "MyCheckboxSelectionModel60",
                     "designerId": "39dfba1d-375c-48de-9114-1095517d0533"
                 },
                 {
@@ -224,7 +224,7 @@
                         "frame": false,
                         "height": null
                     },
-                    "name": "MyToolbar81",
+                    "name": "MyToolbar83",
                     "designerId": "4763e2eb-fd7f-4393-9cdc-8d5d1f847630",
                     "cn": [
                         {
@@ -246,7 +246,7 @@
                                 "value": null,
                                 "valueField": "areaCode"
                             },
-                            "name": "MyComboBox20",
+                            "name": "MyComboBox21",
                             "designerId": "93c8da34-b87e-4f1f-bc1e-8e22387d720c",
                             "cn": [
                                 {
@@ -314,7 +314,7 @@
                                 "store": "abnmCityStore",
                                 "valueField": "areaCode"
                             },
-                            "name": "MyComboBox21",
+                            "name": "MyComboBox22",
                             "designerId": "1f5569f0-0ab6-434c-8479-50b226932ea6",
                             "cn": [
                                 {
@@ -378,7 +378,7 @@
                                 "store": "abnmCountyStore",
                                 "valueField": "areaCode"
                             },
-                            "name": "MyComboBox22",
+                            "name": "MyComboBox23",
                             "designerId": "c8a71f4a-68e0-4aef-8a39-c7d93ae38abe"
                         },
                         {
@@ -396,7 +396,7 @@
                                 "layout|flex": null,
                                 "width": 204
                             },
-                            "name": "MyDateField76",
+                            "name": "MyDateField77",
                             "designerId": "817c6f0f-b469-4ee0-b202-842e3034bab6"
                         },
                         {
@@ -414,7 +414,7 @@
                                 "layout|flex": null,
                                 "width": 211
                             },
-                            "name": "MyTextField247",
+                            "name": "MyTextField251",
                             "designerId": "8a0507ce-0d55-4f2d-b3a7-5c727b487313"
                         },
                         {
@@ -429,7 +429,7 @@
                                 "layout|flex": null,
                                 "text": "搜索"
                             },
-                            "name": "MyButton309",
+                            "name": "MyButton326",
                             "designerId": "6a6fac99-6569-4df3-8d1a-69f3f290514a",
                             "cn": [
                                 {
@@ -519,7 +519,7 @@
                         "frame": false,
                         "height": null
                     },
-                    "name": "MyToolbar82",
+                    "name": "MyToolbar84",
                     "designerId": "db925fbd-63cf-4f82-96c9-897e815ce07a",
                     "cn": [
                         {
@@ -534,7 +534,7 @@
                                 "layout|flex": null,
                                 "text": "信息录入"
                             },
-                            "name": "MyButton310",
+                            "name": "MyButton327",
                             "designerId": "994e3cc1-a2bb-4816-85a8-e40e6e4c84c2",
                             "cn": [
                                 {
@@ -572,7 +572,7 @@
                                 "layout|flex": null,
                                 "text": "删除"
                             },
-                            "name": "MyButton311",
+                            "name": "MyButton328",
                             "designerId": "c90bbc67-ecca-4786-b47a-6fe6825e0aba",
                             "cn": [
                                 {
@@ -643,7 +643,7 @@
                                 "layout|flex": null,
                                 "text": "交易风险预警"
                             },
-                            "name": "MyButton312",
+                            "name": "MyButton329",
                             "designerId": "7b8475e9-a780-4cef-b758-3fdfce975c3f",
                             "cn": [
                                 {
@@ -711,7 +711,7 @@
                                 "layout|flex": null,
                                 "text": "提交异常监管"
                             },
-                            "name": "MyButton313",
+                            "name": "MyButton330",
                             "designerId": "02f149d2-1ba7-499b-82e3-60eb5abf6c2d",
                             "cn": [
                                 {
@@ -775,7 +775,7 @@
                                 "layout|flex": null,
                                 "text": "交易异常预警地图"
                             },
-                            "name": "MyButton314",
+                            "name": "MyButton331",
                             "designerId": "befd1251-d6eb-4ef1-9bc4-9bbe240d8eaa",
                             "cn": [
                                 {

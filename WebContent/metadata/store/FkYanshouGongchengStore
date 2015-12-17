@@ -29,7 +29,7 @@
                 ],
                 "url": "seclet_gongcheng"
             },
-            "name": "MyAjaxProxy17",
+            "name": "MyAjaxProxy18",
             "designerId": "f635a148-570e-453a-98dc-4884f0db75e4",
             "cn": [
                 {
@@ -42,7 +42,7 @@
                     "userConfig": {
                         "root": "root"
                     },
-                    "name": "MyJsonReader17",
+                    "name": "MyJsonReader18",
                     "designerId": "9464da48-b01b-4f52-8c6f-9faab6fecd18"
                 }
             ]

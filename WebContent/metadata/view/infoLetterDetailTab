@@ -28,7 +28,7 @@
                 "layout": "absolute",
                 "title": null
             },
-            "name": "MyForm42",
+            "name": "MyForm43",
             "designerId": "a84ccf73-5861-4172-bbd5-83e4d17a8dd3",
             "cn": [
                 {
@@ -322,7 +322,7 @@
                         "layout|y": 510,
                         "text": "回复并发送邮件"
                     },
-                    "name": "MyButton219",
+                    "name": "MyButton236",
                     "designerId": "3d07ba5c-9ed2-4564-817a-2593105f9c8b",
                     "cn": [
                         {
@@ -360,7 +360,7 @@
                         "text": "取消",
                         "width": 90
                     },
-                    "name": "MyButton220",
+                    "name": "MyButton237",
                     "designerId": "d84846b3-74fc-4c17-bd23-283cc8a38a82",
                     "cn": [
                         {

@@ -1,4 +1,3 @@
-console.log("in TotalMap.js");
 //规划功能地图js
 var jstNavToolbar, jstMap, jstSymbol, jstInfoTemplate, jstDynamicMapServiceLayer, jstQueryTask, jstQuery;
 var jsPortalUrl = "http://www.arcgis.com";
@@ -87,14 +86,14 @@ require([
 	    var imageParameters = new esri.layers.ImageParameters();
 	    imageParameters.format = "jpeg";  //set the image type to PNG24, note default is PNG8.
 
-	    jstDynamicMapServiceLayer = new esri.layers.ArcGISDynamicMapServiceLayer("http://localhost:6080/arcgis/rest/services/tdlzmap/testData/MapServer", {     
+	    jstDynamicMapServiceLayer = new esri.layers.ArcGISDynamicMapServiceLayer("http://localhost:6080/arcgis/rest/services/guihua/MapServer", {     
 	    	"imageParameters":imageParameters
 	    });
 	    
 	    jstMap.addLayer(jstDynamicMapServiceLayer);    
 	    jstNavToolbar = new esri.toolbars.Navigation(jstMap);  
 	    dojo.connect(jstMap, "onClick", jsExecuteQueryTask);
-	    jstQueryTask = new esri.tasks.QueryTask("http://localhost:6080/arcgis/rest/services/tdlzmap/testData/MapServer/7");
+	    jstQueryTask = new esri.tasks.QueryTask("http://localhost:6080/arcgis/rest/services/guihua/MapServer/7");
 	
 	    dojo.connect(jstQueryTask, "onComplete", jsShowTask);
 	    jstQuery = new esri.tasks.Query();

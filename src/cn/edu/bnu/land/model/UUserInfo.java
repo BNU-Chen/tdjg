@@ -1,6 +1,6 @@
 package cn.edu.bnu.land.model;
 
-// Generated 2014-5-6 9:39:29 by Hibernate Tools 4.0.0
+// Generated Nov 4, 2015 9:03:51 PM by Hibernate Tools 4.0.0
 
 import java.util.Date;
 

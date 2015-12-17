@@ -32,7 +32,7 @@
                 "title": "",
                 "url": "add_gongchengxinxi"
             },
-            "name": "MyForm55",
+            "name": "MyForm56",
             "designerId": "ff361015-2bab-4037-be15-4b92a3ec3ae9",
             "cn": [
                 {
@@ -53,7 +53,7 @@
                         "store": "GongchengOpinionStore",
                         "width": 400
                     },
-                    "name": "MyComboBox29",
+                    "name": "MyComboBox30",
                     "designerId": "bfba11a9-cd83-4f3f-99b7-e87cb95cce5d"
                 },
                 {
@@ -70,7 +70,7 @@
                         "scale": "medium",
                         "text": "返回"
                     },
-                    "name": "MyButton355",
+                    "name": "MyButton372",
                     "designerId": "1f7ea954-348b-46f2-9ec7-af90f0655867",
                     "cn": [
                         {
@@ -112,7 +112,7 @@
                         "name": "area",
                         "width": 400
                     },
-                    "name": "MyTextField290",
+                    "name": "MyTextField294",
                     "designerId": "7549b726-5a93-4369-8b98-47412e64f194"
                 },
                 {
@@ -129,7 +129,7 @@
                         "name": "recorder",
                         "width": 380
                     },
-                    "name": "MyTextField291",
+                    "name": "MyTextField295",
                     "designerId": "442556f0-f869-45e1-b21d-b9c4d9de33b5"
                 },
                 {
@@ -148,7 +148,7 @@
                         "size": 26,
                         "width": 400
                     },
-                    "name": "MyTextField292",
+                    "name": "MyTextField296",
                     "designerId": "d9cb2b97-2b71-4b62-9c52-5b8868885ebd"
                 },
                 {
@@ -170,7 +170,7 @@
                         ],
                         "width": 310
                     },
-                    "name": "MyTextField293",
+                    "name": "MyTextField297",
                     "designerId": "462f63d6-c331-4a22-9938-4aab7336b727"
                 },
                 {
@@ -188,7 +188,7 @@
                         "name": "projectName",
                         "width": 380
                     },
-                    "name": "MyTextField294",
+                    "name": "MyTextField298",
                     "designerId": "e91346df-3c79-4478-98e3-56ed07e77b20"
                 },
                 {
@@ -281,7 +281,7 @@
                         "layout|y": 320,
                         "width": 380
                     },
-                    "name": "MyDateField89",
+                    "name": "MyDateField90",
                     "designerId": "fd867133-ca6b-40b6-a867-5d0fb2acff00"
                 },
                 {
@@ -299,7 +299,7 @@
                         "text": "保存",
                         "width": 50
                     },
-                    "name": "MyButton356",
+                    "name": "MyButton373",
                     "designerId": "0dc967f0-61e2-4740-9f95-ec70d65e98da",
                     "cn": [
                         {

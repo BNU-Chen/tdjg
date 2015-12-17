@@ -1,12 +1,12 @@
 package cn.edu.bnu.land.model;
 
-// Generated 2014-5-6 9:39:29 by Hibernate Tools 4.0.0
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Repository;
+// Generated Nov 4, 2015 9:03:51 PM by Hibernate Tools 4.0.0
 
 import java.util.List;
+import javax.naming.InitialContext;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
+import org.hibernate.LockMode;
 import org.hibernate.SessionFactory;
 import org.hibernate.criterion.Example;
 
@@ -15,21 +15,21 @@ import org.hibernate.criterion.Example;
  * @see cn.edu.bnu.land.model.UUserInfo
  * @author Hibernate Tools
  */
-
-@Repository
 public class UUserInfoHome {
 
 	private static final Log log = LogFactory.getLog(UUserInfoHome.class);
 
-	private SessionFactory sessionFactory = null;
+	private final SessionFactory sessionFactory = getSessionFactory();
 
-	@Autowired
-	public void setSessionFactory(SessionFactory sessionFactory) {
-		this.sessionFactory = sessionFactory;
-	}
-
-	public SessionFactory getSessionFactory() {
-		return sessionFactory;
+	protected SessionFactory getSessionFactory() {
+		try {
+			return (SessionFactory) new InitialContext()
+					.lookup("SessionFactory");
+		} catch (Exception e) {
+			log.error("Could not locate SessionFactory in JNDI", e);
+			throw new IllegalStateException(
+					"Could not locate SessionFactory in JNDI");
+		}
 	}
 
 	public void persist(UUserInfo transientInstance) {
@@ -43,10 +43,21 @@ public class UUserInfoHome {
 		}
 	}
 
-	public void update(UUserInfo instance) {
+	public void attachDirty(UUserInfo instance) {
 		log.debug("attaching dirty UUserInfo instance");
 		try {
 			sessionFactory.getCurrentSession().saveOrUpdate(instance);
+			log.debug("attach successful");
+		} catch (RuntimeException re) {
+			log.error("attach failed", re);
+			throw re;
+		}
+	}
+
+	public void attachClean(UUserInfo instance) {
+		log.debug("attaching clean UUserInfo instance");
+		try {
+			sessionFactory.getCurrentSession().lock(instance, LockMode.NONE);
 			log.debug("attach successful");
 		} catch (RuntimeException re) {
 			log.error("attach failed", re);

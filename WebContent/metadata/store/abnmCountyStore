@@ -28,7 +28,7 @@
                 ],
                 "url": "get_infoAreaCountyList"
             },
-            "name": "MyAjaxProxy75",
+            "name": "MyAjaxProxy76",
             "designerId": "39b93054-73fa-4e47-8b3c-98ec7eabfaf5",
             "cn": [
                 {
@@ -41,7 +41,7 @@
                     "userConfig": {
                         "root": null
                     },
-                    "name": "MyJsonReader75",
+                    "name": "MyJsonReader76",
                     "designerId": "bfb47de6-7584-41ec-ac75-850c035c4aed"
                 }
             ]

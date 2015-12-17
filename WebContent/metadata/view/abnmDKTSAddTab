@@ -25,12 +25,11 @@
                 "bodyPadding": 10,
                 "designer|snapToGrid": 10,
                 "height": 600,
-                "id": "abnmDKTSAddForm",
                 "jsonSubmit": true,
                 "layout": "absolute",
                 "title": null
             },
-            "name": "MyForm51",
+            "name": "MyForm52",
             "designerId": "39f643f8-1aab-4c14-a975-f5fc87bf19e5",
             "cn": [
                 {
@@ -43,7 +42,7 @@
                     "userConfig": {
                         "text": "地块基本信息"
                     },
-                    "name": "MyLabel14",
+                    "name": "MyLabel15",
                     "designerId": "a8ee613c-42bb-4a88-9b75-5b4dee6a836e"
                 },
                 {
@@ -58,7 +57,7 @@
                         "layout|y": 200,
                         "text": "地块交易信息"
                     },
-                    "name": "MyLabel15",
+                    "name": "MyLabel16",
                     "designerId": "5779816b-5bcb-477d-8cfc-7a9602b2ad50"
                 },
                 {
@@ -82,7 +81,7 @@
                         "valueField": "landId",
                         "width": null
                     },
-                    "name": "MyComboBox23",
+                    "name": "MyComboBox24",
                     "designerId": "808cafb5-c3f2-475b-821c-25f036806afe"
                 },
                 {
@@ -103,7 +102,7 @@
                         "name": "abdkSeller",
                         "width": null
                     },
-                    "name": "MyTextField248",
+                    "name": "MyTextField252",
                     "designerId": "9dab5c3b-0343-4191-8552-c900cc58fe9e"
                 },
                 {
@@ -124,7 +123,7 @@
                         "name": "abdkBx",
                         "width": null
                     },
-                    "name": "MyTextField249",
+                    "name": "MyTextField253",
                     "designerId": "caaf77db-fd89-46cf-9182-13fb5ae83226"
                 },
                 {
@@ -145,7 +144,7 @@
                         "name": "abdkBprice",
                         "width": null
                     },
-                    "name": "MyTextField250",
+                    "name": "MyTextField254",
                     "designerId": "d47396a8-a4b6-489d-bf1b-2c9487a70028"
                 },
                 {
@@ -166,7 +165,7 @@
                         "name": "abdkAx",
                         "width": null
                     },
-                    "name": "MyTextField251",
+                    "name": "MyTextField255",
                     "designerId": "7f997a49-3fb9-4940-9903-28f2f32c5fca"
                 },
                 {
@@ -187,7 +186,7 @@
                         "name": "dgcl",
                         "width": null
                     },
-                    "name": "MyTextField252",
+                    "name": "MyTextField256",
                     "designerId": "10a71ae2-772b-4894-a58d-691c3c573f89"
                 },
                 {
@@ -208,7 +207,7 @@
                         "name": "abdkAarea",
                         "width": null
                     },
-                    "name": "MyTextField253",
+                    "name": "MyTextField257",
                     "designerId": "3f6229ca-8957-40c4-bb8f-40b5e0077241"
                 },
                 {
@@ -232,7 +231,7 @@
                         "weight": null,
                         "width": null
                     },
-                    "name": "MyTextField254",
+                    "name": "MyTextField258",
                     "designerId": "bb68515b-df67-47cc-a395-71b378fa3dfd"
                 },
                 {
@@ -252,7 +251,7 @@
                         "name": "zldwmc",
                         "width": null
                     },
-                    "name": "MyTextField255",
+                    "name": "MyTextField259",
                     "designerId": "9f24f90d-3bef-468c-8f53-e46ecb01254c"
                 },
                 {
@@ -272,7 +271,7 @@
                         "name": "areaCode",
                         "width": null
                     },
-                    "name": "MyTextField256",
+                    "name": "MyTextField260",
                     "designerId": "dcf6765a-5db7-4985-9941-84ca928c2ac7"
                 },
                 {
@@ -297,7 +296,7 @@
                         "valueField": "projectId",
                         "width": null
                     },
-                    "name": "MyComboBox24",
+                    "name": "MyComboBox25",
                     "designerId": "61e74200-81e8-417e-a711-c3f75bdb5149",
                     "cn": [
                         {
@@ -310,21 +309,21 @@
                             "userConfig": {
                                 "fn": "onComboboxSelect",
                                 "implHandler": [
-                                    "var getProjetName = records[0].get('projectname');",
-                                    "var abnmProjectName = Ext.getCmp('abnmProjectName');",
-                                    "abnmProjectName.setValue(getProjetName);",
-                                    "",
-                                    "var mystore = Ext.StoreMgr.get('abnmProjectDikuaiStore');",
-                                    "mystore.load(",
-                                    "{",
-                                    "    params:{",
-                                    "        projectId: records[0].get('projectId')",
-                                    "    }",
-                                    "}",
-                                    ");",
-                                    "var abnmDikuaiIdField=Ext.getCmp(\"abnmDikuaiId\");",
-                                    "if(abnmDikuaiIdField)",
-                                    "abnmDikuaiIdField.store= mystore;"
+                                    "var getProjetName = records[0].get('projectname');\r",
+                                    "var abnmProjectName = Ext.getCmp('abnmProjectName');\r",
+                                    "abnmProjectName.setValue(getProjetName);\r",
+                                    "\r",
+                                    "var mystore = Ext.StoreMgr.get('abnmProjectDikuaiStore');\r",
+                                    "mystore.load(\r",
+                                    "{\r",
+                                    "    params:{\r",
+                                    "        projectId: records[0].get('projectId')\r",
+                                    "    }\r",
+                                    "}\r",
+                                    ");\r",
+                                    "var abnmDikuaiIdField=Ext.getCmp(\"abnmDikuaiId\");\r",
+                                    "if(abnmDikuaiIdField.view)   \r",
+                                    "abnmDikuaiIdField.view.setStore(mystore);   "
                                 ],
                                 "name": "select",
                                 "scope": "me"
@@ -356,7 +355,7 @@
                         "valueField": "projectname",
                         "width": null
                     },
-                    "name": "MyComboBox25",
+                    "name": "MyComboBox26",
                     "designerId": "c3324611-456b-4a1a-b146-38d805d91865",
                     "cn": [
                         {
@@ -410,7 +409,7 @@
                         "name": "abdkSlope",
                         "width": null
                     },
-                    "name": "MyTextField257",
+                    "name": "MyTextField261",
                     "designerId": "290696db-a5f6-4e83-9040-59040e21e122"
                 },
                 {
@@ -431,7 +430,7 @@
                         "name": "abdkSlopevariance",
                         "width": null
                     },
-                    "name": "MyTextField258",
+                    "name": "MyTextField262",
                     "designerId": "59e67854-555b-40f8-8a34-5c91b0714751"
                 },
                 {
@@ -452,7 +451,7 @@
                         "name": "abdkBuyer",
                         "width": null
                     },
-                    "name": "MyTextField259",
+                    "name": "MyTextField263",
                     "designerId": "fdbd26aa-d240-45a2-91f3-4960f97da6e4"
                 },
                 {
@@ -473,7 +472,7 @@
                         "name": "abdkBy",
                         "width": null
                     },
-                    "name": "MyTextField260",
+                    "name": "MyTextField264",
                     "designerId": "9d561732-f260-4524-84db-ddfdb40e0d28"
                 },
                 {
@@ -494,7 +493,7 @@
                         "name": "abdkAprice",
                         "width": null
                     },
-                    "name": "MyTextField261",
+                    "name": "MyTextField265",
                     "designerId": "2c39a90c-cf34-4d99-ade2-a2b03a05c28b"
                 },
                 {
@@ -515,7 +514,7 @@
                         "name": "abdkAy",
                         "width": null
                     },
-                    "name": "MyTextField262",
+                    "name": "MyTextField266",
                     "designerId": "0000861b-b4ef-4414-8d76-361c48f3f114"
                 },
                 {
@@ -536,7 +535,7 @@
                         "name": "dgjj",
                         "width": null
                     },
-                    "name": "MyTextField263",
+                    "name": "MyTextField267",
                     "designerId": "6e7d7f9f-8749-4067-8729-5bbb6775214f"
                 },
                 {
@@ -573,7 +572,7 @@
                         "text": "确定",
                         "width": 100
                     },
-                    "name": "MyButton316",
+                    "name": "MyButton333",
                     "designerId": "435e037b-f4cf-4745-b603-fdc55a36c9d4",
                     "cn": [
                         {
@@ -590,31 +589,31 @@
                                 ],
                                 "fn": "handler",
                                 "implHandler": [
-                                    "var myform = Ext.getCmp('abnmDKTSAddForm').getForm();",
-                                    "",
-                                    "if (myform.isValid()) { // make sure the form contains valid data before submitting",
-                                    "    myform.submit({",
-                                    "        url:'add_abdkts',",
-                                    "        success: function(form, action) {",
-                                    "            Ext.Msg.alert('成功', '新增地块信息成功');",
-                                    "",
-                                    "            var mystore = Ext.StoreMgr.get('abnmDkTransSupervisionStore'); //获得store对象",
-                                    "            mystore.load();",
-                                    "            var win = Ext.getCmp('abnmDKTSAddTab');",
-                                    "            win.close();",
-                                    "",
-                                    "        },",
-                                    "        failure: function(form, action) {",
-                                    "            Ext.Msg.alert('失败', '新增地块信息失败');",
-                                    "            var win = Ext.getCmp('abnmDKTSAddTab');",
-                                    "            win.close();",
-                                    "",
-                                    "        }",
-                                    "    });",
-                                    "} else {",
-                                    "    Ext.Msg.alert('注意', '填写信息不能为空，请检查！');",
-                                    "}",
-                                    "",
+                                    "var myform = this.up('form').getForm();\r",
+                                    "\r",
+                                    "if (myform.isValid()) { // make sure the form contains valid data before submitting\r",
+                                    "    myform.submit({\r",
+                                    "        url:'add_abdkts',\r",
+                                    "        success: function(form, action) {\r",
+                                    "            Ext.Msg.alert('成功', '新增地块信息成功');\r",
+                                    "\r",
+                                    "            var mystore = Ext.StoreMgr.get('abnmDkTransSupervisionStore'); //获得store对象                                                   \r",
+                                    "            mystore.load();\r",
+                                    "            var win = Ext.getCmp('abnmDKTSAddTab');\r",
+                                    "            win.close();\r",
+                                    "\r",
+                                    "        },\r",
+                                    "        failure: function(form, action) {\r",
+                                    "            Ext.Msg.alert('失败', '新增地块信息失败'); \r",
+                                    "            var win = Ext.getCmp('abnmDKTSAddTab');\r",
+                                    "            win.close();\r",
+                                    "\r",
+                                    "        }\r",
+                                    "    });\r",
+                                    "} else {\r",
+                                    "    Ext.Msg.alert('注意', '填写信息不能为空，请检查！');\r",
+                                    "}\r",
+                                    "\r",
                                     "return;"
                                 ]
                             },
@@ -636,7 +635,7 @@
                         "text": "取消",
                         "width": 90
                     },
-                    "name": "MyButton317",
+                    "name": "MyButton334",
                     "designerId": "6a418d15-9437-460b-b7d1-406c34c1d1ec",
                     "cn": [
                         {

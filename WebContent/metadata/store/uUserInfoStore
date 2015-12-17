@@ -30,7 +30,7 @@
                 ],
                 "url": "get_UserInfo"
             },
-            "name": "MyAjaxProxy26",
+            "name": "MyAjaxProxy27",
             "designerId": "edc4f639-7171-411c-a227-0b7dda6c3851",
             "cn": [
                 {
@@ -43,7 +43,7 @@
                     "userConfig": {
                         "root": "root"
                     },
-                    "name": "MyJsonReader26",
+                    "name": "MyJsonReader27",
                     "designerId": "ba327521-79b1-408a-9454-c6cb1691c0a3"
                 }
             ]

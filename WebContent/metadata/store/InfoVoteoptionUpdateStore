@@ -27,7 +27,7 @@
                 ],
                 "url": "get_voteResult"
             },
-            "name": "MyAjaxProxy97",
+            "name": "MyAjaxProxy98",
             "designerId": "62483c34-b95c-4786-b9ff-b18ce4037e80",
             "cn": [
                 {
@@ -37,7 +37,7 @@
                         "type": "object"
                     },
                     "codeClass": null,
-                    "name": "MyJsonReader97",
+                    "name": "MyJsonReader98",
                     "designerId": "d53fe388-7c82-429f-a58a-bbdeca002e21"
                 }
             ]

@@ -28,7 +28,7 @@
                 "store": "abnmWSRWstore",
                 "title": ""
             },
-            "name": "MyGridPanel65",
+            "name": "MyGridPanel66",
             "designerId": "fc6d3e0a-1564-442b-821d-9ff65b28f1db",
             "cn": [
                 {
@@ -38,7 +38,7 @@
                         "type": "array"
                     },
                     "codeClass": null,
-                    "name": "MyRowNumberer57",
+                    "name": "MyRowNumberer58",
                     "designerId": "ae97c210-dadd-4109-9b7a-cba6e4ae7398"
                 },
                 {
@@ -52,7 +52,7 @@
                         "dataIndex": "rwId",
                         "text": "任务编号"
                     },
-                    "name": "MyColumn277",
+                    "name": "MyColumn283",
                     "designerId": "ef6b5f08-8769-4db9-8a9c-36aab3aeb0ba"
                 },
                 {
@@ -66,7 +66,7 @@
                         "dataIndex": "projectId",
                         "text": "项目编号"
                     },
-                    "name": "MyColumn278",
+                    "name": "MyColumn284",
                     "designerId": "8d93c2ea-63a8-4eeb-9526-1e61729849f4"
                 },
                 {
@@ -80,7 +80,7 @@
                         "dataIndex": "projectName",
                         "text": "项目名称"
                     },
-                    "name": "MyColumn279",
+                    "name": "MyColumn285",
                     "designerId": "2537ada3-d827-4c58-99c1-6ac021a35f55"
                 },
                 {
@@ -94,7 +94,7 @@
                         "dataIndex": "rwContent",
                         "text": "任务描述"
                     },
-                    "name": "MyColumn280",
+                    "name": "MyColumn286",
                     "designerId": "46f4d308-a9fb-44f5-865e-2bc16d7d9a17"
                 },
                 {
@@ -108,7 +108,7 @@
                         "dataIndex": "rwClass",
                         "text": "任务类别"
                     },
-                    "name": "MyColumn281",
+                    "name": "MyColumn287",
                     "designerId": "b0f588c7-3d46-49b1-bb25-f0613ca19f76"
                 },
                 {
@@ -123,7 +123,7 @@
                         "format": "Y-m-d",
                         "text": "任务生成时间"
                     },
-                    "name": "MyDateColumn55",
+                    "name": "MyDateColumn56",
                     "designerId": "6bdd5496-ae9c-40ea-be99-5d5e3f2dcecc"
                 },
                 {
@@ -138,7 +138,7 @@
                         "format": "Y-m-d",
                         "text": "任务执行时间"
                     },
-                    "name": "MyDateColumn56",
+                    "name": "MyDateColumn57",
                     "designerId": "75f2c7b7-a0ce-403f-810a-5e238c021488"
                 },
                 {
@@ -153,7 +153,7 @@
                         "format": "Y-m-d",
                         "text": "任务截止时间"
                     },
-                    "name": "MyDateColumn57",
+                    "name": "MyDateColumn58",
                     "designerId": "a0dec9df-4770-434e-acd4-2577931e7737"
                 },
                 {
@@ -168,7 +168,7 @@
                         "format": "Y-m-d",
                         "text": "任务提交时间"
                     },
-                    "name": "MyDateColumn58",
+                    "name": "MyDateColumn59",
                     "designerId": "648b805c-a553-424f-a051-e5d83841dc28"
                 },
                 {
@@ -182,7 +182,7 @@
                         "dataIndex": "rwIsfinished",
                         "text": "任务是否完成"
                     },
-                    "name": "MyColumn282",
+                    "name": "MyColumn288",
                     "designerId": "1169f928-58a4-4f86-be1e-41a45057dae3"
                 },
                 {
@@ -196,7 +196,7 @@
                         "dataIndex": "rwResponsiblePerson",
                         "text": "下达任务人"
                     },
-                    "name": "MyColumn283",
+                    "name": "MyColumn289",
                     "designerId": "0cbec5bc-2a60-41ef-9ea8-01956b8cafb4"
                 },
                 {
@@ -206,7 +206,7 @@
                         "type": "object"
                     },
                     "codeClass": null,
-                    "name": "MyGridView65",
+                    "name": "MyGridView66",
                     "designerId": "7c03574f-5d8e-42ad-b316-959ebefc874f"
                 },
                 {
@@ -235,7 +235,7 @@
                     "userConfig": {
                         "dock": "top"
                     },
-                    "name": "MyToolbar79",
+                    "name": "MyToolbar81",
                     "designerId": "6388fd60-b27a-4ed1-821c-1b3518f304a3",
                     "cn": [
                         {
@@ -250,7 +250,7 @@
                                 "layout|flex": null,
                                 "text": "返回"
                             },
-                            "name": "MyButton296",
+                            "name": "MyButton313",
                             "designerId": "24ac8889-4688-4a37-ba25-3bd26b9b19f9",
                             "cn": [
                                 {
@@ -289,7 +289,7 @@
                                 "layout|flex": null,
                                 "text": "删除"
                             },
-                            "name": "MyButton297",
+                            "name": "MyButton314",
                             "designerId": "2bf25cc4-8c6f-47fa-9efd-233eafb45ad1",
                             "cn": [
                                 {
@@ -380,7 +380,7 @@
                         "type": "object"
                     },
                     "codeClass": "Ext.selection.CheckboxModel",
-                    "name": "MyCheckboxSelectionModel57",
+                    "name": "MyCheckboxSelectionModel58",
                     "designerId": "321ea36c-b780-4711-934b-7e4d299ba201"
                 }
             ]

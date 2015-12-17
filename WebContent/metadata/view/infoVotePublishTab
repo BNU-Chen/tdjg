@@ -29,7 +29,7 @@
                 "layout": "absolute",
                 "title": ""
             },
-            "name": "MyForm35",
+            "name": "MyForm36",
             "designerId": "e5ce8315-4a08-42b2-b7fc-36dd0919b075",
             "cn": [
                 {
@@ -46,7 +46,7 @@
                         "name": "voteTitle",
                         "width": 690
                     },
-                    "name": "MyTextField202",
+                    "name": "MyTextField206",
                     "designerId": "b4ffe321-4a75-4ed6-9980-f51977262325"
                 },
                 {
@@ -64,7 +64,7 @@
                         "name": "voteIntroduction",
                         "width": 690
                     },
-                    "name": "MyTextField203",
+                    "name": "MyTextField207",
                     "designerId": "41f22fff-8c27-44ab-8d85-7351c6dc191f"
                 },
                 {
@@ -82,7 +82,7 @@
                         "name": "voteVoter",
                         "width": 690
                     },
-                    "name": "MyTextField204",
+                    "name": "MyTextField208",
                     "designerId": "2f76009d-65de-402b-8475-1bd1e1ac841a"
                 },
                 {
@@ -150,7 +150,7 @@
                         "name": "voteEndtime",
                         "width": 260
                     },
-                    "name": "MyDateField44",
+                    "name": "MyDateField45",
                     "designerId": "e353c2c1-8bed-4640-9dc2-8badb2ba1329"
                 },
                 {
@@ -169,7 +169,7 @@
                         "title": "",
                         "width": 590
                     },
-                    "name": "MyGridPanel37",
+                    "name": "MyGridPanel38",
                     "designerId": "2b48e004-4564-4138-be4d-bb48fff94ac2",
                     "cn": [
                         {
@@ -179,7 +179,7 @@
                                 "type": "array"
                             },
                             "codeClass": null,
-                            "name": "MyRowNumberer30",
+                            "name": "MyRowNumberer31",
                             "designerId": "be3f0f5f-6a81-44f0-87ef-a7430a8138de"
                         },
                         {
@@ -193,7 +193,7 @@
                                 "dataIndex": "voptionContent",
                                 "text": "选项内容"
                             },
-                            "name": "MyColumn200",
+                            "name": "MyColumn206",
                             "designerId": "8d0714ad-c2af-44fa-b138-193ae6ba0484"
                         },
                         {
@@ -203,7 +203,7 @@
                                 "type": "object"
                             },
                             "codeClass": null,
-                            "name": "MyGridView37",
+                            "name": "MyGridView38",
                             "designerId": "269f5098-a500-4b68-b1d7-5eed40cb2b43"
                         },
                         {
@@ -216,7 +216,7 @@
                             "userConfig": {
                                 "dock": "top"
                             },
-                            "name": "MyToolbar51",
+                            "name": "MyToolbar53",
                             "designerId": "598c382d-83e4-4105-b099-c35ae2a708fa",
                             "cn": [
                                 {
@@ -230,7 +230,7 @@
                                         "layout|flex": null,
                                         "text": "增加选项"
                                     },
-                                    "name": "MyButton205",
+                                    "name": "MyButton222",
                                     "designerId": "2cf2edc4-4c6b-4ef2-a65f-b9859cddebb7",
                                     "cn": [
                                         {
@@ -332,7 +332,7 @@
                                         "layout|flex": null,
                                         "text": "删除选项"
                                     },
-                                    "name": "MyButton206",
+                                    "name": "MyButton223",
                                     "designerId": "e7df8f62-d0eb-4013-9223-318a196be57a",
                                     "cn": [
                                         {
@@ -397,7 +397,7 @@
                                 "type": "object"
                             },
                             "codeClass": "Ext.selection.CheckboxModel",
-                            "name": "MyCheckboxSelectionModel29",
+                            "name": "MyCheckboxSelectionModel30",
                             "designerId": "f1482106-cd4e-4e8f-b885-50a989e7085e"
                         }
                     ]
@@ -414,7 +414,7 @@
                         "layout|y": 540,
                         "text": "确定发起投票"
                     },
-                    "name": "MyButton207",
+                    "name": "MyButton224",
                     "designerId": "02e73a55-ae97-441e-9a79-dc6194c2076e",
                     "cn": [
                         {
@@ -475,7 +475,7 @@
                         "text": "重置",
                         "width": 80
                     },
-                    "name": "MyButton208",
+                    "name": "MyButton225",
                     "designerId": "abcc40fe-daf9-46c0-a0e0-9462379290f3"
                 }
             ]

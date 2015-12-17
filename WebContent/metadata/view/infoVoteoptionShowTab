@@ -29,7 +29,7 @@
                 "layout": "auto",
                 "title": ""
             },
-            "name": "MyForm38",
+            "name": "MyForm39",
             "designerId": "47e083af-7f03-46b9-92df-e85642a1992e",
             "cn": [
                 {
@@ -45,7 +45,7 @@
                         "name": "voptionContent",
                         "width": 340
                     },
-                    "name": "MyTextField209",
+                    "name": "MyTextField213",
                     "designerId": "385b6a38-a362-4ae1-87f9-d798f1832a90"
                 },
                 {
@@ -58,7 +58,7 @@
                     "userConfig": {
                         "text": "确定"
                     },
-                    "name": "MyButton213",
+                    "name": "MyButton230",
                     "designerId": "ed2914fe-867f-4ffc-b8c5-44908b049a70",
                     "cn": [
                         {

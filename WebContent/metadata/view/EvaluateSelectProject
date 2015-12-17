@@ -30,7 +30,7 @@
                 "subGridXType": "",
                 "title": ""
             },
-            "name": "MyGridPanel16",
+            "name": "MyGridPanel17",
             "designerId": "a52de746-066e-4495-a84f-89d94d7240ab",
             "cn": [
                 {
@@ -40,7 +40,7 @@
                         "type": "array"
                     },
                     "codeClass": null,
-                    "name": "MyRowNumberer12",
+                    "name": "MyRowNumberer13",
                     "designerId": "299f6adb-ba16-4e27-9155-751c205b11c0"
                 },
                 {
@@ -55,7 +55,7 @@
                         "text": "申请编号",
                         "width": 130
                     },
-                    "name": "MyColumn101",
+                    "name": "MyColumn106",
                     "designerId": "1cb2b26b-7430-4e53-bed2-528a6758a760"
                 },
                 {
@@ -70,7 +70,7 @@
                         "text": "复垦项目编号",
                         "width": 130
                     },
-                    "name": "MyColumn102",
+                    "name": "MyColumn107",
                     "designerId": "3a1bb060-6343-4b93-8bce-450a3a65e628"
                 },
                 {
@@ -86,7 +86,7 @@
                         "text": "复垦项目名称",
                         "width": 260
                     },
-                    "name": "MyColumn103",
+                    "name": "MyColumn108",
                     "designerId": "ee58ea08-5547-4e77-8a71-8a836ff9b2a1"
                 },
                 {
@@ -101,7 +101,7 @@
                         "text": "项目施工单位",
                         "width": 230
                     },
-                    "name": "MyColumn104",
+                    "name": "MyColumn109",
                     "designerId": "62828b94-b442-438b-b259-87de2eae96da"
                 },
                 {
@@ -115,7 +115,7 @@
                         "dataIndex": "applyDate",
                         "text": "提交申请日期"
                     },
-                    "name": "MyDateColumn13",
+                    "name": "MyDateColumn14",
                     "designerId": "5047e115-5f28-4549-af3a-ff420ad31913"
                 },
                 {
@@ -130,7 +130,7 @@
                         "text": "备注信息",
                         "width": 160
                     },
-                    "name": "MyColumn105",
+                    "name": "MyColumn110",
                     "designerId": "3da3af8e-02e6-4174-aec7-972c30c0a08b"
                 },
                 {
@@ -144,7 +144,7 @@
                         "dataIndex": "checkResult",
                         "text": "审核结果"
                     },
-                    "name": "MyColumn106",
+                    "name": "MyColumn111",
                     "designerId": "ecf740e9-45da-4d89-adbd-cf12df9c8f9e"
                 },
                 {
@@ -154,7 +154,7 @@
                         "type": "object"
                     },
                     "codeClass": null,
-                    "name": "MyGridView16",
+                    "name": "MyGridView17",
                     "designerId": "59ee555e-c5b6-42bf-b3cd-db931e0c030a"
                 },
                 {
@@ -168,7 +168,7 @@
                         "autoScroll": true,
                         "dock": "top"
                     },
-                    "name": "MyToolbar20",
+                    "name": "MyToolbar22",
                     "designerId": "1ae950f5-cda1-4bea-89c0-b19f3ec00760",
                     "cn": [
                         {
@@ -186,7 +186,7 @@
                                 "layout|flex": null,
                                 "name": "searchKeyword2"
                             },
-                            "name": "MyTextField116",
+                            "name": "MyTextField120",
                             "designerId": "6b40f64b-2ad3-486b-bc9a-900173c8f958"
                         },
                         {
@@ -202,7 +202,7 @@
                                 "layout|flex": null,
                                 "text": "查询"
                             },
-                            "name": "MyButton84",
+                            "name": "MyButton90",
                             "designerId": "c2166320-c02f-4d7f-83e6-a40e30280df1",
                             "cn": [
                                 {
@@ -249,7 +249,7 @@
                                 "layout|flex": null,
                                 "text": "数据采集任务下达"
                             },
-                            "name": "MyButton85",
+                            "name": "MyButton91",
                             "designerId": "38bda7b0-2e5a-4c90-a0f1-6d43346474a0",
                             "cn": [
                                 {
@@ -311,7 +311,7 @@
                                 "layout|flex": null,
                                 "text": "项目土壤质量数据"
                             },
-                            "name": "MyButton86",
+                            "name": "MyButton92",
                             "designerId": "ede8ebc8-8b43-4225-835f-297bb45a1916",
                             "cn": [
                                 {
@@ -379,7 +379,7 @@
                                 "layout|flex": null,
                                 "text": "项目工程质量数据"
                             },
-                            "name": "MyButton87",
+                            "name": "MyButton93",
                             "designerId": "07d36f1a-947b-445d-bd5b-801a33fc2b34",
                             "cn": [
                                 {
@@ -449,7 +449,7 @@
                                 "layout|flex": null,
                                 "text": "土壤质量评价"
                             },
-                            "name": "MyButton88",
+                            "name": "MyButton94",
                             "designerId": "68a6a9a3-659e-412c-abf7-8a24b6fc1e44",
                             "cn": [
                                 {
@@ -525,7 +525,7 @@
                                 "layout|flex": null,
                                 "text": "工程质量评价"
                             },
-                            "name": "MyButton89",
+                            "name": "MyButton95",
                             "designerId": "edcaee29-e851-4418-9a66-52e9473ce2c6",
                             "cn": [
                                 {
@@ -601,7 +601,7 @@
                                 "layout|flex": null,
                                 "text": "专家评价意见"
                             },
-                            "name": "MyButton90",
+                            "name": "MyButton96",
                             "designerId": "d65bd548-a522-4f2d-8422-535eef10b05d",
                             "cn": [
                                 {
@@ -678,7 +678,7 @@
                     "userConfig": {
                         "designer|displayName": "applyCheskbox"
                     },
-                    "name": "MyCheckboxSelectionModel10",
+                    "name": "MyCheckboxSelectionModel11",
                     "designerId": "77b6aee8-c599-461e-9034-69da9e7db464"
                 }
             ]

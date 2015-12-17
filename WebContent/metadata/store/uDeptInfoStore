@@ -31,7 +31,7 @@
                 ],
                 "url": "get_DeptInfo"
             },
-            "name": "MyAjaxProxy28",
+            "name": "MyAjaxProxy29",
             "designerId": "6b186bcc-38a1-40af-8daa-43d1d3fd5ff0",
             "cn": [
                 {
@@ -44,7 +44,7 @@
                     "userConfig": {
                         "root": "root"
                     },
-                    "name": "MyJsonReader28",
+                    "name": "MyJsonReader29",
                     "designerId": "7c234641-66c7-4c3a-a10d-5a112b3e6943"
                 }
             ]

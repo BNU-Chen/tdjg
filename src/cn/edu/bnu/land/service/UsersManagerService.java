@@ -2,19 +2,19 @@ package cn.edu.bnu.land.service;
 
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
+import java.sql.Date;
+import java.sql.SQLException;
 import java.text.DecimalFormat;
-import java.text.SimpleDateFormat;
 import java.util.ArrayList;
-import java.util.Calendar;
 import java.util.Collections;
 import java.util.Comparator;
-import java.util.Date;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 import java.util.TreeMap;
 
+import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import org.hibernate.SQLQuery;
@@ -23,10 +23,11 @@ import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import cn.edu.bnu.land.model.InfoArticle;
 import cn.edu.bnu.land.model.UDeptInfo;
 import cn.edu.bnu.land.model.URightInfo;
 import cn.edu.bnu.land.model.URoleInfo;
-import cn.edu.bnu.land.model.URoleRight;
+import cn.edu.bnu.land.model.SystemMap;
 import cn.edu.bnu.land.model.UUserInfo;
 import cn.edu.bnu.land.model.UUserRole;
 import cn.edu.bnu.land.model.Users;
@@ -44,63 +45,27 @@ public class UsersManagerService {
 	}
 
 	// ---------------------------------数据库备份与还原---------------------------
-	
-	@SuppressWarnings("unchecked")
-	public Map<String, Object> backupDatabase(String bkCommnet) {
-		Map<String, Object> myMapResult = new TreeMap<String, Object>();
-		Session session = sessionFactory.getCurrentSession();
-		try {
-//			DbBackuprecord back = new DbBackuprecord();
-//			//back.setId(11);
-			Calendar ca = Calendar.getInstance();
-	     	Date now = ca.getTime();
-	     	String dateStr = new SimpleDateFormat("yyyy-MM-dd, Ka").format(now);
-//			//back.setBkdate(now); //2014/08/06 15:59:48
-	     	Integer dataSize = 1024;
-//			back.setSize(dataSize);
-//			back.setDescription(bkCommnet);
-//			
-//			//DbBackuprecord back = new DbBackuprecord(now,dataSize,bkCommnet);
-//			session.save(back);
-			String sql = "INSERT INTO db_backuprecord (bkdate,size,description)"
-					+"VALUES('"+dateStr+"',"+dataSize+",'"+bkCommnet+"')";					
-			SQLQuery query = sessionFactory.getCurrentSession().createSQLQuery(sql);
-			query.executeUpdate();
-			System.out.println("备份数据库："+sql);
-			myMapResult.put("success", true);
-		} catch (Exception er) {
-			System.out.println("备份数据库："+er.getCause()+er.getMessage());
-			myMapResult.put("failure", false);
-		}
-		return myMapResult;
+	public void backupDatabase(HttpServletRequest request,
+			HttpServletResponse response) throws SQLException {
+		// String dir =
+		// sessionFactory.getCurrentSession().getServletContext().getRealPath(logoPathDir);
+		String dir = request.getSession().getServletContext().getContextPath();
+		String basePath = request.getScheme() + "://" + request.getServerName()
+				+ ":" + request.getServerPort() + dir + "/";
+		System.out.println("path:" + basePath);
+		String hql = "backup database tdlz to disk = " + basePath
+				+ "backupup.sql";
+		sessionFactory.getCurrentSession().createQuery(hql);
+
+		// org.hibernate.cfg.Configuration cfg = new
+		// org.hibernate.cfg.Configuration();
+		// cfg.configure("hibernate.cfg.xml");
+		// SchemaExport se = new SchemaExport(cfg);
+		// se.setOutputFile("C:\\backup.sql");
+		// se.execute(true, false, false, false);
+
 	}
-	
-	
-//	public Map<String, Object> backupDatabase(String bkCommnet,
-//			HttpServletRequest request,
-//			HttpServletResponse response) throws SQLException {
-//		
-//		Map<String, Object> myMapResult = new TreeMap<String, Object>();
-//		Session session = sessionFactory.getCurrentSession();
-//		try {
-//			DbBackuprecord back = new DbBackuprecord();
-//			//back.setId(11);
-//			Calendar ca = Calendar.getInstance();
-//	     	Date now = ca.getTime();
-//			back.setDate(now); //2014/08/06 15:59:48
-//	     	Integer dataSize = 1024;
-//			back.setSize(dataSize);
-//			back.setComment(bkCommnet);
-//			
-//			//DbBackuprecord back = new DbBackuprecord(now,dataSize,bkCommnet);
-//			session.persist(back);
-//			myMapResult.put("success", true);
-//		} catch (Exception er) {
-//			System.out.println("备份数据库："+er.getCause()+er.getMessage());
-//			myMapResult.put("failure", false);
-//		}
-//		return myMapResult;
-//	}
+
 	// -----------------------------用户信息users---------------------------
 	// 查询用户信息
 	@SuppressWarnings("unchecked")
@@ -226,16 +191,18 @@ public class UsersManagerService {
 	}
 
 	// 删除用户信息
-	public void deleteUserInfoById(String userId) {
-		System.out.println("userId:" + userId);
+	public void deleteUserInfoById(String[] userIds) {
+		System.out.println("userId:" + userIds);
 		UUserInfo result = null;
 		Session session = sessionFactory.getCurrentSession();
 		try {
-			result = (UUserInfo) session.get(UUserInfo.class,
-					Integer.parseInt(userId));
-			System.out.println("result.getDescription():"
-					+ result.getDescription());
-			session.delete(result);
+			for (int i = 0; i < userIds.length; i++) {
+				result = (UUserInfo) session.get(UUserInfo.class,
+						Integer.parseInt(userIds[i]));
+				System.out.println("result.getDescription():"
+						+ result.getDescription());
+				session.delete(result);
+			}
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
@@ -298,14 +265,14 @@ public class UsersManagerService {
 	// -----------------------------角色信息---------------------------
 	// 查询角色信息
 	@SuppressWarnings("unchecked")
-	public Map<String, Object> getRoleInfoList(String searchKey,String enabled) {
+	public Map<String, Object> getRoleInfoList(String searchKey, String enabled) {
 		System.out.println("进入UserManagerService函数-----");
 		String hql = "FROM URoleInfo as r";
 		if (!searchKey.equals("")) {
 			String hql2 = " where r.roleName like '%" + searchKey + "%'"
 					+ " or r.description like '%" + searchKey + "%'"
 					+ " or r.roleNameCn like '%" + searchKey + "%'";
-			if("true".equals(enabled)||"1".equals(enabled)){
+			if ("true".equals(enabled) || "1".equals(enabled)) {
 				hql2 += " AND r.enabled = 1";
 			}
 			hql = hql + hql2;
@@ -322,14 +289,16 @@ public class UsersManagerService {
 	}
 
 	// 删除角色信息
-	public void deleteRoleInfoById(String roleId) {
+	public void deleteRoleInfoById(String[] roleIds) {
 		// System.out.println("roleId:" + roleId);
 		URoleInfo result = null;
 		Session session = sessionFactory.getCurrentSession();
 		try {
-			result = (URoleInfo) session.get(URoleInfo.class,
-					Integer.parseInt(roleId));
-			session.delete(result);
+			for (int i = 0; i < roleIds.length; i++) {
+				result = (URoleInfo) session.get(URoleInfo.class,
+						Integer.parseInt(roleIds[i]));
+				session.delete(result);
+			}
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
@@ -414,16 +383,18 @@ public class UsersManagerService {
 	}
 
 	// 删除权限信息
-	public void deleteRightInfoById(String rightId) {
+	public void deleteRightInfoById(String[] rightIds) {
 		// System.out.println("rightId:" + rightId);
 		URightInfo result = null;
 		Session session = sessionFactory.getCurrentSession();
 		try {
 			String pattern = "0000000000";
-			DecimalFormat df = new DecimalFormat(pattern);
-			result = (URightInfo) session.get(URightInfo.class,
-					df.format(Integer.parseInt(rightId)));
-			session.delete(result);
+			for (int i = 0; i < rightIds.length; i++) {
+				DecimalFormat df = new DecimalFormat(pattern);
+				result = (URightInfo) session.get(URightInfo.class,
+						df.format(Integer.parseInt(rightIds[i])));
+				session.delete(result);
+			}
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
@@ -434,59 +405,60 @@ public class UsersManagerService {
 	public void addRightInfo(URightInfo rightInfo) {
 		Session session = sessionFactory.getCurrentSession();
 		try {
-//			String rightIdParent = rightInfo.getRightId(); // 取得了上一级权限的id
-//			int firstNotZeroIndex = rightIdParent.indexOf("00");
-//			String parentRightCode = rightIdParent.substring(0,
-//					firstNotZeroIndex);
-//			System.out.println("parentRightCode:" + parentRightCode);
-//
-//			String hql = "FROM URightInfo as URightInfo where URightInfo.rightId like '"
-//					+ parentRightCode + "%'";
-//			System.out.println(hql);
-//			List<URightInfo> results = null;
-//			org.hibernate.Query query = sessionFactory.getCurrentSession()
-//					.createQuery(hql);
-//			results = (List<URightInfo>) query.list();
-//			List<Integer> childRightList = new ArrayList<Integer>();
-//			Iterator<URightInfo> it = results.iterator();
-//			while (it.hasNext()) {
-//				URightInfo udi = it.next();
-//				String childRightId = udi.getRightId();
-//				if (childRightId.length() == 10) {
-//					int childId = Integer.parseInt(childRightId.substring(
-//							firstNotZeroIndex, firstNotZeroIndex + 2));
-//					if (childId >= 0) {
-//						childRightList.add(childId);
-//					}
-//				}
-//			}
-//			Collections.sort(childRightList);
-//			System.out.println(childRightList.toString());
-//			int indexToInsert = 0;
-//			int index = 0;
-//			for (; index < childRightList.size(); index++) {
-//				if (index + 1 < childRightList.size()) {
-//					if ((childRightList.get(index + 1) - childRightList
-//							.get(index)) > 1) {
-//						indexToInsert = childRightList.get(index) + 1;
-//					}
-//				}
-//			}
-//			if (indexToInsert == 0) {
-//				indexToInsert = childRightList.get(index - 1) + 1;
-//			}
-//			System.out.println("indexToInsert" + indexToInsert);
-//			String pattern = "00";
-//			DecimalFormat df = new DecimalFormat(pattern);
-//			String rightId = parentRightCode + df.format(indexToInsert);
-//			int zeroLeft = 10 - parentRightCode.length() - 2;
-//			if (10 - parentRightCode.length() - 2 > 0) {
-//				for (int zeroIndex = 0; zeroIndex < zeroLeft; zeroIndex++) {
-//					rightId += '0';
-//				}
-//			}
-//			System.out.println("rightId" + rightId);
-//			rightInfo.setRightId(rightId);
+			// String rightIdParent = rightInfo.getRightId(); // 取得了上一级权限的id
+			// int firstNotZeroIndex = rightIdParent.indexOf("00");
+			// String parentRightCode = rightIdParent.substring(0,
+			// firstNotZeroIndex);
+			// System.out.println("parentRightCode:" + parentRightCode);
+			//
+			// String hql =
+			// "FROM URightInfo as URightInfo where URightInfo.rightId like '"
+			// + parentRightCode + "%'";
+			// System.out.println(hql);
+			// List<URightInfo> results = null;
+			// org.hibernate.Query query = sessionFactory.getCurrentSession()
+			// .createQuery(hql);
+			// results = (List<URightInfo>) query.list();
+			// List<Integer> childRightList = new ArrayList<Integer>();
+			// Iterator<URightInfo> it = results.iterator();
+			// while (it.hasNext()) {
+			// URightInfo udi = it.next();
+			// String childRightId = udi.getRightId();
+			// if (childRightId.length() == 10) {
+			// int childId = Integer.parseInt(childRightId.substring(
+			// firstNotZeroIndex, firstNotZeroIndex + 2));
+			// if (childId >= 0) {
+			// childRightList.add(childId);
+			// }
+			// }
+			// }
+			// Collections.sort(childRightList);
+			// System.out.println(childRightList.toString());
+			// int indexToInsert = 0;
+			// int index = 0;
+			// for (; index < childRightList.size(); index++) {
+			// if (index + 1 < childRightList.size()) {
+			// if ((childRightList.get(index + 1) - childRightList
+			// .get(index)) > 1) {
+			// indexToInsert = childRightList.get(index) + 1;
+			// }
+			// }
+			// }
+			// if (indexToInsert == 0) {
+			// indexToInsert = childRightList.get(index - 1) + 1;
+			// }
+			// System.out.println("indexToInsert" + indexToInsert);
+			// String pattern = "00";
+			// DecimalFormat df = new DecimalFormat(pattern);
+			// String rightId = parentRightCode + df.format(indexToInsert);
+			// int zeroLeft = 10 - parentRightCode.length() - 2;
+			// if (10 - parentRightCode.length() - 2 > 0) {
+			// for (int zeroIndex = 0; zeroIndex < zeroLeft; zeroIndex++) {
+			// rightId += '0';
+			// }
+			// }
+			// System.out.println("rightId" + rightId);
+			// rightInfo.setRightId(rightId);
 			String rightIdParent = rightInfo.getRightId(); // 取得了上一级部门的id
 			int firstNotZeroIndex = rightIdParent.indexOf("00");
 
@@ -574,7 +546,7 @@ public class UsersManagerService {
 					rightId += '0';
 				}
 			}
-			//System.out.println("rightId" + rightId);
+			// System.out.println("rightId" + rightId);
 			rightInfo.setRightId(rightId);
 			session.save(rightInfo);
 		} catch (Exception er) {
@@ -601,10 +573,10 @@ public class UsersManagerService {
 			hql = hql + hql2;
 		}
 		System.out.println(hql);
-		List<URoleRight> results = null;
+		List<SystemMap> results = null;
 		org.hibernate.Query query = sessionFactory.getCurrentSession()
 				.createQuery(hql);
-		results = (List<URoleRight>) query.list();
+		results = (List<SystemMap>) query.list();
 		// System.out.println("date:"+results.get(0).getLoginTime());//输出时间
 		Map<String, Object> myMapResult = new TreeMap<String, Object>();
 		myMapResult.put("root", results);
@@ -615,12 +587,12 @@ public class UsersManagerService {
 	// 删除角色权限信息
 	public void deleteRoleRightById(String roleId) {
 		// System.out.println("roleId:" + roleId);
-		URoleRight result = null;
+		SystemMap result = null;
 		Session session = sessionFactory.getCurrentSession();
 		try {
 			String pattern = "0000000000";
 			DecimalFormat df = new DecimalFormat(pattern);
-			result = (URoleRight) session.get(URoleRight.class,
+			result = (SystemMap) session.get(SystemMap.class,
 					df.format(Integer.parseInt(roleId)));
 			session.delete(result);
 		} catch (Exception e) {
@@ -630,7 +602,7 @@ public class UsersManagerService {
 
 	// 添加角色权限信息
 	@SuppressWarnings("unchecked")
-	public void addRoleRight(URoleRight uRoleRight) {
+	public void addRoleRight(SystemMap uRoleRight) {
 		Session session = sessionFactory.getCurrentSession();
 		try {
 			session.save(uRoleRight);
@@ -640,7 +612,7 @@ public class UsersManagerService {
 	}
 
 	// 编辑更新角色权限信息
-	public void updateOneRoleRight(URoleRight uRoleRight) {
+	public void updateOneRoleRight(SystemMap uRoleRight) {
 		Session session = sessionFactory.getCurrentSession();
 		session.saveOrUpdate(uRoleRight);
 		// System.out.println("updateOneDraft: "+infoArticle.getArticlePublishtime());
@@ -809,17 +781,18 @@ public class UsersManagerService {
 	}
 
 	// 删除部门信息
-	public void deleteDeptInfoById(String deptId) {
+	public void deleteDeptInfoById(String[] deptIds) {
 		// System.out.println("deptId:" + deptId);
 		UDeptInfo result = null;
 		Session session = sessionFactory.getCurrentSession();
 		try {
 			String pattern = "0000000000";
-			DecimalFormat df = new DecimalFormat(pattern);
-			result = (UDeptInfo) session.get(UDeptInfo.class,
-					df.format(Integer.parseInt(deptId)));
-			session.delete(result);
-
+			for (int i = 0; i < deptIds.length; i++) {
+				DecimalFormat df = new DecimalFormat(pattern);
+				result = (UDeptInfo) session.get(UDeptInfo.class,
+						df.format(Integer.parseInt(deptIds[i])));
+				session.delete(result);
+			}
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
@@ -992,13 +965,11 @@ public class UsersManagerService {
 	// -----------------------------用户角色设置---------------------------
 	// 查询角色权限信息
 	@SuppressWarnings("unchecked")
-	public Map<String, Object> getUserRoleList(String username) {		
-		String hql = "FROM UUserRole as ur";
-		if (!"".equals(username)) {
-			String hql2 = " where ur.username like '%" + username + "%'";
-					
-			hql = hql + hql2;
-		}
+	public Map<String, Object> getUserRoleList(String username) {
+		String hql = "FROM URoleInfo AS r " + "WHERE r.roleId IN ("
+				+ "SELECT ur.roleid FROM UUserRole AS ur "
+				+ "where ur.username like '%" + username + "%')";
+
 		System.out.println(hql);
 		List<UUserRole> results = null;
 		org.hibernate.Query query = sessionFactory.getCurrentSession()
@@ -1011,11 +982,93 @@ public class UsersManagerService {
 	}
 
 	// 添加角色权限信息
-	@SuppressWarnings("unchecked")
-	public void updateUserRole(String username, String[] roleName) {
+	public void updateUserRole(String username, String[] roleIds) {
+		@SuppressWarnings("unused")
+		boolean flag = true;
 		Session session = sessionFactory.getCurrentSession();
 		try {
-			session.save(roleName[0]);
+			// 先删除之前的权限
+			String hql = "DELETE UUserRole as ur where ur.username= '"
+					+ username + "'";
+			session.createQuery(hql).executeUpdate();
+
+			// 再添加新的权限
+			for (int i = 0; i < roleIds.length; i++) {
+				UUserRole ur = new UUserRole();
+				ur.setUsername(username);
+				ur.setRoleid(Integer.parseInt(roleIds[i]));
+				session.save(ur);
+			}
+		} catch (Exception er) {
+			System.out.println(er.getMessage());
+		}
+	}
+
+	// -----------------------------角色权限设置---------------------------
+	// 查询角色权限信息
+	@SuppressWarnings("unchecked")
+	public Map<String, Object> getRoleRightSettingList(String roleId) {
+		String hql = "SELECT rr.rightId " + "FROM URoleRight AS rr "
+				+ "WHERE rr.roleId = '" + roleId + "'";
+
+		System.out.println(hql);
+		List<Object> results = null;
+		org.hibernate.Query query = sessionFactory.getCurrentSession()
+				.createQuery(hql);
+		results = (List<Object>) query.list();
+		Map<String, Object> myMapResult = new TreeMap<String, Object>();
+		myMapResult.put("root", results);
+		myMapResult.put("success", true);
+		return myMapResult;
+	}
+
+	// 添加角色权限信息
+	public void updateRoleRight(String roleId, String[] rightIds) {
+		@SuppressWarnings("unused")
+		boolean flag = true;
+		Session session = sessionFactory.getCurrentSession();
+		try {
+			// 先删除之前的权限
+			String hql = "DELETE URoleRight as rr where rr.roleId = '" + roleId
+					+ "'";
+			session.createQuery(hql).executeUpdate();
+
+			// 再添加新的权限
+			for (int i = 0; i < rightIds.length; i++) {
+				SystemMap rr = new SystemMap();
+				rr.setRoleId(roleId);
+				rr.setRightId(rightIds[i]);
+				session.save(rr);
+			}
+		} catch (Exception er) {
+			System.out.println(er.getMessage());
+		}
+	}
+
+	// -----------------------------用户部门设置---------------------------
+	// 查询用户的部门信息
+	@SuppressWarnings("unchecked")
+	public Map<String, Object> getUserDeptList(String userId) {
+		String hql = "SELECT ui.deptId " + "FROM UUserInfo AS ui "
+				+ "WHERE ui.userId = '" + userId + "'";
+
+		System.out.println(hql);
+		List<Object> results = null;
+		org.hibernate.Query query = sessionFactory.getCurrentSession()
+				.createQuery(hql);
+		results = (List<Object>) query.list();
+		Map<String, Object> myMapResult = new TreeMap<String, Object>();
+		myMapResult.put("root", results);
+		myMapResult.put("success", true);
+		return myMapResult;
+	}
+
+	// 更新用户的部门信息
+	public void updateUserDept(UUserInfo userInfo) {
+		try {
+			Session session = sessionFactory.getCurrentSession();
+			session.saveOrUpdate(userInfo);
+
 		} catch (Exception er) {
 			System.out.println(er.getMessage());
 		}

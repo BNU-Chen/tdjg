@@ -1,0 +1,47 @@
+{
+    "type": "jsonstore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoLoad": true,
+        "autoSync": true,
+        "designer|userClassName": "uOptLogStore",
+        "model": "uOptLogModel",
+        "pageSize": null,
+        "storeId": "uOptLogStore"
+    },
+    "designerId": "7dffb792-4a47-4c1b-a7f1-3c9b5763a8a6",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.Ajax",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "url": "get_OptLog"
+            },
+            "name": "MyAjaxProxy102",
+            "designerId": "911bf255-090b-4337-b3c1-eb7bc4459f89",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "root": "root"
+                    },
+                    "name": "MyJsonReader102",
+                    "designerId": "692abfb0-bb8f-47fe-a976-7fcc1aa5a8a7"
+                }
+            ]
+        }
+    ]
+}

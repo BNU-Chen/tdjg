@@ -29,7 +29,7 @@
                 "subGridXType": "",
                 "title": ""
             },
-            "name": "MyGridPanel29",
+            "name": "MyGridPanel30",
             "designerId": "a4da40d1-ea79-4b72-89fd-47867cb68fc7",
             "cn": [
                 {
@@ -39,7 +39,7 @@
                         "type": "array"
                     },
                     "codeClass": null,
-                    "name": "MyRowNumberer23",
+                    "name": "MyRowNumberer24",
                     "designerId": "98a6e409-68db-4651-a009-f149171aa0a1"
                 },
                 {
@@ -54,7 +54,7 @@
                         "hidden": true,
                         "text": "记录号"
                     },
-                    "name": "MyColumn163",
+                    "name": "MyColumn169",
                     "designerId": "8107c8cd-eade-4e00-8149-69630fdcbf48"
                 },
                 {
@@ -69,7 +69,7 @@
                         "text": "项目编号",
                         "width": 130
                     },
-                    "name": "MyColumn164",
+                    "name": "MyColumn170",
                     "designerId": "dc7b45f0-ee25-426a-9988-85f9611108f9"
                 },
                 {
@@ -83,7 +83,7 @@
                         "dataIndex": "projectname",
                         "text": "项目名称"
                     },
-                    "name": "MyColumn165",
+                    "name": "MyColumn171",
                     "designerId": "e3393240-f845-4732-a577-db1f96e6a298"
                 },
                 {
@@ -97,7 +97,7 @@
                         "dataIndex": "rlocation",
                         "text": "行政区位"
                     },
-                    "name": "MyColumn166",
+                    "name": "MyColumn172",
                     "designerId": "495f9825-0624-47bc-be3a-3ce29acd9470"
                 },
                 {
@@ -111,7 +111,7 @@
                         "dataIndex": "rarea",
                         "text": "项目规模(公顷)"
                     },
-                    "name": "MyColumn167",
+                    "name": "MyColumn173",
                     "designerId": "6db40648-b560-42a5-ae9b-cf64b2051fa8"
                 },
                 {
@@ -125,7 +125,7 @@
                         "dataIndex": "rmapnumber",
                         "text": "图幅编号"
                     },
-                    "name": "MyColumn168",
+                    "name": "MyColumn174",
                     "designerId": "0ed6202f-8396-418b-a7a8-3045f7175791"
                 },
                 {
@@ -139,7 +139,7 @@
                         "dataIndex": "rmoney",
                         "text": "资金花费（万元）"
                     },
-                    "name": "MyColumn169",
+                    "name": "MyColumn175",
                     "designerId": "57e6801d-2b14-474f-924e-bd569ca71495"
                 },
                 {
@@ -153,7 +153,7 @@
                         "dataIndex": "conUnit",
                         "text": "施工单位"
                     },
-                    "name": "MyColumn170",
+                    "name": "MyColumn176",
                     "designerId": "8c6dfed1-7a4f-4366-b30d-4f360affaea3"
                 },
                 {
@@ -167,7 +167,7 @@
                         "dataIndex": "areaCode",
                         "text": "所属区域行政代码"
                     },
-                    "name": "MyColumn171",
+                    "name": "MyColumn177",
                     "designerId": "699d1330-668c-4d59-adc9-b12a18de0fbc"
                 },
                 {
@@ -181,7 +181,7 @@
                         "dataIndex": "showYesno",
                         "text": "是否公示"
                     },
-                    "name": "MyColumn172",
+                    "name": "MyColumn178",
                     "designerId": "39f556cd-2595-4e88-be57-7ca174832404"
                 },
                 {
@@ -196,7 +196,7 @@
                         "format": "Y-m-d",
                         "text": "施工时间"
                     },
-                    "name": "MyDateColumn24",
+                    "name": "MyDateColumn25",
                     "designerId": "fece525d-cad9-4b1e-a104-faa0bfad6901"
                 },
                 {
@@ -211,7 +211,7 @@
                         "format": "Y-m-d",
                         "text": "竣工时间"
                     },
-                    "name": "MyDateColumn25",
+                    "name": "MyDateColumn26",
                     "designerId": "6b2d8454-d368-4299-b70a-d81a055b12cd"
                 },
                 {
@@ -235,7 +235,7 @@
                         "type": "object"
                     },
                     "codeClass": null,
-                    "name": "MyGridView29",
+                    "name": "MyGridView30",
                     "designerId": "d0302621-4577-4e23-9c3d-1bb104c2b77a"
                 },
                 {
@@ -248,7 +248,7 @@
                     "userConfig": {
                         "dock": "top"
                     },
-                    "name": "MyToolbar39",
+                    "name": "MyToolbar41",
                     "designerId": "3d12e222-754c-42ca-96bd-d46f4a60a7ab",
                     "cn": [
                         {
@@ -263,7 +263,7 @@
                                 "layout|flex": null,
                                 "text": "添加项目"
                             },
-                            "name": "MyButton155",
+                            "name": "MyButton172",
                             "designerId": "8f3b5009-0d8f-4db2-9223-c869dd649992",
                             "cn": [
                                 {
@@ -304,7 +304,7 @@
                                 "layout|flex": null,
                                 "text": "编辑项目"
                             },
-                            "name": "MyButton156",
+                            "name": "MyButton173",
                             "designerId": "a7e7ea1e-a564-4808-a1c6-47d10b8918d6",
                             "cn": [
                                 {
@@ -379,7 +379,7 @@
                                 "layout|flex": null,
                                 "text": "删除项目"
                             },
-                            "name": "MyButton157",
+                            "name": "MyButton174",
                             "designerId": "adedb5b5-5d65-47c2-9d2b-85fd6f979899",
                             "cn": [
                                 {
@@ -446,7 +446,7 @@
                                 "layout|flex": null,
                                 "text": "查看项目地块信息"
                             },
-                            "name": "MyButton158",
+                            "name": "MyButton175",
                             "designerId": "e858735c-5dc7-4a6f-bd07-61d07626e25a",
                             "cn": [
                                 {
@@ -512,7 +512,7 @@
                                 "layout|flex": null,
                                 "text": "查看地图"
                             },
-                            "name": "MyButton159",
+                            "name": "MyButton176",
                             "designerId": "d24be69c-ca06-4ebb-8760-19d808badd52",
                             "cn": [
                                 {
@@ -581,7 +581,7 @@
                                 "layout|flex": null,
                                 "name": "searchKeyword1"
                             },
-                            "name": "MyTextField154",
+                            "name": "MyTextField158",
                             "designerId": "8f98600d-8992-4c4f-8e29-de1c3e8a4272"
                         },
                         {
@@ -597,7 +597,7 @@
                                 "layout|flex": null,
                                 "text": "查询"
                             },
-                            "name": "MyButton160",
+                            "name": "MyButton177",
                             "designerId": "2863fe08-9802-467b-97d4-d2b51c127dff",
                             "cn": [
                                 {
@@ -645,7 +645,7 @@
                                 "layout|flex": null,
                                 "text": "高级查询"
                             },
-                            "name": "MyButton161",
+                            "name": "MyButton178",
                             "designerId": "6ceddb7b-7cdc-429a-b224-c1828c3161fb",
                             "cn": [
                                 {
@@ -766,7 +766,7 @@
                         "type": "object"
                     },
                     "codeClass": "Ext.selection.CheckboxModel",
-                    "name": "MyCheckboxSelectionModel21",
+                    "name": "MyCheckboxSelectionModel22",
                     "designerId": "1d86ff25-c696-425a-810a-7ec50757e19e"
                 }
             ]

@@ -35,7 +35,7 @@
                 "title": "",
                 "url": "submit_applyFile"
             },
-            "name": "MyForm21",
+            "name": "MyForm22",
             "designerId": "81a1b5ad-4e93-4b52-ae52-4692e3219500",
             "cn": [
                 {
@@ -50,7 +50,7 @@
                         "layout|y": 320,
                         "text": "提交文件"
                     },
-                    "name": "MyButton93",
+                    "name": "MyButton99",
                     "designerId": "30105b9b-ff51-4ce9-89b0-ea4637c91cc9",
                     "cn": [
                         {

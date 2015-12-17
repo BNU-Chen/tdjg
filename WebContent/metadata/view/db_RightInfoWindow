@@ -8,7 +8,7 @@
     "userConfig": {
         "designer|userAlias": "db_RightInfoWindow",
         "designer|userClassName": "db_RightInfoWindow",
-        "height": 342,
+        "height": 367,
         "id": "db_RightInfoWindow",
         "layout": "fit",
         "title": "权限信息修改",
@@ -31,7 +31,7 @@
                 "layout": "vbox",
                 "title": null
             },
-            "name": "MyForm4",
+            "name": "MyForm5",
             "designerId": "db8bd7c6-bd52-4013-92d6-c4a63c85d126",
             "cn": [
                 {
@@ -49,7 +49,7 @@
                         "readOnly": true,
                         "width": 400
                     },
-                    "name": "MyTextField20",
+                    "name": "MyTextField23",
                     "designerId": "3c4e3372-ae06-4560-84f5-6a50a176f3bd"
                 },
                 {
@@ -68,7 +68,7 @@
                         "submitValue": false,
                         "width": 400
                     },
-                    "name": "MyTextField21",
+                    "name": "MyTextField24",
                     "designerId": "7ceb620b-27d4-422e-a3f3-d7fd40bfe996"
                 },
                 {
@@ -80,12 +80,31 @@
                     "codeClass": null,
                     "userConfig": {
                         "fieldLabel": "权限代码",
+                        "id": "w_rightIndex",
+                        "inputType": null,
+                        "labelWidth": 70,
+                        "name": "rightIndex",
+                        "submitValue": false,
+                        "width": 400
+                    },
+                    "name": "MyTextField25",
+                    "designerId": "588a7a51-6c88-460e-9a9a-bac6bea6e5b7"
+                },
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "权限地址",
                         "id": "w_rightUrl",
                         "labelWidth": 70,
                         "name": "url",
                         "width": 400
                     },
-                    "name": "MyTextField22",
+                    "name": "MyTextField26",
                     "designerId": "1a90d433-ff8f-45b4-9c36-13e7da43e3f1"
                 },
                 {
@@ -122,7 +141,7 @@
                         "labelWidth": 70,
                         "name": "description"
                     },
-                    "name": "MyHtmlEditor4",
+                    "name": "MyHtmlEditor5",
                     "designerId": "4c4fa829-0aca-45b2-a221-deb228abb7e0"
                 },
                 {
@@ -136,7 +155,7 @@
                         "dock": "bottom",
                         "layout|flex": 1
                     },
-                    "name": "MyToolbar5",
+                    "name": "MyToolbar7",
                     "designerId": "ecaae15f-fe3b-48d3-834a-579c549ae1ef",
                     "cn": [
                         {
@@ -149,7 +168,7 @@
                             "userConfig": {
                                 "layout|flex": null
                             },
-                            "name": "MyFill5",
+                            "name": "MyFill6",
                             "designerId": "306c74b3-b6dc-4d90-8fc6-d419f157b3a3"
                         },
                         {
@@ -163,7 +182,7 @@
                                 "layout|flex": null,
                                 "text": "取消"
                             },
-                            "name": "MyButton14",
+                            "name": "MyButton20",
                             "designerId": "df6e03ce-8e5a-450f-90d7-f1b49871ae70",
                             "cn": [
                                 {
@@ -198,7 +217,7 @@
                                 "layout|flex": null,
                                 "width": 30
                             },
-                            "name": "MySpacer5",
+                            "name": "MySpacer6",
                             "designerId": "27f04b2e-5302-499e-93c1-b63a10d17e87"
                         },
                         {
@@ -212,7 +231,7 @@
                                 "layout|flex": null,
                                 "text": "确认修改"
                             },
-                            "name": "MyButton15",
+                            "name": "MyButton21",
                             "designerId": "cb268246-9f75-4daa-b1d8-b49a9006a7d6",
                             "cn": [
                                 {

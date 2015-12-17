@@ -22,6 +22,7 @@ Ext.define('MyApp.view.db_UserPrivilegeManagerTab', {
         'Ext.tab.Tab',
         'Ext.toolbar.Toolbar',
         'Ext.form.field.Text',
+        'Ext.resizer.Splitter',
         'Ext.grid.Panel',
         'Ext.grid.RowNumberer',
         'Ext.grid.column.Action',
@@ -83,10 +84,57 @@ Ext.define('MyApp.view.db_UserPrivilegeManagerTab', {
                                         {
                                             xtype: 'button',
                                             icon: 'images/table_add.png',
-                                            text: '添加用户',
+                                            text: '添加',
                                             listeners: {
                                                 click: {
                                                     fn: me.onButtonClick2,
+                                                    scope: me
+                                                }
+                                            }
+                                        },
+                                        {
+                                            xtype: 'button',
+                                            icon: 'images/table_add.png',
+                                            text: '编辑',
+                                            listeners: {
+                                                click: {
+                                                    fn: me.onButtonClick22,
+                                                    scope: me
+                                                }
+                                            }
+                                        },
+                                        {
+                                            xtype: 'button',
+                                            icon: 'images/table_add.png',
+                                            text: '删除',
+                                            listeners: {
+                                                click: {
+                                                    fn: me.onButtonClick221,
+                                                    scope: me
+                                                }
+                                            }
+                                        },
+                                        {
+                                            xtype: 'splitter'
+                                        },
+                                        {
+                                            xtype: 'button',
+                                            icon: 'images/table_add.png',
+                                            text: '设置部门',
+                                            listeners: {
+                                                click: {
+                                                    fn: me.onButtonClick2211,
+                                                    scope: me
+                                                }
+                                            }
+                                        },
+                                        {
+                                            xtype: 'button',
+                                            icon: 'images/table_role.png',
+                                            text: '用户角色设置',
+                                            listeners: {
+                                                click: {
+                                                    fn: me.onButtonClick22111,
                                                     scope: me
                                                 }
                                             }
@@ -97,6 +145,7 @@ Ext.define('MyApp.view.db_UserPrivilegeManagerTab', {
                             items: [
                                 {
                                     xtype: 'gridpanel',
+                                    id: 'db_UserInfoGrid',
                                     autoScroll: true,
                                     store: 'uUserInfoStore',
                                     columns: [
@@ -116,6 +165,12 @@ Ext.define('MyApp.view.db_UserPrivilegeManagerTab', {
                                             width: 100,
                                             dataIndex: 'userName',
                                             text: '用户名'
+                                        },
+                                        {
+                                            xtype: 'gridcolumn',
+                                            width: 100,
+                                            dataIndex: 'deptId',
+                                            text: '部门'
                                         },
                                         {
                                             xtype: 'actioncolumn',
@@ -187,76 +242,6 @@ Ext.define('MyApp.view.db_UserPrivilegeManagerTab', {
                                             dataIndex: 'enabled',
                                             menuText: '',
                                             icon: 'images/table_edit.png'
-                                        },
-                                        {
-                                            xtype: 'actioncolumn',
-                                            handler: function(grid, rowIndex, colIndex, actionItem, event, record, row) {
-                                                if (colIndex === undefined || colIndex < 2) {
-                                                    return;
-                                                }
-                                                var win = Ext.widget('db_UserInfoWindow');
-                                                win.show();
-
-                                                //var form = Ext.widget('db_UserWindowForm');
-                                                var form = Ext.getCmp('db_UserWindowForm');
-                                                console.log("form:",form);
-                                                form.loadRecord(record);
-
-
-                                                //对显示的结果进行处理
-                                                //注册日期的处理
-                                                var registerdateField = Ext.getCmp('users_registerdatew');
-                                                var value = registerdateField.getValue();
-                                                var date = new Date(value);
-                                                console.log('date',date);
-                                                if(date instanceof Date){
-                                                    var str = date.getFullYear()+'-'+(date.getMonth()+1)+'-'+date.getDate();
-                                                    console.log('date2',str);
-                                                    registerdateField.setValue(str);
-                                                }
-                                                //密码框的处理
-                                                var pwdField = Ext.getCmp('users_passwordw');
-                                                pwdField.setValue("");
-                                            },
-                                            width: 50,
-                                            dataIndex: 'date',
-                                            menuText: '',
-                                            icon: 'images/table_edit.png'
-                                        },
-                                        {
-                                            xtype: 'actioncolumn',
-                                            handler: function(grid, rowIndex, colIndex, actionItem, event, record, row) {
-                                                Ext.Msg.confirm('您正在删除', '用户：' + record.get('trueName') + '，用户编号为：'+record.get('userId')+'，<br/> 确认删除？', getResult);
-                                                function getResult(confirm)
-                                                {
-                                                    console.log('confirm:', confirm);
-                                                    if (confirm == "yes"){
-                                                        var userId = record.get("userId");
-                                                        console.log('userId:',userId);
-                                                        Ext.Ajax.request(
-                                                        {
-                                                            url : 'del_UserInfoById',
-                                                            params :
-                                                            {
-                                                                userId : userId
-                                                            },
-                                                            success : function (response){
-                                                                Ext.Msg.alert('成功提示', '记录删除成功。');
-                                                                //successResult();
-                                                                var mystore = Ext.StoreMgr.get('uUserInfoStore');
-                                                                mystore.load();
-                                                            },
-                                                            failure : function (response){
-                                                                //failedResult();
-                                                                // Ext.Msg.alert('失败提示', '记录删除失败。');
-                                                            }
-                                                        });
-                                                    }
-                                                }
-                                            },
-                                            width: 50,
-                                            dataIndex: 'date',
-                                            icon: 'images/table_delete.png'
                                         },
                                         {
                                             xtype: 'gridcolumn',
@@ -360,6 +345,42 @@ Ext.define('MyApp.view.db_UserPrivilegeManagerTab', {
                                                     scope: me
                                                 }
                                             }
+                                        },
+                                        {
+                                            xtype: 'button',
+                                            icon: 'images/table_add.png',
+                                            text: '编辑',
+                                            listeners: {
+                                                click: {
+                                                    fn: me.onButtonClick212,
+                                                    scope: me
+                                                }
+                                            }
+                                        },
+                                        {
+                                            xtype: 'button',
+                                            icon: 'images/table_add.png',
+                                            text: '删除',
+                                            listeners: {
+                                                click: {
+                                                    fn: me.onButtonClick2121,
+                                                    scope: me
+                                                }
+                                            }
+                                        },
+                                        {
+                                            xtype: 'splitter'
+                                        },
+                                        {
+                                            xtype: 'button',
+                                            icon: 'images/table_right.png',
+                                            text: '修改权限',
+                                            listeners: {
+                                                click: {
+                                                    fn: me.onButtonClick21211,
+                                                    scope: me
+                                                }
+                                            }
                                         }
                                     ]
                                 }
@@ -367,6 +388,7 @@ Ext.define('MyApp.view.db_UserPrivilegeManagerTab', {
                             items: [
                                 {
                                     xtype: 'gridpanel',
+                                    id: 'db_RoleInfoGrid',
                                     store: 'uRoleInfoStore',
                                     columns: [
                                         {
@@ -399,56 +421,6 @@ Ext.define('MyApp.view.db_UserPrivilegeManagerTab', {
                                             width: 400,
                                             dataIndex: 'description',
                                             text: '描述'
-                                        },
-                                        {
-                                            xtype: 'actioncolumn',
-                                            handler: function(grid, rowIndex, colIndex, actionItem, event, record, row) {
-                                                if (colIndex === undefined || colIndex < 2) {
-                                                    return;
-                                                }
-                                                var win = Ext.widget('db_RoleInfoWindow');
-                                                win.show();
-
-                                                var form = Ext.getCmp('db_RoleInfoWindowForm').getForm();
-                                                form.loadRecord(record);
-
-                                            },
-                                            width: 50,
-                                            dataIndex: 'date',
-                                            menuText: '',
-                                            icon: 'images/table_edit.png'
-                                        },
-                                        {
-                                            xtype: 'actioncolumn',
-                                            handler: function(grid, rowIndex, colIndex, actionItem, event, record, row) {
-                                                Ext.Msg.confirm('您正在删除', '角色：' + record.get('roleNameCn') + '，角色代码为：'+record.get('roleName')+'，<br/> 确认删除？', getResult);
-                                                function getResult(confirm)
-                                                {
-                                                    console.log('confirm:', confirm);
-                                                    if (confirm == "yes"){
-                                                        var roleId = record.get("roleId");
-                                                        Ext.Ajax.request(
-                                                        {
-                                                            url : 'del_RoleInfoById',
-                                                            params :
-                                                            {
-                                                                roleId : roleId
-                                                            },
-                                                            success : function (response){
-                                                                Ext.Msg.alert('成功提示', '角色删除成功。');
-                                                                var mystore = Ext.StoreMgr.get('uRoleInfoStore');
-                                                                mystore.load();
-                                                            },
-                                                            failure : function (response){
-
-                                                            }
-                                                        });
-                                                    }
-                                                }
-                                            },
-                                            width: 50,
-                                            dataIndex: 'date',
-                                            icon: 'images/table_delete.png'
                                         }
                                     ],
                                     selModel: Ext.create('Ext.selection.CheckboxModel', {
@@ -504,6 +476,28 @@ Ext.define('MyApp.view.db_UserPrivilegeManagerTab', {
                                                     scope: me
                                                 }
                                             }
+                                        },
+                                        {
+                                            xtype: 'button',
+                                            icon: 'images/table_add.png',
+                                            text: '编辑',
+                                            listeners: {
+                                                click: {
+                                                    fn: me.onButtonClick2111,
+                                                    scope: me
+                                                }
+                                            }
+                                        },
+                                        {
+                                            xtype: 'button',
+                                            icon: 'images/table_add.png',
+                                            text: '删除',
+                                            listeners: {
+                                                click: {
+                                                    fn: me.onButtonClick21111,
+                                                    scope: me
+                                                }
+                                            }
                                         }
                                     ]
                                 }
@@ -550,76 +544,6 @@ Ext.define('MyApp.view.db_UserPrivilegeManagerTab', {
                                             width: 400,
                                             dataIndex: 'description',
                                             text: '描述'
-                                        },
-                                        {
-                                            xtype: 'actioncolumn',
-                                            handler: function(grid, rowIndex, colIndex, actionItem, event, record, row) {
-                                                if (colIndex === undefined || colIndex < 2) {
-                                                    return;
-                                                }
-                                                var win = Ext.widget('db_RightInfoWindow');
-                                                win.show();
-
-                                                var form = Ext.getCmp('db_RightInfoWindowForm');
-                                                form.loadRecord(record);
-
-                                                //对显示的内容进行处理
-                                                //对权限名称进行处理
-                                                var rightNameField = Ext.getCmp('w_rightName');
-                                                var value = rightNameField.getValue();
-                                                var index = value.lastIndexOf("&nbsp;");
-                                                console.log(index);
-                                                if(index>=0){
-                                                    var substr = value.substring(index+6,value.length);
-                                                    rightNameField.setValue(substr);
-                                                }
-                                            },
-                                            width: 50,
-                                            dataIndex: 'date',
-                                            menuText: '',
-                                            icon: 'images/table_edit.png'
-                                        },
-                                        {
-                                            xtype: 'actioncolumn',
-                                            handler: function(grid, rowIndex, colIndex, actionItem, event, record, row) {
-                                                //去除权限名称的空格
-                                                var rightName = record.get('rightName');
-                                                var index = rightName.lastIndexOf("&nbsp;");
-                                                var substr;
-                                                if(index>=0){
-                                                    substr = rightName.substring(index+6,rightName.length);
-                                                }
-                                                Ext.Msg.confirm('您正在删除', '权限："' + substr + '"，权限代码为："'+record.get('url')+'"，<br/> 确认删除？', getResult);
-
-                                                function getResult(confirm)
-                                                {
-                                                    console.log('confirm:', confirm);
-                                                    if (confirm == "yes"){
-                                                        var rightId = record.get("rightId");
-                                                        Ext.Ajax.request(
-                                                        {
-                                                            url : 'del_RightInfoById',
-                                                            params :
-                                                            {
-                                                                rightId : rightId
-                                                            },
-                                                            success : function (response){
-                                                                Ext.Msg.alert('成功提示', '权限删除成功。');
-                                                                //successResult();
-                                                                var mystore = Ext.StoreMgr.get('uRightInfoStore');
-                                                                mystore.load();
-                                                            },
-                                                            failure : function (response){
-                                                                //failedResult();
-                                                                // Ext.Msg.alert('失败提示', '记录删除失败。');
-                                                            }
-                                                        });
-                                                    }
-                                                }
-                                            },
-                                            width: 50,
-                                            dataIndex: 'date',
-                                            icon: 'images/table_delete.png'
                                         }
                                     ],
                                     selModel: Ext.create('Ext.selection.CheckboxModel', {
@@ -675,6 +599,28 @@ Ext.define('MyApp.view.db_UserPrivilegeManagerTab', {
                                                     scope: me
                                                 }
                                             }
+                                        },
+                                        {
+                                            xtype: 'button',
+                                            icon: 'images/table_add.png',
+                                            text: '编辑',
+                                            listeners: {
+                                                click: {
+                                                    fn: me.onButtonClick2111111,
+                                                    scope: me
+                                                }
+                                            }
+                                        },
+                                        {
+                                            xtype: 'button',
+                                            icon: 'images/table_add.png',
+                                            text: '删除',
+                                            listeners: {
+                                                click: {
+                                                    fn: me.onButtonClick21111111,
+                                                    scope: me
+                                                }
+                                            }
                                         }
                                     ]
                                 }
@@ -713,72 +659,6 @@ Ext.define('MyApp.view.db_UserPrivilegeManagerTab', {
                                             width: 400,
                                             dataIndex: 'description',
                                             text: '描述'
-                                        },
-                                        {
-                                            xtype: 'actioncolumn',
-                                            handler: function(grid, rowIndex, colIndex, actionItem, event, record, row) {
-                                                if (colIndex === undefined || colIndex < 2) {
-                                                    return;
-                                                }
-                                                var win = Ext.widget('db_DeptInfoWindow');
-                                                win.show();
-
-                                                var form = Ext.getCmp('db_DeptInfoWindowForm');
-                                                form.loadRecord(record);
-
-                                                //对显示的内容进行处理
-                                                //对部门名称进行处理
-                                                var deptNameField = Ext.getCmp('deptWindow_deptName');
-                                                var value = deptNameField.getValue();
-                                                var index = value.lastIndexOf("&nbsp;");
-                                                console.log(index);
-                                                if(index>=0){
-                                                    var substr = value.substring(index+6,value.length);
-                                                    deptNameField.setValue(substr);
-                                                }
-                                            },
-                                            width: 50,
-                                            icon: 'images/table_edit.png'
-                                        },
-                                        {
-                                            xtype: 'actioncolumn',
-                                            handler: function(grid, rowIndex, colIndex, actionItem, event, record, row) {
-                                                //去除名称的空格
-                                                var deptName = record.get('deptName');
-                                                var index = deptName.lastIndexOf("&nbsp;");
-                                                var substr;
-                                                if(index>=0){
-                                                    substr = deptName.substring(index+6,deptName.length);
-                                                }
-                                                Ext.Msg.confirm('您正在删除', '部门："' + substr + '"，部门编号为："'+record.get('deptId')+'"，<br/> 确认删除？', getResult);
-                                                function getResult(confirm)
-                                                {
-                                                    console.log('confirm:', confirm);
-                                                    if (confirm == "yes"){
-                                                        var deptId = record.get("deptId");
-                                                        Ext.Ajax.request(
-                                                        {
-                                                            url : 'del_DeptInfoById',
-                                                            params :
-                                                            {
-                                                                deptId : deptId
-                                                            },
-                                                            success : function (response){
-                                                                Ext.Msg.alert('成功提示', '记录删除成功。');
-                                                                //successResult();
-                                                                var mystore = Ext.StoreMgr.get('uDeptInfoStore');
-                                                                mystore.load();
-                                                            },
-                                                            failure : function (response){
-                                                                //failedResult();
-                                                                // Ext.Msg.alert('失败提示', '记录删除失败。');
-                                                            }
-                                                        });
-                                                    }
-                                                }
-                                            },
-                                            width: 50,
-                                            icon: 'images/table_delete.png'
                                         }
                                     ],
                                     selModel: Ext.create('Ext.selection.CheckboxModel', {
@@ -823,6 +703,137 @@ Ext.define('MyApp.view.db_UserPrivilegeManagerTab', {
         win.show();
     },
 
+    onButtonClick22: function(button, e, eOpts) {
+        var grid = Ext.getCmp('db_UserInfoGrid');
+
+        var record = grid.getSelectionModel().getSelection();
+
+        if(record.length === 0){
+            Ext.Msg.alert('提示','请先选择您要操作的行！');
+            return;
+        }else if(record.length >1){
+            Ext.Msg.alert('提示','您只能编辑一个用户，请重新选择。');
+            return;
+        }else {
+
+            var win = Ext.widget('db_UserInfoWindow');
+            win.show();
+
+            var form = Ext.getCmp('db_UserWindowForm');
+            form.loadRecord(record[0]);
+
+            //对显示的结果进行处理
+            //注册日期的处理
+            var registerdateField = Ext.getCmp('users_registerdatew');
+            var value = registerdateField.getValue();
+            var date = new Date(value);
+            console.log('date',date);
+            if(date instanceof Date){
+                var str = date.getFullYear()+'-'+(date.getMonth()+1)+'-'+date.getDate();
+                console.log('date2',str);
+                registerdateField.setValue(str);
+            }
+            //密码框的处理
+            var pwdField = Ext.getCmp('users_passwordw');
+            pwdField.setValue("");
+        }
+
+
+
+    },
+
+    onButtonClick221: function(button, e, eOpts) {
+        var grid = Ext.getCmp('db_UserInfoGrid');
+
+        var record = grid.getSelectionModel().getSelection();
+
+        if(record.length === 0){
+            Ext.Msg.alert('提示','请先选择您要操作的行！');
+            return;
+        }else{
+            var  userIds =new Array(record.length);
+            var msg = '';
+            for(var i = 0;i<record.length;i++){
+                userIds[i] = record[i].get("userId");
+                msg += record[i].get("userName") + '<br/>';
+            }
+
+            Ext.Msg.confirm('提示', '您正在删除以下用户：<br/>' + msg+'确认删除？', getResult);
+            function getResult(confirm)
+            {
+                if (confirm == "yes"){
+                    Ext.Ajax.request(
+                        {
+                            url : 'del_UserInfoById',
+                            params :
+                            {
+                                userIds : userIds
+                            },
+                            success : function (response){
+                                Ext.Msg.alert('成功提示', '记录删除成功。');
+                                //successResult();
+                                var mystore = Ext.StoreMgr.get('uUserInfoStore');
+                                mystore.load();
+                            },
+                            failure : function (response){
+                                //failedResult();
+                                // Ext.Msg.alert('失败提示', '记录删除失败。');
+                            }
+                        });
+                }
+            }
+        }
+
+
+
+    },
+
+    onButtonClick2211: function(button, e, eOpts) {
+        var grid = Ext.getCmp('db_UserInfoGrid');
+
+        var record = grid.getSelectionModel().getSelection();
+
+        if(record.length === 0 ){
+            Ext.Msg.alert('提示','请先选择您要操作的行！');
+            return;
+        }else if(record.length < 1){
+            Ext.Msg.alert('提示','您只能同时编辑一个用户信息，请重新选择。');
+            return;
+        }else{
+            var win = Ext.widget('db_UserRoleSettingWindow');
+            //设置window中的用户名，便于查询
+            var userName = record[0].get('userName');
+            Ext.getCmp('urSet_userName').setText(userName);
+            win.show();
+
+        }
+
+
+
+    },
+
+    onButtonClick22111: function(button, e, eOpts) {
+        var grid = Ext.getCmp('db_UserInfoGrid');		//获取表格grid
+        var recordsSelected = grid.getSelectionModel().getSelection();	//获取选中的记录
+
+        if(recordsSelected.length === 0){
+            Ext.Msg.alert('提示','请先选择您要操作的用户！');
+            return;
+        }else if(recordsSelected.length > 1){
+            Ext.Msg.alert('提示','请选中单个用户进行操作！');
+            return;
+        }else{
+            var win = Ext.widget('db_UserRoleSettingWindow');
+
+            //设置window中的用户名，便于查询
+            var userName = recordsSelected[0].get('userName');
+            Ext.getCmp('urSet_userName').setText(userName);
+
+            //显示window
+            win.show();
+        }
+    },
+
     onGridpanelCellClick: function(tableview, td, cellIndex, record, tr, rowIndex, e, eOpts) {
         //console.log('this is cellclick');
         //console.log('tableview:',tableview);
@@ -859,6 +870,93 @@ Ext.define('MyApp.view.db_UserPrivilegeManagerTab', {
     onButtonClick21: function(button, e, eOpts) {
         var win = Ext.widget('db_RoleInfoAddWindow');
         win.show();
+
+    },
+
+    onButtonClick212: function(button, e, eOpts) {
+        var grid = Ext.getCmp('db_RoleInfoGrid');
+
+        var record = grid.getSelectionModel().getSelection();
+
+        if(record.length === 0){
+            Ext.Msg.alert('提示','请先选择您要操作的行！');
+            return;
+        }else if(record.length >1){
+            Ext.Msg.alert('提示','您只能编辑一个角色信息，请重新选择。');
+            return;
+        }else {
+
+            var win = Ext.widget('db_RoleInfoWindow');
+            win.show();
+
+            var form = Ext.getCmp('db_RoleInfoWindowForm').getForm();
+            form.loadRecord(record[0]);
+        }
+    },
+
+    onButtonClick2121: function(button, e, eOpts) {
+        var grid = Ext.getCmp('db_RoleInfoGrid');
+
+        var record = grid.getSelectionModel().getSelection();
+
+        if(record.length === 0){
+            Ext.Msg.alert('提示','请先选择您要操作的行！');
+            return;
+        }else{
+            var  roleIds =new Array(record.length);
+            var msg = '';
+            for(var i = 0;i<record.length;i++){
+                roleIds[i] = record[i].get("roleId");
+                msg += record[i].get("roleName") + '<br/>';
+            }
+
+            Ext.Msg.confirm('提示', '您正在删除以下角色：<br/>' + msg+'确认删除？', getResult);
+            function getResult(confirm)
+            {
+                console.log('confirm:', confirm);
+                if (confirm == "yes"){
+
+                    Ext.Ajax.request(
+                        {
+                            url : 'del_RoleInfoById',
+                            params :
+                            {
+                                roleIds : roleIds
+                            },
+                            success : function (response){
+                                Ext.Msg.alert('成功提示', '角色删除成功。');
+                                var mystore = Ext.StoreMgr.get('uRoleInfoStore');
+                                mystore.load();
+                            },
+                            failure : function (response){
+
+                            }
+                        });
+                }
+            }
+        }
+    },
+
+    onButtonClick21211: function(button, e, eOpts) {
+        var grid = Ext.getCmp('db_RoleInfoGrid');		//获取表格grid
+        var recordsSelected = grid.getSelectionModel().getSelection();	//获取选中的记录
+
+        if(recordsSelected.length === 0){
+            Ext.Msg.alert('提示','请先选择您要操作的角色！');
+            return;
+        }else if(recordsSelected.length > 1){
+            Ext.Msg.alert('提示','请选中单个角色进行操作！');
+            return;
+        }else{
+            var win = Ext.widget('db_RoleRightSettingWindow');
+
+            //设置window中的角色id，便于查询
+            var roleId = recordsSelected[0].get('roleId');
+            Ext.getCmp('rrSet_roleId').setText(roleId);
+
+            //显示window
+            win.show();
+        }
 
     },
 
@@ -929,6 +1027,89 @@ Ext.define('MyApp.view.db_UserPrivilegeManagerTab', {
         }
     },
 
+    onButtonClick2111: function(button, e, eOpts) {
+        var grid = Ext.getCmp('rightInfoGrid');
+
+        var record = grid.getSelectionModel().getSelection();
+
+        if(record.length === 0){
+            Ext.Msg.alert('提示','请先选择您要操作的行！');
+            return;
+        }else if(record.length >1){
+            Ext.Msg.alert('提示','您只能编辑一个权限信息，请重新选择。');
+            return;
+        }else {
+            var win = Ext.widget('db_RightInfoWindow');
+            win.show();
+
+            var form = Ext.getCmp('db_RightInfoWindowForm');
+            form.loadRecord(record[0]);
+
+            //对显示的内容进行处理
+            //对权限名称进行处理
+            var rightNameField = Ext.getCmp('w_rightName');
+            var value = rightNameField.getValue();
+            var index = value.lastIndexOf("&nbsp;");
+            console.log(index);
+            if(index>=0){
+                var substr = value.substring(index+6,value.length);
+                rightNameField.setValue(substr);
+            }
+        }
+
+
+    },
+
+    onButtonClick21111: function(button, e, eOpts) {
+        var grid = Ext.getCmp('rightInfoGrid');
+
+        var record = grid.getSelectionModel().getSelection();
+
+        if(record.length === 0){
+            Ext.Msg.alert('提示','请先选择您要操作的行！');
+            return;
+        }else{
+            var  rightIds =new Array(record.length);
+            var msg = '';
+            for(var i = 0;i<record.length;i++){
+                rightIds[i] = record[i].get("rightId");
+                //去除权限名称的空格
+                var rightName = record[i].get('rightName');
+                var index = rightName.lastIndexOf("&nbsp;");
+                var substr;
+                if(index>=0){
+                    substr = rightName.substring(index+6,rightName.length);
+                }
+                msg += substr + '<br/>';
+            }
+
+            Ext.Msg.confirm('提示', '您正在删除以下权限：<br/>' + msg+'确认删除？', getResult);
+            function getResult(confirm)
+            {
+                if (confirm == "yes"){
+                    Ext.Ajax.request(
+                        {
+                            url : 'del_RightInfoById',
+                            params :
+                            {
+                                rightIds : rightIds
+                            },
+                            success : function (response){
+                                Ext.Msg.alert('成功提示', '权限删除成功。');
+                                //successResult();
+                                var mystore = Ext.StoreMgr.get('uRightInfoStore');
+                                mystore.load();
+                            },
+                            failure : function (response){
+                                //failedResult();
+                                // Ext.Msg.alert('失败提示', '记录删除失败。');
+                            }
+                        });
+                }
+            }
+        }
+    },
+
     onButtonClick31111: function(button, e, eOpts) {
         var getKeyword = Ext.getCmp('searchKeyword_DeptInfo').getValue();
         console.log("keyword:",getKeyword);
@@ -986,6 +1167,94 @@ Ext.define('MyApp.view.db_UserPrivilegeManagerTab', {
             }
 
         }
+    },
+
+    onButtonClick2111111: function(button, e, eOpts) {
+        var grid = Ext.getCmp('deptInfoGrid');
+
+        var record = grid.getSelectionModel().getSelection();
+
+        if(record.length === 0){
+            Ext.Msg.alert('提示','请先选择您要操作的行！');
+            return;
+        }else if(record.length >1){
+            Ext.Msg.alert('提示','您只能编辑一个部门信息，请重新选择。');
+            return;
+        }else {
+            var win = Ext.widget('db_DeptInfoWindow');
+            win.show();
+
+            var form = Ext.getCmp('db_DeptInfoWindowForm');
+            form.loadRecord(record[0]);
+
+            //对显示的内容进行处理
+            //对部门名称进行处理
+            var deptNameField = Ext.getCmp('deptWindow_deptName');
+            var value = deptNameField.getValue();
+            var index = value.lastIndexOf("&nbsp;");
+            console.log(index);
+            if(index>=0){
+                var substr = value.substring(index+6,value.length);
+                deptNameField.setValue(substr);
+            }
+        }
+
+
+    },
+
+    onButtonClick21111111: function(button, e, eOpts) {
+        var grid = Ext.getCmp('deptInfoGrid');
+        var record = grid.getSelectionModel().getSelection();
+
+        if(record.length === 0){
+            Ext.Msg.alert('提示','请先选择您要操作的行！');
+            return;
+        }else{
+            var  deptIds =new Array(record.length);
+            var msg = '';
+            for(var i = 0;i<record.length;i++){
+                deptIds[i] = record[i].get("deptId");
+                //去除权限名称的空格
+                //去除名称的空格
+                var deptName = record[i].get('deptName');
+                var index = deptName.lastIndexOf("&nbsp;");
+                var substr = '';
+                if(index>=0){
+                    substr = deptName.substring(index+6,deptName.length);
+                }
+                msg += substr + '<br/>';
+            }
+
+            Ext.Msg.confirm('提示', '您正在删除以下部门：<br/>' + msg+'确认删除？', getResult);
+            function getResult(confirm)
+            {
+                if (confirm == "yes"){
+                    Ext.Ajax.request(
+                    {
+                        url : 'del_DeptInfoById',
+                        params :
+                        {
+                            deptIds : deptIds
+                        },
+                        success : function (response){
+                            Ext.Msg.alert('成功提示', '记录删除成功。');
+                            //successResult();
+                            var mystore = Ext.StoreMgr.get('uDeptInfoStore');
+                            mystore.load();
+                        },
+                        failure : function (response){
+                            //failedResult();
+                            // Ext.Msg.alert('失败提示', '记录删除失败。');
+                        }
+                    });
+                }
+            }
+        }
+
+
+
+
+
     }
 
 });

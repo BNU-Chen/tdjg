@@ -25,7 +25,7 @@
                 "store": "FkRwStore",
                 "title": ""
             },
-            "name": "MyGridPanel9",
+            "name": "MyGridPanel10",
             "designerId": "7c3bf83c-5d8a-47ff-8288-ff2b5f30764e",
             "cn": [
                 {
@@ -39,7 +39,7 @@
                         "dataIndex": "rwId",
                         "text": "任务编号"
                     },
-                    "name": "MyColumn35",
+                    "name": "MyColumn40",
                     "designerId": "5eb9f833-5f88-4256-a7ee-2e32a6e612b8"
                 },
                 {
@@ -53,7 +53,7 @@
                         "dataIndex": "projectId",
                         "text": "项目编号"
                     },
-                    "name": "MyColumn36",
+                    "name": "MyColumn41",
                     "designerId": "503701f3-7c9a-4ecf-9415-7cc03da7c42d"
                 },
                 {
@@ -67,7 +67,7 @@
                         "dataIndex": "projectName",
                         "text": "项目名称"
                     },
-                    "name": "MyColumn37",
+                    "name": "MyColumn42",
                     "designerId": "5a0c32a6-c6c1-4448-bd08-bc97692e25bb"
                 },
                 {
@@ -81,7 +81,7 @@
                         "dataIndex": "rwContent",
                         "text": "任务内容"
                     },
-                    "name": "MyColumn38",
+                    "name": "MyColumn43",
                     "designerId": "b7c69e7f-5a30-4d24-bc34-a18a2723da64"
                 },
                 {
@@ -95,7 +95,7 @@
                         "dataIndex": "rwClass",
                         "text": "任务类别"
                     },
-                    "name": "MyColumn39",
+                    "name": "MyColumn44",
                     "designerId": "4a6149c1-5b07-4916-9310-f8b7da944f70"
                 },
                 {
@@ -109,7 +109,7 @@
                         "dataIndex": "rwGeneratetime",
                         "text": "任务生成时间"
                     },
-                    "name": "MyDateColumn5",
+                    "name": "MyDateColumn6",
                     "designerId": "ce23b887-f39d-4263-bbf4-0206be92d40f"
                 },
                 {
@@ -123,7 +123,7 @@
                         "dataIndex": "rwStarttime",
                         "text": "任务执行时间"
                     },
-                    "name": "MyDateColumn6",
+                    "name": "MyDateColumn7",
                     "designerId": "eb203935-8468-4360-887d-53f609607353"
                 },
                 {
@@ -137,7 +137,7 @@
                         "dataIndex": "rwEndtime",
                         "text": "任务结束时间"
                     },
-                    "name": "MyDateColumn7",
+                    "name": "MyDateColumn8",
                     "designerId": "612ac41f-c4a8-4371-b52f-58cf40a8c33f"
                 },
                 {
@@ -151,7 +151,7 @@
                         "dataIndex": "rwSubmittime",
                         "text": "任务提交时间"
                     },
-                    "name": "MyDateColumn8",
+                    "name": "MyDateColumn9",
                     "designerId": "38f6887b-bc69-4509-b9e6-f8ffe494de91"
                 },
                 {
@@ -179,7 +179,7 @@
                         "dataIndex": "rwResponsiblePerson",
                         "text": "下达任务人"
                     },
-                    "name": "MyColumn40",
+                    "name": "MyColumn45",
                     "designerId": "fa397291-f726-4f31-8b7e-a7b0b55e566f"
                 },
                 {
@@ -189,7 +189,7 @@
                         "type": "object"
                     },
                     "codeClass": null,
-                    "name": "MyGridView9",
+                    "name": "MyGridView10",
                     "designerId": "270fb5b2-b372-4446-bdeb-e4ba2a528efb"
                 },
                 {
@@ -218,7 +218,7 @@
                     "userConfig": {
                         "dock": "top"
                     },
-                    "name": "MyToolbar10",
+                    "name": "MyToolbar12",
                     "designerId": "0416160c-081a-4225-a1ee-1525946f0b53",
                     "cn": [
                         {
@@ -235,7 +235,7 @@
                                 "text": "返回项目列表",
                                 "width": 94
                             },
-                            "name": "MyButton43",
+                            "name": "MyButton49",
                             "designerId": "60e3b135-e541-42fc-ac4d-36bba03b9189",
                             "customConfigs": [
                                 {
@@ -278,7 +278,7 @@
                         "type": "object"
                     },
                     "codeClass": "Ext.selection.CheckboxModel",
-                    "name": "MyCheckboxSelectionModel4",
+                    "name": "MyCheckboxSelectionModel5",
                     "designerId": "639613b0-078c-4f6e-bb22-fed25e19cf6b"
                 }
             ]

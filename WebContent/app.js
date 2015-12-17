@@ -75,7 +75,9 @@ Ext.application({
         'uDeptInfoModel',
         'map_fkSampleManagementModel',
         'yqprjmonitorInfoModel',
-        'TaishiFormPanelEdit'
+        'TaishiFormPanelEdit',
+        'dbBlacklistModel',
+        'uOptLogModel'
     ],
     stores: [
         'ArticlePubJYXCStore',
@@ -185,7 +187,9 @@ Ext.application({
         'ApplyprojectStore',
         'ApplyIdStore',
         'FKJCResultDikuaiStore',
-        'useMapResourceStore'
+        'useMapResourceStore',
+        'dbBlacklistStore',
+        'uOptLogStore'
     ],
     views: [
         'ManagAcceptApply',
@@ -290,7 +294,10 @@ Ext.application({
         'FieldFqdPanel',
         'TaishiFormPanelEdit',
         'use_SelectLayerWindow',
-        'use_MonitorResult'
+        'use_MonitorResult',
+        'db_BlacklistTab',
+        'db_BlacklistWindow',
+        'db_RoleRightSettingWindow'
     ],
     name: 'MyApp',
 

@@ -30,7 +30,7 @@
                 "layout|region": "north",
                 "title": "选择查询条件"
             },
-            "name": "MyForm8",
+            "name": "MyForm9",
             "designerId": "d135e6b8-3b1a-4bfc-8bce-cc419cf24acc",
             "cn": [
                 {
@@ -49,7 +49,7 @@
                         "layout|y": 20,
                         "width": 180
                     },
-                    "name": "MyTextField51",
+                    "name": "MyTextField55",
                     "designerId": "3077fe1c-5a75-4b4e-b189-8a555256a399"
                 },
                 {
@@ -69,7 +69,7 @@
                         "layout|y": 20,
                         "width": 180
                     },
-                    "name": "MyDateField",
+                    "name": "MyDateField1",
                     "designerId": "a212f28a-788a-442c-9ff8-4f81d9068d25"
                 },
                 {
@@ -89,7 +89,7 @@
                         "layout|y": 20,
                         "width": 180
                     },
-                    "name": "MyDateField1",
+                    "name": "MyDateField2",
                     "designerId": "91afff81-ef74-47d7-8827-c4099dfd6d0e"
                 },
                 {
@@ -105,7 +105,7 @@
                         "text": "查询",
                         "width": 60
                     },
-                    "name": "MyButton30",
+                    "name": "MyButton36",
                     "designerId": "ef32fbd4-367b-45f8-b191-c5598b0dba5d",
                     "cn": [
                         {
@@ -166,7 +166,7 @@
                 "store": "ShouyiStat_Nonghu",
                 "title": "农户收益分配统计表"
             },
-            "name": "MyGridPanel4",
+            "name": "MyGridPanel5",
             "designerId": "1501c74b-ab3f-4969-8810-8c21e17697e8",
             "cn": [
                 {
@@ -180,7 +180,7 @@
                         "text": "序号",
                         "width": 46
                     },
-                    "name": "MyRowNumberer3",
+                    "name": "MyRowNumberer4",
                     "designerId": "2fb5bf0e-b46f-4053-b38b-1ead87880ba6"
                 },
                 {
@@ -195,7 +195,7 @@
                         "text": "农户姓名",
                         "width": 67
                     },
-                    "name": "MyColumn11",
+                    "name": "MyColumn16",
                     "designerId": "3d1fbb87-6283-40ee-a9ae-5b794379e0ec"
                 },
                 {
@@ -210,7 +210,7 @@
                         "text": "拥有地块编号",
                         "width": 91
                     },
-                    "name": "MyColumn12",
+                    "name": "MyColumn17",
                     "designerId": "5f3ddfc8-b759-4033-8fdf-f2968246fa1d"
                 },
                 {
@@ -224,7 +224,7 @@
                         "dataIndex": "lzsj",
                         "text": "流转时间"
                     },
-                    "name": "MyDateColumn",
+                    "name": "MyDateColumn1",
                     "designerId": "c910f59f-1919-4481-8235-99c6224c9ae0"
                 },
                 {
@@ -294,7 +294,7 @@
                         "type": "object"
                     },
                     "codeClass": null,
-                    "name": "MyGridView4",
+                    "name": "MyGridView5",
                     "designerId": "5dc46483-1079-4b12-87a2-6fb8190f7c33"
                 },
                 {

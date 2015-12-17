@@ -29,7 +29,7 @@
                 ],
                 "url": "get_abwsList"
             },
-            "name": "MyAjaxProxy69",
+            "name": "MyAjaxProxy70",
             "designerId": "4f193386-677e-4d40-be31-297fa7432401",
             "cn": [
                 {
@@ -42,7 +42,7 @@
                     "userConfig": {
                         "root": "root"
                     },
-                    "name": "MyJsonReader69",
+                    "name": "MyJsonReader70",
                     "designerId": "b3282028-43cd-49f9-b096-92a68c53678b"
                 }
             ]

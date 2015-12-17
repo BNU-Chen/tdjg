@@ -29,7 +29,7 @@
                 "store": "useMapResourceStore",
                 "title": null
             },
-            "name": "MyGridPanel",
+            "name": "MyGridPanel1",
             "designerId": "ecbd7572-14e4-45ff-804e-859420609294",
             "cn": [
                 {
@@ -39,7 +39,7 @@
                         "type": "array"
                     },
                     "codeClass": null,
-                    "name": "MyRowNumberer",
+                    "name": "MyRowNumberer1",
                     "designerId": "2d3f9164-18a8-40fc-880e-a168bfa26089"
                 },
                 {
@@ -54,7 +54,7 @@
                         "text": "权限名称",
                         "width": 100
                     },
-                    "name": "MyColumn",
+                    "name": "MyColumn4",
                     "designerId": "1117dd7a-7744-495b-a6da-42ca3ae1e93b"
                 },
                 {
@@ -69,7 +69,7 @@
                         "text": "权限地址",
                         "width": 250
                     },
-                    "name": "MyColumn1",
+                    "name": "MyColumn5",
                     "designerId": "107f9304-9e46-4973-bf1c-00c9e9b5dee1"
                 },
                 {
@@ -84,7 +84,7 @@
                         "text": "描述",
                         "width": 200
                     },
-                    "name": "MyColumn2",
+                    "name": "MyColumn6",
                     "designerId": "e86da88f-6dd7-4acf-a963-cf979a524b61"
                 },
                 {
@@ -94,7 +94,7 @@
                         "type": "object"
                     },
                     "codeClass": null,
-                    "name": "MyGridView",
+                    "name": "MyGridView1",
                     "designerId": "c4b5fcb7-b25c-432d-bcb7-b7d18893f9af"
                 },
                 {
@@ -107,7 +107,7 @@
                     "userConfig": {
                         "designer|displayName": null
                     },
-                    "name": "MyCheckboxSelectionModel",
+                    "name": "MyCheckboxSelectionModel1",
                     "designerId": "4b93c792-eb30-4f5e-b48a-d5216ea6eeb1"
                 },
                 {
@@ -120,7 +120,7 @@
                     "userConfig": {
                         "dock": "top"
                     },
-                    "name": "MyToolbar",
+                    "name": "MyToolbar2",
                     "designerId": "557d5e34-5045-4f14-be84-d4280d9134dc",
                     "cn": [
                         {
@@ -134,7 +134,7 @@
                                 "layout|flex": null,
                                 "text": "确认"
                             },
-                            "name": "MyButton",
+                            "name": "MyButton6",
                             "designerId": "c52c18f2-8233-4694-b708-d6b844568181",
                             "cn": [
                                 {
@@ -212,7 +212,7 @@
                             "userConfig": {
                                 "layout|flex": null
                             },
-                            "name": "MyFill",
+                            "name": "MyFill1",
                             "designerId": "bc325abb-58b1-4953-87c7-4962187b2e2b"
                         },
                         {
@@ -229,7 +229,7 @@
                                 "labelWidth": 80,
                                 "layout|flex": null
                             },
-                            "name": "MyTextField",
+                            "name": "MyTextField3",
                             "designerId": "4abffcad-2a5b-4226-b7b4-04a6c89ca7dd"
                         },
                         {
@@ -243,7 +243,7 @@
                                 "layout|flex": null,
                                 "text": "查询"
                             },
-                            "name": "MyButton1",
+                            "name": "MyButton7",
                             "designerId": "daf06423-c8c4-4a2d-bde2-8171bb459c9f"
                         },
                         {
@@ -257,7 +257,7 @@
                                 "layout|flex": null,
                                 "width": 20
                             },
-                            "name": "MySpacer",
+                            "name": "MySpacer1",
                             "designerId": "3088da60-85d0-4a12-93ab-b839cdf8914e"
                         },
                         {
@@ -271,7 +271,7 @@
                                 "layout|flex": null,
                                 "text": "取消"
                             },
-                            "name": "MyButton2",
+                            "name": "MyButton8",
                             "designerId": "7a47caab-e2ac-49c6-83fb-abedabd82c90",
                             "cn": [
                                 {

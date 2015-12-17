@@ -31,7 +31,7 @@
                 ],
                 "url": "get_infoCommentList"
             },
-            "name": "MyAjaxProxy47",
+            "name": "MyAjaxProxy48",
             "designerId": "196ff545-26f2-459f-8c0e-d27d74fed775",
             "cn": [
                 {
@@ -44,7 +44,7 @@
                     "userConfig": {
                         "root": "root"
                     },
-                    "name": "MyJsonReader47",
+                    "name": "MyJsonReader48",
                     "designerId": "031a4ea2-a4d8-48c7-9bd6-63f28a2afe23"
                 }
             ]

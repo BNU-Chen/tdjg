@@ -31,7 +31,7 @@
                 "pollForChanges": null,
                 "title": null
             },
-            "name": "MyForm39",
+            "name": "MyForm40",
             "designerId": "ae1edd3f-5d41-44c7-97f4-8cf29847a2a4",
             "cn": [
                 {
@@ -49,7 +49,7 @@
                         "store": "InfoReportStore",
                         "title": ""
                     },
-                    "name": "MyGridPanel39",
+                    "name": "MyGridPanel40",
                     "designerId": "f4b6d005-2638-4dbc-a075-c8e0af3c5cb8",
                     "cn": [
                         {
@@ -63,7 +63,7 @@
                                 "text": null,
                                 "width": 39
                             },
-                            "name": "MyRowNumberer32",
+                            "name": "MyRowNumberer33",
                             "designerId": "b72c162d-5818-4e94-bc44-7324d10e90b9"
                         },
                         {
@@ -77,7 +77,7 @@
                                 "dataIndex": "reportTitle",
                                 "text": "来信主题"
                             },
-                            "name": "MyColumn203",
+                            "name": "MyColumn209",
                             "designerId": "d107ab24-c2b4-4c10-9bd5-42c2fa51dffe"
                         },
                         {
@@ -91,7 +91,7 @@
                                 "dataIndex": "reporterName",
                                 "text": "来信人"
                             },
-                            "name": "MyColumn204",
+                            "name": "MyColumn210",
                             "designerId": "9c584e6b-512e-424a-9bd6-12cdf67c3252"
                         },
                         {
@@ -105,7 +105,7 @@
                                 "dataIndex": "reportClass",
                                 "text": "类别"
                             },
-                            "name": "MyColumn205",
+                            "name": "MyColumn211",
                             "designerId": "91ba973c-c5a0-428f-a124-7fce97836b32"
                         },
                         {
@@ -120,7 +120,7 @@
                                 "format": "Y-m-d",
                                 "text": "来信时间"
                             },
-                            "name": "MyDateColumn35",
+                            "name": "MyDateColumn36",
                             "designerId": "ad5d8a3a-2f4c-4bc7-aaee-90a3aa46b649"
                         },
                         {
@@ -134,7 +134,7 @@
                                 "dataIndex": "reportIsreply",
                                 "text": "是否回复"
                             },
-                            "name": "MyColumn206",
+                            "name": "MyColumn212",
                             "designerId": "b3a44731-6e3c-48e6-a2bd-4414d12fb64c"
                         },
                         {
@@ -149,7 +149,7 @@
                                 "format": "Y-m-d",
                                 "text": "回复时间"
                             },
-                            "name": "MyDateColumn36",
+                            "name": "MyDateColumn37",
                             "designerId": "214eb2cd-b9fd-48e5-adaa-498e15a59493"
                         },
                         {
@@ -159,7 +159,7 @@
                                 "type": "object"
                             },
                             "codeClass": null,
-                            "name": "MyGridView39",
+                            "name": "MyGridView40",
                             "designerId": "aece0d83-8692-4c9d-b9fa-bbc8280a2f8f"
                         },
                         {
@@ -169,7 +169,7 @@
                                 "type": "object"
                             },
                             "codeClass": "Ext.selection.CheckboxModel",
-                            "name": "MyCheckboxSelectionModel31",
+                            "name": "MyCheckboxSelectionModel32",
                             "designerId": "e469d358-5e5a-4061-929a-6744eff3370b"
                         },
                         {
@@ -185,7 +185,7 @@
                                 "frame": false,
                                 "height": null
                             },
-                            "name": "MyToolbar53",
+                            "name": "MyToolbar55",
                             "designerId": "79dc51e9-4917-4468-b1b1-313e0e456a27",
                             "cn": [
                                 {
@@ -203,7 +203,7 @@
                                         "layout|flex": null,
                                         "width": 204
                                     },
-                                    "name": "MyDateField46",
+                                    "name": "MyDateField47",
                                     "designerId": "82b554d3-1aee-4a7b-bcf7-0963f81e04e9"
                                 },
                                 {
@@ -221,7 +221,7 @@
                                         "layout|flex": null,
                                         "width": 211
                                     },
-                                    "name": "MyTextField210",
+                                    "name": "MyTextField214",
                                     "designerId": "8aa5e41c-7216-4f56-86d2-653aac72199c"
                                 },
                                 {
@@ -236,7 +236,7 @@
                                         "layout|flex": null,
                                         "text": "搜索"
                                     },
-                                    "name": "MyButton214",
+                                    "name": "MyButton231",
                                     "designerId": "1c08d00e-25f8-428d-ad10-776f177bcbcf",
                                     "cn": [
                                         {

@@ -26,7 +26,7 @@
             "userConfig": {
                 "url": "ApplyListId"
             },
-            "name": "MyAjaxProxy33",
+            "name": "MyAjaxProxy34",
             "designerId": "e3faed7d-de15-4eda-b1bc-c93cf180f6bb",
             "cn": [
                 {
@@ -39,7 +39,7 @@
                     "userConfig": {
                         "root": "root"
                     },
-                    "name": "MyJsonReader33",
+                    "name": "MyJsonReader34",
                     "designerId": "1895a115-551e-4088-b950-371bcb99f39d"
                 }
             ]
