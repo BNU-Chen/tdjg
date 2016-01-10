@@ -1,0 +1,48 @@
+{
+    "type": "jsonstore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoLoad": true,
+        "autoSync": true,
+        "designer|userClassName": "projection_Store",
+        "model": "projection",
+        "pageSize": 15,
+        "storeId": "projection_Store"
+    },
+    "name": "yqprjmonitorInfoStore1",
+    "designerId": "202bad10-793e-46dd-8bf0-ca5e5f87aa0a",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.Ajax",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "url": "get_projections"
+            },
+            "name": "MyAjaxProxy15",
+            "designerId": "49eb02b4-80d4-4622-8ff3-5565c5b116c4",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "root": "root"
+                    },
+                    "name": "MyJsonReader15",
+                    "designerId": "b1d45fa0-0221-46d4-ac00-22d15a976877"
+                }
+            ]
+        }
+    ]
+}

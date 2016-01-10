@@ -255,6 +255,12 @@ Ext.define('MyApp.view.MyViewport', {
                                                 leaf: true
                                             },
                                             {
+                                                id: 309,
+                                                text: '项目资料管理',
+                                                icon: '',
+                                                leaf: true
+                                            },
+                                            {
                                                 id: 303,
                                                 text: '规划拆迁区域',
                                                 icon: '',
@@ -811,6 +817,18 @@ Ext.define('MyApp.view.MyViewport', {
                 tabPanel.removeAll(true);
                 tabPanel.add(Ext.widget('proj'));
                 Ext.getCmp("proj").getLayout().setActiveItem(1);
+                break;
+            case 309:
+                var proView = Ext.widget('projectionFile');
+                console.log("view:",proView);
+                tabPanel.removeAll(true);
+                tabPanel.add(proView);
+                //Ext.getCmp("projectionFile").getLayout().setActiveItem(1);
+                //var xtype = selected[0].get('id');
+                //var tabPanel = Ext.getCmp('myTabPanel');
+                //tabPanel.removeAll(true);
+                //tabPanel.add(Ext.widget(xtype));
+
                 break;
             case 303:
                 tabPanel.removeAll(true);

@@ -34,10 +34,18 @@ public class MapController {
 	}
 
 	// 由图层index名称获取图层url
-	@RequestMapping(value = "/map_getMapURLByName")
+	@RequestMapping(value = "/get_projections")
 	// ,method=RequestMethod.POST
 	@ResponseBody
-	public Map<String, Object> getMapURLByName() throws IOException {
-		return this.mapService.getMapURLByName();
+	public Map<String, Object> get_projections() throws IOException {
+		return this.mapService.get_Projection();
 	}
+	
+	// 由图层index名称获取图层url
+		@RequestMapping(value = "/map_getMapURLByName")
+		// ,method=RequestMethod.POST
+		@ResponseBody
+		public Map<String, Object> getMapURLByName() throws IOException {
+			return this.mapService.getMapURLByName();
+		}
 }

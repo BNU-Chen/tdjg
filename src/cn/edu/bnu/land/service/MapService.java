@@ -1,9 +1,7 @@
 package cn.edu.bnu.land.service;
 
-import java.sql.Date;
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 import java.util.TreeMap;
@@ -13,7 +11,8 @@ import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import cn.edu.bnu.land.model.URightInfo;
+import cn.edu.bnu.land.model.FkGongcheng;
+import cn.edu.bnu.land.model.Projection;
 
 @Service
 public class MapService {
@@ -128,6 +127,30 @@ public class MapService {
 		map.put("success", true);
 		map.put("VALUE", rightIndexMap);
 		return (map);
+	}
+
+	/*
+	 * 查询工程质量信息 2014-03-21
+	 */
+	public Map<String, Object> get_Projection() {
+		String totalConut = new String();
+		String hql = "from Projection";
+
+		List<Projection> results = null;
+		try {
+			org.hibernate.Query query = sessionFactory.getCurrentSession()
+					.createQuery(hql);
+			totalConut = String.valueOf(query.list().size());
+			System.out.println(totalConut);
+
+			results = (List<Projection>) query.list();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		Map<String, Object> myMapResult = new TreeMap<String, Object>();
+		myMapResult.put("total", totalConut);
+		myMapResult.put("root", results);
+		return myMapResult;
 	}
 
 }

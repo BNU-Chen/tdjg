@@ -6,16 +6,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import cn.edu.bnu.land.model.InfoArticle;
-import cn.edu.bnu.land.model.ProjectAll;
-import cn.edu.bnu.land.model.ProjectAllHome;
 import cn.edu.bnu.land.model.DkMonitordata;
 import cn.edu.bnu.land.model.DkMonitordataHome;
-import cn.edu.bnu.land.model.ProjectYqProgress;
-
-import java.util.List;
-import java.util.Map;
-import java.util.TreeMap;
 @Service
 public class MonitordataService {
 	private DkMonitordataHome DkMonitorDataHome;
@@ -34,16 +26,14 @@ public class MonitordataService {
 	//1、添加监测数据
 	public void addMonitordata(DkMonitordata dkMonitordata) {
 		Session session = sessionFactory.getCurrentSession();	
-		session.saveOrUpdate(dkMonitordata);
-		
+		session.saveOrUpdate(dkMonitordata);		
 	}
 
 
 	public void updateMonitordata(DkMonitordata dkMonitordata ) {
 		System.out.println("update_monitordata: "+dkMonitordata.getHead());
 		Session session = sessionFactory.getCurrentSession(); 
-		session.saveOrUpdate(dkMonitordata);	
-		
+		session.saveOrUpdate(dkMonitordata);			
 	}
 
 	
@@ -52,7 +42,6 @@ public class MonitordataService {
 	@Transactional
 	public void deleteMonitordatabyIds(String[] recordIds) 
 	{
-
 		DkMonitordata result = null;
 		Session session = sessionFactory.getCurrentSession();
 

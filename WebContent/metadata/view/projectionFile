@@ -1,0 +1,169 @@
+{
+    "type": "Ext.panel.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "projectionFile",
+        "designer|userClassName": "projectionFile",
+        "height": null,
+        "id": "projectionFile",
+        "layout": "border",
+        "title": "项目资料管理",
+        "width": null
+    },
+    "name": "aceeptApplyfile1",
+    "designerId": "5be315b7-4bed-4927-866e-b1ecdb432c75",
+    "cn": [
+        {
+            "type": "Ext.grid.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|region": "center",
+                "layout|split": true,
+                "store": "projection_Store",
+                "title": null
+            },
+            "name": "MyGridPanel82",
+            "designerId": "0e543d90-4596-4583-bb89-0002bd776a1c",
+            "cn": [
+                {
+                    "type": "Ext.grid.RowNumberer",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "name": "MyRowNumberer73",
+                    "designerId": "2cf844da-3ab7-4360-9a72-055448089bfd"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "projectNumber",
+                        "text": "项目编号"
+                    },
+                    "name": "MyColumn350",
+                    "designerId": "0c55911d-028b-4766-96fa-fe293fe8e109"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "projectAddress",
+                        "text": "项目地址"
+                    },
+                    "name": "MyColumn351",
+                    "designerId": "3cbd9bee-c121-41f1-89c5-698a17481798"
+                },
+                {
+                    "type": "Ext.grid.column.Date",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "createTime",
+                        "text": "创建时间"
+                    },
+                    "name": "MyDateColumn73",
+                    "designerId": "fb5c351b-697d-4dc2-9eb2-831ca90cff6d"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "projectStatus",
+                        "text": "项目阶段"
+                    },
+                    "name": "MyColumn352",
+                    "designerId": "e8db36a8-0516-478e-b6bd-046b4b63654e"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "files",
+                        "text": "项目描述"
+                    },
+                    "name": "MyColumn353",
+                    "designerId": "0e791329-71bf-4ec0-aafc-385845db85f3"
+                },
+                {
+                    "type": "Ext.grid.View",
+                    "reference": {
+                        "name": "viewConfig",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "name": "MyGridView82",
+                    "designerId": "0e3b0d75-4434-4f7a-bbcd-29a5c847403a"
+                },
+                {
+                    "type": "Ext.toolbar.Paging",
+                    "reference": {
+                        "name": "dockedItems",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "displayInfo": true,
+                        "dock": "bottom",
+                        "store": "projection_Store",
+                        "width": 360
+                    },
+                    "name": "MyPagingToolbar62",
+                    "designerId": "4d917f2b-637a-42b8-b78d-2fafb19a2144"
+                },
+                {
+                    "type": "basiceventbinding",
+                    "reference": {
+                        "name": "listeners",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fn": "onGridpanelCellClick",
+                        "implHandler": [
+                            "console.log(\"windowss\");",
+                            "var win = Ext.widget('project_file_window');",
+                            "console.log(\"win:\",win);",
+                            "if(win){",
+                            "    console.log(\"win show\");",
+                            "    win.show();",
+                            "}"
+                        ],
+                        "name": "cellclick",
+                        "scope": "me"
+                    },
+                    "name": "onGridpanelCellClick",
+                    "designerId": "cf2b7d43-0f65-4e8d-94bc-8078df85cce1"
+                }
+            ]
+        }
+    ]
+}

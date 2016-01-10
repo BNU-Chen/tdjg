@@ -77,7 +77,8 @@ Ext.application({
         'yqprjmonitorInfoModel',
         'TaishiFormPanelEdit',
         'dbBlacklistModel',
-        'uOptLogModel'
+        'uOptLogModel',
+        'projection'
     ],
     stores: [
         'ArticlePubJYXCStore',
@@ -190,6 +191,7 @@ Ext.application({
         'useMapResourceStore',
         'dbBlacklistStore',
         'uOptLogStore',
+        'projection_Store',
         
         'notice',
         'ggleixing',
@@ -329,6 +331,8 @@ Ext.application({
         'db_BlacklistTab',
         'db_BlacklistWindow',
         'db_RoleRightSettingWindow',
+        'projectionFile',
+        'project_file_window',
         
         'dh',
         'recFile',

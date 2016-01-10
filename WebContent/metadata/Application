@@ -63,7 +63,8 @@
             "yqprjmonitorInfoModel",
             "TaishiFormPanelEdit",
             "dbBlacklistModel",
-            "uOptLogModel"
+            "uOptLogModel",
+            "projection"
         ],
         "name": "MyApp",
         "stores": [
@@ -176,7 +177,8 @@
             "FKJCResultDikuaiStore",
             "useMapResourceStore",
             "dbBlacklistStore",
-            "uOptLogStore"
+            "uOptLogStore",
+            "projection_Store"
         ],
         "views": [
             "ManagAcceptApply",
@@ -284,7 +286,9 @@
             "use_MonitorResult",
             "db_BlacklistTab",
             "db_BlacklistWindow",
-            "db_RoleRightSettingWindow"
+            "db_RoleRightSettingWindow",
+            "projectionFile",
+            "project_file_window"
         ]
     },
     "name": "Application",
