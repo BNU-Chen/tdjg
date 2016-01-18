@@ -637,13 +637,13 @@ Ext.define('MyApp.view.MyViewport', {
                                 children: [
                                     {
                                         id: 'use_MonitoringSampling',
-                                        text: '监测抽样',
+                                        text: '流转后土地用地抽样监测',
                                         icon: '',
                                         leaf: true
                                     },
                                     {
                                         id: 'use_MonitorResult',
-                                        text: '抽样结果',
+                                        text: '监测抽样结果',
                                         icon: '',
                                         leaf: true
                                     }
@@ -699,7 +699,7 @@ Ext.define('MyApp.view.MyViewport', {
                                     },
                                     {
                                         id: 'abnmXunChaTab',
-                                        text: '现场巡查',
+                                        text: '现场巡查管理',
                                         icon: '',
                                         leaf: true
                                     },
