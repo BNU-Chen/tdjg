@@ -265,13 +265,13 @@ Ext.define('MyApp.view.MyViewport', {
                                                 text: '规划拆迁区域',
                                                 icon: '',
                                                 leaf: true
-                                            },
-                                            {
-                                                id: 304,
-                                                text: '现状冲突房屋',
-                                                icon: '',
-                                                leaf: true
                                             }
+                                            //, {
+                                            //    id: 304,
+                                            //    text: '现状冲突房屋',
+                                            //    icon: '',
+                                            //    leaf: true
+                                            //}
                                             //,
                                             //                                            {
                                             //                                                id: 102,
@@ -319,43 +319,36 @@ Ext.define('MyApp.view.MyViewport', {
                                         ]
                                     },
                                     {
-                                        id: '',
-                                        text: '复垦申请管理',
-                                        icon: '',
-                                        children: [
-                                            {
-                                                id: 401,
-                                                text: '填写复垦申请',
-                                                icon: '',
-                                                leaf: true
-                                            },
-                                            {
-                                                id: 402,
-                                                text: '上传权利证明',
-                                                icon: '',
-                                                leaf: true
-                                            },
-                                            {
-                                                id: 403,
-                                                text: '撤销及修改申请',
-                                                icon: '',
-                                                leaf: true
-                                            },
-                                            {
-                                                id: 404,
-                                                text: '审核申请',
-                                                icon: '',
-                                                leaf: true
-                                            },
-                                            {
-                                                id: 405,
-                                                text: '查看申请状态',
-                                                icon: '',
-                                                leaf: true
-                                            }
-                                        ]
-                                    },
-                                    {
+                                        //    id: '',
+                                        //    text: '复垦申请管理',
+                                        //    icon: '',
+                                        //    children: [{
+                                        //        id: 401,
+                                        //        text: '填写复垦申请',
+                                        //        icon: '',
+                                        //        leaf: true
+                                        //    }, {
+                                        //        id: 402,
+                                        //        text: '上传权利证明',
+                                        //        icon: '',
+                                        //        leaf: true
+                                        //    }, {
+                                        //        id: 403,
+                                        //       text: '撤销及修改申请',
+                                        //        icon: '',
+                                        //        leaf: true
+                                        //    }, {
+                                        //        id: 404,
+                                        //        text: '审核申请',
+                                        //        icon: '',
+                                        //       leaf: true
+                                        //    }, {
+                                        //        id: 405,
+                                        //        text: '查看申请状态',
+                                        //        icon: '',
+                                        //        leaf: true
+                                        //    }]
+                                        //}, {
                                         id: 501,
                                         text: '录入拆迁面积',
                                         icon: '',
