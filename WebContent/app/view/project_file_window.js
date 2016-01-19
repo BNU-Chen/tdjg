@@ -18,10 +18,10 @@ Ext.define('MyApp.view.project_file_window', {
     alias: 'widget.project_file_window',
 
     requires: [
-        'Ext.Img',
         'Ext.toolbar.Toolbar',
         'Ext.form.Panel',
-        'Ext.form.field.File'
+        'Ext.form.field.File',
+        'Ext.Img'
     ],
 
     height: 400,
@@ -35,85 +35,6 @@ Ext.define('MyApp.view.project_file_window', {
         var me = this;
 
         Ext.applyIf(me, {
-            items: [
-                {
-                    xtype: 'image',
-                    height: 201,
-                    margin: '5,5,5,5',
-                    maxHeight: 100,
-                    maxWidth: 100,
-                    minHeight: 100,
-                    minWidth: 100,
-                    width: 100,
-                    src: 'images/project/01_01.JPG'
-                },
-                {
-                    xtype: 'image',
-                    height: 201,
-                    margin: '5,5,5,5',
-                    maxHeight: 100,
-                    maxWidth: 100,
-                    minHeight: 100,
-                    minWidth: 100,
-                    width: 100,
-                    src: 'images/project/01_02.JPG'
-                },
-                {
-                    xtype: 'image',
-                    height: 201,
-                    margin: '5,5,5,5',
-                    maxHeight: 100,
-                    maxWidth: 100,
-                    minHeight: 100,
-                    minWidth: 100,
-                    width: 100,
-                    src: 'images/project/01_03.JPG'
-                },
-                {
-                    xtype: 'image',
-                    height: 201,
-                    margin: '5,5,5,5',
-                    maxHeight: 100,
-                    maxWidth: 100,
-                    minHeight: 100,
-                    minWidth: 100,
-                    width: 100,
-                    src: 'images/project/01_04.JPG'
-                },
-                {
-                    xtype: 'image',
-                    height: 201,
-                    margin: '5,5,5,5',
-                    maxHeight: 100,
-                    maxWidth: 100,
-                    minHeight: 100,
-                    minWidth: 100,
-                    width: 100,
-                    src: 'images/project/word.JPG'
-                },
-                {
-                    xtype: 'image',
-                    height: 201,
-                    margin: '5,5,5,5',
-                    maxHeight: 100,
-                    maxWidth: 100,
-                    minHeight: 100,
-                    minWidth: 100,
-                    width: 100,
-                    src: 'images/project/word.JPG'
-                },
-                {
-                    xtype: 'image',
-                    height: 201,
-                    margin: '5,5,5,5',
-                    maxHeight: 100,
-                    maxWidth: 100,
-                    minHeight: 100,
-                    minWidth: 100,
-                    width: 100,
-                    src: 'images/project/excel.JPG'
-                }
-            ],
             dockedItems: [
                 {
                     xtype: 'toolbar',
@@ -133,10 +54,278 @@ Ext.define('MyApp.view.project_file_window', {
                         }
                     ]
                 }
+            ],
+            items: [
+                {
+                    xtype: 'panel',
+                    height: 120,
+                    html: '<div style="width:100%;height:100%;" background-image: url(project/word.jpg);',
+                    margin: '5,5,5,5',
+                    width: 100,
+                    layout: 'fit',
+                    title: '废弃房屋',
+                    items: [
+                        {
+                            xtype: 'image',
+                            height: 201,
+                            maxHeight: 100,
+                            maxWidth: 100,
+                            minHeight: 100,
+                            minWidth: 100,
+                            width: 100,
+                            src: 'project/01_01.jpg',
+                            title: '废弃房屋',
+                            listeners: {
+                                afterrender: {
+                                    fn: me.onImageAfterRender,
+                                    scope: me
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    xtype: 'panel',
+                    height: 120,
+                    html: '<div style="width:100%;height:100%;" background-image: url(project/word.jpg);',
+                    margin: '5,5,5,5',
+                    width: 100,
+                    layout: 'fit',
+                    title: '荒山',
+                    items: [
+                        {
+                            xtype: 'image',
+                            height: 201,
+                            maxHeight: 100,
+                            maxWidth: 100,
+                            minHeight: 100,
+                            minWidth: 100,
+                            width: 100,
+                            src: 'project/01_02.jpg',
+                            title: '荒山',
+                            listeners: {
+                                afterrender: {
+                                    fn: me.onImageAfterRender5,
+                                    scope: me
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    xtype: 'panel',
+                    height: 120,
+                    html: '<div style="width:100%;height:100%;" background-image: url(project/word.jpg);',
+                    margin: '5,5,5,5',
+                    width: 100,
+                    layout: 'fit',
+                    title: '倒塌房屋',
+                    items: [
+                        {
+                            xtype: 'image',
+                            height: 201,
+                            maxHeight: 100,
+                            maxWidth: 100,
+                            minHeight: 100,
+                            minWidth: 100,
+                            width: 100,
+                            src: 'project/01_03.jpg',
+                            listeners: {
+                                afterrender: {
+                                    fn: me.onImageAfterRender4,
+                                    scope: me
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    xtype: 'panel',
+                    height: 120,
+                    html: '<div style="width:100%;height:100%;" background-image: url(project/word.jpg);',
+                    margin: '5,5,5,5',
+                    width: 100,
+                    layout: 'fit',
+                    title: '空心村',
+                    items: [
+                        {
+                            xtype: 'image',
+                            height: 201,
+                            maxHeight: 100,
+                            maxWidth: 100,
+                            minHeight: 100,
+                            minWidth: 100,
+                            width: 100,
+                            src: 'project/01_04.jpg',
+                            listeners: {
+                                afterrender: {
+                                    fn: me.onImageAfterRender3,
+                                    scope: me
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    xtype: 'panel',
+                    height: 120,
+                    html: '<div style="width:100%;height:100%;" background-image: url(project/word.jpg);',
+                    margin: '5,5,5,5',
+                    width: 100,
+                    layout: 'fit',
+                    title: '复垦项目实施方案',
+                    items: [
+                        {
+                            xtype: 'image',
+                            height: 201,
+                            maxHeight: 100,
+                            maxWidth: 100,
+                            minHeight: 100,
+                            minWidth: 100,
+                            width: 100,
+                            src: 'project/word.jpg',
+                            listeners: {
+                                afterrender: {
+                                    fn: me.onImageAfterRender2,
+                                    scope: me
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    xtype: 'panel',
+                    height: 120,
+                    html: '<div style="width:100%;height:100%;" background-image: url(project/word.jpg);',
+                    margin: '5,5,5,5',
+                    width: 100,
+                    layout: 'fit',
+                    title: '复垦项目技术设计',
+                    items: [
+                        {
+                            xtype: 'image',
+                            height: 201,
+                            maxHeight: 100,
+                            maxWidth: 100,
+                            minHeight: 100,
+                            minWidth: 100,
+                            width: 100,
+                            src: 'project/word.jpg',
+                            listeners: {
+                                afterrender: {
+                                    fn: me.onImageAfterRender1,
+                                    scope: me
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    xtype: 'panel',
+                    height: 120,
+                    html: '<div style="width:100%;height:100%;" background-image: url(project/word.jpg);',
+                    margin: '5,5,5,5',
+                    width: 100,
+                    layout: 'fit',
+                    title: '复垦工程表',
+                    items: [
+                        {
+                            xtype: 'image',
+                            height: 201,
+                            maxHeight: 100,
+                            maxWidth: 100,
+                            minHeight: 100,
+                            minWidth: 100,
+                            width: 100,
+                            src: 'project/excel.jpg',
+                            listeners: {
+                                afterrender: {
+                                    fn: me.onImageAfterRender11,
+                                    scope: me
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    xtype: 'panel',
+                    height: 120,
+                    html: '<div style="width:100%;height:100%;" background-image: url(project/word.jpg);',
+                    margin: '5,5,5,5',
+                    width: 100,
+                    layout: 'fit',
+                    title: '复垦项目台账',
+                    items: [
+                        {
+                            xtype: 'image',
+                            height: 201,
+                            maxHeight: 100,
+                            maxWidth: 100,
+                            minHeight: 100,
+                            minWidth: 100,
+                            width: 100,
+                            src: 'project/excel.jpg',
+                            listeners: {
+                                afterrender: {
+                                    fn: me.onImageAfterRender111,
+                                    scope: me
+                                }
+                            }
+                        }
+                    ]
+                }
             ]
         });
 
         me.callParent(arguments);
+    },
+
+    onImageAfterRender: function(component, eOpts) {
+        component.el.on('click', function(){
+            window.open('./project/01_01.jpg', '_blank');
+        });
+    },
+
+    onImageAfterRender5: function(component, eOpts) {
+        component.el.on('click', function(){
+            window.open('./project/01_02.jpg', '_blank');
+        });
+    },
+
+    onImageAfterRender4: function(component, eOpts) {
+        component.el.on('click', function(){
+            window.open('./project/01_03.jpg', '_blank');
+        });
+    },
+
+    onImageAfterRender3: function(component, eOpts) {
+        component.el.on('click', function(){
+            window.open('./project/01_04.jpg', '_blank');
+        });
+    },
+
+    onImageAfterRender2: function(component, eOpts) {
+        component.el.on('click', function(){
+            window.open('./project/doc_fangan.htm', '_blank');
+        });
+    },
+
+    onImageAfterRender1: function(component, eOpts) {
+        component.el.on('click', function(){
+            window.open('./project/doc_shejishu.htm', '_blank');
+        });
+    },
+
+    onImageAfterRender11: function(component, eOpts) {
+        component.el.on('click', function(){
+            window.open('./project/xls_gongcheng.htm', '_blank');
+        });
+    },
+
+    onImageAfterRender111: function(component, eOpts) {
+        component.el.on('click', function(){
+            window.open('./project/xls_taizhang.htm', '_blank');
+        });
     }
 
 });

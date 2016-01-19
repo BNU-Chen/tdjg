@@ -20,9 +20,13 @@ Ext.define('MyApp.view.projectionFile', {
     requires: [
         'Ext.grid.Panel',
         'Ext.grid.RowNumberer',
+        'Ext.selection.CheckboxModel',
         'Ext.grid.column.Date',
         'Ext.grid.View',
-        'Ext.toolbar.Paging'
+        'Ext.toolbar.Paging',
+        'Ext.form.field.Text',
+        'Ext.button.Button',
+        'Ext.toolbar.Separator'
     ],
 
     id: 'projectionFile',
@@ -45,30 +49,39 @@ Ext.define('MyApp.view.projectionFile', {
                         },
                         {
                             xtype: 'gridcolumn',
+                            width: 120,
                             dataIndex: 'projectNumber',
                             text: '项目编号'
                         },
                         {
                             xtype: 'gridcolumn',
+                            width: 150,
                             dataIndex: 'projectAddress',
-                            text: '项目地址'
+                            text: '项目所在地'
                         },
                         {
                             xtype: 'datecolumn',
+                            width: 150,
                             dataIndex: 'createTime',
-                            text: '创建时间'
+                            text: '创建时间',
+                            format: 'Y-m-d'
                         },
                         {
                             xtype: 'gridcolumn',
+                            width: 150,
                             dataIndex: 'projectStatus',
                             text: '项目阶段'
                         },
                         {
                             xtype: 'gridcolumn',
-                            dataIndex: 'files',
+                            width: 150,
+                            dataIndex: 'projectDescription',
                             text: '项目描述'
                         }
                     ],
+                    selModel: Ext.create('Ext.selection.CheckboxModel', {
+
+                    }),
                     dockedItems: [
                         {
                             xtype: 'pagingtoolbar',
@@ -77,13 +90,47 @@ Ext.define('MyApp.view.projectionFile', {
                             displayInfo: true,
                             store: 'projection_Store'
                         }
-                    ],
-                    listeners: {
-                        cellclick: {
-                            fn: me.onGridpanelCellClick,
-                            scope: me
+                    ]
+                }
+            ],
+            dockedItems: [
+                {
+                    xtype: 'toolbar',
+                    dock: 'top',
+                    items: [
+                        {
+                            xtype: 'textfield'
+                        },
+                        {
+                            xtype: 'button',
+                            text: '搜索'
+                        },
+                        {
+                            xtype: 'tbseparator'
+                        },
+                        {
+                            xtype: 'button',
+                            icon: 'images/table_add.png',
+                            text: '创建项目',
+                            listeners: {
+                                click: {
+                                    fn: me.onButtonClick,
+                                    scope: me
+                                }
+                            }
+                        },
+                        {
+                            xtype: 'button',
+                            icon: 'images/table_upload.png',
+                            text: '查看项目资料',
+                            listeners: {
+                                click: {
+                                    fn: me.onButtonClick1,
+                                    scope: me
+                                }
+                            }
                         }
-                    }
+                    ]
                 }
             ]
         });
@@ -91,7 +138,126 @@ Ext.define('MyApp.view.projectionFile', {
         me.callParent(arguments);
     },
 
-    onGridpanelCellClick: function(tableview, td, cellIndex, record, tr, rowIndex, e, eOpts) {
+    onButtonClick: function(button, e, eOpts) {
+        var newProjectForm = Ext.create('Ext.form.Panel', {
+
+            height: 231,
+
+            autoScroll: true,
+            bodyPadding: 10,
+            title: '立项',
+            items: [{
+                xtype: 'datefield',
+                anchor: '100%',
+                fieldLabel: '设立时间',
+                editable: false,
+                value: new Date(),
+                format: 'Y-m-d',
+            }, {
+                xtype: 'textfield',
+                anchor: '100%',
+                fieldLabel: '项目编号',
+            }, {
+                xtype: 'textfield',
+                anchor: '100%',
+                fieldLabel: '项目所在地',
+            }, {
+                xtype: 'textfield',
+                anchor: '100%',
+                fieldLabel: '进展状况',
+                editable: false,
+                value: '立项阶段'
+            }, {
+                xtype: 'textareafield',
+                anchor: '100%',
+                fieldLabel: '项目描述',
+
+            }, {
+                xtype: 'button',
+                text: '创建',
+                handler: function() {
+                    var jsCreateTime = Ext.util.Format.date(newProjectForm.getComponent(0).getValue(), 'Y-m-d');
+                    var jsProjectNumber = newProjectForm.getComponent(1).getValue();
+                    var jsProjectAddress = newProjectForm.getComponent(2).getValue();
+                    var jsProjectStatus = newProjectForm.getComponent(3).getValue();
+                    var jsDescription = newProjectForm.getComponent(4).getValue();
+
+                    Ext.Ajax.request({
+                        //设置提交的地址
+                        url: 'addProject.action',
+                        //设置提交的方式为post
+
+                        params: {
+                            createTime: "" + jsCreateTime + "",
+                            projectNumber: "" + jsProjectNumber + "",
+                            projectAddress: "" + jsProjectAddress + "",
+                            projectStatus: "" + jsProjectStatus + "",
+                            projectDescription: "" + jsDescription + "",
+
+                        },
+                        method: 'post',
+
+                        //网络成功返回
+                        success: function(form, action) {
+                            Ext.Msg.show({
+                                title: '结果信息',
+                                msg: '创建成功',
+                                width: 300,
+                                buttons: Ext.Msg.OK,
+                                icon: Ext.window.MessageBox.INFO
+                            });
+
+                            Ext.getCmp('proj').getComponent(1).getComponent(0).getStore().reload();
+
+                            newProjectWindow.destroy();
+                            Ext.Ajax.request({
+                                url: 'createRecord.action',
+                                params: {
+                                    projectID: "" + jsProjectNumber + "",
+                                },
+                                method: 'post',
+                                success: function() {
+                                    Ext.getStore("listFile").reload();
+
+                                },
+                                failure: function() {
+                                }
+                            });
+                        },
+                        //网络失败返回
+                        failure: function(form, action) {
+                        }
+                    });
+                },
+            }, {
+                xtype: 'button',
+                text: '返回',
+                handler: function() {
+                    newProjectWindow.destroy();
+                },
+            }]
+        });
+
+        var newProjectWindow = Ext.create('Ext.window.Window', {
+            title: '创建项目窗口',
+            width: 400,
+            constrain: true,
+            height: 300,
+            layout: {
+                type: 'fit',
+            },
+
+            items: [
+
+            ]
+
+        });
+        newProjectWindow.add(newProjectForm);
+        newProjectWindow.show();
+
+    },
+
+    onButtonClick1: function(button, e, eOpts) {
         console.log("windowss");
         var win = Ext.widget('project_file_window');
         console.log("win:",win);

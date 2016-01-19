@@ -30,24 +30,19 @@ Ext.define('MyApp.model.projection', {
             type: 'string'
         },
         {
-            name: 'createTime',
-            type: 'string'
+            name: 'createTime'
         },
         {
-            name: 'projectStatus',
-            type: 'float'
+            name: 'projectStatus'
         },
         {
-            name: 'endTime',
-            type: 'float'
+            name: 'endTime'
         },
         {
-            name: 'projectDescription',
-            type: 'float'
+            name: 'projectDescription'
         },
         {
-            name: 'files',
-            type: 'float'
+            name: 'files'
         }
     ]
 });

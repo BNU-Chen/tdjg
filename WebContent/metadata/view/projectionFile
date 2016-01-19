@@ -44,6 +44,16 @@
                     "designerId": "2cf844da-3ab7-4360-9a72-055448089bfd"
                 },
                 {
+                    "type": "Ext.selection.CheckboxModel",
+                    "reference": {
+                        "name": "selModel",
+                        "type": "object"
+                    },
+                    "codeClass": "Ext.selection.CheckboxModel",
+                    "name": "MyCheckboxSelectionModel",
+                    "designerId": "f8836353-eb86-44bb-b8e0-57c3973a1382"
+                },
+                {
                     "type": "Ext.grid.column.Column",
                     "reference": {
                         "name": "columns",
@@ -52,7 +62,8 @@
                     "codeClass": null,
                     "userConfig": {
                         "dataIndex": "projectNumber",
-                        "text": "项目编号"
+                        "text": "项目编号",
+                        "width": 120
                     },
                     "name": "MyColumn350",
                     "designerId": "0c55911d-028b-4766-96fa-fe293fe8e109"
@@ -66,7 +77,8 @@
                     "codeClass": null,
                     "userConfig": {
                         "dataIndex": "projectAddress",
-                        "text": "项目地址"
+                        "text": "项目所在地",
+                        "width": 150
                     },
                     "name": "MyColumn351",
                     "designerId": "3cbd9bee-c121-41f1-89c5-698a17481798"
@@ -80,10 +92,12 @@
                     "codeClass": null,
                     "userConfig": {
                         "dataIndex": "createTime",
-                        "text": "创建时间"
+                        "format": "Y-m-d",
+                        "text": "创建时间",
+                        "width": 150
                     },
-                    "name": "MyDateColumn73",
-                    "designerId": "fb5c351b-697d-4dc2-9eb2-831ca90cff6d"
+                    "name": "MyDateColumn",
+                    "designerId": "079289c1-7595-47fa-92c2-ecbbc107c8b9"
                 },
                 {
                     "type": "Ext.grid.column.Column",
@@ -94,10 +108,11 @@
                     "codeClass": null,
                     "userConfig": {
                         "dataIndex": "projectStatus",
-                        "text": "项目阶段"
+                        "text": "项目阶段",
+                        "width": 150
                     },
-                    "name": "MyColumn352",
-                    "designerId": "e8db36a8-0516-478e-b6bd-046b4b63654e"
+                    "name": "MyColumn1",
+                    "designerId": "3e9caf95-e97c-40be-87ce-ca30b0e417da"
                 },
                 {
                     "type": "Ext.grid.column.Column",
@@ -107,11 +122,12 @@
                     },
                     "codeClass": null,
                     "userConfig": {
-                        "dataIndex": "files",
-                        "text": "项目描述"
+                        "dataIndex": "projectDescription",
+                        "text": "项目描述",
+                        "width": 150
                     },
-                    "name": "MyColumn353",
-                    "designerId": "0e791329-71bf-4ec0-aafc-385845db85f3"
+                    "name": "MyColumn2",
+                    "designerId": "09b3cfa0-e577-44e1-a9a1-049d44ff6bc5"
                 },
                 {
                     "type": "Ext.grid.View",
@@ -138,30 +154,253 @@
                     },
                     "name": "MyPagingToolbar62",
                     "designerId": "4d917f2b-637a-42b8-b78d-2fafb19a2144"
-                },
+                }
+            ]
+        },
+        {
+            "type": "Ext.toolbar.Toolbar",
+            "reference": {
+                "name": "dockedItems",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "dock": "top"
+            },
+            "name": "MyToolbar",
+            "designerId": "edb91ff0-36c3-49f7-99be-89b08ca5fc45",
+            "cn": [
                 {
-                    "type": "basiceventbinding",
+                    "type": "Ext.form.field.Text",
                     "reference": {
-                        "name": "listeners",
+                        "name": "items",
                         "type": "array"
                     },
                     "codeClass": null,
                     "userConfig": {
-                        "fn": "onGridpanelCellClick",
-                        "implHandler": [
-                            "console.log(\"windowss\");",
-                            "var win = Ext.widget('project_file_window');",
-                            "console.log(\"win:\",win);",
-                            "if(win){",
-                            "    console.log(\"win show\");",
-                            "    win.show();",
-                            "}"
-                        ],
-                        "name": "cellclick",
-                        "scope": "me"
+                        "fieldLabel": null,
+                        "layout|flex": null
                     },
-                    "name": "onGridpanelCellClick",
-                    "designerId": "cf2b7d43-0f65-4e8d-94bc-8078df85cce1"
+                    "name": "MyTextField",
+                    "designerId": "ad387acb-1bb7-4a4e-96bb-11909a8241e8"
+                },
+                {
+                    "type": "Ext.button.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|flex": null,
+                        "text": "搜索"
+                    },
+                    "name": "MyButton",
+                    "designerId": "381608ff-b21a-4068-a983-dd7940d29119"
+                },
+                {
+                    "type": "Ext.toolbar.Separator",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|flex": null
+                    },
+                    "name": "MySeparator",
+                    "designerId": "e799c27d-58de-4249-9948-5fe968268804"
+                },
+                {
+                    "type": "Ext.button.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "icon": "images/table_add.png",
+                        "layout|flex": null,
+                        "text": "创建项目"
+                    },
+                    "name": "MyButton1",
+                    "designerId": "60612810-1b04-4495-950a-2537f6cbdee9",
+                    "cn": [
+                        {
+                            "type": "basiceventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "onButtonClick",
+                                "implHandler": [
+                                    "var newProjectForm = Ext.create('Ext.form.Panel', {",
+                                    "",
+                                    "    height: 231,",
+                                    "",
+                                    "    autoScroll: true,",
+                                    "    bodyPadding: 10,",
+                                    "    title: '立项',",
+                                    "    items: [{",
+                                    "        xtype: 'datefield',",
+                                    "        anchor: '100%',",
+                                    "        fieldLabel: '设立时间',",
+                                    "        editable: false,",
+                                    "        value: new Date(),",
+                                    "        format: 'Y-m-d',",
+                                    "    }, {",
+                                    "        xtype: 'textfield',",
+                                    "        anchor: '100%',",
+                                    "        fieldLabel: '项目编号',",
+                                    "    }, {",
+                                    "        xtype: 'textfield',",
+                                    "        anchor: '100%',",
+                                    "        fieldLabel: '项目所在地',",
+                                    "    }, {",
+                                    "        xtype: 'textfield',",
+                                    "        anchor: '100%',",
+                                    "        fieldLabel: '进展状况',",
+                                    "        editable: false,",
+                                    "        value: '立项阶段'",
+                                    "    }, {",
+                                    "        xtype: 'textareafield',",
+                                    "        anchor: '100%',",
+                                    "        fieldLabel: '项目描述',",
+                                    "",
+                                    "    }, {",
+                                    "        xtype: 'button',",
+                                    "        text: '创建',",
+                                    "        handler: function() {",
+                                    "            var jsCreateTime = Ext.util.Format.date(newProjectForm.getComponent(0).getValue(), 'Y-m-d');",
+                                    "            var jsProjectNumber = newProjectForm.getComponent(1).getValue();",
+                                    "            var jsProjectAddress = newProjectForm.getComponent(2).getValue();",
+                                    "            var jsProjectStatus = newProjectForm.getComponent(3).getValue();",
+                                    "            var jsDescription = newProjectForm.getComponent(4).getValue();",
+                                    "",
+                                    "            Ext.Ajax.request({",
+                                    "                //设置提交的地址  ",
+                                    "                url: 'addProject.action',",
+                                    "                //设置提交的方式为post  ",
+                                    "",
+                                    "                params: {",
+                                    "                    createTime: \"\" + jsCreateTime + \"\",",
+                                    "                    projectNumber: \"\" + jsProjectNumber + \"\",",
+                                    "                    projectAddress: \"\" + jsProjectAddress + \"\",",
+                                    "                    projectStatus: \"\" + jsProjectStatus + \"\",",
+                                    "                    projectDescription: \"\" + jsDescription + \"\",",
+                                    "",
+                                    "                },",
+                                    "                method: 'post',",
+                                    "",
+                                    "                //网络成功返回  ",
+                                    "                success: function(form, action) {",
+                                    "                    Ext.Msg.show({",
+                                    "                        title: '结果信息',",
+                                    "                        msg: '创建成功',",
+                                    "                        width: 300,",
+                                    "                        buttons: Ext.Msg.OK,",
+                                    "                        icon: Ext.window.MessageBox.INFO",
+                                    "                    });",
+                                    "",
+                                    "                    Ext.getCmp('proj').getComponent(1).getComponent(0).getStore().reload();",
+                                    "",
+                                    "                    newProjectWindow.destroy();",
+                                    "                    Ext.Ajax.request({",
+                                    "                        url: 'createRecord.action',",
+                                    "                        params: {",
+                                    "                            projectID: \"\" + jsProjectNumber + \"\",",
+                                    "                        },",
+                                    "                        method: 'post',",
+                                    "                        success: function() {",
+                                    "                            Ext.getStore(\"listFile\").reload();",
+                                    "",
+                                    "                        },",
+                                    "                        failure: function() {",
+                                    "                        }",
+                                    "                    });",
+                                    "                },",
+                                    "                //网络失败返回  ",
+                                    "                failure: function(form, action) {",
+                                    "                }",
+                                    "            });",
+                                    "        },",
+                                    "    }, {",
+                                    "        xtype: 'button',",
+                                    "        text: '返回',",
+                                    "        handler: function() {",
+                                    "            newProjectWindow.destroy();",
+                                    "        },",
+                                    "    }]",
+                                    "});",
+                                    "",
+                                    "var newProjectWindow = Ext.create('Ext.window.Window', {",
+                                    "    title: '创建项目窗口',",
+                                    "    width: 400,",
+                                    "    constrain: true,",
+                                    "    height: 300,",
+                                    "    layout: {",
+                                    "        type: 'fit',",
+                                    "    },",
+                                    "",
+                                    "    items: [",
+                                    "",
+                                    "    ]",
+                                    "",
+                                    "});",
+                                    "newProjectWindow.add(newProjectForm);",
+                                    "newProjectWindow.show();",
+                                    ""
+                                ],
+                                "name": "click",
+                                "scope": "me"
+                            },
+                            "name": "onButtonClick",
+                            "designerId": "c9448d35-51f5-4be2-abea-50ffc541ea75"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.button.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "icon": "images/table_upload.png",
+                        "layout|flex": null,
+                        "text": "查看项目资料"
+                    },
+                    "name": "MyButton2",
+                    "designerId": "d158554f-ecc3-4d8a-b49d-d01eb75e41d0",
+                    "cn": [
+                        {
+                            "type": "basiceventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "onButtonClick1",
+                                "implHandler": [
+                                    "console.log(\"windowss\");",
+                                    "var win = Ext.widget('project_file_window');",
+                                    "console.log(\"win:\",win);",
+                                    "if(win){",
+                                    "    console.log(\"win show\");",
+                                    "    win.show();",
+                                    "}"
+                                ],
+                                "name": "click",
+                                "scope": "me"
+                            },
+                            "name": "onButtonClick1",
+                            "designerId": "ebb0434c-2081-40b6-b0ac-42343e79a54c"
+                        }
+                    ]
                 }
             ]
         }

@@ -248,12 +248,12 @@ Ext.define('MyApp.view.MyViewport', {
                                         text: '项目与规划',
                                         icon: '',
                                         children: [
-                                            {
-                                                id: 302,
-                                                text: '项目管理',
-                                                icon: '',
-                                                leaf: true
-                                            },
+                                            //{
+                                            //    id: 302,
+                                            //    text: '项目管理',
+                                            //    icon: '',
+                                            //    leaf: true
+                                            //}, 
                                             {
                                                 id: 309,
                                                 text: '项目资料管理',
