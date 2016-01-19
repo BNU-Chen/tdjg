@@ -288,7 +288,8 @@
             "db_BlacklistWindow",
             "db_RoleRightSettingWindow",
             "projectionFile",
-            "project_file_window"
+            "project_file_window",
+            "projection_map"
         ]
     },
     "name": "Application",

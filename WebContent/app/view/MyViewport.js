@@ -261,11 +261,17 @@ Ext.define('MyApp.view.MyViewport', {
                                                 leaf: true
                                             },
                                             {
-                                                id: 303,
-                                                text: '规划拆迁区域',
+                                                id: 308,
+                                                text: '项目资料管理',
                                                 icon: '',
                                                 leaf: true
                                             }
+                                            //{
+                                            //    id: 303,
+                                            //    text: '规划拆迁区域',
+                                            //    icon: '',
+                                            //    leaf: true
+                                            //}
                                             //, {
                                             //    id: 304,
                                             //    text: '现状冲突房屋',
@@ -822,6 +828,11 @@ Ext.define('MyApp.view.MyViewport', {
                 //tabPanel.removeAll(true);
                 //tabPanel.add(Ext.widget(xtype));
 
+                break;
+            case 308:
+                tabPanel.removeAll(true);
+                tabPanel.add(Ext.widget('projection_map'));
+                Ext.getCmp("projection_map").getLayout().setActiveItem(2);
                 break;
             case 303:
                 tabPanel.removeAll(true);

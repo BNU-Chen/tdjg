@@ -1,0 +1,94 @@
+{
+    "type": "Ext.panel.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "projection_map",
+        "designer|userClassName": "projection_map",
+        "id": "use_MonitorResult1",
+        "layout": "fit",
+        "title": "复垦规划项目地图"
+    },
+    "name": "use_MonitorResult1",
+    "designerId": "3f8f6b5d-48f3-4f51-96fe-428540a5cee4",
+    "cn": [
+        {
+            "type": "Ext.panel.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "html": [
+                    "<div id = \"mapdiv_projection\" style = \"width=100%;height:100%;\">",
+                    "</div>"
+                ],
+                "layout": "fit",
+                "title": null
+            },
+            "name": "MyPanel5",
+            "designerId": "4cbd7c89-994b-466f-b836-574a6b6eee05",
+            "cn": [
+                {
+                    "type": "basiceventbinding",
+                    "reference": {
+                        "name": "listeners",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fn": "onPanelAfterRender",
+                        "implHandler": [
+                            "//加入地图的js文件",
+                            "var head = document.getElementsByTagName('head')[0];",
+                            "var script= document.createElement(\"script\");",
+                            "script.type = \"text/javascript\";",
+                            "script.src=\"map/projection_map.js\";",
+                            "head.appendChild(script);"
+                        ],
+                        "name": "afterrender",
+                        "scope": "me"
+                    },
+                    "name": "onPanelAfterRender",
+                    "designerId": "c406bd28-02c2-4ecc-9d99-d495635dd33b"
+                },
+                {
+                    "type": "Ext.toolbar.Toolbar",
+                    "reference": {
+                        "name": "dockedItems",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dock": "top"
+                    },
+                    "name": "MyToolbar1",
+                    "designerId": "ea1fe753-398e-4102-a8bd-d1e4812701b5",
+                    "cn": [
+                        {
+                            "type": "Ext.form.field.ComboBox",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "displayField": "projectAddress",
+                                "fieldLabel": "项目名称",
+                                "layout|flex": null,
+                                "store": "projection_Store",
+                                "valueField": "files"
+                            },
+                            "name": "MyComboBox",
+                            "designerId": "2a3ae3d4-8a41-4367-9313-e9591c283ed8"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -333,6 +333,7 @@ Ext.application({
         'db_RoleRightSettingWindow',
         'projectionFile',
         'project_file_window',
+        'projection_map',
         
         'dh',
         'recFile',
