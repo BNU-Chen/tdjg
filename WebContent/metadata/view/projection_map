@@ -79,6 +79,7 @@
                             "userConfig": {
                                 "displayField": "projectAddress",
                                 "fieldLabel": "项目名称",
+                                "id": "projection_map_combo",
                                 "layout|flex": null,
                                 "store": "projection_Store",
                                 "valueField": "files"

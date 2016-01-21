@@ -49,6 +49,7 @@ Ext.define('MyApp.view.projection_map', {
                             items: [
                                 {
                                     xtype: 'combobox',
+                                    id: 'projection_map_combo',
                                     fieldLabel: '项目名称',
                                     displayField: 'projectAddress',
                                     store: 'projection_Store',

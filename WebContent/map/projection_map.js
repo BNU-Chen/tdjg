@@ -15,12 +15,12 @@ require([
     "esri/tasks/query",
     "esri/tasks/find",
 
-    "esri/dijit/InfoWindowLite",  //弹出对话框
-    "esri/dijit/Popup",           //弹出对话框
-    "esri/dijit/PopupTemplate",   //弹出对话框模板
-    "esri/dijit/HomeButton",  //Home按钮
-    "esri/dijit/Scalebar",    //比例尺
-    "esri/dijit/LayerSwipe",  //图层卷帘效果
+    "esri/dijit/InfoWindowLite", //弹出对话框
+    "esri/dijit/Popup", //弹出对话框
+    "esri/dijit/PopupTemplate", //弹出对话框模板
+    "esri/dijit/HomeButton", //Home按钮
+    "esri/dijit/Scalebar", //比例尺
+    "esri/dijit/LayerSwipe", //图层卷帘效果
 
     "esri/Color",
     "dojo/parser",
@@ -34,7 +34,7 @@ require([
     "dojo/string",
 
     "dojo/domReady!"
-], function (Map, Graphic, esriConfig, urlUtils, Point, Extent, SpatialReference, FeatureLayer, InfoTemplate, SimpleFillSymbol, SimpleLineSymbol, SimpleMarkerSymbol, ClassBreakRenderer, Query, InfoWindowLite, Popup, PopupTemplate, HomeButton, Scalebar, LayerSwipe, Color, parser, dom, domClass, domStyle, domConstruct, on, number, String) {
+], function(Map, Graphic, esriConfig, urlUtils, Point, Extent, SpatialReference, FeatureLayer, InfoTemplate, SimpleFillSymbol, SimpleLineSymbol, SimpleMarkerSymbol, ClassBreakRenderer, Query, InfoWindowLite, Popup, PopupTemplate, HomeButton, Scalebar, LayerSwipe, Color, parser, dom, domClass, domStyle, domConstruct, on, number, String) {
 
     var map;
     var mapServiceLayer;
@@ -53,11 +53,28 @@ require([
         map = new Map("mapdiv_projection", {
             logo: false
         });
-        map.removeAllLayers();
-        var mapURL ="http://localhost:6080/arcgis/rest/services/csqzjxzq/MapServer";
-        mapServiceLayer = new esri.layers.ArcGISDynamicMapServiceLayer(mapURL);
 
-        map.addLayer(mapServiceLayer);
+
+        // 选择第一条数据
+        var combo = Ext.getCmp("projection_map_combo");
+        if (combo) {
+            combo.on('change', projectChange);
+            combo.select(combo.getStore().getAt(0));
+        }
+
+
+
+
+
+        function projectChange(cmp, newValue, oldValue, eOpts) {
+            var mapURL = newValue;
+
+            // 添加图层
+            map.removeAllLayers();
+            // var mapURL = "http://localhost:6080/arcgis/rest/services/csqzjxzq/MapServer";
+            mapServiceLayer = new esri.layers.ArcGISDynamicMapServiceLayer(mapURL);
+            map.addLayer(mapServiceLayer);
+        }
     }
 
 });
