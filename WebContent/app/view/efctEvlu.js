@@ -1246,7 +1246,7 @@ Ext.define('MyApp.view.efctEvlu', {
                                                 }
                                                 */
                                                 else if(count >75 & count <95){
-                                                    progressText = "正在生成评估报告……"+count+"%";
+                                                    progressText = "正在生成评估结果……"+count+"%";
                                                 }
                                                 else if(count == 95){                                                	
                                                     progressText = "完成"+count+"%";
@@ -1269,7 +1269,7 @@ Ext.define('MyApp.view.efctEvlu', {
                                                                 fontSize: '28px',
                                                                 fontFamily: '黑体'
                                                             },
-                                                            text: '评估报告'
+                                                            text: '评估结果'
                                                         },
                                                         {
                                                             xtype: 'textfield',
